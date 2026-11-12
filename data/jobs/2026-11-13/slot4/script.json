@@ -1,0 +1,76 @@
+{
+  "judul": "Mengapa Apple Dianggap Safe Haven di Sektor Teknologi?",
+  "hook": "Lagi panik pas saham teknologi merah semua, tapi Apple malah santai naik?",
+  "angle": "Sudut kreator Indonesia: Mengapa Apple dianggap sebagai safe haven di sektor teknologi",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Lagi panik pas saham teknologi merah semua, tapi Apple malah santai naik? Orang sering salah paham, dikira semua perusahaan tech itu sama cara kerjanya. Padahal rahasianya ada di tumpukan uang kas dan produk yang selalu dibeli orang meski ekonomi lagi seret. Makanya raksasa ini dijuluki pelabuhan aman. Coba cek laporan keuangannya sebelum kamu ambil keputusan. Follow buat part 2.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Lagi panik pas saham teknologi merah semua, tapi Apple malah santai naik?",
+      "teks_layar": "Saham Tech Merah, Apple Naik?",
+      "pose": "shrug",
+      "keyword": "panik",
+      "latar": "Grafik saham turun",
+      "image_query": "stickman confused looking at red stock chart"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Orang sering salah paham, dikira semua perusahaan tech itu sama cara kerjanya.",
+      "teks_layar": "Bedanya Tech Biasa vs Apple",
+      "pose": "think",
+      "keyword": "salah paham",
+      "latar": "Tanda tanya besar",
+      "image_query": "stickman thinking with question marks"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal rahasianya ada di tumpukan uang kas dan produk yang selalu dibeli orang meski ekonomi lagi seret.",
+      "teks_layar": "Uang Kas & Produk Loyal",
+      "pose": "point",
+      "keyword": "uang kas",
+      "latar": "Tumpukan uang",
+      "image_query": "stickman pointing at money bag"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Makanya raksasa ini dijuluki pelabuhan aman. Coba cek laporan keuangannya sebelum kamu ambil keputusan.",
+      "teks_layar": "Cek Laporan Keuangan",
+      "pose": "typing",
+      "keyword": "pelabuhan aman",
+      "latar": "Laptop dan dokumen",
+      "image_query": "stickman typing on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part 2.",
+      "teks_layar": "Follow buat Part 2",
+      "pose": "cheer",
+      "keyword": "follow",
+      "latar": "Tombol follow",
+      "image_query": "stickman cheering happy"
+    }
+  ],
+  "caption": "Kenapa sih Apple selalu dibilang paling aman pas pasar saham lagi goyang? Simpan video ini biar nggak lupa.",
+  "cta": "Follow buat part 2.",
+  "hashtag": [
+    "#KreatorAI",
+    "#SahamTeknologi",
+    "#Apple",
+    "#BelajarSaham",
+    "#Investasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Kenapa Apple Paling Aman?",
+  "image_query": "",
+  "llm_provider": "gemini"
+}

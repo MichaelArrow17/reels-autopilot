@@ -1,0 +1,76 @@
+{
+  "judul": "3 Cara Simpel Jaga Data Pribadi di Internet",
+  "hook": "Pernah mikir nggak, foto dan nomor HP kamu bisa tersebar tanpa kamu sadari?",
+  "angle": "Panduan praktis menjaga privasi data pribadi di internet untuk pengguna sehari-hari di Indonesia.",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah mikir nggak, foto dan nomor HP kamu bisa tersebar tanpa kamu sadari? Banyak orang kira cuma peretasan akun besar yang bahaya. Padahal, kebiasaan asal klik link dan pakai satu kata sandi buat semua akun itu fatal banget. Biar aman, pertama, wajib aktifkan verifikasi dua langkah. Kedua, bedakan kata sandi untuk setiap aplikasi penting kamu. Ketiga, rajin cek izin akses aplikasi yang kamu unduh. Jangan kasih izin akses lokasi atau kontak kalau nggak perlu. Jaga privasi digitalmu dari sekarang sebelum terlambat. Simpan video ini biar kamu nggak lupa!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah mikir nggak, foto dan nomor HP kamu bisa tersebar tanpa kamu sadari?",
+      "teks_layar": "Data Pribadimu Bocor?",
+      "pose": "shrug",
+      "keyword": "data privacy leak",
+      "latar": "kamar tidur malam hari dengan cahaya HP",
+      "image_query": "stickman looking confused at smartphone screen glowing in dark room"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak orang kira cuma peretasan akun besar yang bahaya. Padahal, kebiasaan asal klik link dan pakai satu kata sandi buat semua akun itu fatal banget.",
+      "teks_layar": "Bahaya 1 Password Buat Semua!",
+      "pose": "think",
+      "keyword": "weak password risk",
+      "latar": "meja kerja dengan laptop dan tanda bahaya",
+      "image_query": "stickman thinking deeply next to laptop showing warning shield icons"
+    },
+    {
+      "id": 3,
+      "nama": "solusi_1_dan_2",
+      "narasi": "Biar aman, pertama, wajib aktifkan verifikasi dua langkah. Kedua, bedakan kata sandi untuk setiap aplikasi penting kamu.",
+      "teks_layar": "1. Aktifkan 2FA\n2. Bedakan Password",
+      "pose": "typing",
+      "keyword": "two factor authentication",
+      "latar": "layar login akun digital",
+      "image_query": "stickman typing securely on laptop with padlock screen"
+    },
+    {
+      "id": 4,
+      "nama": "solusi_3",
+      "narasi": "Ketiga, rajin cek izin akses aplikasi yang kamu unduh. Jangan kasih izin akses lokasi atau kontak kalau nggak perlu.",
+      "teks_layar": "3. Cek Izin Akses Aplikasi",
+      "pose": "point",
+      "keyword": "app permission settings",
+      "latar": "tampilan menu pengaturan ponsel",
+      "image_query": "stickman pointing to smartphone app permissions toggles"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Jaga privasi digitalmu dari sekarang sebelum terlambat. Simpan video ini biar kamu nggak lupa!",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "cyber security protection",
+      "latar": "ruang digital cerah dengan perisai keamanan",
+      "image_query": "stickman standing proudly next to a green security shield icon"
+    }
+  ],
+  "caption": "Jangan tunggu data pribadi bocor baru panik! 🔒 Lakukan 3 langkah simpel ini sekarang juga buat amankan akun digitalmu. Mana yang udah kamu terapkan?\n\n#KeamananSiber #TipsInternet #PoChai #KreatorAI #EdukasiDigital",
+  "cta": "Simpan video ini biar kamu nggak lupa!",
+  "hashtag": [
+    "#KreatorAI",
+    "#KeamananSiber",
+    "#TipsDigital",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Fitur verifikasi dua langkah (2FA) terbukti efektif mencegah peretasan akun.",
+    "Izin akses aplikasi (lokasi, kontak) bisa disesuaikan manual di pengaturan Android dan iOS."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "HP Kamu Aman dari Peretas?",
+  "image_query": "",
+  "llm_provider": "gemini"
+}

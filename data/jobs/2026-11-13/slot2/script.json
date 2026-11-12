@@ -1,0 +1,75 @@
+{
+  "judul": "AI Ubah Cara Investasi Saham Lewat Chat",
+  "hook": "Beli saham sekarang tinggal pakai chat?",
+  "angle": "Sudut kreator Indonesia: AI Ubah Cara Investasi Saham, Investor Kini Bisa Analisis hingga Trading Lewat Chat",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Beli saham sekarang tinggal pakai chat? Kamu mungkin mikir investasi saham itu ribet dan butuh waktu lama buat baca grafik. Padahal, sekarang kecerdasan buatan bisa bantu kamu menganalisis pasar sampai eksekusi trading langsung dari kolom obrolan. Jangan cuma dipakai buat ngerjain tugas kantor. Coba eksplorasi fitur AI di aplikasi sahammu buat riset emiten harian. Follow akun Po Chai buat tips AI lainnya.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Beli saham sekarang tinggal pakai chat?",
+      "teks_layar": "Trading Saham Pakai Chat?",
+      "pose": "think",
+      "keyword": "chat saham",
+      "latar": "minimalis",
+      "image_query": "stickman thinking about stock chat"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kamu mungkin mikir investasi saham itu ribet dan butuh waktu lama buat baca grafik.",
+      "teks_layar": "Ribet Baca Grafik?",
+      "pose": "shrug",
+      "keyword": "ribet grafik",
+      "latar": "minimalis",
+      "image_query": "stickman confused looking at charts"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, sekarang kecerdasan buatan bisa bantu kamu menganalisis pasar sampai eksekusi trading langsung dari kolom obrolan.",
+      "teks_layar": "Analisis & Trading via AI",
+      "pose": "typing",
+      "keyword": "ai trading",
+      "latar": "minimalis",
+      "image_query": "stickman typing on chat ai"
+    },
+    {
+      "id": 4,
+      "nama": "aksi",
+      "narasi": "Jangan cuma dipakai buat ngerjain tugas kantor. Coba eksplorasi fitur AI di aplikasi sahammu buat riset emiten harian.",
+      "teks_layar": "Riset Emiten Pakai AI",
+      "pose": "point",
+      "keyword": "riset emiten",
+      "latar": "minimalis",
+      "image_query": "stickman pointing at smartphone"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow akun Po Chai buat tips AI lainnya.",
+      "teks_layar": "Follow Po Chai",
+      "pose": "cheer",
+      "keyword": "follow po chai",
+      "latar": "minimalis",
+      "image_query": "stickman cheering with text"
+    }
+  ],
+  "caption": "Cara investasi saham berubah drastis! Sekarang kamu bisa analisis dan trading cuma lewat chat pakai AI. Udah coba fitur ini belum? Simpan video ini dan follow buat tips AI lainnya.",
+  "cta": "Follow akun Po Chai buat tips AI lainnya.",
+  "hashtag": [
+    "#KreatorAI",
+    "#InvestasiSaham",
+    "#TradingAI",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "AI kini dapat digunakan untuk analisis dan trading saham melalui chat berdasarkan berita Medcom.id."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Trading Saham Lewat Chat AI?",
+  "image_query": "",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Masih ngedit video manual padahal di CapCut ada fitur AI otomatis?",
+      "isi": "Fitur Naskah AI bisa buat naskah instan dari topik yang kamu ketik, dan sekali klik Teks ke Video langsung nambahin klip serta teks. Editing berjam-jam jadi selesai dalam hitungan detik.",
+      "cta": "Simpan video ini biar kamu nggak lupa saat coba!",
+      "pertanyaan": "Fitur AI mana nih yang paling bikin kamu penasaran mau coba duluan?",
+      "hashtag": [
+        "#CapCutAI",
+        "#EditVideoOtomatis",
+        "#KreatorPemula",
+        "#TipsEditing",
+        "#AItools"
+      ]
+    },
+    {
+      "baris1": "Yakin masih mau ngedit manual kalau AI CapCut bisa instan?",
+      "isi": "Cukup ketik topik yang mau dibahas, Naskah AI bakal bikinin naskah lengkap. Lanjut klik Teks ke Video, klip dan teks langsung terpasang sendiri dalam hitungan detik.",
+      "cta": "Simpan video ini biar kamu nggak lupa saat coba!",
+      "pertanyaan": "Biasanya butuh waktu berapa lama sih buat selesaiin satu video editan?",
+      "hashtag": [
+        "#TutorialCapCut",
+        "#NaskahAI",
+        "#BelajarNgonten",
+        "#VideoEditing",
+        "#ContentCreator"
+      ]
+    },
+    {
+      "baris1": "Nyangka pakai AI di CapCut itu ribet dan harus bayar mahal?",
+      "isi": "Padahal gampang banget, tinggal ketik topik buat naskah instan lalu klik Teks ke Video. AI yang bakal pilihkan klip dan teksnya secara otomatis untuk kamu.",
+      "cta": "Simpan video ini biar kamu nggak lupa saat coba!",
+      "pertanyaan": "Pernah coba pakai fitur AI di aplikasi editing belum?",
+      "hashtag": [
+        "#TipsCapCut",
+        "#EditVideoCepat",
+        "#AIToolsIndonesia",
+        "#KreatorAI",
+        "#ContentTips"
+      ]
+    }
+  ],
+  "cover": "Edit Video Otomatis Pakai AI CapCut",
+  "komentar_pin": "Simpan dulu videonya biar gampang dicari pas kamu mau praktekin. Menurut kamu, fitur AI ini bakal hemat waktu ngedit nggak?",
+  "llm_provider": "gemini"
+}

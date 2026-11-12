@@ -11,6 +11,36 @@
       "tanggal": "2026-11-12",
       "angle": "Sudut kreator Indonesia: cara pakai ai",
       "slot": 1
+    },
+    {
+      "judul": "Cara Pakai AI CapCut",
+      "tanggal": "2026-11-13",
+      "angle": "Sudut pandang praktis kreator konten tentang memanfaatkan fitur AI tersembunyi di CapCut untuk efisiensi editing",
+      "slot": 1
+    },
+    {
+      "judul": "AI Ubah Cara Investasi Saham Lewat Chat",
+      "tanggal": "2026-11-13",
+      "angle": "Sudut kreator Indonesia: AI Ubah Cara Investasi Saham, Investor Kini Bisa Analisis hingga Trading Lewat Chat",
+      "slot": 2
+    },
+    {
+      "judul": "Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
+      "tanggal": "2026-11-13",
+      "angle": "Sudut kreator Indonesia: Teknologi Ada, Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
+      "slot": 3
+    },
+    {
+      "judul": "Mengapa Apple Dianggap Safe Haven di Sektor Teknologi?",
+      "tanggal": "2026-11-13",
+      "angle": "Sudut kreator Indonesia: Mengapa Apple dianggap sebagai safe haven di sektor teknologi",
+      "slot": 4
+    },
+    {
+      "judul": "3 Cara Simpel Jaga Data Pribadi di Internet",
+      "tanggal": "2026-11-13",
+      "angle": "Panduan praktis menjaga privasi data pribadi di internet untuk pengguna sehari-hari di Indonesia.",
+      "slot": 5
     }
   ],
   "days": {
@@ -1141,7 +1171,7 @@
           "id": "2026-11-13-s1-ec0699",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "cara pakai ai capcut",
+          "judul": "Cara Pakai AI CapCut",
           "hook": "cara pakai ai capcut?",
           "topic": {
             "judul": "cara pakai ai capcut",
@@ -1173,14 +1203,26 @@
             "sinyal": "cara pakai ai",
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-13T07:26:56+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-13T07:26:56+08:00",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot1/script.json",
+          "caption": "Masih ngedit video manual padahal di CapCut ada fitur AI otomatis?\nFitur Naskah AI bisa buat naskah instan dari topik yang kamu ketik, dan sekali klik Teks ke Video langsung nambahin klip serta teks. Editing berjam-jam jadi selesai dalam hitungan detik.\nSimpan video ini biar kamu nggak lupa saat coba!\nFitur AI mana nih yang paling bikin kamu penasaran mau coba duluan?\n#CapCutAI #EditVideoOtomatis #KreatorPemula #TipsEditing #AItools",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -0.4,
+            "duration": 35.0,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-13-s2-129791",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "​AI Ubah Cara Investasi Saham, Investor Kini Bisa Analisis hingga Trading Lewat Chat - Medcom.id",
+          "judul": "AI Ubah Cara Investasi Saham Lewat Chat",
           "hook": "​AI Ubah Cara Investasi Saham, Investor Kini Bisa Analisis hingga Trading Lewat?",
           "topic": {
             "judul": "​AI Ubah Cara Investasi Saham, Investor Kini Bisa Analisis hingga Trading Lewat Chat - Medcom.id",
@@ -1212,14 +1254,26 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-13T07:26:56+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-13T07:26:56+08:00",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot2/script.json",
+          "caption": "Beli saham sekarang beneran bisa cuma modal chat?\nKecerdasan buatan kini mampu menganalisis pasar hingga eksekusi trading langsung dari kolom obrolan. Kamu tidak perlu lagi menghabiskan waktu lama hanya untuk membaca grafik rumit.\nFollow akun Po Chai untuk tips AI lainnya.\nMenurutmu, apakah AI bakal bikin investasi saham jadi lebih aman?\n#InvestasiSaham #TipsAI #TeknologiFinansial #ArtificialIntelligence #EdukasiSaham",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -0.4,
+            "duration": 26.933333,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-13-s3-2da203",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Teknologi Ada, Kenapa Fitur Otonom Xpeng Belum Aktif di RI? - Uzone.id",
+          "judul": "Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
           "hook": "Teknologi Ada, Kenapa Fitur Otonom Xpeng Belum Aktif di RI? - Uzone.id?",
           "topic": {
             "judul": "Teknologi Ada, Kenapa Fitur Otonom Xpeng Belum Aktif di RI? - Uzone.id",
@@ -1251,14 +1305,26 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-13T07:26:56+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-13T07:26:56+08:00",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot3/script.json",
+          "caption": "Kenapa fitur otonom mobil canggih malah mati di jalanan kita?\nSistem navigasi lokal dan rambu jalan kita ternyata belum siap membaca teknologi tingkat tinggi. Sensor mobil bisa bingung sendiri kalau dipaksa aktif sebelum aturannya jelas.\nSimpan video ini biar nggak ketinggalan info teknologi terbaru.\nMenurutmu, butuh berapa tahun lagi jalanan di Indonesia siap untuk mobil otonom?\n#MobilOtonom #Xpeng #TeknologiOtomotif #Inovasi #TechTrends",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -0.5,
+            "duration": 27.768,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-13-s4-e771cd",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "Mengapa Apple dianggap sebagai safe haven di sektor teknologi? - Investing.com Indonesia",
+          "judul": "Mengapa Apple Dianggap Safe Haven di Sektor Teknologi?",
           "hook": "Mengapa Apple dianggap sebagai safe haven di sektor teknologi? - Investing.com Indonesia?",
           "topic": {
             "judul": "Mengapa Apple dianggap sebagai safe haven di sektor teknologi? - Investing.com Indonesia",
@@ -1290,14 +1356,26 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-13T07:26:56+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-13T07:26:56+08:00",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot4/script.json",
+          "caption": "Kenapa Apple tetap santai naik saat saham teknologi lain merah semua?\nRahasianya ada di tumpukan uang kas dan produk yang selalu dibeli orang meski ekonomi sedang seret, membuat perusahaan ini dijuluki pelabuhan aman.\nFollow untuk part berikutnya.\nPernahkah kamu memperhatikan laporan keuangan sebelum membeli saham teknologi?\n#sahamteknologi #belajarsaham #investasipemula #analisisfundamental #techstocks",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -0.5,
+            "duration": 25.833333,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-13-s5-6e7b2f",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "10 Cara untuk Menjaga Data Pribadi di Internet",
+          "judul": "3 Cara Simpel Jaga Data Pribadi di Internet",
           "hook": "10 Cara untuk Menjaga Data Pribadi di Internet?",
           "topic": {
             "judul": "10 Cara untuk Menjaga Data Pribadi di Internet",
@@ -1329,8 +1407,20 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-13T07:26:56+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-13T07:26:56+08:00",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot5/script.json",
+          "caption": "Pernah mikir nggak, data pribadi kamu bisa tersebar tanpa disadari?\nKebiasaan asal klik link dan pakai satu kata sandi untuk semua akun ternyata sangat berbahaya. Solusinya, aktifkan verifikasi dua langkah, bedakan kata sandi, dan batasi izin akses aplikasi.\nSimpan video ini biar kamu nggak lupa!\nMana dari 3 cara tadi yang paling sering kamu abaikan?\n#datapribadi #keamanan_siber #privasidigital #tipsinternet #cybersecurity",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -0.5,
+            "duration": 39.966667,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-13T07:26:55+08:00",

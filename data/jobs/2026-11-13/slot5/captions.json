@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah mikir nggak, data pribadi kamu bisa tersebar tanpa disadari?",
+      "isi": "Kebiasaan asal klik link dan pakai satu kata sandi untuk semua akun ternyata sangat berbahaya. Solusinya, aktifkan verifikasi dua langkah, bedakan kata sandi, dan batasi izin akses aplikasi.",
+      "cta": "Simpan video ini biar kamu nggak lupa!",
+      "pertanyaan": "Mana dari 3 cara tadi yang paling sering kamu abaikan?",
+      "hashtag": [
+        "#datapribadi",
+        "#keamanan_siber",
+        "#privasidigital",
+        "#tipsinternet",
+        "#cybersecurity"
+      ]
+    },
+    {
+      "baris1": "Foto dan nomor HP kamu bisa tersebar tanpa kamu sadari?",
+      "isi": "Banyak yang mengira hanya peretasan besar yang berbahaya, padahal kebiasaan sepele seperti memakai satu kata sandi untuk semua akun itu fatal. Selalu cek izin akses aplikasi yang kamu unduh.",
+      "cta": "Simpan video ini biar kamu nggak lupa!",
+      "pertanyaan": "Apakah kamu masih pakai satu kata sandi yang sama untuk semua akun?",
+      "hashtag": [
+        "#keamanan_siber",
+        "#datapribadi",
+        "#tips_digital",
+        "#lindungidata",
+        "#privacy"
+      ]
+    },
+    {
+      "baris1": "Yakin data pribadimu sudah aman di internet?",
+      "isi": "Bahaya terbesar justru datang dari kebiasaan asal klik link dan mengabaikan izin akses aplikasi di HP. Mulai sekarang, rajin cek izin akses lokasi atau kontak dan bedakan kata sandi pentingmu.",
+      "cta": "Simpan video ini biar kamu nggak lupa!",
+      "pertanyaan": "Aplikasi apa saja yang saat ini masih memegang izin akses lokasi di HP kamu?",
+      "hashtag": [
+        "#privasidigital",
+        "#tipsinternet",
+        "#datapribadi",
+        "#edukasidigital",
+        "#digitalsafety"
+      ]
+    }
+  ],
+  "cover": "Cara Simpel Jaga Data Pribadi",
+  "komentar_pin": "Yuk, mulai lebih peduli sama keamanan data digital kita dari sekarang! Tulis di komentar, mana cara yang mau kamu terapkan duluan?",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Beli saham sekarang beneran bisa cuma modal chat?",
+      "isi": "Kecerdasan buatan kini mampu menganalisis pasar hingga eksekusi trading langsung dari kolom obrolan. Kamu tidak perlu lagi menghabiskan waktu lama hanya untuk membaca grafik rumit.",
+      "cta": "Follow akun Po Chai untuk tips AI lainnya.",
+      "pertanyaan": "Menurutmu, apakah AI bakal bikin investasi saham jadi lebih aman?",
+      "hashtag": [
+        "#InvestasiSaham",
+        "#TipsAI",
+        "#TeknologiFinansial",
+        "#ArtificialIntelligence",
+        "#EdukasiSaham"
+      ]
+    },
+    {
+      "baris1": "Masih mikir investasi saham itu ribet dan makan waktu?",
+      "isi": "Teknologi AI saat ini sudah bisa membantu proses analisis pasar hingga eksekusi trading lewat chat. Fitur ini bisa kamu manfaatkan untuk riset emiten harian dengan lebih efisien.",
+      "cta": "Simpan video ini biar nggak lupa cara risetnya.",
+      "pertanyaan": "Apa ketakutan terbesarmu saat mulai investasi saham?",
+      "hashtag": [
+        "#InvestasiSaham",
+        "#AIIndonesia",
+        "#BelajarSaham",
+        "#SmartInvesting",
+        "#Fintech"
+      ]
+    },
+    {
+      "baris1": "AI bukan cuma buat ngerjain tugas kantor, lho!",
+      "isi": "Kamu bisa menggunakan fitur AI di aplikasi saham untuk menganalisis pasar dan eksekusi trading secara langsung. Ini adalah cara baru untuk mempermudah riset emiten setiap harinya.",
+      "cta": "Komentar 'MAU' kalau kamu mau tahu aplikasi saham dengan fitur AI.",
+      "pertanyaan": "Sudah pernah coba fitur AI di aplikasi sahammu?",
+      "hashtag": [
+        "#InvestasiSaham",
+        "#AI",
+        "#TipsInvestasi",
+        "#SahamIndonesia",
+        "#TechTrends"
+      ]
+    }
+  ],
+  "cover": "Investasi Saham Cuma Modal Chat?",
+  "komentar_pin": "Ketik 'MAU' di kolom komentar kalau kamu mau tahu aplikasi saham apa saja yang sudah mendukung fitur AI untuk riset!",
+  "llm_provider": "gemini"
+}

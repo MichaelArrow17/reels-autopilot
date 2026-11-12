@@ -1,0 +1,76 @@
+{
+  "judul": "Cara Pakai AI CapCut",
+  "hook": "Masih ngedit video manual berjam-jam padahal di CapCut ada fitur AI yang bikin semuanya otomatis?",
+  "angle": "Sudut pandang praktis kreator konten tentang memanfaatkan fitur AI tersembunyi di CapCut untuk efisiensi editing",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Masih ngedit video manual berjam-jam padahal di CapCut ada fitur AI yang bikin semuanya otomatis? Banyak yang nyangka pakai AI di CapCut itu ribet atau harus bayar mahal, padahal gampang banget. Pertama, kamu bisa pakai fitur Naskah AI. Cukup ketik topik yang kamu mau, AI bakal buatkan naskah lengkap secara instan. Kedua, tinggal sekali klik Teks ke Video, AI langsung milih klip dan nambahin teks sesuai naskahmu. Editing yang tadinya sejam, selesai dalam hitungan detik. Simpan video ini biar kamu nggak lupa saat coba!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Masih ngedit video manual berjam-jam padahal di CapCut ada fitur AI yang bikin semuanya otomatis?",
+      "teks_layar": "Ngedit Manual Berjam-jam?",
+      "pose": "shrug",
+      "keyword": "edit video capcut ai",
+      "latar": "ruang kerja timeline video rumit",
+      "image_query": "frustrated video editor timeline capcut"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang nyangka pakai AI di CapCut itu ribet atau harus bayar mahal, padahal gampang banget.",
+      "teks_layar": "Ribet & Mahal? Salah!",
+      "pose": "think",
+      "keyword": "fitur ai capcut gratis",
+      "latar": "layar hp pilihan fitur ai",
+      "image_query": "capcut ai features icons screen"
+    },
+    {
+      "id": 3,
+      "nama": "langkah_1",
+      "narasi": "Pertama, kamu bisa pakai fitur Naskah AI. Cukup ketik topik yang kamu mau, AI bakal buatkan naskah lengkap secara instan.",
+      "teks_layar": "1. Naskah AI Otomatis",
+      "pose": "typing",
+      "keyword": "naskah ai capcut script generator",
+      "latar": "tampilan fitur script to video",
+      "image_query": "capcut script to video interface"
+    },
+    {
+      "id": 4,
+      "nama": "langkah_2",
+      "narasi": "Kedua, tinggal sekali klik Teks ke Video, AI langsung milih klip dan nambahin teks sesuai naskahmu.",
+      "teks_layar": "2. Teks ke Video",
+      "pose": "point",
+      "keyword": "teks ke video ai capcut",
+      "latar": "proses pemuatan video otomatis",
+      "image_query": "capcut text to video generate screen"
+    },
+    {
+      "id": 5,
+      "nama": "payoff_cta",
+      "narasi": "Editing yang tadinya sejam, selesai dalam hitungan detik. Simpan video ini biar kamu nggak lupa saat coba!",
+      "teks_layar": "Selesai dalam Hitungan Detik!",
+      "pose": "cheer",
+      "keyword": "simpan video tutorial capcut ai",
+      "latar": "hasil video selesai edit cepat",
+      "image_query": "happy creator completed video capcut"
+    }
+  ],
+  "caption": "Bikin konten sekarang bisa secepat ini cuma pakai fitur AI di CapCut! 🚀\n\nNggak perlu pusing mikir ide naskah atau nyusun klip satu per satu. Coba langsung fitur 'Naskah ke Video' dan rasakan bedanya.\n\nSimpan video ini biar nggak bingung waktu praktek nanti! 📌",
+  "cta": "Simpan video ini biar kamu nggak lupa saat coba!",
+  "hashtag": [
+    "#KreatorAI",
+    "#CapCutAI",
+    "#TutorialCapCut",
+    "#TipsKreator",
+    "#EditVideoSimpel"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Memastikan ketersediaan nama fitur 'Naskah ke Video' atau 'Script to Video' di aplikasi CapCut versi terbaru."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "CARA PAKAI AI CAPCUT OTO-MATIS",
+  "image_query": "",
+  "llm_provider": "gemini"
+}

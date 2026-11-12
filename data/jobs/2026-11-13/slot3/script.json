@@ -1,0 +1,77 @@
+{
+  "judul": "Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
+  "hook": "Mobil canggih sudah ada, tapi kenapa fitur otonomnya malah mati di jalanan kita?",
+  "angle": "Sudut kreator Indonesia: Teknologi Ada, Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mobil canggih sudah ada, tapi kenapa fitur otonomnya malah mati di jalanan kita? Kamu mungkin mikir masalahnya ada di mobilnya. Padahal, sistem navigasi lokal dan rambu jalan kita belum siap baca teknologi tingkat tinggi itu. Kalau dipaksa nyala, sensornya malah bingung sendiri. Makanya, fitur keren itu dikunci dulu sampai aturannya jelas. Simpan video ini biar nggak ketinggalan info teknologi terbaru.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mobil canggih sudah ada, tapi kenapa fitur otonomnya malah mati di jalanan kita?",
+      "teks_layar": "Fitur Otonom Xpeng Mati?",
+      "pose": "idle",
+      "keyword": "Xpeng",
+      "latar": "Jalan raya Indonesia",
+      "image_query": "stickman confused traffic"
+    },
+    {
+      "id": 2,
+      "nama": "konflik_1",
+      "narasi": "Kamu mungkin mikir masalahnya ada di mobilnya.",
+      "teks_layar": "Bukan karena mobilnya!",
+      "pose": "shrug",
+      "keyword": "mobil",
+      "latar": "Showroom mobil",
+      "image_query": "stickman shrug near car"
+    },
+    {
+      "id": 3,
+      "nama": "konflik_2",
+      "narasi": "Padahal, sistem navigasi lokal dan rambu jalan kita belum siap baca teknologi tingkat tinggi itu.",
+      "teks_layar": "Infrastruktur Belum Siap",
+      "pose": "think",
+      "keyword": "navigasi",
+      "latar": "Peta digital",
+      "image_query": "stickman thinking map"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Kalau dipaksa nyala, sensornya malah bingung sendiri. Makanya, fitur keren itu dikunci dulu sampai aturannya jelas.",
+      "teks_layar": "Fitur Dikunci Sementara",
+      "pose": "point",
+      "keyword": "sensor",
+      "latar": "Kantor regulasi",
+      "image_query": "stickman pointing screen"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini biar nggak ketinggalan info teknologi terbaru.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "Ponsel pintar",
+      "image_query": "stickman smiling phone"
+    }
+  ],
+  "caption": "Mobil canggih udah masuk, tapi kenapa fitur otonomnya belum bisa dipakai di Indonesia? Tonton sampai habis ya!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Xpeng",
+    "#MobilOtonom",
+    "#Teknologi",
+    "#Otomotif"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Status regulasi fitur otonom di Indonesia",
+    "Kesesuaian sensor Xpeng dengan infrastruktur lokal"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Fitur Otonom Xpeng Kok Belum Aktif?",
+  "image_query": "",
+  "llm_provider": "gemini"
+}

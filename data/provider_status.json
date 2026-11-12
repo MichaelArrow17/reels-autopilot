@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-11-12T23:26:47.334829+00:00",
+  "updated_at": "2026-11-12T23:36:27.985574+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
       "provider_id": "gemini",
-      "consecutive_failures": 1,
-      "last_error": "RuntimeError: gemini gemini-3.1-flash-lite HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+      "consecutive_failures": 0,
+      "last_error": null,
       "last_error_at": "2026-11-12T14:19:04.739504+00:00",
-      "last_success_at": "2026-11-12T13:47:38.548809+00:00",
-      "cooldown_until": "2026-11-12T14:24:04.739521+00:00",
+      "last_success_at": "2026-11-12T23:36:15.416956+00:00",
+      "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 2,
+      "success_count": 12,
       "failure_count": 1
     },
     "tts:edge_tts": {
@@ -20,11 +20,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T14:19:20.703187+00:00",
+      "last_success_at": "2026-11-12T23:36:26.492416+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 2,
+      "success_count": 7,
       "failure_count": 0
     },
     "images:openverse": {
@@ -32,26 +32,26 @@
       "provider_id": "openverse",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: openverse: tidak ada hasil berlisensi komersial",
-      "last_error_at": "2026-11-12T14:19:28.434650+00:00",
+      "last_error_at": "2026-11-12T23:34:18.708960+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T14:24:28.434669+00:00",
+      "cooldown_until": "2026-11-12T23:39:18.708978+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 2
+      "failure_count": 4
     },
     "images:wikimedia": {
       "category": "images",
       "provider_id": "wikimedia",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: wikimedia: tidak ada berkas berlisensi komersial yang cocok",
-      "last_error_at": "2026-11-12T14:19:28.931530+00:00",
+      "last_error_at": "2026-11-12T23:34:19.255452+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T14:24:28.931548+00:00",
+      "cooldown_until": "2026-11-12T23:39:19.255483+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 2
+      "failure_count": 4
     },
     "images:local": {
       "category": "images",
@@ -59,11 +59,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T14:19:28.994061+00:00",
+      "last_success_at": "2026-11-12T23:36:27.985518+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 2,
+      "success_count": 7,
       "failure_count": 0
     },
     "llm:github_models": {

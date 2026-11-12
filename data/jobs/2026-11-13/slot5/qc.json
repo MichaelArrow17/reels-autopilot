@@ -1,0 +1,18 @@
+{
+  "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-13/slot5/reel.mp4",
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "duration": 39.966667,
+  "has_audio": true,
+  "has_video": true,
+  "integrated_lufs": -14.0,
+  "true_peak_dbtp": -0.5,
+  "mean_volume_db": -14.2,
+  "file_size": 1946157,
+  "caption_ok": true,
+  "caption_errors": []
+}

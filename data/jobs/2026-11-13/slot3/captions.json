@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa fitur otonom mobil canggih malah mati di jalanan kita?",
+      "isi": "Sistem navigasi lokal dan rambu jalan kita ternyata belum siap membaca teknologi tingkat tinggi. Sensor mobil bisa bingung sendiri kalau dipaksa aktif sebelum aturannya jelas.",
+      "cta": "Simpan video ini biar nggak ketinggalan info teknologi terbaru.",
+      "pertanyaan": "Menurutmu, butuh berapa tahun lagi jalanan di Indonesia siap untuk mobil otonom?",
+      "hashtag": [
+        "#MobilOtonom",
+        "#Xpeng",
+        "#TeknologiOtomotif",
+        "#Inovasi",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Kenapa fitur otonom Xpeng belum aktif di Indonesia?",
+      "isi": "Bukan karena mobilnya yang rusak, tapi rambu jalan dan sistem navigasi lokal belum siap. Fitur keren ini sengaja dikunci sampai regulasinya benar-benar siap.",
+      "cta": "Simpan video ini biar nggak ketinggalan info teknologi terbaru.",
+      "pertanyaan": "Pernahkah kamu penasaran gimana rasanya naik mobil dengan fitur otonom penuh?",
+      "hashtag": [
+        "#MobilOtonom",
+        "#XpengIndonesia",
+        "#TeknologiMasaDepan",
+        "#Otomotif",
+        "#FutureTech"
+      ]
+    },
+    {
+      "baris1": "Kenapa mobil canggih harus dikunci fitur otonomnya di RI?",
+      "isi": "Faktanya, sensor mobil akan bingung karena rambu jalan dan navigasi lokal belum mendukung. Makanya fitur tersebut dimatikan dulu sampai aturannya jelas.",
+      "cta": "Simpan video ini biar nggak ketinggalan info teknologi terbaru.",
+      "pertanyaan": "Kira-kira apa tantangan terbesar infrastruktur jalan kita saat ini?",
+      "hashtag": [
+        "#MobilOtonom",
+        "#Xpeng",
+        "#InfrastrukturIndonesia",
+        "#Teknologi",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Kenapa Fitur Otonom Mati di RI?",
+  "komentar_pin": "Tulis jawabanmu di komentar ya! Jangan lupa tap save buat simpan videonya. 👇",
+  "llm_provider": "gemini"
+}
