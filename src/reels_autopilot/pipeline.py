@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -240,9 +241,13 @@ class Pipeline:
             return {"ok": False, "reason": "awaiting_approval", "slot": slot}
         mp4 = Path(v.get("mp4") or "")
         if not mp4.exists():
-            # fallback: produksi ulang dari topik
-            v = self.produce_one(v, date)
-            mp4 = Path(v.get("mp4") or "")
+            allow = os.environ.get("ALLOW_RERENDER", "true").strip().lower() not in {"0", "false", "no"}
+            if allow:
+                # fallback: produksi ulang dari topik
+                v = self.produce_one(v, date)
+                mp4 = Path(v.get("mp4") or "")
+            else:
+                log.error("MP4 slot %s tidak ada dan ALLOW_RERENDER=false; tidak render ulang", slot)
         if not mp4.exists():
             return {"ok": False, "reason": "mp4_missing", "slot": slot}
 

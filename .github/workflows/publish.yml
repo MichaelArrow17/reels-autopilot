@@ -13,6 +13,15 @@ on:
       slot:
         description: "Nomor slot 1–5 (kosong = deteksi dari jam WITA)"
         required: false
+        type: string
+      dry_run:
+        description: "Override DRY_RUN untuk run ini saja (true/false). Kosong = pakai variabel repo."
+        required: false
+        type: string
+      artifact_run_id:
+        description: "ID run produce yang artifak MP4-nya dipakai (supaya tidak render ulang)"
+        required: false
+        type: string
 permissions:
   contents: write
   actions: read
@@ -32,10 +41,62 @@ jobs:
           cache: "pip"
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -r requirements.txt
+      - name: Tentukan DRY_RUN untuk run ini
+        id: dry
+        env:
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          VAR_DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+        run: |
+          case "${INPUT_DRY_RUN}" in
+            true|false|True|False|TRUE|FALSE)
+              val=$(printf '%s' "${INPUT_DRY_RUN}" | tr '[:upper:]' '[:lower:]')
+              echo "value=${val}" >> "$GITHUB_OUTPUT"
+              ;;
+            "")
+              echo "value=${VAR_DRY_RUN}" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "Input dry_run tidak valid (true/false/kosong): ${INPUT_DRY_RUN}" >&2
+              exit 1
+              ;;
+          esac
+          echo "DRY_RUN efektif akan memakai output langkah ini (variabel repo tidak diubah)."
+      - name: Unduh MP4 dari artifak produce
+        if: ${{ inputs.artifact_run_id != '' }}
+        uses: actions/download-artifact@v4
+        with:
+          name: reels-${{ inputs.artifact_run_id }}
+          run-id: ${{ inputs.artifact_run_id }}
+          path: data/jobs
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Letakkan MP4 di data/jobs/<tanggal>/slotN
+        if: ${{ inputs.artifact_run_id != '' }}
+        run: |
+          set -euo pipefail
+          found=0
+          while IFS= read -r -d '' f; do
+            slotdir=$(basename "$(dirname "$f")")
+            datedir=$(basename "$(dirname "$(dirname "$f")")")
+            case "$slotdir" in slot[1-5]) ;; *) continue ;; esac
+            case "$datedir" in 20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;; *) continue ;; esac
+            dest="data/jobs/${datedir}/${slotdir}/reel.mp4"
+            mkdir -p "$(dirname "$dest")"
+            if [ "$(realpath "$f")" != "$(realpath -m "$dest")" ]; then
+              cp -f "$f" "$dest"
+            fi
+            echo "MP4 siap: $dest ($(wc -c < "$dest") byte)"
+            found=1
+          done < <(find data/jobs -name 'reel.mp4' -print0)
+          if [ "$found" -eq 0 ]; then
+            echo "Artifak tidak berisi reel.mp4 yang dikenali." >&2
+            find data/jobs -type f -print >&2
+            exit 1
+          fi
       - name: Tentukan slot dan publish
         env:
           PYTHONPATH: src
-          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          DRY_RUN: ${{ steps.dry.outputs.value }}
+          ALLOW_RERENDER: ${{ inputs.artifact_run_id != '' && 'false' || 'true' }}
           APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -49,7 +110,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
           META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION || 'v26.0' }}
           GITHUB_RELEASES_REPO: ${{ vars.GITHUB_RELEASES_REPO || github.repository }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
@@ -90,7 +151,7 @@ jobs:
           PY
             SLOT=$(cat /tmp/slot.txt)
           fi
-          echo "Slot=$SLOT"
+          echo "Slot=$SLOT DRY_RUN=$DRY_RUN ALLOW_RERENDER=$ALLOW_RERENDER"
           python -m reels_autopilot publish --slot "$SLOT"
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

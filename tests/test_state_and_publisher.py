@@ -191,3 +191,36 @@ def test_ig_reel_survives_permalink_failure(monkeypatch):
     out = pub.ig_reel("https://example.com/v.mp4", "caption tes")
     assert out["id"] == "m1"
     assert "permalink" not in out
+
+def test_asset_name_from_job_path():
+    from reels_autopilot.publisher import _asset_name
+    path = Path("/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-12/slot1/reel.mp4")
+    assert _asset_name(path) == "2026-11-12-slot1-reel.mp4"
+
+
+def test_assert_public_video_url_retries_then_ok(monkeypatch):
+    from reels_autopilot import publisher as pubmod
+
+    calls = {"n": 0}
+
+    class Fake:
+        def __init__(self, status, content=b"mp4"):
+            self.status_code = status
+            self._content = content
+
+        def iter_content(self, _size):
+            yield self._content
+
+        def close(self):
+            return None
+
+    def fake_head(url, **kwargs):
+        calls["n"] += 1
+        if calls["n"] < 2:
+            return Fake(404)
+        return Fake(200)
+
+    monkeypatch.setattr(pubmod.requests, "head", fake_head)
+    monkeypatch.setattr(pubmod.time, "sleep", lambda *_: None)
+    pubmod._assert_public_video_url("https://example.com/v.mp4")
+    assert calls["n"] == 2

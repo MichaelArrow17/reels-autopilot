@@ -43,6 +43,39 @@ def _redact(d: Any) -> Any:
     return d
 
 
+def _asset_name(mp4: Path) -> str:
+    """Nama unik dari path job (2026-11-12/slot1/reel.mp4 → 2026-11-12-slot1-reel.mp4)."""
+    parts = [x for x in Path(mp4).parts if x not in (".", "/")]
+    tail = parts[-3:] if len(parts) >= 3 else parts
+    name = "-".join(tail)
+    if not name.lower().endswith(".mp4"):
+        name = f"{name}.mp4"
+    return name or Path(mp4).name
+
+
+def _assert_public_video_url(url: str) -> None:
+    """Pastikan video_url bisa diunduh tanpa auth, sebelum container IG dibuat."""
+    last_err = "unknown"
+    for attempt in range(5):
+        try:
+            r = requests.head(url, allow_redirects=True, timeout=30)
+            if r.status_code in {400, 403, 405}:
+                r = requests.get(url, stream=True, allow_redirects=True, timeout=60)
+                chunk = next(r.iter_content(8192), b"")
+                r.close()
+                if r.status_code < 400 and chunk:
+                    log.info("video_url publik (GET %s, %s byte awal)", r.status_code, len(chunk))
+                    return
+            elif r.status_code < 400:
+                log.info("video_url publik (HEAD %s)", r.status_code)
+                return
+            last_err = f"HTTP {r.status_code}"
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {e}"
+        time.sleep(3 * (attempt + 1))
+    raise RuntimeError(f"video_url belum bisa diunduh publik ({last_err}): {url}")
+
+
 class Publisher:
     def __init__(self, settings: Settings | None = None):
         self.settings = settings or get_settings()
@@ -123,9 +156,10 @@ class Publisher:
             result["fb"] = self.fb_reel(mp4, caption, when_unix=when_unix, video_state=video_state)
         if dest_ig:
             if not public_url:
-                hosted = self.host.upload(mp4, name=Path(mp4).name)
+                hosted = self.host.upload(mp4, name=_asset_name(mp4))
                 result["host"] = {"provider": hosted.provider_id, "url": hosted.public_url}
                 public_url = hosted.public_url
+            _assert_public_video_url(public_url)
             result["ig"] = self.ig_reel(public_url, caption)
         return result
 
