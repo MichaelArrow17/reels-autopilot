@@ -3,8 +3,8 @@
   "hook": "Kamu nggak perlu kamera untuk mulai unggah Reels.",
   "angle": "Workflow programmatic untuk kreator Indonesia: naskah, suara, render, jadwal.",
   "bahasa": "id",
-  "durasi_target_detik": 60,
-  "narasi_penuh": "Kamu nggak perlu kamera untuk mulai unggah Reels. Satu naskah, satu suara, dan gambar yang dibuat dari kode, sudah cukup jadi video vertikal siap tayang. Bukan sihir, dan bukan aplikasi yang tinggal ketik prompt lalu selesai. Ini workflow programmatic. Pagi: kumpulkan topik dari tren dan berita, buang yang berbahaya atau yang sudah pernah dibuat, lalu pilih yang punya rasa penasaran. Lalu naskah ditulis untuk telinga, bukan untuk mata. Hook harus selesai dalam dua detik. Satu gagasan per adegan. Setiap klaim dicek, tidak ada angka yang dikarang. Suara diisi otomatis, gambar stickman dirender, lalu file dijadwalkan ke Facebook Page dan Instagram. Kamu bisa setujui atau tolak dari HP lewat Telegram. Mulai dari lima video sehari. Ukur mana yang ditonton sampai akhir, lalu ulang yang berhasil. AI yang kerja, kamu yang punya arah. Simpan video ini kalau mau ikut alurnya.",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kamu nggak perlu kamera untuk mulai unggah Reels. Satu naskah, satu suara, dan gambar dari kode sudah cukup jadi video vertikal siap tayang. Bukan sihir, dan bukan aplikasi yang tinggal ketik prompt lalu selesai. Ini workflow programmatic. Pagi, pilih topik yang punya rasa penasaran, buang yang berbahaya atau sudah pernah dibuat. Naskah ditulis untuk telinga. Hook selesai dalam dua detik. Satu gagasan per adegan, setiap klaim dicek. Suara otomatis, stickman dirender, lalu file dijadwalkan. Kamu setujui atau tolak lewat Telegram. AI yang kerja, kamu yang punya arah. Simpan video ini.",
   "adegan": [
     {
       "id": 1,

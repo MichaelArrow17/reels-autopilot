@@ -8,14 +8,15 @@ import uuid
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from reels_autopilot.config import SLOTS, Settings, get_settings
+from reels_autopilot.captions import chunk_captions
+from reels_autopilot.config import HARD_MAX_DURATION, SLOTS, Settings, get_settings
 from reels_autopilot.providers.images import ImageClient
 from reels_autopilot.providers.router import ProviderRouter
-from reels_autopilot.providers.tts import TTSClient
+from reels_autopilot.providers.tts import TTSClient, Word
 from reels_autopilot.publisher import Publisher
-from reels_autopilot.qc import inspect, report_text
+from reels_autopilot.qc import QCRejected, inspect, pre_publish_gate, report_text
 from reels_autopilot.renderer import render_video
-from reels_autopilot.script_writer import ScriptWriter, fallback_script
+from reels_autopilot.script_writer import ScriptWriter, _word_count, fallback_script, trim_to_word_budget
 from reels_autopilot.state import State, today_wita
 from reels_autopilot.telegram_bot import TelegramBot
 from reels_autopilot.topic_scout import TopicScout
@@ -31,6 +32,24 @@ def _job_dir(settings: Settings, date: str, slot: int) -> Path:
     p = settings.jobs_dir / date / f"slot{slot}"
     p.mkdir(parents=True, exist_ok=True)
     return p
+
+
+def _load_job_words(video: dict) -> list[Word] | None:
+    script_path = video.get("script_path")
+    candidates = []
+    if script_path:
+        candidates.append(Path(script_path).with_name("words.json"))
+    mp4 = video.get("mp4")
+    if mp4:
+        candidates.append(Path(mp4).with_name("words.json"))
+    for path in candidates:
+        if path.exists():
+            data = json.loads(path.read_text(encoding="utf-8"))
+            return [
+                Word(word=d["word"], start=float(d["start"]), duration=float(d["duration"]))
+                for d in data
+            ]
+    return None
 
 
 class Pipeline:
@@ -133,9 +152,38 @@ class Pipeline:
                 )
             )
         tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
+        if tts.duration > HARD_MAX_DURATION:
+            ratio = max(0.5, (HARD_MAX_DURATION - 1.0) / tts.duration)
+            max_words = max(60, int(_word_count(script["narasi_penuh"]) * ratio))
+            script["narasi_penuh"] = trim_to_word_budget(script["narasi_penuh"], max_words)
+            (job / "script.json").write_text(
+                json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            log.warning(
+                "TTS %.1fs > %.0fs, naskah dipotong ke %s kata lalu disintesis ulang",
+                tts.duration, HARD_MAX_DURATION, max_words,
+            )
+            tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
         (job / "words.json").write_text(
             json.dumps([{"word": w.word, "start": w.start, "duration": w.duration} for w in tts.words],
                        ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        chunks = chunk_captions(tts.words, audio_duration=min(tts.duration, HARD_MAX_DURATION))
+        (job / "chunks.json").write_text(
+            json.dumps(
+                [
+                    {
+                        "text": c.text,
+                        "start": c.start,
+                        "end": c.end,
+                        "words": [{"word": w.word, "start": w.start, "duration": w.duration} for w in c.words],
+                    }
+                    for c in chunks
+                ],
+                ensure_ascii=False,
+                indent=2,
+            ),
             encoding="utf-8",
         )
         bg = attr = None
@@ -150,7 +198,7 @@ class Pipeline:
             log.info("gambar stok dilewati: %s", e)
         mp4 = job / "reel.mp4"
         render_video(script, tts, mp4, settings=self.settings, background_photo=bg, attribution=attr or "")
-        qc = inspect(mp4)
+        qc = inspect(mp4, words=tts.words, chunks=chunks)
         (job / "qc.json").write_text(json.dumps(qc.to_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
         video.update({
             "status": "rendered",
@@ -197,6 +245,17 @@ class Pipeline:
             mp4 = Path(v.get("mp4") or "")
         if not mp4.exists():
             return {"ok": False, "reason": "mp4_missing", "slot": slot}
+
+        # Gerbang QC pra-publish: durasi & timing caption wajib lolos.
+        try:
+            gate = pre_publish_gate(mp4, words=_load_job_words(v))
+        except QCRejected as e:
+            v["status"] = "qc_failed"
+            v["qc_ok"] = False
+            v["qc"] = e.result.to_dict()
+            self.state.upsert_video(v, date)
+            log.warning("Publish slot %s ditolak QC: %s", slot, e)
+            return {"ok": False, "reason": "qc_failed", "slot": slot, "errors": e.result.errors}
 
         # waktu SCHEDULED untuk FB: jika kita publish tepat di jam slot, PUBLISHED langsung
         slot_meta = next((s for s in SLOTS if s["id"] == slot), None)

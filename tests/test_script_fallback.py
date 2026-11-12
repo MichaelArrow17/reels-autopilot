@@ -1,3 +1,4 @@
+from reels_autopilot.config import TARGET_WORDS_MAX, TARGET_WORDS_MIN
 from reels_autopilot.script_writer import fallback_script, _word_count
 
 
@@ -11,5 +12,7 @@ def test_fallback_has_hook_and_five_scenes():
     assert "Halo guys" not in s["narasi_penuh"]
     assert len(s["adegan"]) == 5
     assert s["is_ai_generated"] is True
-    assert _word_count(s["narasi_penuh"]) >= 80
+    n = _word_count(s["narasi_penuh"])
+    assert TARGET_WORDS_MIN <= n <= TARGET_WORDS_MAX
     assert s["cta"]
+    assert s["durasi_target_detik"] <= 45

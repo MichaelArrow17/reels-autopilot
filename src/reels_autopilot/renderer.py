@@ -13,11 +13,13 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+from reels_autopilot.captions import CaptionChunk, chunk_at_time, chunk_captions
 from reels_autopilot.config import (
     COLOR_ACCENT,
     COLOR_BG,
     COLOR_MUTED,
     COLOR_TEXT,
+    HARD_MAX_DURATION,
     ROOT,
     TARGET_FPS,
     TARGET_HEIGHT,
@@ -25,7 +27,7 @@ from reels_autopilot.config import (
     Settings,
     get_settings,
 )
-from reels_autopilot.providers.tts import TTSResult, Word
+from reels_autopilot.providers.tts import TTSResult, Word, normalize_word_timings
 from reels_autopilot.stickman import pose_frame
 
 log = logging.getLogger("reels.render")
@@ -82,17 +84,6 @@ def wrap_words(text: str, font: ImageFont.ImageFont, max_w: int) -> list[str]:
     if cur:
         lines.append(" ".join(cur))
     return lines
-
-
-def current_word_index(words: list[Word], t: float) -> int:
-    if not words:
-        return -1
-    for i, w in enumerate(words):
-        if w.start <= t < w.end + 0.02:
-            return i
-    if t >= words[-1].end:
-        return len(words) - 1
-    return 0
 
 
 def scene_for_time(windows: list[tuple[float, float, dict]], t: float) -> dict:
@@ -208,27 +199,26 @@ def draw_karaoke(
     words: list[Word],
     t: float,
     fonts: dict,
+    chunks: list[CaptionChunk] | None = None,
 ) -> None:
-    if not words:
+    """Tampilkan SATU chunk stabil (2–4 kata), highlight kata yang sedang diucapkan."""
+    if chunks is None and words:
+        chunks = chunk_captions(words)
+    ch = chunk_at_time(chunks or [], t)
+    if not ch:
         return
-    idx = current_word_index(words, t)
-    # tampilkan jendela ± 6 kata di sekitar kata aktif, pecah jadi 2-3 baris
-    start = max(0, idx - 4)
-    end = min(len(words), idx + 8)
-    window = words[start:end]
+    hi = ch.highlight_index(t)
+    window = ch.words
     font = fonts["caption"]
     font_hi = fonts["caption_hi"]
     max_w = 920
-    # bangun baris
+    # bangun baris (chunk pendek: biasanya 1 baris)
     lines: list[list[tuple[str, bool]]] = [[]]
     for i, w in enumerate(window):
-        global_i = start + i
         token = w.word
-        is_hi = global_i == idx
+        is_hi = i == hi
         cur = lines[-1]
         trial = " ".join(x[0] for x in cur + [(token, is_hi)])
-        f = font_hi if is_hi else font
-        # cek lebar kasar
         if font.getlength(trial) > max_w and cur:
             lines.append([(token, is_hi)])
         else:
@@ -298,7 +288,18 @@ def render_video(
     settings = settings or get_settings()
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
-    duration = tts.duration or 60.0
+    duration = tts.duration or 0.0
+    words = list(tts.words or [])
+    if duration > HARD_MAX_DURATION:
+        log.warning(
+            "durasi TTS %.1fs melebihi batas keras %.0fs, dipotong",
+            duration, HARD_MAX_DURATION,
+        )
+        duration = HARD_MAX_DURATION
+        words = normalize_word_timings(words, duration)
+    elif duration <= 0:
+        duration = 1.0 / max(1, fps)
+    chunks = chunk_captions(words, audio_duration=duration)
     n_frames = max(1, int(round(duration * fps)))
     fonts = {
         "brand": load_font(28, 600, settings),
@@ -317,7 +318,7 @@ def render_video(
             log.info("latar foto gagal: %s", e)
     base = make_background((TARGET_WIDTH, TARGET_HEIGHT), photo)
     hook = script.get("hook") or (script.get("narasi_penuh") or "")[:80]
-    windows = build_windows(script, tts.words, duration)
+    windows = build_windows(script, words, duration)
     poses = sorted({(sc.get("pose") or "idle") for *_, sc in windows} | {"idle", "cheer"})
     # panaskan cache sprite
     for p in poses:
@@ -362,7 +363,7 @@ def render_video(
                     sprite = sprite.copy()
                     sprite.putalpha(alpha)
                 frame.paste(sprite, ((TARGET_WIDTH - sprite.width) // 2, 420), sprite)
-            draw_karaoke(frame, tts.words, t, fonts)
+            draw_karaoke(frame, words, t, fonts, chunks=chunks)
             if attribution:
                 dr2 = ImageDraw.Draw(frame)
                 dr2.text((64, 1488), attribution[:80], font=fonts["small"], fill=MUTED)

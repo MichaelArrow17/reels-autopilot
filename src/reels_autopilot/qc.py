@@ -1,4 +1,4 @@
-"""QC otomatis sesuai playbook 10.4: resolusi, fps, audio, durasi, loudness, true peak."""
+"""QC otomatis: resolusi, fps, audio, durasi (batas 45s), caption timing, loudness, true peak."""
 
 from __future__ import annotations
 
@@ -8,6 +8,7 @@ import subprocess
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
+from reels_autopilot.captions import CaptionChunk, chunk_captions, validate_caption_chunks
 from reels_autopilot.config import (
     HARD_MAX_DURATION,
     MAX_DURATION,
@@ -17,6 +18,7 @@ from reels_autopilot.config import (
     TARGET_TRUE_PEAK,
     TARGET_WIDTH,
 )
+from reels_autopilot.providers.tts import Word
 
 log = logging.getLogger("reels.qc")
 
@@ -37,6 +39,8 @@ class QCResult:
     true_peak_dbtp: float | None = None
     mean_volume_db: float | None = None
     file_size: int = 0
+    caption_ok: bool | None = None
+    caption_errors: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -93,7 +97,7 @@ def _mean_volume(path: Path) -> float | None:
     return float(m.group(1)) if m else None
 
 
-def inspect(path: Path | str) -> QCResult:
+def inspect(path: Path | str, *, words: list[Word] | None = None, chunks: list[CaptionChunk] | None = None) -> QCResult:
     path = Path(path)
     res = QCResult(path=str(path), ok=True, file_size=path.stat().st_size if path.exists() else 0)
     if not path.exists():
@@ -146,12 +150,9 @@ def inspect(path: Path | str) -> QCResult:
         res.errors.append("tidak ada aliran audio (TTS wajib terdengar)")
     if res.mean_volume_db is not None and res.mean_volume_db < -45:
         res.errors.append(f"audio terlalu sunyi (mean {res.mean_volume_db} dB)")
-    if res.duration < MIN_DURATION:
-        res.warnings.append(f"durasi {res.duration:.1f}s di bawah ideal {MIN_DURATION:.0f}–{MAX_DURATION:.0f}s")
-    if res.duration > MAX_DURATION:
-        res.warnings.append(f"durasi {res.duration:.1f}s di atas ideal {MAX_DURATION:.0f}s")
-    if res.duration > HARD_MAX_DURATION:
-        res.errors.append(f"durasi {res.duration:.1f}s melebihi batas keras 2:59")
+    dur_err, dur_warn = duration_issues(res.duration)
+    res.errors.extend(dur_err)
+    res.warnings.extend(dur_warn)
     if res.integrated_lufs is not None and abs(res.integrated_lufs - TARGET_LUFS) > 1.5:
         res.warnings.append(
             f"loudness {res.integrated_lufs:.1f} LUFS, target {TARGET_LUFS:.0f} ±1.5"
@@ -160,9 +161,70 @@ def inspect(path: Path | str) -> QCResult:
         res.errors.append(
             f"true peak {res.true_peak_dbtp:.2f} dBTP melebihi batas {TARGET_TRUE_PEAK} dBTP"
         )
+    cap_err = caption_issues(words=words, chunks=chunks, duration=res.duration)
+    res.caption_errors = cap_err
+    if words is not None or chunks is not None:
+        res.caption_ok = len(cap_err) == 0
+        res.errors.extend(cap_err)
     if res.ok:
         res.ok = len(res.errors) == 0
     return res
+
+
+
+
+def duration_issues(duration: float) -> tuple[list[str], list[str]]:
+    """Error jika di atas batas keras 45s; peringatan di luar jendela ideal 30–40s (min config 25s)."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    if duration > HARD_MAX_DURATION + 1e-3:
+        errors.append(
+            f"durasi {duration:.1f}s melebihi batas keras {HARD_MAX_DURATION:.0f}s"
+        )
+    elif duration > MAX_DURATION + 1e-3:
+        warnings.append(
+            f"durasi {duration:.1f}s di atas ideal {MIN_DURATION:.0f}–{MAX_DURATION:.0f}s (target 30–40s)"
+        )
+    if duration < MIN_DURATION:
+        warnings.append(
+            f"durasi {duration:.1f}s di bawah ideal {MIN_DURATION:.0f}–{MAX_DURATION:.0f}s (target 30–40s)"
+        )
+    return errors, warnings
+
+
+def caption_issues(
+    *,
+    words: list[Word] | None = None,
+    chunks: list[CaptionChunk] | None = None,
+    duration: float | None = None,
+) -> list[str]:
+    """Cek monotik, tanpa tumpang tindih/duplikat, dan waktu tampil minimum."""
+    if chunks is None:
+        if not words:
+            return []
+        chunks = chunk_captions(words, audio_duration=duration)
+    return validate_caption_chunks(chunks)
+
+
+class QCRejected(Exception):
+    """Gerbang pra-publish: timing caption atau durasi tidak lolos."""
+
+    def __init__(self, result: QCResult):
+        self.result = result
+        super().__init__("QC menolak tayang: " + "; ".join(result.errors or ["tidak lolos"]))
+
+
+def pre_publish_gate(
+    path: Path | str,
+    *,
+    words: list[Word] | None = None,
+    chunks: list[CaptionChunk] | None = None,
+) -> QCResult:
+    """Tolak publish jika durasi atau timing caption gagal (error, bukan sekadar peringatan)."""
+    result = inspect(path, words=words, chunks=chunks)
+    if not result.ok:
+        raise QCRejected(result)
+    return result
 
 
 def report_text(q: QCResult) -> str:
@@ -172,6 +234,8 @@ def report_text(q: QCResult) -> str:
         f"audio={'ada' if q.has_audio else 'TIDAK'}  size={q.file_size/1e6:.2f} MB",
         f"  LUFS={q.integrated_lufs}  true_peak={q.true_peak_dbtp}  mean={q.mean_volume_db}",
     ]
+    if q.caption_ok is not None:
+        lines.append(f"  caption={'lolos' if q.caption_ok else 'GAGAL'}")
     for e in q.errors:
         lines.append(f"  ERROR: {e}")
     for w in q.warnings:

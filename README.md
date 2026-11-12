@@ -21,11 +21,11 @@ PYTHONPATH=src DRY_RUN=true .venv/bin/python -m reels_autopilot sample
 PYTHONPATH=src .venv/bin/pytest tests/ -q
 ```
 
-Sampel: [`samples/sample_reel.mp4`](samples/sample_reel.mp4)
+Sampel uji awal: [`samples/sample_reel.mp4`](samples/sample_reel.mp4)
 
 - 1080×1920, 30 fps, **64,54 detik**, audio AAC (edge-tts, `id-ID-ArdiNeural`)
 - Loudness **−14,0 LUFS**, true peak **−0,5 dBTP**, mean **−14,2 dB**
-- QC: lolos, tanpa error/peringatan
+- Catatan koreksi (caption flicker + durasi terlalu panjang, target baru 30–40 dtk / batas 45 dtk): [`docs/TEST_NOTES.md`](docs/TEST_NOTES.md)
 
 Perintah lain: `scout`, `produce`, `publish --slot 1`, `poll`, `run-once`, `providers`, `status`, `qc PATH`.
 

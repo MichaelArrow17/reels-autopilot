@@ -1,6 +1,6 @@
 """Penulis naskah Reels (JSON) — LLM dengan failover, template lokal sebagai cadangan.
 
-Fokus monetisasi: hook selesai <2 detik, 45–90 dtk, 1 gagasan/adegan,
+Fokus monetisasi: hook selesai <2 detik, 30–40 dtk (batas 45), 1 gagasan/adegan,
 caption karaoke-friendly, CTA tunggal, tanpa angka karangan, bahasa Indonesia santai.
 """
 
@@ -12,7 +12,15 @@ import re
 from pathlib import Path
 from typing import Any
 
-from reels_autopilot.config import Settings, get_settings
+from reels_autopilot.config import (
+    HARD_MAX_DURATION,
+    TARGET_DURATION,
+    TARGET_WORDS,
+    TARGET_WORDS_MAX,
+    TARGET_WORDS_MIN,
+    Settings,
+    get_settings,
+)
 from reels_autopilot.providers.llm import LLMClient
 from reels_autopilot.providers.router import ProviderRouter
 
@@ -23,6 +31,39 @@ POSES = ("idle", "point", "think", "cheer", "typing", "walk", "shrug", "sit")
 
 def _word_count(text: str) -> int:
     return len(re.findall(r"\S+", text or ""))
+
+
+def trim_to_word_budget(text: str, max_words: int = TARGET_WORDS_MAX) -> str:
+    """Potong naskah di batas kalimat terakhir yang masih muat dalam anggaran kata."""
+    tokens = (text or "").split()
+    if len(tokens) <= max_words:
+        return (text or "").strip()
+    cut = tokens[:max_words]
+    # cari titik/tanya/seru paling belakang di jendela anggaran
+    last_end = -1
+    for i, tok in enumerate(cut):
+        if re.search(r"[.!?…]+$", tok):
+            last_end = i
+    # sisakan minimal ~70% anggaran supaya hook+isi tidak putus terlalu awal
+    min_keep = max(TARGET_WORDS_MIN - 10, int(max_words * 0.7))
+    if last_end + 1 >= min_keep:
+        cut = cut[: last_end + 1]
+    return " ".join(cut).strip()
+
+
+def clamp_duration_target(seconds: int | float | None) -> int:
+    try:
+        d = int(seconds or TARGET_DURATION)
+    except (TypeError, ValueError):
+        d = int(TARGET_DURATION)
+    return int(min(HARD_MAX_DURATION, max(30, d)))
+
+
+def enforce_script_budget(script: dict, max_words: int = TARGET_WORDS_MAX) -> dict:
+    narasi = trim_to_word_budget(script.get("narasi_penuh") or "", max_words)
+    script["narasi_penuh"] = narasi
+    script["durasi_target_detik"] = clamp_duration_target(script.get("durasi_target_detik"))
+    return script
 
 
 class ScriptWriter:
@@ -36,8 +77,11 @@ class ScriptWriter:
         user = json.dumps(
             {
                 "TOPIK": topic,
-                "DURASI_TARGET_DETIK": 60,
-                "KATA_TARGET": 180,
+                "DURASI_TARGET_DETIK": int(TARGET_DURATION),
+                "DURASI_MAKS_DETIK": int(HARD_MAX_DURATION),
+                "KATA_TARGET": TARGET_WORDS,
+                "KATA_MIN": TARGET_WORDS_MIN,
+                "KATA_MAX": TARGET_WORDS_MAX,
                 "BAHASA": "Indonesia santai, orang kedua (kamu)",
                 "GAYA": "explainer stickman Po Chai, Kreator AI",
             },
@@ -49,10 +93,10 @@ class ScriptWriter:
             log.warning("LLM naskah gagal (%s), pakai template", e)
             data, provider = {"_template": True}, "template"
         if provider == "template" or (isinstance(data, dict) and data.get("_template")):
-            script = fallback_script(topic)
+            script = enforce_script_budget(fallback_script(topic))
             script["llm_provider"] = "template"
             return script
-        script = _normalize(data, topic)
+        script = enforce_script_budget(_normalize(data, topic))
         script["llm_provider"] = provider
         return script
 
@@ -81,11 +125,12 @@ def _load_prompt(settings: Settings, name: str, default: str) -> str:
 
 def _normalize(data: dict, topic: dict) -> dict:
     narasi = (data.get("narasi_penuh") or "").strip()
-    if _word_count(narasi) < 80:
+    if _word_count(narasi) < TARGET_WORDS_MIN:
         # terlalu pendek — gabung dari adegan
         parts = [a.get("narasi") or "" for a in data.get("adegan") or []]
         if parts:
             narasi = " ".join(parts)
+    narasi = trim_to_word_budget(narasi, TARGET_WORDS_MAX)
     adegan = data.get("adegan") or []
     clean = []
     for i, a in enumerate(adegan[:6], 1):
@@ -110,7 +155,7 @@ def _normalize(data: dict, topic: dict) -> dict:
         "hook": hook,
         "angle": data.get("angle") or topic.get("angle") or "",
         "bahasa": "id",
-        "durasi_target_detik": int(data.get("durasi_target_detik") or 60),
+        "durasi_target_detik": clamp_duration_target(data.get("durasi_target_detik")),
         "narasi_penuh": narasi,
         "adegan": clean,
         "caption": data.get("caption") or "",
@@ -133,34 +178,26 @@ def fallback_script(topic: dict) -> dict:
         "Tubuh: naskah, suara, render, jadwal.",
         "Payoff: ukur retensi, ulang yang berhasil.",
     ]
-    # ~150-180 kata, orang kedua, tanpa "di video ini", 1 CTA
+    # ~75–100 kata, orang kedua, tanpa "di video ini", 1 CTA, target 30–40 dtk
     narasi = (
-        f"{hook.rstrip('.')} "
-        "Satu naskah, satu suara, dan gambar yang dibuat dari kode, sudah cukup jadi video vertikal siap tayang. "
+        f"{hook.rstrip('.')}. "
+        "Satu naskah, satu suara, dan gambar dari kode sudah cukup jadi video vertikal siap tayang. "
         "Bukan sihir, dan bukan aplikasi yang tinggal ketik prompt lalu selesai. Ini workflow programmatic. "
-        "Pagi: kumpulkan topik dari tren dan berita, buang yang berbahaya atau yang sudah pernah dibuat, "
-        "lalu pilih yang punya rasa penasaran. "
-        "Lalu naskah ditulis untuk telinga, bukan untuk mata. Hook harus selesai dalam dua detik. "
-        "Satu gagasan per adegan. Setiap klaim dicek, tidak ada angka yang dikarang. "
-        "Suara diisi otomatis, gambar stickman dirender, lalu file dijadwalkan ke Facebook Page dan Instagram. "
-        "Kamu bisa setujui atau tolak dari HP lewat Telegram. "
-        "Mulai dari lima video sehari. Ukur mana yang ditonton sampai akhir, lalu ulang yang berhasil. "
-        "AI yang kerja, kamu yang punya arah. Simpan video ini kalau mau ikut alurnya."
+        "Pagi, pilih topik yang punya rasa penasaran, buang yang berbahaya atau sudah pernah dibuat. "
+        "Naskah ditulis untuk telinga. Hook selesai dalam dua detik. Satu gagasan per adegan, setiap klaim dicek. "
+        "Suara otomatis, stickman dirender, lalu file dijadwalkan. Kamu setujui atau tolak lewat Telegram. "
+        "AI yang kerja, kamu yang punya arah. Simpan video ini."
     )
     # jika topik spesifik, bungkus hook + kerangka tanpa mengarang fakta
     if topic.get("judul") and "kamera" not in judul.lower() and "reels" not in (hook.lower()):
         narasi = (
-            f"{hook.rstrip('.')} "
-            f"Banyak orang Indonesia sudah mendengar soal “{judul.rstrip('?')}”, tapi jarang yang dijelaskan pelan, "
-            "tanpa istilah yang bikin mundur. "
-            "Kita mulai dari rasa penasaran, bukan dari definisi. "
-            "Satu gagasan per adegan, biar mudah diingat. "
-            "Kalau ada klaim, kita hanya bilang yang bisa dicek — tidak ada angka yang dikarang. "
-            "Visualnya sederhana: karakter stickman, teks di layar, suara yang jelas. "
-            "Tujuannya bukan kelihatan canggih, tapi biar kamu tahan nonton sampai akhir, lalu bisa coba sendiri. "
-            "Kalau ini nyambung, simpan videonya, dan pantau mana bagian yang bikin kamu berhenti scroll. "
-            "Itu sinyal retensi yang sama dipakai kreator untuk merancang video berikutnya. "
-            "AI bisa bantu riset dan naskah, tapi arah dan rasa tetap di tangan kamu."
+            f"{hook.rstrip('.')}. "
+            f"Banyak yang sudah mendengar soal “{judul.rstrip('?')}”, tapi jarang dijelaskan pelan. "
+            "Kita mulai dari rasa penasaran, bukan definisi. Satu gagasan per adegan, biar mudah diingat. "
+            "Klaim hanya yang bisa dicek — tidak ada angka yang dikarang. "
+            "Visualnya sederhana: stickman, teks di layar, suara yang jelas. "
+            "Tujuannya biar kamu tahan nonton sampai akhir, lalu bisa coba sendiri. "
+            "Kalau nyambung, simpan videonya. AI bisa bantu naskah, arah tetap di tangan kamu."
         )
     adegan = [
         {"id": 1, "nama": "hook", "narasi": hook, "teks_layar": hook, "pose": "idle", "keyword": "HOOK", "latar": "", "image_query": ""},
@@ -176,12 +213,12 @@ def fallback_script(topic: dict) -> dict:
         "Menurutmu, bagian mana yang paling susah: naskah, suara, atau jadwal?\n\n"
         "#KreatorAI #PoChai #ReelsIndonesia #FacelessContent #VideoAI"
     )
-    return {
+    return enforce_script_budget({
         "judul": judul,
         "hook": hook,
         "angle": angle,
         "bahasa": "id",
-        "durasi_target_detik": 60,
+        "durasi_target_detik": int(TARGET_DURATION),
         "narasi_penuh": narasi,
         "adegan": adegan,
         "caption": caption,
@@ -192,7 +229,7 @@ def fallback_script(topic: dict) -> dict:
         "cover_text": hook if len(hook.split()) <= 8 else " ".join(hook.split()[:6]),
         "image_query": "dark studio creative desk indonesia",
         "llm_provider": "template",
-    }
+    })
 
 
 def fallback_captions(script: dict) -> dict:
@@ -217,14 +254,14 @@ _DEFAULT_SCRIPT_PROMPT = """PERAN: Kamu penulis naskah voice-over untuk Reels ex
 ATURAN:
 - Tulis untuk TELINGA: satu ide per kalimat, campur pendek & panjang, tanpa jargon.
 - Hook SELESAI dalam 2 detik pertama. Dilarang: "Di video ini...", "Halo guys...".
-- Durasi target 60 detik ≈ 180 kata (±3 kata/detik). Batas keras 2:59.
+- Durasi target 35 detik ≈ 90 kata (75–100 kata, ±2,5–3 kata/detik). Target 30–40 detik, batas keras 45 detik.
 - Setiap angka di layar harus diucapkan. JANGAN menambah angka yang tidak ada di input.
 - Akhiri dengan SATU ajakan (simpan ATAU follow part 2).
 - Orang kedua ("kamu"), tanpa kata sifat pengisi.
 - 5 adegan. Pose stickman hanya: idle, point, think, cheer, typing, walk, shrug, sit.
 - Adegan 1 (2 detik pertama) adalah hook: karakter BELUM muncul (teks masalah penonton).
 OUTPUT HANYA JSON valid:
-{"judul":"","hook":"","angle":"","durasi_target_detik":60,"narasi_penuh":"",
+{"judul":"","hook":"","angle":"","durasi_target_detik":35,"narasi_penuh":"",
  "adegan":[{"id":1,"nama":"hook","narasi":"","teks_layar":"","pose":"idle","keyword":"","latar":"","image_query":""}],
  "caption":"","cta":"","hashtag":[],"fakta_yang_wajib_dicek":[],"cover_text":"","is_ai_generated":true}
 """

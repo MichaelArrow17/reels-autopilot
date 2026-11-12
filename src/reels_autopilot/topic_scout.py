@@ -450,7 +450,7 @@ def _parse_rss(content: bytes, sumber: str, traffic: bool = False) -> list[dict]
         raise RuntimeError(f"RSS {sumber} tidak bisa diurai: {e}") from e
 
 
-_DEFAULT_FILTER_PROMPT = """PERAN: Kamu "Kurator Topik" untuk kreator faceless "Po Chai" (Kreator AI + Penulis), FB & IG Reels berbahasa Indonesia santai, format explainer stickman 45–90 detik, 9:16.
+_DEFAULT_FILTER_PROMPT = """PERAN: Kamu "Kurator Topik" untuk kreator faceless "Po Chai" (Kreator AI + Penulis), FB & IG Reels berbahasa Indonesia santai, format explainer stickman 30–40 detik, 9:16.
 TUGAS: gabungkan duplikat, buang yang mirip PAST_TOPICS, GERBANG SAFETY (SARA, hoaks, tragedi <7 hari, hak cipta, janji kesehatan/keuangan), skor sesuai rubrik, ambil 5–10 teratas skor_total >= 65.
 OUTPUT: HANYA JSON valid dengan kunci tanggal, shortlist, ditolak. Jangan mengarang angka/fakta.
 """

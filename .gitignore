@@ -43,3 +43,6 @@ samples/frames/
 data/provider_status.json
 data/cache/
 .pytest_cache/
+
+# Local connector/token files — never commit
+.secrets/

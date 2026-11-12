@@ -184,7 +184,7 @@ Estimasi menit Actions (Linux, already rounded up per job):
 ## 7. Monetisasi & retensi (audiens Indonesia)
 
 - Hook selesai &lt;2 detik, **tanpa karakter di depan** (playbook 9.3) — layar teks masalah penonton.
-- Durasi ideal **45–90 detik** (batas keras 2:59).
+- Durasi ideal **30–40 detik** (batas keras 45 detik).
 - Caption **karaoke** (banyak yang nonton tanpa bunyi).
 - Satu gagasan per adegan, 5 adegan, satu CTA.
 - Campuran target **60% evergreen / 40% viral**; bank evergreen 20 topik niche Kreator AI.

@@ -9,7 +9,7 @@
     {"judul": "Kenapa faceless content bisa tembus tanpa wajah", "hook": "Kamu tidak harus tampil di kamera untuk mulai unggah.", "angle": "Format explainer + suara + teks untuk pemula.", "tipe": "evergreen"},
     {"judul": "Apa itu LLM, dijelaskan pakai analogi dapur", "hook": "LLM itu bukan otak, lebih mirip dapur yang banyak resep.", "angle": "Penjelasan awam, tanpa mitos kesadaran mesin.", "tipe": "evergreen"},
     {"judul": "Kenapa prompt pendek kadang lebih jitu", "hook": "Prompt panjang tidak otomatis membuat jawaban lebih pintar.", "angle": "Satu instruksi jelas vs meracau.", "tipe": "evergreen"},
-    {"judul": "Kenapa video 60 detik sering lebih tahan ditonton", "hook": "Lebih panjang belum tentu lebih berkesan.", "angle": "Durasi ideal Reels explainer 45–90 detik.", "tipe": "evergreen"},
+    {"judul": "Kenapa video 60 detik sering lebih tahan ditonton", "hook": "Lebih panjang belum tentu lebih berkesan.", "angle": "Durasi ideal Reels explainer 30–40 detik.", "tipe": "evergreen"},
     {"judul": "Apa bedanya AI gambar dan AI video buat kreator", "hook": "Gambar AI dan video AI itu dua alat, bukan satu tombol ajaib.", "angle": "Kapan pakai yang mana, tanpa merek berbayar wajib.", "tipe": "evergreen"},
     {"judul": "Kenapa kreator perlu mirroring ke beberapa platform", "hook": "Video yang laku di Instagram belum tentu laku di X.", "angle": "Satu naskah, beberapa saluran, ukur yang bekerja.", "tipe": "evergreen"},
     {"judul": "Apa itu token di ChatGPT, tanpa istilah merumitkan", "hook": "Kamu bayar dan dibatasi bukan per kata biasa, tapi per token.", "angle": "Penjelasan praktis untuk pengguna Indonesia.", "tipe": "evergreen"},

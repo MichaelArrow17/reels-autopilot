@@ -38,19 +38,128 @@ class TTSResult:
     voice: str = ""
 
 
-def estimate_words(text: str, duration: float) -> list[Word]:
+def syllable_weight(token: str) -> int:
+    """Bobot suku kata + huruf (bahasa Indonesia kasar: kelompok vokal)."""
+    core = re.sub(r"[^\w]", "", token or "", flags=re.UNICODE).lower()
+    if not core:
+        return 1
+    groups = re.findall(r"[aeiouéèäö]+", core)
+    return max(1, len(groups)) * 3 + max(1, len(core))
+
+
+def _speech_to_abs(spans: list[tuple[float, float]], t_speech: float) -> float:
+    remaining = t_speech
+    for a, b in spans:
+        length = b - a
+        if remaining <= length:
+            return a + remaining
+        remaining -= length
+    return spans[-1][1] if spans else t_speech
+
+
+def detect_speech_spans(
+    path: Path,
+    duration: float,
+    *,
+    noise_db: float = -35.0,
+    min_silence: float = 0.15,
+) -> list[tuple[float, float]]:
+    """Span berisi ucapan (kebalikan silencedetect). Gagal → seluruh durasi."""
+    if duration <= 0 or not Path(path).exists():
+        return [(0.0, max(0.0, duration))]
+    r = subprocess.run(
+        [
+            "ffmpeg", "-hide_banner", "-i", str(path),
+            "-af", f"silencedetect=noise={noise_db}dB:d={min_silence}",
+            "-f", "null", "-",
+        ],
+        capture_output=True, text=True, check=False,
+    )
+    log_text = (r.stderr or "") + (r.stdout or "")
+    events: list[tuple[str, float]] = []
+    for m in re.finditer(r"silence_(start|end):\s*([+-]?\d+(?:\.\d+)?)", log_text):
+        events.append((m.group(1), float(m.group(2))))
+    if not events:
+        return [(0.0, duration)]
+    silences: list[tuple[float, float]] = []
+    start: float | None = None
+    for kind, t in events:
+        if kind == "start":
+            start = max(0.0, t)
+        elif kind == "end" and start is not None:
+            silences.append((start, max(start, min(duration, t))))
+            start = None
+    if start is not None:
+        silences.append((start, duration))
+    speech: list[tuple[float, float]] = []
+    cursor = 0.0
+    for a, b in silences:
+        if a > cursor + 0.02:
+            speech.append((cursor, min(a, duration)))
+        cursor = max(cursor, b)
+    if cursor < duration - 0.02:
+        speech.append((cursor, duration))
+    speech = [(a, b) for a, b in speech if b > a + 0.02]
+    return speech or [(0.0, duration)]
+
+
+def estimate_words(
+    text: str,
+    duration: float,
+    speech_spans: list[tuple[float, float]] | None = None,
+) -> list[Word]:
+    """Taksiran timing kata: proporsional suku kata/huruf, hanya di interval ucapan."""
     tokens = WORD_RE.findall(text)
     if not tokens or duration <= 0:
         return []
-    weights = [max(1, len(re.sub(r"[^\w]", "", t, flags=re.UNICODE))) for t in tokens]
+    weights = [syllable_weight(t) for t in tokens]
     total = sum(weights) or 1
-    t = 0.0
+    spans = speech_spans or [(0.0, duration)]
+    spans = [(max(0.0, a), min(duration, b)) for a, b in spans if b > a]
+    if not spans:
+        spans = [(0.0, duration)]
+    speech_dur = sum(b - a for a, b in spans) or duration
     out: list[Word] = []
+    t_speech = 0.0
     for tok, w in zip(tokens, weights):
-        d = duration * (w / total)
-        out.append(Word(word=tok, start=t, duration=d))
-        t += d
-    return out
+        d = speech_dur * (w / total)
+        start = _speech_to_abs(spans, t_speech)
+        end = _speech_to_abs(spans, t_speech + d)
+        out.append(Word(word=tok, start=start, duration=max(0.05, end - start)))
+        t_speech += d
+    return normalize_word_timings(out, duration)
+
+
+def normalize_word_timings(words: list[Word], duration: float | None = None) -> list[Word]:
+    """Urutkan, rapikan durasi, hilangkan tumpang tindih, clamp ke durasi audio."""
+    cleaned: list[Word] = []
+    for w in words or []:
+        token = (w.word or "").strip()
+        if not token:
+            continue
+        start = max(0.0, float(w.start))
+        dur = float(w.duration)
+        if dur <= 0:
+            dur = 0.08
+        cleaned.append(Word(word=token, start=start, duration=dur))
+    cleaned.sort(key=lambda w: (w.start, w.end))
+    for i in range(len(cleaned) - 1):
+        nxt = cleaned[i + 1].start
+        if cleaned[i].start > nxt:
+            cleaned[i].start = max(0.0, nxt - 0.05)
+        if cleaned[i].end > nxt:
+            cleaned[i].duration = max(0.05, nxt - cleaned[i].start)
+    if duration and duration > 0 and cleaned:
+        cap = duration
+        kept: list[Word] = []
+        for w in cleaned:
+            if w.start >= cap:
+                break
+            if w.end > cap:
+                w.duration = max(0.05, cap - w.start)
+            kept.append(w)
+        cleaned = kept
+    return cleaned
 
 
 def probe_duration(path: Path) -> float:
@@ -152,13 +261,22 @@ class TTSClient:
 
         result = self.router.execute("tts", callers)
         provider_id, words = result.value
+        raw_duration = probe_duration(raw) if raw.exists() else 0.0
         norm = loudnorm(raw, final)
         duration = probe_duration(norm)
-        if not words or (words and words[-1].end < duration * 0.7):
-            words = estimate_words(text, duration)
-        # rapikan durasi kata terakhir agar tidak melewati audio
-        if words and duration > 0 and words[-1].end > duration:
-            words[-1].duration = max(0.05, duration - words[-1].start)
+        # Timing WordBoundary dari audio mentah; skala tipis jika loudnorm mengubah durasi.
+        if words and raw_duration > 0 and duration > 0 and abs(duration - raw_duration) > 0.05:
+            scale = duration / raw_duration
+            words = [Word(word=w.word, start=w.start * scale, duration=w.duration * scale) for w in words]
+        if words:
+            # Jangan buang timing asli hanya karena ada sunyi di ekor audio.
+            if duration > 0 and words[-1].end > duration * 1.2:
+                scale = duration / words[-1].end
+                words = [Word(word=w.word, start=w.start * scale, duration=w.duration * scale) for w in words]
+            words = normalize_word_timings(words, duration)
+        if not words:
+            spans = detect_speech_spans(norm, duration)
+            words = estimate_words(text, duration, speech_spans=spans)
         return TTSResult(
             audio_path=norm,
             words=words,
