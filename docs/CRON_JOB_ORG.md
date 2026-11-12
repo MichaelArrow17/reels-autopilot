@@ -59,7 +59,9 @@ jika event-nya `schedule`). Tetap kirim `slot` di cron-job.org agar telat bebera
 menit tidak salah pilih.
 
 Jangan isi `dry_run` (supaya memakai variabel repo) dan jangan isi
-`artifact_run_id` kecuali memulihkan artifak produce tertentu.
+`artifact_run_id` kecuali memulihkan artifak produce tertentu. Jika kosong,
+workflow memakai artifak run produce sukses terbaru (yang ACC-mu lihat),
+bukan merender ulang.
 
 ## Kuota gratis cron-job.org
 
