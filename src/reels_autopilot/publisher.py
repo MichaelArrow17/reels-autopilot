@@ -1,8 +1,9 @@
 """Publish Reels ke Instagram (utama) dan opsional ke Facebook Page.
 
-Jalur utama: Instagram API with Instagram Login (graph.instagram.com) —
-container REELS lalu media_publish. Wajib video_url publik (HostingClient).
-Profil Facebook menerima Reel lewat auto-share IG, bukan Graph ke profil.
+Jalur utama: Graph API IG (host lewat IG_GRAPH_HOST, default graph.facebook.com,
+versi v21.0) — container REELS lalu media_publish. Wajib video_url publik
+(HostingClient). Profil Facebook menerima Reel lewat auto-share IG, bukan
+Graph ke profil. Permalink media diambil setelah media_publish (untuk Telegram).
 
 Facebook Page (graph.facebook.com video_reels) bersifat opsional: hanya
 dijalankan jika FB_PAGE_ID + FB_PAGE_TOKEN diisi.
@@ -75,15 +76,17 @@ class Publisher:
                 "would_do": {
                     "fb_page": dest_fb,
                     "ig": dest_ig,
-                    "api": "graph.instagram.com (Instagram Login)",
+                    "api": s.ig_graph_base,
                     "video_state": video_state if not when_unix else "SCHEDULED",
                     "scheduled_publish_time": when_unix,
                     "page_id": s.fb_page_id or "(opsional, belum diisi)",
                     "ig_user_id": s.ig_user_id or "(belum diisi)",
                     "is_ai_generated": s.fb_is_ai_generated,
                     "note": (
-                        "Target utama: Instagram Reels via Instagram Login. "
-                        "Profil Facebook menerima lewat auto-share IG. "
+                        "Target utama: Instagram Reels via Graph API "
+                        f"({s.ig_graph_base}). "
+                        "Profil Facebook menerima lewat auto-share IG "
+                        "(cek FB Po Chai; API tidak bisa memverifikasi). "
                         "Publish ke Facebook Page bersifat opsional."
                     ),
                 },
@@ -179,15 +182,15 @@ class Publisher:
         return fin.json()
 
     def ig_reel(self, public_video_url: str, caption: str) -> dict:
-        """Container REELS → media_publish di graph.instagram.com.
+        """Container REELS → poll FINISHED → media_publish → ambil permalink.
 
+        Host: IG_GRAPH_HOST (default graph.facebook.com) / v21.0.
         Tidak ada parameter jadwal — panggil tepat di jam tayang.
         video_url harus publik (GitHub Releases / R2 / catbox).
         """
         s = self.settings
         if not s.ig_configured:
             raise RuntimeError("IG_USER_ID / IG_ACCESS_TOKEN belum diisi")
-        # Instagram API with Instagram Login — bukan graph.facebook.com
         g = s.ig_graph_base
         c = requests.post(
             f"{g}/{s.ig_user_id}/media",
@@ -225,7 +228,30 @@ class Publisher:
             timeout=60,
         )
         _meta_err("ig", pub)
-        return pub.json()
+        body = pub.json() or {}
+        media_id = body.get("id")
+        if media_id:
+            permalink = _fetch_permalink(g, media_id, s.ig_token)
+            if permalink:
+                body["permalink"] = permalink
+        return body
+
+
+def _fetch_permalink(graph_base: str, media_id: str, token: str) -> str | None:
+    """Ambil permalink media. Gagal tidak menggagalkan publish."""
+    try:
+        info = requests.get(
+            f"{graph_base}/{media_id}",
+            params={"fields": "permalink,id", "access_token": token},
+            timeout=30,
+        )
+        if info.status_code >= 400:
+            log.warning("permalink IG tidak tersedia (HTTP %s)", info.status_code)
+            return None
+        return (info.json() or {}).get("permalink")
+    except Exception as e:
+        log.warning("permalink IG gagal diambil: %s", type(e).__name__)
+        return None
 
 
 def _meta_err(provider: str, resp: requests.Response) -> None:

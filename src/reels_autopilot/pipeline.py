@@ -279,11 +279,16 @@ class Pipeline:
         v["publish"] = {k: result.get(k) for k in ("dry_run", "fb", "ig", "host", "dry_run_path")}
         v["published_at"] = datetime.now(self.settings.tz).isoformat(timespec="seconds")
         self.state.upsert_video(v, date)
-        self.tg.send(
-            f"{'DRY-RUN ' if self.settings.dry_run else ''}Slot {slot} "
-            f"({v.get('slot_label')} WITA) — {v.get('judul')}\n"
-            f"Status: {v['status']}"
-        )
+        prefix = "DRY-RUN " if self.settings.dry_run else ""
+        lines = [
+            f"{prefix}Slot {slot} ({v.get('slot_label')} WITA) — {v.get('judul')}",
+            f"Status: {v['status']}",
+        ]
+        permalink = (result.get("ig") or {}).get("permalink") if isinstance(result.get("ig"), dict) else None
+        if permalink:
+            lines.append(str(permalink))
+        lines.append("cek FB Po Chai")
+        self.tg.send("\n".join(lines))
         return {"ok": True, "video": v, "publish": result}
 
     def run_once(self, *, topic: dict | None = None) -> dict:

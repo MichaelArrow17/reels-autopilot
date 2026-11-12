@@ -150,9 +150,15 @@ class Settings:
     fb_page_id: str = field(default_factory=lambda: _str("FB_PAGE_ID"))
     fb_page_token: str = field(default_factory=lambda: _str("FB_PAGE_TOKEN"))
     ig_user_id: str = field(default_factory=lambda: _str("IG_USER_ID"))
-    # Canonical: IG_ACCESS_TOKEN (Instagram API with Instagram Login).
-    # IG_TOKEN dipertahankan sebagai alias lama.
+    # Canonical: IG_ACCESS_TOKEN (Facebook Login for Business user token, atau alias IG_TOKEN).
     ig_token: str = field(default_factory=lambda: _str("IG_ACCESS_TOKEN") or _str("IG_TOKEN"))
+    # Host Graph untuk publish IG. Token EAAP (Facebook Login) memakai graph.facebook.com;
+    # token Instagram Login memakai graph.instagram.com.
+    ig_graph_host: str = field(default_factory=lambda: _str("IG_GRAPH_HOST", "graph.facebook.com"))
+    ig_graph_version: str = field(default_factory=lambda: _str("IG_GRAPH_VERSION", "v21.0"))
+    # App Meta — dipakai exchange + debug_token. Kosong = health check saja.
+    fb_app_id: str = field(default_factory=lambda: _str("FB_APP_ID"))
+    fb_app_secret: str = field(default_factory=lambda: _str("FB_APP_SECRET"))
     # PAT fine-grained (contents/secrets RW) untuk refresh token IG menulis secret.
     # GITHUB_TOKEN otomatis Actions TIDAK bisa menulis secret.
     gh_pat: str = field(default_factory=lambda: _str("GH_PAT"))
@@ -234,9 +240,16 @@ class Settings:
         return f"https://graph.facebook.com/{self._graph_version}"
 
     @property
+    def _ig_graph_version(self) -> str:
+        v = self.ig_graph_version or "v21.0"
+        return v if v.startswith("v") else "v" + v
+
+    @property
     def ig_graph_base(self) -> str:
-        """Instagram API with Instagram Login (graph.instagram.com)."""
-        return f"https://graph.instagram.com/{self._graph_version}"
+        """Host Graph untuk IG (default graph.facebook.com / v21.0)."""
+        host = (self.ig_graph_host or "graph.facebook.com").strip()
+        host = host.replace("https://", "").replace("http://", "").strip().strip("/")
+        return f"https://{host}/{self._ig_graph_version}"
 
     @property
     def ig_configured(self) -> bool:

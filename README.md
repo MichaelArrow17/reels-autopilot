@@ -8,10 +8,11 @@ Baca dulu:
 
 1. **[BLUEPRINT.md](BLUEPRINT.md)** — arsitektur, rantai failover, batas gratis yang jujur, kelayakan 5 video/hari.
 2. **[SETUP_CHECKLIST.md](SETUP_CHECKLIST.md)** — langkah berurutan, akun mana, siapa yang kerjakan (BRO vs BOT), daftar secret.
+3. **[docs/SETUP_STATUS.md](docs/SETUP_STATUS.md)** — status setup terkini (akun, ID, jadwal, sisa pekerjaan).
 
 ## Batasan Meta
 
-Jalur utama: **Instagram API with Instagram Login** (`graph.instagram.com`) ke IG professional **@achmad_radinal94**. Profil Facebook menerima Reel lewat **auto-share IG**. Facebook Page bersifat **opsional** (bukan syarat otomasi). Token IG jangka panjang di-refresh bulanan (secret `GH_PAT`).
+Jalur utama: Graph API ke IG professional **@achmad_radinal94** (`IG_GRAPH_HOST`, default `graph.facebook.com` / v21.0; token Facebook Login for Business). Profil Facebook **Po Chai** menerima Reel lewat **auto-share IG**. Facebook Page tidak dipakai. Token di-health-check mingguan; auto-refresh butuh `FB_APP_SECRET` + `GH_PAT`.
 
 ## Tes yang sudah jalan di box (12 Nov 2026, WITA)
 

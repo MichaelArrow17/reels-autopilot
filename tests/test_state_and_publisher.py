@@ -51,7 +51,7 @@ def test_publisher_dry_run_writes_file_no_network(tmp_path, monkeypatch):
     text = path.read_text()
     assert "SECRETTOKEN123" not in text
     assert "tes caption" in text
-    assert "Instagram Login" in text or "auto-share" in text
+    assert "graph.facebook.com" in text or "auto-share" in text or "cek FB Po Chai" in text
     path.unlink(missing_ok=True)
 
 
@@ -96,3 +96,98 @@ def test_ig_access_token_env_alias(monkeypatch):
     monkeypatch.setenv("IG_USER_ID", "1789")
     s2 = Settings()
     assert s2.ig_configured is True
+
+
+def test_ig_graph_base_default_is_facebook_v21(monkeypatch):
+    monkeypatch.delenv("IG_GRAPH_HOST", raising=False)
+    monkeypatch.delenv("IG_GRAPH_VERSION", raising=False)
+    s = Settings()
+    assert s.ig_graph_base == "https://graph.facebook.com/v21.0"
+
+
+def test_ig_reel_publishes_and_fetches_permalink(monkeypatch):
+    s = Settings()
+    s.dry_run = False
+    s.ig_user_id = "1784"
+    s.ig_token = "TOK"
+    s.ig_graph_host = "graph.facebook.com"
+    s.ig_graph_version = "v21.0"
+    pub = Publisher(s)
+
+    posts = []
+    gets = []
+
+    class Resp:
+        def __init__(self, payload, status_code=200):
+            self.status_code = status_code
+            self._payload = payload
+            self.text = ""
+
+        def json(self):
+            return self._payload
+
+    def fake_post(url, data=None, timeout=None, **kwargs):
+        posts.append(url)
+        if url.endswith("/media"):
+            return Resp({"id": "container1"})
+        if url.endswith("/media_publish"):
+            return Resp({"id": "media99"})
+        raise AssertionError(f"unexpected POST {url}")
+
+    def fake_get(url, params=None, timeout=None, **kwargs):
+        gets.append((url, (params or {}).get("fields")))
+        if url.endswith("/container1"):
+            return Resp({"status_code": "FINISHED"})
+        if url.endswith("/media99"):
+            return Resp({"id": "media99", "permalink": "https://www.instagram.com/reel/ABC/"})
+        raise AssertionError(f"unexpected GET {url}")
+
+    import reels_autopilot.publisher as pubmod
+
+    monkeypatch.setattr(pubmod.requests, "post", fake_post)
+    monkeypatch.setattr(pubmod.requests, "get", fake_get)
+    monkeypatch.setattr(pubmod.time, "sleep", lambda _s: None)
+
+    out = pub.ig_reel("https://example.com/v.mp4", "caption tes")
+    assert out["id"] == "media99"
+    assert out["permalink"] == "https://www.instagram.com/reel/ABC/"
+    assert posts[0] == "https://graph.facebook.com/v21.0/1784/media"
+    assert posts[1] == "https://graph.facebook.com/v21.0/1784/media_publish"
+    assert any(u.endswith("/media99") for u, _ in gets)
+
+
+def test_ig_reel_survives_permalink_failure(monkeypatch):
+    s = Settings()
+    s.dry_run = False
+    s.ig_user_id = "1784"
+    s.ig_token = "TOK"
+    pub = Publisher(s)
+
+    class Resp:
+        def __init__(self, payload, status_code=200):
+            self.status_code = status_code
+            self._payload = payload
+            self.text = ""
+
+        def json(self):
+            return self._payload
+
+    def fake_post(url, data=None, timeout=None, **kwargs):
+        if url.endswith("/media"):
+            return Resp({"id": "c1"})
+        return Resp({"id": "m1"})
+
+    def fake_get(url, params=None, timeout=None, **kwargs):
+        if url.endswith("/c1"):
+            return Resp({"status_code": "FINISHED"})
+        return Resp({}, status_code=400)
+
+    import reels_autopilot.publisher as pubmod
+
+    monkeypatch.setattr(pubmod.requests, "post", fake_post)
+    monkeypatch.setattr(pubmod.requests, "get", fake_get)
+    monkeypatch.setattr(pubmod.time, "sleep", lambda _s: None)
+
+    out = pub.ig_reel("https://example.com/v.mp4", "caption tes")
+    assert out["id"] == "m1"
+    assert "permalink" not in out
