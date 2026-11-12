@@ -16,6 +16,10 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Ambil main terbaru SETELAH antrean concurrency selesai,
+          # supaya job kedua (GitHub cron + cron-job.org) membaca state yang sudah di-commit.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

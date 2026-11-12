@@ -26,6 +26,9 @@ permissions:
   contents: write
   actions: read
   models: read
+# Satu publish pada satu waktu. Job yang menunggu lalu checkout main terbaru
+# (plus guard already_published) mencegah double-publish jika cron GitHub
+# dan cron-job.org memicu slot yang sama.
 concurrency:
   group: reels-publish
   cancel-in-progress: false
@@ -35,6 +38,10 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Ambil main terbaru SETELAH antrean concurrency selesai,
+          # supaya job kedua (GitHub cron + cron-job.org) membaca state yang sudah di-commit.
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -121,36 +128,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           INPUT_SLOT: ${{ inputs.slot }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
         run: |
           python -m reels_autopilot poll || true
-          if [ -n "$INPUT_SLOT" ]; then
-            SLOT="$INPUT_SLOT"
-          else
-            # jam WITA sekarang
-            H=$(TZ=Asia/Makassar date +%H)
-            M=$(TZ=Asia/Makassar date +%M)
-            HM=$((10#$H * 60 + 10#$M))
-            SLOT=1
-            # pilih slot terdekat yang sudah lewat ≤ 20 menit, else yang paling dekat
-            python - << 'PY' > /tmp/slot.txt
-          import os
-          from datetime import datetime
-          from zoneinfo import ZoneInfo
-          now = datetime.now(ZoneInfo("Asia/Makassar"))
-          slots = [(1,7,30),(2,12,0),(3,17,0),(4,19,0),(5,21,0)]
-          forced = os.environ.get("INPUT_SLOT")
-          if forced:
-              print(forced); raise SystemExit
-          minutes = now.hour*60+now.minute
-          best, bestd = 1, 10**9
-          for i,h,m in slots:
-              d = abs(minutes - (h*60+m))
-              if d < bestd:
-                  best, bestd = i, d
-          print(best)
-          PY
-            SLOT=$(cat /tmp/slot.txt)
-          fi
+          # input slot (cron-job.org / dispatch) > cron GitHub > deteksi jam WITA
+          SLOT=$(python -c "from reels_autopilot.config import resolve_publish_slot; import os; print(resolve_publish_slot(input_slot=os.environ.get('INPUT_SLOT'), schedule_cron=os.environ.get('SCHEDULE_CRON')))")
           echo "Slot=$SLOT DRY_RUN=$DRY_RUN ALLOW_RERENDER=$ALLOW_RERENDER"
           python -m reels_autopilot publish --slot "$SLOT"
       - uses: stefanzweifel/git-auto-commit-action@v5

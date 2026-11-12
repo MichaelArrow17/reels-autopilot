@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -19,6 +20,54 @@ SLOTS: list[dict] = [
     {"id": 4, "hour": 19, "minute": 0},
     {"id": 5, "hour": 21, "minute": 0},
 ]
+
+# Cron UTC di workflow publish.yml (GitHub schedule selalu UTC).
+# cron-job.org sebaiknya memakai timezone Asia/Makassar + input slot, bukan deteksi jam.
+SCHEDULE_TO_SLOT: dict[str, int] = {
+    "30 23 * * *": 1,
+    "0 4 * * *": 2,
+    "0 9 * * *": 3,
+    "0 11 * * *": 4,
+    "0 13 * * *": 5,
+}
+
+SLOT_IDS = {int(s["id"]) for s in SLOTS}
+
+
+def resolve_publish_slot(
+    input_slot: str | int | None = None,
+    schedule_cron: str | None = None,
+    now: datetime | None = None,
+) -> int:
+    """Pilih slot: input eksplisit, lalu cron schedule GitHub, lalu jam WITA terdekat.
+
+    Deteksi jam memakai jarak melingkar 24 jam, supaya run lewat tengah malam
+    tidak salah pilih. Tetap kirim input slot dari cron-job.org bila bisa.
+    """
+    raw = "" if input_slot is None else str(input_slot).strip()
+    if raw:
+        try:
+            slot = int(raw)
+        except ValueError as e:
+            raise ValueError(f"slot tidak valid: {input_slot!r}") from e
+        if slot not in SLOT_IDS:
+            raise ValueError(f"slot harus 1-5, bukan {slot}")
+        return slot
+    cron = (schedule_cron or "").strip()
+    if cron in SCHEDULE_TO_SLOT:
+        return SCHEDULE_TO_SLOT[cron]
+    now = now or datetime.now(WITA)
+    minutes = now.hour * 60 + now.minute
+    day = 24 * 60
+    best, best_d = SLOTS[0]["id"], day
+    for s in SLOTS:
+        target = s["hour"] * 60 + s["minute"]
+        d = abs(minutes - target)
+        d = min(d, day - d)
+        if d < best_d:
+            best, best_d = s["id"], d
+    return best
+
 
 # Palet resmi playbook (bagian 9 / 10)
 COLOR_BG = "#0F1B2A"

@@ -11,6 +11,18 @@ from pathlib import Path
 
 from reels_autopilot.captions import chunk_captions
 from reels_autopilot.config import HARD_MAX_DURATION, SLOTS, Settings, get_settings
+
+# Status yang tidak boleh diproduksi ulang jika GitHub cron dan cron-job.org
+# memicu job yang sama. qc_failed / failed tetap boleh dicoba ulang.
+PRODUCED_STATUSES = frozenset({
+    "rendered",
+    "approved",
+    "published",
+    "dry_published",
+    "rejected",
+    "skipped",
+})
+TERMINAL_PUBLISH_STATUSES = frozenset({"rejected", "skipped", "published"})
 from reels_autopilot.providers.images import ImageClient
 from reels_autopilot.providers.router import ProviderRouter
 from reels_autopilot.providers.tts import TTSClient, Word
@@ -53,6 +65,31 @@ def _load_job_words(video: dict) -> list[Word] | None:
     return None
 
 
+def already_produced(video: dict | None) -> bool:
+    """True jika slot ini sudah di-render/approve/publish/tolak — meski MP4 tidak ada di runner."""
+    return (video or {}).get("status") in PRODUCED_STATUSES
+
+
+def already_scouted(day: dict | None, *, force: bool = False) -> bool:
+    if force:
+        return False
+    d = day or {}
+    return bool(d.get("scouted_at") or d.get("videos") or d.get("shortlist"))
+
+
+def already_published(video: dict | None) -> bool:
+    """True jika status published, atau IG sudah punya id/permalink (state sempat belum tersimpan)."""
+    if not video:
+        return False
+    if video.get("status") == "published":
+        return True
+    pub = video.get("publish") or {}
+    ig = pub.get("ig") if isinstance(pub, dict) else None
+    if isinstance(ig, dict) and (ig.get("id") or ig.get("permalink")):
+        return True
+    return False
+
+
 class Pipeline:
     def __init__(self, settings: Settings | None = None):
         self.settings = settings or get_settings()
@@ -66,6 +103,18 @@ class Pipeline:
         self.tg = TelegramBot(self.settings, self.state)
 
     def scout_and_notify(self) -> dict:
+        date = today_wita(self.settings)
+        force = os.environ.get("FORCE_SCOUT", "").strip().lower() in {"1", "true", "yes", "on"}
+        day = self.state.day(date)
+        if already_scouted(day, force=force):
+            log.info("Scout %s sudah ada, dilewati (idempotent)", date)
+            return {
+                "tanggal": date,
+                "shortlist": day.get("shortlist") or [],
+                "ditolak": day.get("ditolak") or [],
+                "skipped": "already_scouted",
+                "filter_provider": None,
+            }
         result = self.scout.run(use_llm=True)
         self.tg.send_shortlist(result)
         # siapkan antrian video dari shortlist (status pending)
@@ -111,12 +160,10 @@ class Pipeline:
         for v in vids:
             if limit is not None and n >= limit:
                 break
-            if v.get("status") in {"published", "rejected", "skipped", "rendered", "approved"}:
-                # rendered/approved sudah diproduksi
-                if v.get("status") in {"rendered", "approved"} and v.get("mp4") and Path(v["mp4"]).exists():
-                    continue
-                if v.get("status") in {"published", "rejected", "skipped"}:
-                    continue
+            if already_produced(v):
+                # Jangan render ulang meski MP4 tidak ada di checkout (hanya JSON yang di-commit).
+                log.info("Slot %s status=%s, produksi dilewati (idempotent)", v.get("slot"), v.get("status"))
+                continue
             try:
                 produced = self.produce_one(v, date)
                 out.append(produced)
@@ -233,7 +280,12 @@ class Pipeline:
         v = self.state.video_by_slot(slot, date)
         if not v:
             return {"ok": False, "reason": "no_video", "slot": slot}
-        if v.get("status") in {"rejected", "skipped", "published"}:
+        if already_published(v):
+            if v.get("status") != "published":
+                v["status"] = "published"
+                self.state.upsert_video(v, date)
+            return {"ok": False, "reason": "published", "slot": slot}
+        if v.get("status") in TERMINAL_PUBLISH_STATUSES:
             return {"ok": False, "reason": v["status"], "slot": slot}
         if v.get("status") == "qc_failed":
             return {"ok": False, "reason": "qc_failed", "slot": slot}
