@@ -1,0 +1,50 @@
+# 06:00 WITA = 22:00 UTC
+name: scout
+on:
+  schedule:
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  models: read
+concurrency:
+  group: reels-state
+  cancel-in-progress: false
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Sistem
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Python deps
+        run: pip install -r requirements.txt
+      - name: Scout
+        env:
+          PYTHONPATH: src
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_MODELS_TOKEN || secrets.GITHUB_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python -m reels_autopilot scout
+      - name: Simpan state
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update state setelah scout"
+          file_pattern: data/*.json data/**/*.json
+          commit_user_name: reels-autopilot[bot]
+          commit_user_email: reels-autopilot[bot]@users.noreply.github.com
+        continue-on-error: true

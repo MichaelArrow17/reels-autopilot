@@ -1,0 +1,74 @@
+{
+  "judul": "Kenapa video AI bisa tayang tanpa kamera",
+  "hook": "Kamu nggak perlu kamera untuk mulai unggah Reels.",
+  "angle": "Workflow programmatic untuk kreator Indonesia: naskah, suara, render, jadwal.",
+  "bahasa": "id",
+  "durasi_target_detik": 60,
+  "narasi_penuh": "Kamu nggak perlu kamera untuk mulai unggah Reels. Satu naskah, satu suara, dan gambar yang dibuat dari kode, sudah cukup jadi video vertikal siap tayang. Bukan sihir, dan bukan aplikasi yang tinggal ketik prompt lalu selesai. Ini workflow programmatic. Pagi: kumpulkan topik dari tren dan berita, buang yang berbahaya atau yang sudah pernah dibuat, lalu pilih yang punya rasa penasaran. Lalu naskah ditulis untuk telinga, bukan untuk mata. Hook harus selesai dalam dua detik. Satu gagasan per adegan. Setiap klaim dicek, tidak ada angka yang dikarang. Suara diisi otomatis, gambar stickman dirender, lalu file dijadwalkan ke Facebook Page dan Instagram. Kamu bisa setujui atau tolak dari HP lewat Telegram. Mulai dari lima video sehari. Ukur mana yang ditonton sampai akhir, lalu ulang yang berhasil. AI yang kerja, kamu yang punya arah. Simpan video ini kalau mau ikut alurnya.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kamu nggak perlu kamera untuk mulai unggah Reels.",
+      "teks_layar": "Tanpa kamera. Siap unggah.",
+      "pose": "idle",
+      "keyword": "TANPA KAMERA",
+      "latar": "hook full-text",
+      "image_query": ""
+    },
+    {
+      "id": 2,
+      "nama": "bukan_sihir",
+      "narasi": "Satu naskah, satu suara, dan gambar dari kode.",
+      "teks_layar": "Naskah + suara + kode",
+      "pose": "think",
+      "keyword": "WORKFLOW",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 3,
+      "nama": "riset",
+      "narasi": "Pilih topik yang punya rasa penasaran, buang yang berbahaya.",
+      "teks_layar": "Riset · Filter · Pilih",
+      "pose": "point",
+      "keyword": "FILTER",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 4,
+      "nama": "produksi",
+      "narasi": "Hook dua detik. Satu gagasan per adegan. Klaim dicek.",
+      "teks_layar": "Hook 2 detik",
+      "pose": "typing",
+      "keyword": "HOOK 2 DTK",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "AI yang kerja, kamu yang punya arah. Simpan video ini.",
+      "teks_layar": "Simpan video ini",
+      "pose": "cheer",
+      "keyword": "SIMPAN",
+      "latar": "",
+      "image_query": ""
+    }
+  ],
+  "caption": "Kamu nggak perlu kamera untuk mulai unggah Reels.\n\nWorkflow programmatic: riset, naskah, suara, render, jadwal.\nSimpan kalau mau dipraktekkan.\n\nMenurutmu, bagian mana yang paling susah?\n\n#KreatorAI #PoChai #ReelsIndonesia #FacelessContent #VideoAI",
+  "cta": "Simpan video ini.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#ReelsIndonesia",
+    "#FacelessContent",
+    "#VideoAI"
+  ],
+  "fakta_yang_wajib_dicek": [],
+  "is_ai_generated": true,
+  "cover_text": "Tanpa kamera, tetap unggah",
+  "image_query": "",
+  "llm_provider": "sample"
+}

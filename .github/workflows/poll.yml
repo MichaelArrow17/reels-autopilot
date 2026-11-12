@@ -1,0 +1,39 @@
+# Jendela approval 06:00–09:00 WITA saja (hemat menit Actions):
+# 22:00–23:40 UTC dan 00:00–00:40 UTC, setiap 20 menit = 12 run/hari.
+name: poll-telegram
+on:
+  schedule:
+    - cron: "0,20,40 22-23 * * *"
+    - cron: "0,20,40 0 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: reels-state
+  cancel-in-progress: false
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Poll
+        env:
+          PYTHONPATH: src
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+        run: python -m reels_autopilot poll
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update state setelah poll Telegram"
+          file_pattern: data/*.json
+          commit_user_name: reels-autopilot[bot]
+          commit_user_email: reels-autopilot[bot]@users.noreply.github.com
+        continue-on-error: true

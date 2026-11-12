@@ -1,0 +1,25 @@
+{
+  "catatan": "Bank topik evergreen niche Kreator AI. Tidak ada angka yang harus diklaim. Aman untuk diulang dengan angle baru setelah 6+ bulan. Campuran curiosity-gap untuk audiens Indonesia.",
+  "topics": [
+    {"judul": "Kenapa AI kadang ngarang fakta", "hook": "AI bisa kedengeran yakin, padahal lagi ngarang.", "angle": "Halusinasi LLM dijelaskan tanpa jargon, buat kreator yang mau cek fakta sebelum posting.", "tipe": "evergreen"},
+    {"judul": "Kenapa hook dua detik menentukan Reels", "hook": "Dua detik pertama memutuskan kamu ditonton atau dilewati.", "angle": "Retensi Reels untuk kreator Indonesia, tanpa janji views.", "tipe": "evergreen"},
+    {"judul": "Apa itu TTS dan kenapa suaranya makin natural", "hook": "Suara di Reels itu belum tentu orangnya yang ngomong.", "angle": "Text-to-speech untuk faceless content, plus etik label AI.", "tipe": "evergreen"},
+    {"judul": "Kenapa satu gagasan per adegan lebih gampang diingat", "hook": "Kalau satu layar penuh teks, penontonnya pergi.", "angle": "Prinsip storyboard explainer stickman.", "tipe": "evergreen"},
+    {"judul": "Cara cek fakta hasil AI sebelum diposting", "hook": "Jangan unggah angka yang kamu tidak bisa tunjuk sumbernya.", "angle": "Ritual cek fakta 3 langkah untuk kreator.", "tipe": "evergreen"},
+    {"judul": "Kenapa faceless content bisa tembus tanpa wajah", "hook": "Kamu tidak harus tampil di kamera untuk mulai unggah.", "angle": "Format explainer + suara + teks untuk pemula.", "tipe": "evergreen"},
+    {"judul": "Apa itu LLM, dijelaskan pakai analogi dapur", "hook": "LLM itu bukan otak, lebih mirip dapur yang banyak resep.", "angle": "Penjelasan awam, tanpa mitos kesadaran mesin.", "tipe": "evergreen"},
+    {"judul": "Kenapa prompt pendek kadang lebih jitu", "hook": "Prompt panjang tidak otomatis membuat jawaban lebih pintar.", "angle": "Satu instruksi jelas vs meracau.", "tipe": "evergreen"},
+    {"judul": "Kenapa video 60 detik sering lebih tahan ditonton", "hook": "Lebih panjang belum tentu lebih berkesan.", "angle": "Durasi ideal Reels explainer 45–90 detik.", "tipe": "evergreen"},
+    {"judul": "Apa bedanya AI gambar dan AI video buat kreator", "hook": "Gambar AI dan video AI itu dua alat, bukan satu tombol ajaib.", "angle": "Kapan pakai yang mana, tanpa merek berbayar wajib.", "tipe": "evergreen"},
+    {"judul": "Kenapa kreator perlu mirroring ke beberapa platform", "hook": "Video yang laku di Instagram belum tentu laku di X.", "angle": "Satu naskah, beberapa saluran, ukur yang bekerja.", "tipe": "evergreen"},
+    {"judul": "Apa itu token di ChatGPT, tanpa istilah merumitkan", "hook": "Kamu bayar dan dibatasi bukan per kata biasa, tapi per token.", "angle": "Penjelasan praktis untuk pengguna Indonesia.", "tipe": "evergreen"},
+    {"judul": "Kenapa caption Reels tetap penting meski ada suara", "hook": "Banyak orang nonton tanpa bunyi.", "angle": "Karaoke caption dan hook tertulis untuk retensi.", "tipe": "evergreen"},
+    {"judul": "Cara merancang CTA yang satu saja, bukan lima", "hook": "Kalau semua diminta, orang tidak melakukan apa-apa.", "angle": "Satu ajakan: simpan, komentar, atau follow.", "tipe": "evergreen"},
+    {"judul": "Kenapa label konten AI itu penting", "hook": "Kalau suaranya buatan, jangan pura-pura itu kamu.", "angle": "Kebijakan platform dan kepercayaan penonton.", "tipe": "evergreen"},
+    {"judul": "Apa itu workflow programmatic video", "hook": "Video berikutnya tidak harus dimulai dari nol di editor.", "angle": "Riset → naskah → suara → render → jadwal, diulang tiap hari.", "tipe": "evergreen"},
+    {"judul": "Kenapa tren harian wajib difilter, bukan langsung diikuti", "hook": "Tidak semua yang tren cocok jadi Reels kamu.", "angle": "Niche, safety, dan rasa penasaran sebelum produksi.", "tipe": "evergreen"},
+    {"judul": "Cara pakai Google Trends tanpa terjebak bola dan gosip", "hook": "Tren Indonesia isinya sering olahraga dan selebriti.", "angle": "Ambil sinyal, lalu saring ke niche kreator AI.", "tipe": "evergreen"},
+    {"judul": "Kenapa evergeen content tetap diunggah di tengah tren", "hook": "Video yang hanya hidup 48 jam tidak bisa menopang akun sendirian.", "angle": "Campuran 60/40 evergreen dan viral.", "tipe": "evergreen"},
+    {"judul": "Apa yang bisa dan tidak bisa diotomatisasi dari HP", "hook": "Hampir semua langkah bisa dari HP, kecuali render yang berat.", "angle": "Mode HP + bot: approve dari Telegram, mesin yang kerja.", "tipe": "evergreen"}
+  ]
+}

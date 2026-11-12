@@ -1,0 +1,68 @@
+# 06:30 WITA = 22:30 UTC — setelah jendela veto singkat
+name: produce
+on:
+  schedule:
+    - cron: "30 22 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Batas video (kosong = kuota harian)"
+        required: false
+permissions:
+  contents: write
+  models: read
+  actions: write
+concurrency:
+  group: reels-state
+  cancel-in-progress: false
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -r requirements.txt
+      - name: Poll Telegram lalu produksi
+        env:
+          PYTHONPATH: src
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_MODELS_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_MODELS_MODEL: ${{ vars.GITHUB_MODELS_MODEL || 'openai/gpt-4o-mini' }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PIPER_MODEL: ${{ vars.PIPER_MODEL }}
+        run: |
+          python -m reels_autopilot poll || true
+          LIMIT=""
+          if [ -n "${{ inputs.limit }}" ]; then LIMIT="--limit ${{ inputs.limit }}"; fi
+          python -m reels_autopilot produce $LIMIT
+      - name: Unggah MP4 (artifact, retensi 2 hari)
+        uses: actions/upload-artifact@v4
+        with:
+          name: reels-${{ github.run_id }}
+          path: data/jobs/**/*.mp4
+          if-no-files-found: warn
+          retention-days: 2
+      - name: Simpan state (JSON saja, tanpa media)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update state setelah produce"
+          file_pattern: data/*.json data/**/*.json
+          commit_user_name: reels-autopilot[bot]
+          commit_user_email: reels-autopilot[bot]@users.noreply.github.com
+        continue-on-error: true

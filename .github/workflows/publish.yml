@@ -1,0 +1,97 @@
+# Lima slot WITA (UTC+8):
+# 07:30 → 23:30 UTC, 12:00 → 04:00, 17:00 → 09:00, 19:00 → 11:00, 21:00 → 13:00
+name: publish
+on:
+  schedule:
+    - cron: "30 23 * * *"
+    - cron: "0 4 * * *"
+    - cron: "0 9 * * *"
+    - cron: "0 11 * * *"
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Nomor slot 1–5 (kosong = deteksi dari jam WITA)"
+        required: false
+permissions:
+  contents: write
+  actions: read
+  models: read
+concurrency:
+  group: reels-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -r requirements.txt
+      - name: Tentukan slot dan publish
+        env:
+          PYTHONPATH: src
+          DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION || 'v26.0' }}
+          GITHUB_RELEASES_REPO: ${{ vars.GITHUB_RELEASES_REPO || github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          VIDEO_HOST_CHAIN: ${{ vars.VIDEO_HOST_CHAIN || 'github_release,r2,catbox' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          INPUT_SLOT: ${{ inputs.slot }}
+        run: |
+          python -m reels_autopilot poll || true
+          if [ -n "$INPUT_SLOT" ]; then
+            SLOT="$INPUT_SLOT"
+          else
+            # jam WITA sekarang
+            H=$(TZ=Asia/Makassar date +%H)
+            M=$(TZ=Asia/Makassar date +%M)
+            HM=$((10#$H * 60 + 10#$M))
+            SLOT=1
+            # pilih slot terdekat yang sudah lewat ≤ 20 menit, else yang paling dekat
+            python - << 'PY' > /tmp/slot.txt
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("Asia/Makassar"))
+          slots = [(1,7,30),(2,12,0),(3,17,0),(4,19,0),(5,21,0)]
+          forced = os.environ.get("INPUT_SLOT")
+          if forced:
+              print(forced); raise SystemExit
+          minutes = now.hour*60+now.minute
+          best, bestd = 1, 10**9
+          for i,h,m in slots:
+              d = abs(minutes - (h*60+m))
+              if d < bestd:
+                  best, bestd = i, d
+          print(best)
+          PY
+            SLOT=$(cat /tmp/slot.txt)
+          fi
+          echo "Slot=$SLOT"
+          python -m reels_autopilot publish --slot "$SLOT"
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update state setelah publish"
+          file_pattern: data/*.json
+          commit_user_name: reels-autopilot[bot]
+          commit_user_email: reels-autopilot[bot]@users.noreply.github.com
+        continue-on-error: true

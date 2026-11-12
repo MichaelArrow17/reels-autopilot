@@ -1,0 +1,45 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Pipeline outputs (JSON state is tracked; media is not)
+data/jobs/**/*.mp3
+data/jobs/**/*.mp4
+data/jobs/**/*.wav
+data/jobs/**/*.jsonl
+data/dry_run/
+data/cache/
+data/state.json
+!data/.gitkeep
+!data/evergreen_bank.json
+!data/sample_script.json
+!data/past_topics.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Build leftovers & inspection frames (sampel MP4 tetap dilacak)
+samples/_build/
+samples/frames/
+data/provider_status.json
+data/cache/
+.pytest_cache/
