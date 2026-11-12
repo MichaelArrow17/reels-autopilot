@@ -18,14 +18,15 @@ build/
 .coverage
 htmlcov/
 
-# Pipeline outputs (JSON state is tracked; media is not)
+# Pipeline outputs (JSON state is tracked; media is not).
+# data/state.json dan data/provider_status.json DI-COMMIT agar antrian,
+# approval, dan cooldown failover persist di GitHub Actions.
 data/jobs/**/*.mp3
 data/jobs/**/*.mp4
 data/jobs/**/*.wav
 data/jobs/**/*.jsonl
 data/dry_run/
 data/cache/
-data/state.json
 !data/.gitkeep
 !data/evergreen_bank.json
 !data/sample_script.json
@@ -40,7 +41,6 @@ data/state.json
 # Build leftovers & inspection frames (sampel MP4 tetap dilacak)
 samples/_build/
 samples/frames/
-data/provider_status.json
 data/cache/
 .pytest_cache/
 

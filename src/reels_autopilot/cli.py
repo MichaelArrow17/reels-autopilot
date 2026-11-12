@@ -83,7 +83,19 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "publish":
         res = pipe.publish_slot(args.slot, args.date)
         print(json.dumps(res, ensure_ascii=False, indent=2, default=str))
-        return 0 if res.get("ok") or res.get("reason") in {"rejected", "skipped", "published", "paused"} else 1
+        skip_ok = {
+            "rejected",
+            "skipped",
+            "published",
+            "paused",
+            "no_video",
+            "meta_secrets_missing",
+        }
+        if res.get("ok") or res.get("reason") in skip_ok:
+            if not res.get("ok"):
+                print(f"Publish dilewati: {res.get('reason')}")
+            return 0
+        return 1
 
     if args.cmd == "poll":
         acts = pipe.tg.poll()

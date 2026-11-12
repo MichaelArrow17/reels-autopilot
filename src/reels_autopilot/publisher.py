@@ -83,6 +83,26 @@ class Publisher:
             log.info("DRY_RUN publish tertulis di %s", out)
             return result
 
+        missing_fb = dest_fb and (not s.fb_page_id or not s.fb_page_token)
+        missing_ig = dest_ig and (not s.ig_user_id or not s.ig_token)
+        if missing_fb:
+            log.warning("Publish FB dilewati: FB_PAGE_ID / FB_PAGE_TOKEN belum diisi.")
+            result["fb"] = {"skipped": True, "reason": "missing_fb_secrets"}
+            dest_fb = False
+        if missing_ig:
+            log.warning("Publish IG dilewati: IG_USER_ID / IG_TOKEN belum diisi.")
+            result["ig"] = {"skipped": True, "reason": "missing_ig_secrets"}
+            dest_ig = False
+        if not dest_fb and not dest_ig:
+            result["skipped"] = True
+            result["reason"] = "meta_secrets_missing"
+            log.warning(
+                "Publish dilewati: secret Meta belum diisi "
+                "(FB_PAGE_ID, FB_PAGE_TOKEN, IG_USER_ID, IG_TOKEN). "
+                "Video tidak diunggah."
+            )
+            return result
+
         if dest_fb:
             result["fb"] = self.fb_reel(mp4, caption, when_unix=when_unix, video_state=video_state)
         if dest_ig:

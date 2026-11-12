@@ -40,11 +40,13 @@ class TelegramBot:
         )
 
     def _call(self, method: str, **kwargs) -> dict:
-        if self.settings.dry_run or not self.configured:
+        # DRY_RUN hanya menahan publish Meta. Notifikasi approval tetap dikirim
+        # jika bot sudah dikonfigurasi, supaya preview sampai ke Telegram.
+        if not self.configured:
             dest = self.settings.dry_run_dir / f"telegram_{method}_{datetime.now().strftime('%H%M%S%f')}.json"
             dest.write_text(json.dumps({"method": method, **_safe(kwargs)}, ensure_ascii=False, indent=2), encoding="utf-8")
-            log.info("DRY_RUN Telegram %s → %s", method, dest)
-            return {"ok": True, "dry_run": True, "path": str(dest)}
+            log.info("Telegram belum dikonfigurasi; %s ditulis ke %s", method, dest)
+            return {"ok": False, "reason": "not_configured", "path": str(dest)}
         url = API.format(token=self.settings.telegram_bot_token, method=method)
         files = kwargs.pop("files", None)
         if files:
@@ -59,19 +61,20 @@ class TelegramBot:
 
     def send(self, text: str, *, chat_id: str | None = None, parse_mode: str | None = None) -> dict:
         cid = chat_id or self.chat_id
-        if not cid and not self.settings.dry_run:
+        if not cid:
             log.warning("TELEGRAM_CHAT_ID kosong, pesan tidak terkirim")
             return {"ok": False, "reason": "no chat_id"}
-        payload: dict[str, Any] = {"chat_id": cid or "DRY_RUN", "text": text}
+        payload: dict[str, Any] = {"chat_id": cid, "text": text}
         if parse_mode:
             payload["parse_mode"] = parse_mode
         return self._call("sendMessage", **payload)
 
     def send_video(self, mp4: Path, caption: str = "", *, chat_id: str | None = None) -> dict:
         cid = chat_id or self.chat_id
-        if self.settings.dry_run or not self.configured:
+        if not self.configured:
             return self._call("sendVideo", chat_id=cid or "DRY_RUN", caption=caption, path=str(mp4))
         if not cid:
+            log.warning("TELEGRAM_CHAT_ID kosong, video tidak terkirim")
             return {"ok": False, "reason": "no chat_id"}
         with Path(mp4).open("rb") as f:
             return self._call(
@@ -121,10 +124,6 @@ class TelegramBot:
         actions: list[dict] = []
         if not self.configured:
             log.info("Telegram tidak dikonfigurasi; poll dilewati")
-            return actions
-        if self.settings.dry_run:
-            # tetap process? tidak ada update nyata
-            log.info("DRY_RUN poll: tidak memanggil getUpdates")
             return actions
         offset = self.state.telegram_offset()
         r = requests.get(

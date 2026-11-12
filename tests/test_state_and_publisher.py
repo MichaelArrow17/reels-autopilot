@@ -53,3 +53,21 @@ def test_publisher_dry_run_writes_file_no_network(tmp_path, monkeypatch):
     assert "tes caption" in text
     assert "Profil pribadi TIDAK didukung" in text
     path.unlink(missing_ok=True)
+
+
+def test_publisher_skips_when_meta_secrets_missing(tmp_path):
+    s = Settings()
+    s.dry_run = False
+    s.fb_page_id = ""
+    s.fb_page_token = ""
+    s.ig_user_id = ""
+    s.ig_token = ""
+    mp4 = tmp_path / "x.mp4"
+    mp4.write_bytes(b"fake")
+    result = Publisher(s).publish(mp4, caption="tes", dest_fb=True, dest_ig=True)
+    assert result["skipped"] is True
+    assert result["reason"] == "meta_secrets_missing"
+    assert result["fb"]["reason"] == "missing_fb_secrets"
+    assert result["ig"]["reason"] == "missing_ig_secrets"
+    # tidak boleh menandai sukses publish
+    assert result.get("dry_run") is False
