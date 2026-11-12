@@ -46,3 +46,7 @@ data/cache/
 
 # Local connector/token files — never commit
 .secrets/
+
+# Panduan cadangan berisi ID akun — jangan di-commit ke repo publik
+docs/Panduan_Reels_Autopilot.pdf
+docs/_panduan_build/
