@@ -1,75 +1,76 @@
 {
-  "judul": "Cara Pakai AI Lebih Maksimal",
-  "hook": "Mau coba pakai AI tapi jawabannya sering kaku dan nggak sesuai?",
-  "angle": "Sudut kreator Indonesia: cara praktis bikin jawaban AI lebih alami dan tepat sasaran",
+  "judul": "cara pakai ai",
+  "hook": "cara pakai ai?",
+  "angle": "Sudut kreator Indonesia: cara pakai ai",
   "bahasa": "id",
   "durasi_target_detik": 35,
-  "narasi_penuh": "Mau coba pakai AI tapi jawabannya sering kaku dan nggak sesuai? Masalahnya, kamu mungkin cuma ngetik perintah pendek tanpa konteks. AI jadi bingung dan asal jawab seadanya. Solusinya simpel: kasih AI peran dulu. Contohnya, 'Bertindaklah sebagai penulis naskah santai'. Lalu sebutkan siapa penontonmu dan seperti apa hasil akhir yang kamu mau. Jawabannya bakal jauh lebih spesifik dan alami! Praktikkan cara ini sekarang juga. Follow Po Chai untuk tips AI seru lainnya!",
+  "narasi_penuh": "cara pakai ai?. Banyak yang sudah mendengar soal “cara pakai ai”, tapi jarang dijelaskan pelan. Kita mulai dari rasa penasaran, bukan definisi. Satu gagasan per adegan, biar mudah diingat. Klaim hanya yang bisa dicek — tidak ada angka yang dikarang. Visualnya sederhana: stickman, teks di layar, suara yang jelas. Tujuannya biar kamu tahan nonton sampai akhir, lalu bisa coba sendiri. Kalau nyambung, simpan videonya. AI bisa bantu naskah, arah tetap di tangan kamu.",
   "adegan": [
     {
       "id": 1,
       "nama": "hook",
-      "narasi": "Mau coba pakai AI tapi jawabannya sering kaku dan nggak sesuai?",
-      "teks_layar": "Hasil AI Kaku & Nggak Sesuai?",
-      "pose": "shrug",
-      "keyword": "hasil ai kaku",
-      "latar": "kamar komputer",
-      "image_query": "stickman confused looking at computer screen with robotic output"
+      "narasi": "cara pakai ai?",
+      "teks_layar": "cara pakai ai?",
+      "pose": "idle",
+      "keyword": "HOOK",
+      "latar": "",
+      "image_query": ""
     },
     {
       "id": 2,
-      "nama": "konflik",
-      "narasi": "Masalahnya, kamu mungkin cuma ngetik perintah pendek tanpa konteks. AI jadi bingung dan asal jawab seadanya.",
-      "teks_layar": "Cuma Ngetik Perintah Pendek?",
-      "pose": "typing",
-      "keyword": "prompt pendek tanpa konteks",
-      "latar": "meja kerja",
-      "image_query": "stickman typing short prompt on keyboard"
+      "nama": "konteks",
+      "narasi": "Hook: taruh penonton di dalam pertanyaan.",
+      "teks_layar": "Bukan sihir",
+      "pose": "think",
+      "keyword": "WORKFLOW",
+      "latar": "",
+      "image_query": ""
     },
     {
       "id": 3,
-      "nama": "peran_ai",
-      "narasi": "Solusinya simpel: kasih AI peran dulu. Contohnya, 'Bertindaklah sebagai penulis naskah santai'.",
-      "teks_layar": "Kasih AI Peran Spesifik",
+      "nama": "konflik",
+      "narasi": "Konflik: apa yang biasanya disalahpahami.",
+      "teks_layar": "Satu gagasan, satu adegan",
       "pose": "point",
-      "keyword": "kasih ai peran",
-      "latar": "ruang ide",
-      "image_query": "stickman pointing to text prompt rule"
+      "keyword": "1 IDE",
+      "latar": "",
+      "image_query": ""
     },
     {
       "id": 4,
-      "nama": "detail_konteks",
-      "narasi": "Lalu sebutkan siapa penontonmu dan seperti apa hasil akhir yang kamu mau. Jawabannya bakal jauh lebih spesifik dan alami!",
-      "teks_layar": "Jelaskan Target & Gaya Bahasa",
-      "pose": "think",
-      "keyword": "detail konteks prompt",
-      "latar": "ruang ide",
-      "image_query": "stickman thinking with lightbulb and checklist"
+      "nama": "payoff",
+      "narasi": "Payoff: satu langkah yang bisa langsung dicoba.",
+      "teks_layar": "Cek fakta, baru tayang",
+      "pose": "typing",
+      "keyword": "CEK FAKTA",
+      "latar": "",
+      "image_query": ""
     },
     {
       "id": 5,
       "nama": "cta",
-      "narasi": "Praktikkan cara ini sekarang juga. Follow Po Chai untuk tips AI seru lainnya!",
-      "teks_layar": "Follow buat tips AI seru!",
+      "narasi": "Simpan video ini kalau mau ikut alurnya.",
+      "teks_layar": "Simpan · Follow",
       "pose": "cheer",
-      "keyword": "follow po chai",
-      "latar": "studio",
-      "image_query": "stickman cheering happily with phone"
+      "keyword": "SIMPAN",
+      "latar": "",
+      "image_query": ""
     }
   ],
-  "caption": "Hasil AI kamu sering kaku? Coba ubah cara bikin perintahnya pakai 1 trik simpel ini! 🤖✨\n\nSimpan video ini biar nggak lupa saat mau ngetik prompt berikutnya.\n\n#KreatorAI #TipsAI #CaraPakaiAI #BelajarAI #PoChai",
-  "cta": "Follow Po Chai untuk tips AI seru lainnya!",
+  "caption": "cara pakai ai?\n\nExplainer singkat untuk kreator Indonesia. Tanpa angka karangan.\nSimpan kalau mau dipraktekkan.\n\nMenurutmu, bagian mana yang paling susah: naskah, suara, atau jadwal?\n\n#KreatorAI #PoChai #ReelsIndonesia #FacelessContent #VideoAI",
+  "cta": "Simpan video ini.",
   "hashtag": [
     "#KreatorAI",
-    "#TipsAI",
-    "#CaraPakaiAI",
-    "#BelajarAI"
+    "#PoChai",
+    "#ReelsIndonesia",
+    "#FacelessContent",
+    "#VideoAI"
   ],
   "fakta_yang_wajib_dicek": [
-    "Tidak ada klaim angka spesifik yang perlu diverifikasi ulang."
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
   ],
   "is_ai_generated": true,
-  "cover_text": "Trik Bikin Jawaban AI Nggak Kaku!",
-  "image_query": "",
-  "llm_provider": "gemini"
+  "cover_text": "cara pakai ai?",
+  "image_query": "dark studio creative desk indonesia",
+  "llm_provider": "template"
 }

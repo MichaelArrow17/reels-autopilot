@@ -5,6 +5,12 @@
       "tanggal": "2026-11-12",
       "angle": "Sudut kreator Indonesia: cara praktis bikin jawaban AI lebih alami dan tepat sasaran",
       "slot": 1
+    },
+    {
+      "judul": "cara pakai ai",
+      "tanggal": "2026-11-12",
+      "angle": "Sudut kreator Indonesia: cara pakai ai",
+      "slot": 1
     }
   ],
   "days": {
@@ -460,7 +466,7 @@
           "id": "2026-11-12-s1-0d1f7f",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Cara Pakai AI Lebih Maksimal",
+          "judul": "cara pakai ai",
           "hook": "cara pakai ai?",
           "topic": {
             "judul": "cara pakai ai",
@@ -496,14 +502,14 @@
           "created_at": "2026-11-12T21:46:05+08:00",
           "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-12/slot1/reel.mp4",
           "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-12/slot1/script.json",
-          "caption": "Kenapa jawaban AI sering kaku dan nggak sesuai harapan?\nMasalahnya ada di perintah yang terlalu pendek tanpa konteks. Solusinya simpel, cukup kasih AI peran spesifik dan tentukan target penontonmu.\nFollow untuk part berikutnya\nPeran apa yang paling sering kamu berikan ke AI?\n#TipsAI #BelajarAI #ArtificialIntelligence #ProductivityHack #Teknologi",
+          "caption": "cara pakai ai?\nExplainer singkat, satu gagasan per adegan. Tanpa angka yang dikarang.\nSimpan video ini.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #ReelsIndonesia #FacelessContent #VideoAI",
           "tts_provider": "edge_tts",
-          "llm_provider": "gemini",
+          "llm_provider": "template",
           "qc_ok": true,
           "qc": {
             "lufs": -14.0,
             "peak": -0.5,
-            "duration": 34.536,
+            "duration": 37.166667,
             "errors": []
           }
         },
@@ -669,8 +675,8 @@
     }
   },
   "telegram": {
-    "last_update_id": 0,
-    "chat_id": ""
+    "last_update_id": 966393059,
+    "chat_id": "7568757522"
   },
   "paused": false,
   "paused_until": null

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-11-12T13:48:03.721667+00:00",
+  "updated_at": "2026-11-12T14:19:28.994108+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
       "provider_id": "gemini",
-      "consecutive_failures": 0,
-      "last_error": null,
-      "last_error_at": null,
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: gemini gemini-3.1-flash-lite HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+      "last_error_at": "2026-11-12T14:19:04.739504+00:00",
       "last_success_at": "2026-11-12T13:47:38.548809+00:00",
-      "cooldown_until": null,
+      "cooldown_until": "2026-11-12T14:24:04.739521+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 2,
-      "failure_count": 0
+      "failure_count": 1
     },
     "tts:edge_tts": {
       "category": "tts",
@@ -20,11 +20,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T13:47:54.786693+00:00",
+      "last_success_at": "2026-11-12T14:19:20.703187+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 1,
+      "success_count": 2,
       "failure_count": 0
     },
     "images:openverse": {
@@ -32,26 +32,26 @@
       "provider_id": "openverse",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: openverse: tidak ada hasil berlisensi komersial",
-      "last_error_at": "2026-11-12T13:48:03.015556+00:00",
+      "last_error_at": "2026-11-12T14:19:28.434650+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T13:53:03.015576+00:00",
+      "cooldown_until": "2026-11-12T14:24:28.434669+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 1
+      "failure_count": 2
     },
     "images:wikimedia": {
       "category": "images",
       "provider_id": "wikimedia",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: wikimedia: tidak ada berkas berlisensi komersial yang cocok",
-      "last_error_at": "2026-11-12T13:48:03.674214+00:00",
+      "last_error_at": "2026-11-12T14:19:28.931530+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T13:53:03.674233+00:00",
+      "cooldown_until": "2026-11-12T14:24:28.931548+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 1
+      "failure_count": 2
     },
     "images:local": {
       "category": "images",
@@ -59,11 +59,37 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T13:48:03.721588+00:00",
+      "last_success_at": "2026-11-12T14:19:28.994061+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 1,
+      "success_count": 2,
+      "failure_count": 0
+    },
+    "llm:github_models": {
+      "category": "llm",
+      "provider_id": "github_models",
+      "consecutive_failures": 1,
+      "last_error": "ConnectionError: HTTPSConnectionPool(host='models.inference.ai.azure.com', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='models.inference.ai.azure.com', port=443): Failed to resolve 'models.inference.ai.azure.com' ([Errno -2] Name or service not known)\"))",
+      "last_error_at": "2026-11-12T14:19:04.914538+00:00",
+      "last_success_at": null,
+      "cooldown_until": "2026-11-12T14:24:04.914553+00:00",
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 0,
+      "failure_count": 1
+    },
+    "llm:template": {
+      "category": "llm",
+      "provider_id": "template",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "last_success_at": "2026-11-12T14:19:04.918207+00:00",
+      "cooldown_until": null,
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 2,
       "failure_count": 0
     }
   }
