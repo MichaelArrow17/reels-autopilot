@@ -97,7 +97,7 @@ jobs:
           PYTHONPATH: src
           DRY_RUN: ${{ steps.dry.outputs.value }}
           ALLOW_RERENDER: ${{ inputs.artifact_run_id != '' && 'false' || 'true' }}
-          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'required' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}

@@ -45,6 +45,13 @@ def main(argv: list[str] | None = None) -> int:
     p_pub.add_argument("--slot", type=int, required=True, choices=[s["id"] for s in SLOTS])
     p_pub.add_argument("--date", default=None)
 
+    p_h = sub.add_parser("handoff", help="Kirim paket share FB ke Telegram (tanpa publish ulang)")
+    p_h.add_argument("--slot", type=int, required=True, choices=[s["id"] for s in SLOTS])
+    p_h.add_argument("--date", default=None)
+    p_h.add_argument("--mp4", default=None, help="Path MP4 jika tidak ada di job dir")
+    p_h.add_argument("--permalink", default=None)
+    p_h.add_argument("--chat-id", default=None)
+
     sub.add_parser("poll", help="Ambil perintah Telegram (getUpdates)")
 
     p_once = sub.add_parser("run-once", help="Satu video end-to-end (DRY_RUN)")
@@ -80,6 +87,35 @@ def main(argv: list[str] | None = None) -> int:
                            "mp4": v.get("mp4"), "qc_ok": v.get("qc_ok")} for v in out],
                          ensure_ascii=False, indent=2))
         return 0
+
+    if args.cmd == "handoff":
+        from pathlib import Path as _P
+        date = args.date or today_wita(settings)
+        v = pipe.state.video_by_slot(args.slot, date)
+        if not v:
+            print(json.dumps({"ok": False, "reason": "no_video", "slot": args.slot, "date": date}, ensure_ascii=False))
+            return 1
+        mp4 = _P(args.mp4) if args.mp4 else _P(v.get("mp4") or "")
+        permalink = args.permalink or ((v.get("publish") or {}).get("ig") or {}).get("permalink")
+        public_url = ((v.get("publish") or {}).get("host") or {}).get("url")
+        res = pipe.tg.send_fb_handoff(
+            mp4=mp4 if mp4.exists() else None,
+            caption=v.get("caption") or "",
+            permalink=permalink,
+            public_url=public_url,
+            chat_id=args.chat_id,
+        )
+        # jangan cetak token; parts boleh ada error text
+        safe = {"ok": res.get("ok"), "parts": []}
+        for part in res.get("parts") or []:
+            safe["parts"].append({
+                "ok": part.get("ok"),
+                "reason": part.get("reason"),
+                "error": part.get("error"),
+                "message_id": ((part.get("result") or {}).get("message_id") if isinstance(part.get("result"), dict) else None),
+            })
+        print(json.dumps(safe, ensure_ascii=False, indent=2))
+        return 0 if res.get("ok") else 1
 
     if args.cmd == "publish":
         res = pipe.publish_slot(args.slot, args.date)

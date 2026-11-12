@@ -99,8 +99,8 @@ class Pipeline:
         if self.settings.approval_mode == "required":
             selected = self.state.day(date).get("selected")
             if not selected:
-                log.info("Mode required: belum ada pilihan, produce ditunda")
-                return []
+                # ACC wajib hanya sebelum publish, bukan sebelum produksi.
+                log.info("Mode required: belum ada pilihan topik, produce memakai shortlist")
         vids = list(self.state.videos(date))
         if not vids:
             # belum ada antrian — jalankan scout dulu
@@ -284,16 +284,30 @@ class Pipeline:
         v["publish"] = {k: result.get(k) for k in ("dry_run", "fb", "ig", "host", "dry_run_path")}
         v["published_at"] = datetime.now(self.settings.tz).isoformat(timespec="seconds")
         self.state.upsert_video(v, date)
-        prefix = "DRY-RUN " if self.settings.dry_run else ""
-        lines = [
-            f"{prefix}Slot {slot} ({v.get('slot_label')} WITA) — {v.get('judul')}",
-            f"Status: {v['status']}",
-        ]
         permalink = (result.get("ig") or {}).get("permalink") if isinstance(result.get("ig"), dict) else None
-        if permalink:
-            lines.append(str(permalink))
-        lines.append("cek FB Po Chai")
-        self.tg.send("\n".join(lines))
+        public_url = None
+        if isinstance(result.get("host"), dict):
+            public_url = result["host"].get("url")
+        try:
+            if self.settings.dry_run:
+                lines = [
+                    f"DRY-RUN Slot {slot} ({v.get('slot_label')} WITA) — {v.get('judul')}",
+                    f"Status: {v['status']}",
+                ]
+                if permalink:
+                    lines.append(str(permalink))
+                self.tg.send("\n".join(lines))
+            else:
+                handoff = self.tg.send_fb_handoff(
+                    mp4=mp4,
+                    caption=v.get("caption") or "",
+                    permalink=permalink,
+                    public_url=public_url,
+                )
+                if not handoff.get("ok"):
+                    log.error("Paket share FB ke Telegram gagal (publish IG tetap sukses): %s", handoff)
+        except Exception as e:
+            log.error("Telegram setelah publish tidak boleh menggagalkan tayang: %s", e)
         return {"ok": True, "video": v, "publish": result}
 
     def run_once(self, *, topic: dict | None = None) -> dict:

@@ -1,8 +1,8 @@
 # reels-autopilot — Po Chai / Kreator AI
 
-Pipeline **gratis** dan **otonom** untuk Reels Instagram (auto-share ke profil Facebook): riset topik → naskah → TTS → render 9:16 → QC → (opsional) veto di Telegram → publish. Jalan di **GitHub Actions**, tanpa PC/VPS.
+Pipeline **gratis** dan **otonom** untuk Reels Instagram: riset topik → naskah → TTS → render 9:16 → QC → **ACC di Telegram** → publish ke IG @achmad_radinal94, lalu paket share manual ke profil Facebook Po Chai. Jalan di **GitHub Actions**, tanpa PC/VPS.
 
-Default **`DRY_RUN=true`**: tidak ada yang diposting.
+Variable repo **`DRY_RUN=false`** saat pipeline resmi jalan (5 slot/hari). Lokal, default kode tetap aman jika `DRY_RUN` tidak diisi. **`APPROVAL_MODE=required`**: tanpa ACC/OK, job publish tidak menayangkan Reel.
 
 Baca dulu:
 
@@ -12,7 +12,7 @@ Baca dulu:
 
 ## Batasan Meta
 
-Jalur utama: Graph API ke IG professional **@achmad_radinal94** (`IG_GRAPH_HOST`, default `graph.facebook.com` / v21.0; token Facebook Login for Business). Profil Facebook **Po Chai** menerima Reel lewat **auto-share IG**. Facebook Page tidak dipakai. Token di-health-check mingguan; auto-refresh butuh `FB_APP_SECRET` + `GH_PAT`.
+Jalur utama: Graph API ke IG professional **@achmad_radinal94** (`IG_GRAPH_HOST`, default `graph.facebook.com` / v21.0; token Facebook Login for Business). Meta API tidak bisa posting ke profil pribadi, dan auto-share IG tidak menyala untuk Reel yang dipublish lewat API — setelah tayang, bot mengirim MP4 + caption siap salin ke Telegram untuk di-share ke profil **Po Chai**. Facebook Page tidak dipakai. Token SYSTEM_USER di-health-check mingguan.
 
 ## Tes yang sudah jalan di box (12 Nov 2026, WITA)
 

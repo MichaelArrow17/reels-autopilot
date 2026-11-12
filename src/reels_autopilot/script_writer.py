@@ -66,6 +66,85 @@ def enforce_script_budget(script: dict, max_words: int = TARGET_WORDS_MAX) -> di
     return script
 
 
+
+def is_thin_hook(hook: str) -> bool:
+    """Hook tipis: kosong atau kurang dari 8 kata (mis. hanya 'cara pakai ai?')."""
+    words = re.findall(r"\w+", hook or "", flags=re.UNICODE)
+    return len(words) < 8
+
+
+def enrich_hook_line(hook: str, judul: str | None = None) -> str:
+    """Baris hook caption: pertahankan yang sudah utuh, perkaya yang hanya judul pendek."""
+    raw = (hook or "").strip() or (judul or "").strip()
+    if raw and not is_thin_hook(raw):
+        if raw[-1] not in ".!?…":
+            raw = raw + "."
+        return raw
+    topic = (judul or hook or "AI").strip()
+    topic = re.sub(r"[?!.]+$", "", topic).strip() or "AI"
+    # jangan mengarang fakta; bungkus topik jadi hook rasa penasaran
+    return f"Masih bingung soal {topic}? Ini cara praktisnya, tanpa angka yang dikarang."
+
+
+def template_value_lines(topic: str = "") -> list[str]:
+    return [
+        "Explainer singkat: satu gagasan per adegan, klaim hanya yang bisa dicek.",
+        "Alurnya sederhana — kamu yang tetap pegang arah, AI cuma bantu eksekusi.",
+    ]
+
+
+def template_hashtags(
+    judul: str = "",
+    hook: str = "",
+    existing: list[str] | None = None,
+) -> list[str]:
+    """3–5 hashtag relevan, utamakan bahasa Indonesia."""
+    text = f"{judul} {hook}".lower()
+    out: list[str] = []
+
+    def add(tag: str) -> None:
+        tag = (tag or "").strip()
+        if not tag:
+            return
+        if not tag.startswith("#"):
+            tag = "#" + tag
+        if tag not in out and len(out) < 5:
+            out.append(tag)
+
+    for t in existing or []:
+        add(t)
+    for t in ("#KreatorAI", "#PoChai", "#ReelsIndonesia"):
+        add(t)
+    extras: list[str] = []
+    if any(k in text for k in ("ai", "chatgpt", "gemini", "llm", "kecerdasan")):
+        extras += ["#TipsAI", "#BelajarAI"]
+    if any(k in text for k in ("reels", "konten", "kreator", "faceless", "video", "caption", "hook")):
+        extras.append("#KontenKreator")
+    extras += ["#TipsKonten", "#BelajarAI", "#TipsAI", "#KontenKreator"]
+    for t in extras:
+        add(t)
+    return out[:5]
+
+
+def build_template_caption(
+    *,
+    hook: str = "",
+    judul: str = "",
+    cta: str | None = None,
+    hashtag: list[str] | None = None,
+) -> str:
+    """Caption cadangan: hook + 1–2 baris nilai + CTA + 3–5 hashtag."""
+    hook_line = enrich_hook_line(hook, judul)
+    values = template_value_lines(judul or hook)
+    cta_line = (cta or "Simpan video ini, atau follow buat tip berikutnya.").strip()
+    tags = template_hashtags(judul, hook, hashtag)
+    parts = [hook_line, "", values[0]]
+    if len(values) > 1:
+        parts.append(values[1])
+    parts += ["", cta_line, "", " ".join(tags)]
+    return "\n".join(parts)
+
+
 class ScriptWriter:
     def __init__(self, settings: Settings | None = None, router: ProviderRouter | None = None):
         self.settings = settings or get_settings()
@@ -206,13 +285,7 @@ def fallback_script(topic: dict) -> dict:
         {"id": 4, "nama": "payoff", "narasi": beats[2] if len(beats) > 2 else "", "teks_layar": "Cek fakta, baru tayang", "pose": "typing", "keyword": "CEK FAKTA", "latar": "", "image_query": ""},
         {"id": 5, "nama": "cta", "narasi": "Simpan video ini kalau mau ikut alurnya.", "teks_layar": "Simpan · Follow", "pose": "cheer", "keyword": "SIMPAN", "latar": "", "image_query": ""},
     ]
-    caption = (
-        f"{hook}\n\n"
-        "Explainer singkat untuk kreator Indonesia. Tanpa angka karangan.\n"
-        "Simpan kalau mau dipraktekkan.\n\n"
-        "Menurutmu, bagian mana yang paling susah: naskah, suara, atau jadwal?\n\n"
-        "#KreatorAI #PoChai #ReelsIndonesia #FacelessContent #VideoAI"
-    )
+    caption = build_template_caption(hook=hook, judul=judul, cta="Simpan video ini, atau follow buat tip berikutnya.")
     return enforce_script_budget({
         "judul": judul,
         "hook": hook,
@@ -222,8 +295,8 @@ def fallback_script(topic: dict) -> dict:
         "narasi_penuh": narasi,
         "adegan": adegan,
         "caption": caption,
-        "cta": "Simpan video ini.",
-        "hashtag": ["#KreatorAI", "#PoChai", "#ReelsIndonesia", "#FacelessContent", "#VideoAI"],
+        "cta": "Simpan video ini, atau follow buat tip berikutnya.",
+        "hashtag": template_hashtags(judul, hook),
         "fakta_yang_wajib_dicek": topic.get("fakta_yang_wajib_dicek") or [],
         "is_ai_generated": True,
         "cover_text": hook if len(hook.split()) <= 8 else " ".join(hook.split()[:6]),
@@ -234,17 +307,22 @@ def fallback_script(topic: dict) -> dict:
 
 def fallback_captions(script: dict) -> dict:
     hook = script.get("hook") or script.get("judul") or "Tonton sampai akhir."
+    judul = script.get("judul") or hook
+    hook_line = enrich_hook_line(hook, judul)
+    values = template_value_lines(judul)
+    tags = template_hashtags(judul, hook, script.get("hashtag"))
+    cta = script.get("cta") or "Simpan video ini, atau follow buat tip berikutnya."
     return {
         "varian": [
             {
-                "baris1": hook[:90],
-                "isi": "Explainer singkat, satu gagasan per adegan. Tanpa angka yang dikarang.",
-                "cta": script.get("cta") or "Simpan video ini.",
+                "baris1": hook_line[:90],
+                "isi": " ".join(values),
+                "cta": cta,
                 "pertanyaan": "Bagian mana yang mau kamu coba dulu?",
-                "hashtag": script.get("hashtag") or ["#KreatorAI", "#PoChai"],
+                "hashtag": tags,
             }
         ],
-        "cover": script.get("cover_text") or hook,
+        "cover": script.get("cover_text") or hook_line,
         "komentar_pin": "Pertanyaan? Tulis di komentar, bro.",
         "llm_provider": "template",
     }

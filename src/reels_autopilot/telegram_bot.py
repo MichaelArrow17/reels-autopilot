@@ -20,6 +20,31 @@ from reels_autopilot.state import State, today_wita
 
 log = logging.getLogger("reels.tg")
 API = "https://api.telegram.org/bot{token}/{method}"
+TG_VIDEO_MAX_BYTES = 50 * 1024 * 1024
+FB_HANDOFF_VIDEO_CAPTION = "Siap share ke FB Po Chai"
+FB_HANDOFF_HOWTO = (
+    "Tahan video > Bagikan/Share > Facebook > Reels "
+    "(atau simpan ke galeri lalu buka FB > Reels > pilih video), tempel caption, Bagikan."
+)
+
+
+def html_escape(text: str) -> str:
+    return (text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def fb_handoff_text(caption: str, permalink: str | None = None) -> str:
+    """Pesan 2: caption siap salin (blok monospace) + cara share + permalink IG."""
+    body = html_escape((caption or "").strip() or "(caption kosong)")
+    lines = [
+        "Caption siap tempel ke FB Po Chai (ketuk blok di bawah, lalu salin):",
+        "",
+        f"<pre><code>{body}</code></pre>",
+        "",
+        html_escape(FB_HANDOFF_HOWTO),
+    ]
+    if permalink:
+        lines.extend(["", html_escape(str(permalink))])
+    return "\n".join(lines)
 
 
 class TelegramBot:
@@ -69,10 +94,26 @@ class TelegramBot:
             payload["parse_mode"] = parse_mode
         return self._call("sendMessage", **payload)
 
-    def send_video(self, mp4: Path, caption: str = "", *, chat_id: str | None = None) -> dict:
+    def send_video(
+        self,
+        mp4: Path,
+        caption: str = "",
+        *,
+        chat_id: str | None = None,
+        supports_streaming: bool = True,
+    ) -> dict:
         cid = chat_id or self.chat_id
+        extra: dict[str, Any] = {}
+        if supports_streaming:
+            extra["supports_streaming"] = "true"
         if not self.configured:
-            return self._call("sendVideo", chat_id=cid or "DRY_RUN", caption=caption, path=str(mp4))
+            return self._call(
+                "sendVideo",
+                chat_id=cid or "DRY_RUN",
+                caption=caption,
+                path=str(mp4),
+                **extra,
+            )
         if not cid:
             log.warning("TELEGRAM_CHAT_ID kosong, video tidak terkirim")
             return {"ok": False, "reason": "no chat_id"}
@@ -82,7 +123,103 @@ class TelegramBot:
                 chat_id=cid,
                 caption=caption[:1024],
                 files={"video": (Path(mp4).name, f, "video/mp4")},
+                **extra,
             )
+
+    def send_document(self, path: Path, caption: str = "", *, chat_id: str | None = None) -> dict:
+        cid = chat_id or self.chat_id
+        if not self.configured:
+            return self._call("sendDocument", chat_id=cid or "DRY_RUN", caption=caption, path=str(path))
+        if not cid:
+            log.warning("TELEGRAM_CHAT_ID kosong, dokumen tidak terkirim")
+            return {"ok": False, "reason": "no chat_id"}
+        with Path(path).open("rb") as f:
+            return self._call(
+                "sendDocument",
+                chat_id=cid,
+                caption=(caption or "")[:1024],
+                files={"document": (Path(path).name, f, "application/octet-stream")},
+            )
+
+    def _try_send(self, label: str, fn) -> dict:
+        """Kirim, retry sekali jika exception; tidak melempar ke pemanggil."""
+        try:
+            return fn()
+        except Exception as e:
+            log.warning("Telegram %s gagal, coba sekali lagi: %s", label, e)
+            try:
+                return fn()
+            except Exception as e2:
+                log.error("Telegram %s gagal setelah retry: %s", label, e2)
+                return {
+                    "ok": False,
+                    "reason": "telegram_send_failed",
+                    "error": f"{type(e2).__name__}: {e2}"[:400],
+                }
+
+    def send_fb_handoff(
+        self,
+        *,
+        mp4: Path | str | None,
+        caption: str,
+        permalink: str | None = None,
+        public_url: str | None = None,
+        chat_id: str | None = None,
+    ) -> dict:
+        """Paket 2 pesan setelah IG tayang: video + caption/cara share. Gagal Telegram tidak boleh meledak."""
+        cid = chat_id or self.chat_id
+        parts: list[dict] = []
+        video_caption = FB_HANDOFF_VIDEO_CAPTION
+        path = Path(mp4) if mp4 else None
+        size = path.stat().st_size if path and path.exists() else 0
+
+        def send_media() -> dict:
+            if path and path.exists() and size <= TG_VIDEO_MAX_BYTES:
+                return self.send_video(path, video_caption, chat_id=cid, supports_streaming=True)
+            if path and path.exists() and size <= TG_VIDEO_MAX_BYTES * 2:
+                # di atas 50 MB: coba dokumen; jika API menolak, pemanggil retry/tautan
+                return self.send_document(path, video_caption, chat_id=cid)
+            if public_url:
+                return self.send(f"{video_caption}\n{public_url}", chat_id=cid)
+            if path and path.exists():
+                return self.send(
+                    f"{video_caption}\nFile terlalu besar untuk Telegram ({size} byte)."
+                    + (f"\n{public_url}" if public_url else ""),
+                    chat_id=cid,
+                )
+            if public_url:
+                return self.send(f"{video_caption}\n{public_url}", chat_id=cid)
+            return self.send(f"{video_caption}\n(Video tidak tersedia di runner.)", chat_id=cid)
+
+        media = self._try_send("handoff_video", send_media)
+        # Jika sendVideo/document gagal, jatuhkan ke tautan rilis jika ada.
+        if not media.get("ok") and public_url:
+            media = self._try_send(
+                "handoff_video_link",
+                lambda: self.send(f"{video_caption}\n{public_url}", chat_id=cid),
+            )
+        parts.append(media)
+
+        text = fb_handoff_text(caption, permalink)
+
+        def send_caption() -> dict:
+            return self.send(text, chat_id=cid, parse_mode="HTML")
+
+        cap_res = self._try_send("handoff_caption", send_caption)
+        if not cap_res.get("ok"):
+            # fallback tanpa HTML jika parse_mode ditolak
+            plain = (
+                f"Caption siap tempel ke FB Po Chai:\n\n{caption}\n\n"
+                f"{FB_HANDOFF_HOWTO}"
+                + (f"\n\n{permalink}" if permalink else "")
+            )
+            cap_res = self._try_send(
+                "handoff_caption_plain",
+                lambda: self.send(plain, chat_id=cid),
+            )
+        parts.append(cap_res)
+        ok = all(p.get("ok") for p in parts)
+        return {"ok": ok, "parts": parts}
 
     def send_shortlist(self, result: dict) -> dict:
         tanggal = result.get("tanggal") or today_wita(self.settings)
@@ -109,11 +246,21 @@ class TelegramBot:
     def send_preview(self, video: dict, mp4: Path | None = None) -> dict:
         slot = video.get("slot")
         judul = video.get("judul") or ""
+        if self.settings.approval_mode == "required":
+            gate = (
+                f"Balas OK atau ACC {slot} supaya boleh tayang di IG. "
+                f"Tanpa ACC, slot ini tidak dipublish. TOLAK {slot} untuk batal."
+            )
+        else:
+            gate = (
+                f"Balas TOLAK {slot} untuk batal, atau biarkan untuk tayang "
+                f"(mode {self.settings.approval_mode})."
+            )
         caption = (
             f"Preview slot {slot} — {judul}\n"
             f"Status: {video.get('status')}\n"
             f"Jam tayang: {video.get('slot_label') or ''} WITA\n"
-            f"Balas TOLAK {slot} untuk batal, atau biarkan untuk tayang (mode {self.settings.approval_mode})."
+            f"{gate}"
         )
         if mp4 and Path(mp4).exists() and Path(mp4).stat().st_size < 49_000_000:
             return self.send_video(Path(mp4), caption)
@@ -159,7 +306,7 @@ class TelegramBot:
             self.send(msg, chat_id=chat_id)
 
         if low in {"/start", "start"}:
-            reply("Bot Po Chai siap, bro. /status · /pause · /resume · TOLAK 2 · OK")
+            reply("Bot Po Chai siap, bro. /status · /pause · /resume · TOLAK 2 · OK / ACC 1")
             return {"action": "start"}
         if low in {"/status", "status"}:
             reply(self.status_text(date))
@@ -189,7 +336,7 @@ class TelegramBot:
                     self.state.upsert_video(v, date)
             reply(f"Ditolak: slot {slots}. Tidak akan tayang.")
             return {"action": "reject", "slots": slots}
-        m = re.match(r"^/?(ok|ya|approve|setuju)\s*([\d\s,]*)$", low)
+        m = re.match(r"^/?(ok|ya|approve|setuju|acc)\s*([\d\s,]*)$", low)
         if m:
             nums = [int(x) for x in re.findall(r"\d+", m.group(2) or "")]
             vids = self.state.videos(date)

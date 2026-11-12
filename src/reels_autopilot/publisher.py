@@ -118,8 +118,9 @@ class Publisher:
                     "note": (
                         "Target utama: Instagram Reels via Graph API "
                         f"({s.ig_graph_base}). "
-                        "Profil Facebook menerima lewat auto-share IG "
-                        "(cek FB Po Chai; API tidak bisa memverifikasi). "
+                        "Profil Facebook Po Chai tidak bisa ditarget API "
+                        "(hanya Page). Setelah IG tayang, bot mengirim paket "
+                        "share manual ke Telegram. "
                         "Publish ke Facebook Page bersifat opsional."
                     ),
                 },

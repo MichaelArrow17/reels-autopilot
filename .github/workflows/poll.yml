@@ -1,4 +1,5 @@
-# Jendela approval 06:00–09:00 WITA saja (hemat menit Actions):
+# Jendela poll ACC/TOLAK 06:00–09:00 WITA (hemat menit Actions).
+# ACC di luar jendela ini dibaca di awal job publish tiap slot.
 # 22:00–23:40 UTC dan 00:00–00:40 UTC, setiap 20 menit = 12 run/hari.
 name: poll-telegram
 on:
@@ -28,7 +29,7 @@ jobs:
           DRY_RUN: ${{ vars.DRY_RUN || 'true' }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'veto' }}
+          APPROVAL_MODE: ${{ vars.APPROVAL_MODE || 'required' }}
         run: python -m reels_autopilot poll
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:

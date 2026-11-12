@@ -51,7 +51,7 @@ def test_publisher_dry_run_writes_file_no_network(tmp_path, monkeypatch):
     text = path.read_text()
     assert "SECRETTOKEN123" not in text
     assert "tes caption" in text
-    assert "graph.facebook.com" in text or "auto-share" in text or "cek FB Po Chai" in text
+    assert "graph.facebook.com" in text or "Telegram" in text or "profil" in text.lower()
     path.unlink(missing_ok=True)
 
 
@@ -224,3 +224,73 @@ def test_assert_public_video_url_retries_then_ok(monkeypatch):
     monkeypatch.setattr(pubmod.time, "sleep", lambda *_: None)
     pubmod._assert_public_video_url("https://example.com/v.mp4")
     assert calls["n"] == 2
+
+
+def test_fb_handoff_text_is_copyable_and_drops_old_line():
+    from reels_autopilot.telegram_bot import FB_HANDOFF_HOWTO, fb_handoff_text
+
+    caption = "cara pakai ai?\nSimpan video ini.\n#KreatorAI #PoChai"
+    permalink = "https://www.instagram.com/reel/DfpSYK-CuMW/"
+    text = fb_handoff_text(caption, permalink)
+    assert "<pre><code>" in text and "</code></pre>" in text
+    assert "cara pakai ai?" in text
+    assert "#KreatorAI" in text
+    assert FB_HANDOFF_HOWTO.replace(">", "&gt;") in text or FB_HANDOFF_HOWTO in text
+    assert permalink in text
+    assert "cek FB Po Chai" not in text
+    # ampersand/chevron di caption di-escape di dalam blok
+    escaped = fb_handoff_text("A & B <C>", None)
+    assert "A &amp; B &lt;C&gt;" in escaped
+
+
+def test_send_fb_handoff_retries_then_swallows(tmp_path, monkeypatch):
+    from reels_autopilot.config import Settings
+    from reels_autopilot.telegram_bot import FB_HANDOFF_VIDEO_CAPTION, TelegramBot
+
+    s = Settings()
+    s.telegram_bot_token = "dummy-token"
+    s.telegram_chat_id = "7568757522"
+    bot = TelegramBot(s)
+    mp4 = tmp_path / "reel.mp4"
+    mp4.write_bytes(b"fake-video")
+    calls = {"n": 0}
+
+    def boom(*_a, **_k):
+        calls["n"] += 1
+        raise RuntimeError("telegram down")
+
+    monkeypatch.setattr(bot, "send_video", boom)
+    monkeypatch.setattr(bot, "send", boom)
+    out = bot.send_fb_handoff(
+        mp4=mp4,
+        caption="hook\\nisi\\n#PoChai",
+        permalink="https://www.instagram.com/reel/DfpSYK-CuMW/",
+    )
+    assert out["ok"] is False
+    assert calls["n"] >= 2  # minimal video retried
+    assert all(p.get("reason") == "telegram_send_failed" or p.get("ok") is False for p in out["parts"])
+
+
+def test_send_video_sets_supports_streaming(tmp_path, monkeypatch):
+    from reels_autopilot.config import Settings
+    from reels_autopilot.telegram_bot import TelegramBot
+
+    s = Settings()
+    s.telegram_bot_token = "dummy-token"
+    s.telegram_chat_id = "7568757522"
+    bot = TelegramBot(s)
+    mp4 = tmp_path / "reel.mp4"
+    mp4.write_bytes(b"fake-video")
+    seen = {}
+
+    def fake_call(method, **kwargs):
+        seen["method"] = method
+        seen["kwargs"] = kwargs
+        return {"ok": True, "result": {"message_id": 1}}
+
+    monkeypatch.setattr(bot, "_call", fake_call)
+    res = bot.send_video(mp4, "Siap share ke FB Po Chai", supports_streaming=True)
+    assert res["ok"] is True
+    assert seen["method"] == "sendVideo"
+    assert seen["kwargs"].get("supports_streaming") == "true"
+    assert "files" in seen["kwargs"]

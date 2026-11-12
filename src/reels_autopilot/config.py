@@ -92,7 +92,7 @@ def _list(name: str, default: list[str]) -> list[str]:
 class Settings:
     root: Path = field(default_factory=find_root)
     dry_run: bool = field(default_factory=lambda: _bool("DRY_RUN", True))
-    approval_mode: str = field(default_factory=lambda: _str("APPROVAL_MODE", "veto").lower())
+    approval_mode: str = field(default_factory=lambda: _str("APPROVAL_MODE", "required").lower())
     auto_approve_timeout_min: int = field(default_factory=lambda: _int("AUTO_APPROVE_TIMEOUT_MIN", 45))
     skip_on_timeout: bool = field(default_factory=lambda: _bool("SKIP_ON_TIMEOUT", False))
     daily_quota: int = field(default_factory=lambda: _int("DAILY_QUOTA", 5))
