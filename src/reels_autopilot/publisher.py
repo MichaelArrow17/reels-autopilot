@@ -1,8 +1,14 @@
-"""Publish Reels ke Facebook PAGE (video_reels) dan Instagram (Content Publishing).
+"""Publish Reels ke Instagram (utama) dan opsional ke Facebook Page.
+
+Jalur utama: Instagram API with Instagram Login (graph.instagram.com) —
+container REELS lalu media_publish. Wajib video_url publik (HostingClient).
+Profil Facebook menerima Reel lewat auto-share IG, bukan Graph ke profil.
+
+Facebook Page (graph.facebook.com video_reels) bersifat opsional: hanya
+dijalankan jika FB_PAGE_ID + FB_PAGE_TOKEN diisi.
 
 Default DRY_RUN=true: tidak memanggil API, hanya menulis payload (token disensor).
-Graph API TIDAK bisa publish ke profil pribadi "Po Chai" — hanya ke Page.
-IG butuh akun Creator/Business dan video_url publik (lihat HostingClient).
+Secret IG yang belum diisi → skip dengan log jelas, bukan exception.
 """
 
 from __future__ import annotations
@@ -48,11 +54,14 @@ class Publisher:
         caption: str,
         when_unix: int | None = None,
         video_state: str = "PUBLISHED",
-        dest_fb: bool = True,
+        dest_fb: bool | None = None,
         dest_ig: bool = True,
         public_url: str | None = None,
     ) -> dict:
         s = self.settings
+        # FB Page opsional: default on hanya jika secret-nya ada.
+        if dest_fb is None:
+            dest_fb = s.fb_configured
         result: dict[str, Any] = {
             "dry_run": s.dry_run,
             "fb": None,
@@ -66,12 +75,17 @@ class Publisher:
                 "would_do": {
                     "fb_page": dest_fb,
                     "ig": dest_ig,
+                    "api": "graph.instagram.com (Instagram Login)",
                     "video_state": video_state if not when_unix else "SCHEDULED",
                     "scheduled_publish_time": when_unix,
-                    "page_id": s.fb_page_id or "(belum diisi)",
+                    "page_id": s.fb_page_id or "(opsional, belum diisi)",
                     "ig_user_id": s.ig_user_id or "(belum diisi)",
                     "is_ai_generated": s.fb_is_ai_generated,
-                    "note": "Profil pribadi TIDAK didukung API. Perlu Facebook Page.",
+                    "note": (
+                        "Target utama: Instagram Reels via Instagram Login. "
+                        "Profil Facebook menerima lewat auto-share IG. "
+                        "Publish ke Facebook Page bersifat opsional."
+                    ),
                 },
                 "caption": caption,
                 "mp4": str(mp4),
@@ -83,24 +97,23 @@ class Publisher:
             log.info("DRY_RUN publish tertulis di %s", out)
             return result
 
-        missing_fb = dest_fb and (not s.fb_page_id or not s.fb_page_token)
-        missing_ig = dest_ig and (not s.ig_user_id or not s.ig_token)
+        missing_fb = dest_fb and not s.fb_configured
+        missing_ig = dest_ig and not s.ig_configured
         if missing_fb:
-            log.warning("Publish FB dilewati: FB_PAGE_ID / FB_PAGE_TOKEN belum diisi.")
+            log.warning("Publish FB Page dilewati: FB_PAGE_ID / FB_PAGE_TOKEN belum diisi (opsional).")
             result["fb"] = {"skipped": True, "reason": "missing_fb_secrets"}
             dest_fb = False
         if missing_ig:
-            log.warning("Publish IG dilewati: IG_USER_ID / IG_TOKEN belum diisi.")
-            result["ig"] = {"skipped": True, "reason": "missing_ig_secrets"}
-            dest_ig = False
-        if not dest_fb and not dest_ig:
-            result["skipped"] = True
-            result["reason"] = "meta_secrets_missing"
             log.warning(
-                "Publish dilewati: secret Meta belum diisi "
-                "(FB_PAGE_ID, FB_PAGE_TOKEN, IG_USER_ID, IG_TOKEN). "
-                "Video tidak diunggah."
+                "Publish IG dilewati: IG_USER_ID / IG_ACCESS_TOKEN belum diisi. "
+                "Video tidak diunggah ke Instagram."
             )
+            result["ig"] = {"skipped": True, "reason": "missing_ig_secrets"}
+            result["skipped"] = True
+            result["reason"] = "ig_secrets_missing"
+            # IG adalah target utama — jangan lanjut FB-only sebagai pengganti.
+            dest_ig = False
+            dest_fb = False
             return result
 
         if dest_fb:
@@ -166,11 +179,16 @@ class Publisher:
         return fin.json()
 
     def ig_reel(self, public_video_url: str, caption: str) -> dict:
-        """Tidak ada parameter jadwal — panggil tepat di jam tayang."""
+        """Container REELS → media_publish di graph.instagram.com.
+
+        Tidak ada parameter jadwal — panggil tepat di jam tayang.
+        video_url harus publik (GitHub Releases / R2 / catbox).
+        """
         s = self.settings
-        if not s.ig_user_id or not s.ig_token:
-            raise RuntimeError("IG_USER_ID / IG_TOKEN belum diisi")
-        g = s.graph_base
+        if not s.ig_configured:
+            raise RuntimeError("IG_USER_ID / IG_ACCESS_TOKEN belum diisi")
+        # Instagram API with Instagram Login — bukan graph.facebook.com
+        g = s.ig_graph_base
         c = requests.post(
             f"{g}/{s.ig_user_id}/media",
             data={

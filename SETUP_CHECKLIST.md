@@ -18,24 +18,24 @@ Akun:
 
 Jangan tempel token di chat. Jangan pakai kunci orang lain atau yang bocor.
 
-`DRY_RUN` harus tetap `true` sampai tes DRAFT di Page berhasil.
+`DRY_RUN` harus tetap `true` sampai tes Reel ke Instagram (API Instagram Login) berhasil.
 
 ---
 
 ## A. Persiapan Meta — radinalachmad@gmail.com
 
-1. **[BRO]** Buat **Facebook Page** bernama misalnya “Po Chai” (kategori Kreator/Publikasi). Profil pribadi “Po Chai” **tetap ada**; API hanya menulis ke Page. Ini syarat mutlak otomasi.
-2. **[BRO]** Di Instagram @achmad_radinal94: Settings → Account type → ubah ke **Creator atau Business** (status sekarang belum diketahui).
-3. **[BRO]** tautkan IG ke Page lewat Accounts Center / Meta Business Suite (`business.facebook.com`), login radinalachmad@gmail.com.
-4. **[BRO]** Uji manual 1 Reel ke Page + IG lewat Business Suite (boleh jadwal). Pastikan muncul di keduanya.
-5. **[BRO]** Buat app di [developers.facebook.com](https://developers.facebook.com): tipe Business, produk **Facebook Login for Business** dan **Instagram**.
-6. **[BRO]** Izin (permissions), Standard Access cukup kalau app hanya untuk akun sendiri (App Review tidak wajib menurut tabel resmi Meta — playbook):
-   - FB: `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`
-   - IG Login: `instagram_business_basic`, `instagram_business_content_publish`
-   - User harus punya tugas `CREATE_CONTENT` di Page.
-   - Kalau ada Page Publishing Authorization (PPA), selesaikan dulu.
-7. **[BRO]** Generate **Page access token jangka panjang** dan **IG token**. Catat `FB_PAGE_ID`, `IG_USER_ID`. Simpan hanya di Secrets, bukan chat.
-8. **[BRO]** Cek kuota IG: `GET /{ig-id}/content_publishing_limit?fields=config,quota_usage` (100 vs 50 — **BELUM DIVERIFIKASI**).
+Jalur utama: **Instagram API with Instagram Login** (`graph.instagram.com`). Profil Facebook menerima Reel lewat **auto-share IG**. Facebook Page bersifat **opsional**, bukan syarat otomasi.
+
+1. **[BRO]** Di Instagram @achmad_radinal94: pastikan akun **Professional** (Creator atau Business).
+2. **[BRO]** Aktifkan auto-share Reel IG ke profil Facebook (pengaturan IG / Accounts Center), login radinalachmad@gmail.com.
+3. **[BRO, opsional]** Facebook Page “Po Chai” hanya jika nanti ingin publish API langsung ke Page. Bukan wajib.
+4. **[BRO]** Uji manual 1 Reel di IG; pastikan muncul juga di profil Facebook jika auto-share aktif.
+5. **[BRO]** Buat app di [developers.facebook.com](https://developers.facebook.com) dengan produk **Instagram API with Instagram Login** (bukan Facebook Login for Business sebagai syarat).
+6. **[BRO]** Izin (permissions), Standard Access cukup kalau app hanya untuk akun sendiri:
+   - Wajib: `instagram_business_basic`, `instagram_business_content_publish`
+   - Opsional Page: `pages_show_list`, `pages_read_engagement`, `pages_manage_posts`
+7. **[BRO]** Generate **long-lived IG User token** (Instagram Login). Catat `IG_USER_ID` dan `IG_ACCESS_TOKEN`. Simpan hanya di Secrets, bukan chat. Token ini di-refresh otomatis setiap bulan (workflow `refresh-ig-token`, butuh `GH_PAT`).
+8. **[BRO]** Cek kuota IG: `GET https://graph.instagram.com/{ig-id}/content_publishing_limit?fields=config,quota_usage` (100 vs 50 — **BELUM DIVERIFIKASI**).
 
 ## B. Bot Telegram — @achmadrd
 
@@ -78,7 +78,7 @@ Visual utama = stickman lokal (tanpa kunci). Stok hanya latar, **filter lisensi 
 
 ## F. Hosting MP4 untuk IG — arrowmichael17
 
-FB Page **tidak** butuh URL publik (unggah biner). IG **wajib** `video_url` publik.
+IG **wajib** `video_url` publik (GitHub Releases / R2 / catbox). Facebook Page opsional tidak butuh URL publik (unggah biner).
 
 28. **[BRO]** Kalau repo **publik**: set `GITHUB_RELEASES_REPO=owner/nama`. `GITHUB_TOKEN` otomatis di Actions. Ini jalur primer.
 29. **[BRO, opsional]** Cloudflare R2 (tier gratis, **angka BELUM DIVERIFIKASI**): buat bucket + public URL / domain. Isi `R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`, `R2_PUBLIC_BASE_URL`, `R2_ENDPOINT`.
@@ -92,13 +92,14 @@ Isi di GitHub Actions Secrets (nilai) dan Variables (yang bukan rahasia). Lokal:
 
 | Nama | Akun | Wajib? |
 |---|---|---|
-| `FB_PAGE_ID` | radinalachmad | ya, untuk publish FB |
-| `FB_PAGE_TOKEN` | radinalachmad | ya, untuk publish FB |
 | `IG_USER_ID` | radinalachmad | ya, untuk publish IG |
-| `IG_TOKEN` | radinalachmad | ya, untuk publish IG |
+| `IG_ACCESS_TOKEN` | radinalachmad | ya, long-lived Instagram Login token |
+| `GH_PAT` | arrowmichael17 | ya, untuk cron refresh token IG (GITHUB_TOKEN Actions tidak bisa menulis secret) |
 | `TELEGRAM_BOT_TOKEN` | @achmadrd / BotFather | ya, untuk bot HP |
 | `TELEGRAM_CHAT_ID` | @achmadrd | ya, agar pesan sampai |
 | `GEMINI_API_KEY` | arrowmichael17 | sangat disarankan (naskah lebih bagus) |
+| `FB_PAGE_ID` | radinalachmad | tidak, opsional (publish ke Page) |
+| `FB_PAGE_TOKEN` | radinalachmad | tidak, opsional (publish ke Page) |
 
 ### Secrets (cadangan, opsional)
 

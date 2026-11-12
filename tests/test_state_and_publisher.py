@@ -51,7 +51,7 @@ def test_publisher_dry_run_writes_file_no_network(tmp_path, monkeypatch):
     text = path.read_text()
     assert "SECRETTOKEN123" not in text
     assert "tes caption" in text
-    assert "Profil pribadi TIDAK didukung" in text
+    assert "Instagram Login" in text or "auto-share" in text
     path.unlink(missing_ok=True)
 
 
@@ -66,8 +66,33 @@ def test_publisher_skips_when_meta_secrets_missing(tmp_path):
     mp4.write_bytes(b"fake")
     result = Publisher(s).publish(mp4, caption="tes", dest_fb=True, dest_ig=True)
     assert result["skipped"] is True
-    assert result["reason"] == "meta_secrets_missing"
-    assert result["fb"]["reason"] == "missing_fb_secrets"
+    assert result["reason"] == "ig_secrets_missing"
     assert result["ig"]["reason"] == "missing_ig_secrets"
     # tidak boleh menandai sukses publish
     assert result.get("dry_run") is False
+
+
+def test_publisher_default_skips_ig_without_requiring_fb(tmp_path):
+    s = Settings()
+    s.dry_run = False
+    s.fb_page_id = ""
+    s.fb_page_token = ""
+    s.ig_user_id = ""
+    s.ig_token = ""
+    mp4 = tmp_path / "x.mp4"
+    mp4.write_bytes(b"fake")
+    # dest_fb default = False karena secret FB kosong (opsional)
+    result = Publisher(s).publish(mp4, caption="tes")
+    assert result["skipped"] is True
+    assert result["reason"] == "ig_secrets_missing"
+
+
+def test_ig_access_token_env_alias(monkeypatch):
+    monkeypatch.setenv("IG_ACCESS_TOKEN", "NEWSTYLE")
+    monkeypatch.delenv("IG_TOKEN", raising=False)
+    s = Settings()
+    assert s.ig_token == "NEWSTYLE"
+    assert s.ig_configured is False  # user id masih kosong
+    monkeypatch.setenv("IG_USER_ID", "1789")
+    s2 = Settings()
+    assert s2.ig_configured is True

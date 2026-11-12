@@ -493,14 +493,14 @@ CATALOG: dict[str, list[dict]] = {
     "publish": [
         {
             "id": "fb_page_reels",
-            "name": "Facebook Graph API video_reels (PAGE saja)",
+            "name": "Facebook Graph API video_reels (PAGE, opsional)",
             "akun": "radinalachmad@gmail.com",
             "env": ["FB_PAGE_ID", "FB_PAGE_TOKEN"],
             "gratis": True,
             "limits": (
-                "30 Reels via API per 24 jam (moving window), jadwal 10 menit–29 hari "
-                "(playbook, dari docs resmi Meta). TIDAK bisa publish ke profil pribadi, "
-                "meski mode profesional."
+                "Opsional. Jalur utama adalah Instagram Login; profil FB menerima "
+                "lewat auto-share IG. Jika Page diisi: 30 Reels via API / 24 jam, "
+                "jadwal 10 menit–29 hari. TIDAK bisa publish ke profil pribadi."
             ),
             "verified": True,
             "reset": "rolling_24h",
@@ -508,9 +508,9 @@ CATALOG: dict[str, list[dict]] = {
         },
         {
             "id": "ig_reels",
-            "name": "Instagram Content Publishing API (Creator/Business)",
+            "name": "Instagram API with Instagram Login (graph.instagram.com REELS)",
             "akun": "radinalachmad@gmail.com / @achmad_radinal94",
-            "env": ["IG_USER_ID", "IG_TOKEN"],
+            "env": ["IG_USER_ID", "IG_ACCESS_TOKEN"],
             "gratis": True,
             "limits": (
                 "Guide resmi: 100 post via API / 24 jam. Halaman referensi "

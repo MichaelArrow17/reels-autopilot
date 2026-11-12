@@ -1,6 +1,6 @@
 # reels-autopilot — Po Chai / Kreator AI
 
-Pipeline **gratis** dan **otonom** untuk Reels Facebook Page + Instagram: riset topik → naskah → TTS → render 9:16 → QC → (opsional) veto di Telegram → publish. Jalan di **GitHub Actions**, tanpa PC/VPS.
+Pipeline **gratis** dan **otonom** untuk Reels Instagram (auto-share ke profil Facebook): riset topik → naskah → TTS → render 9:16 → QC → (opsional) veto di Telegram → publish. Jalan di **GitHub Actions**, tanpa PC/VPS.
 
 Default **`DRY_RUN=true`**: tidak ada yang diposting.
 
@@ -11,7 +11,7 @@ Baca dulu:
 
 ## Batasan Meta
 
-Graph API **hanya** bisa publish Reels ke **Facebook Page**, bukan ke profil pribadi “Po Chai”. Rencana: buat Page “Po Chai” di **radinalachmad@gmail.com**, IG @achmad_radinal94 ke Creator/Business, tautkan ke Page.
+Jalur utama: **Instagram API with Instagram Login** (`graph.instagram.com`) ke IG professional **@achmad_radinal94**. Profil Facebook menerima Reel lewat **auto-share IG**. Facebook Page bersifat **opsional** (bukan syarat otomasi). Token IG jangka panjang di-refresh bulanan (secret `GH_PAT`).
 
 ## Tes yang sudah jalan di box (12 Nov 2026, WITA)
 
@@ -27,7 +27,7 @@ Sampel uji awal: [`samples/sample_reel.mp4`](samples/sample_reel.mp4)
 - Loudness **−14,0 LUFS**, true peak **−0,5 dBTP**, mean **−14,2 dB**
 - Catatan koreksi (caption flicker + durasi terlalu panjang, target baru 30–40 dtk / batas 45 dtk): [`docs/TEST_NOTES.md`](docs/TEST_NOTES.md)
 
-Perintah lain: `scout`, `produce`, `publish --slot 1`, `poll`, `run-once`, `providers`, `status`, `qc PATH`.
+Perintah lain: `scout`, `produce`, `publish --slot 1`, `poll`, `run-once`, `refresh-ig-token`, `providers`, `status`, `qc PATH`.
 
 ## Akun
 
@@ -35,4 +35,4 @@ Perintah lain: `scout`, `produce`, `publish --slot 1`, `poll`, `run-once`, `prov
 - GitHub, Gemini, dan layanan non-Meta: **arrowmichael17@gmail.com**
 - Telegram bot: **@BotFather** di **@achmadrd**
 
-Repo ini **belum di-push**. Jangan commit file `.env`.
+Repo publik: [MichaelArrow17/reels-autopilot](https://github.com/MichaelArrow17/reels-autopilot). Jangan commit file `.env` atau `.secrets/`.

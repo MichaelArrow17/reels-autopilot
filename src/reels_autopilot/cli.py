@@ -57,6 +57,7 @@ def main(argv: list[str] | None = None) -> int:
     p_qc = sub.add_parser("qc", help="Periksa sebuah MP4")
     p_qc.add_argument("path")
 
+    sub.add_parser("refresh-ig-token", help="Refresh long-lived IG token dan tulis ke GitHub Secret")
     sub.add_parser("providers", help="Tampilkan rantai failover, batas, dan status cooldown")
     sub.add_parser("status", help="Status antrian hari ini")
 
@@ -90,6 +91,7 @@ def main(argv: list[str] | None = None) -> int:
             "paused",
             "no_video",
             "meta_secrets_missing",
+            "ig_secrets_missing",
         }
         if res.get("ok") or res.get("reason") in skip_ok:
             if not res.get("ok"):
@@ -124,6 +126,15 @@ def main(argv: list[str] | None = None) -> int:
         print(report_text(q))
         print(json.dumps(q.to_dict(), ensure_ascii=False, indent=2))
         return 0 if q.ok else 2
+
+    if args.cmd == "refresh-ig-token":
+        from reels_autopilot.ig_token import run as refresh_ig
+        res = refresh_ig(settings)
+        print(json.dumps(res, ensure_ascii=False, indent=2))
+        # skip karena secret belum ada = sukses bersih (workflow bulanan tidak merah)
+        if res.get("ok") or res.get("reason") in {"ig_secrets_missing", "gh_pat_missing", "repo_missing"}:
+            return 0
+        return 1
 
     if args.cmd == "providers":
         router = ProviderRouter(settings)

@@ -150,7 +150,12 @@ class Settings:
     fb_page_id: str = field(default_factory=lambda: _str("FB_PAGE_ID"))
     fb_page_token: str = field(default_factory=lambda: _str("FB_PAGE_TOKEN"))
     ig_user_id: str = field(default_factory=lambda: _str("IG_USER_ID"))
-    ig_token: str = field(default_factory=lambda: _str("IG_TOKEN"))
+    # Canonical: IG_ACCESS_TOKEN (Instagram API with Instagram Login).
+    # IG_TOKEN dipertahankan sebagai alias lama.
+    ig_token: str = field(default_factory=lambda: _str("IG_ACCESS_TOKEN") or _str("IG_TOKEN"))
+    # PAT fine-grained (contents/secrets RW) untuk refresh token IG menulis secret.
+    # GITHUB_TOKEN otomatis Actions TIDAK bisa menulis secret.
+    gh_pat: str = field(default_factory=lambda: _str("GH_PAT"))
     meta_graph_version: str = field(default_factory=lambda: _str("META_GRAPH_VERSION", "v26.0"))
     fb_is_ai_generated: bool = field(default_factory=lambda: _bool("FB_IS_AI_GENERATED", True))
 
@@ -219,11 +224,27 @@ class Settings:
         return self.data_dir / "past_topics.json"
 
     @property
+    def _graph_version(self) -> str:
+        v = self.meta_graph_version or "v26.0"
+        return v if v.startswith("v") else "v" + v
+
+    @property
     def graph_base(self) -> str:
-        v = self.meta_graph_version
-        if not v.startswith("v"):
-            v = "v" + v
-        return f"https://graph.facebook.com/{v}"
+        """Facebook Graph (hanya untuk publish Page opsional)."""
+        return f"https://graph.facebook.com/{self._graph_version}"
+
+    @property
+    def ig_graph_base(self) -> str:
+        """Instagram API with Instagram Login (graph.instagram.com)."""
+        return f"https://graph.instagram.com/{self._graph_version}"
+
+    @property
+    def ig_configured(self) -> bool:
+        return bool(self.ig_user_id and self.ig_token)
+
+    @property
+    def fb_configured(self) -> bool:
+        return bool(self.fb_page_id and self.fb_page_token)
 
 
 def get_settings() -> Settings:

@@ -1,20 +1,20 @@
 # BLUEPRINT — reels-autopilot (Po Chai / Kreator AI)
 
-Pipeline video pendek **otonom**, **gratis**, dari screening topik sampai publikasi Reels. Dijalankan di **GitHub Actions** (cron, zona **WITA = UTC+8**). Tidak butuh PC atau VPS milik bro. Kode ini **belum di-push** dan **belum mem-publish** apa pun (default `DRY_RUN=true`).
+Pipeline video pendek **otonom**, **gratis**, dari screening topik sampai publikasi Reels. Dijalankan di **GitHub Actions** (cron, zona **WITA = UTC+8**). Tidak butuh PC atau VPS milik bro. Default `DRY_RUN=true`: belum mem-publish ke IG/FB. Repo: `MichaelArrow17/reels-autopilot`.
 
 Dasar: *Playbook_FB_IG_Kreator_AI.pdf* bagian 13–16, dilengkapi rantai failover layanan resmi/gratis dan fokus retensi untuk monetisasi (≥5 Reels/hari).
 
 ---
 
-## 1. Batasan paling penting: API Meta hanya ke PAGE
+## 1. Batasan paling penting: publish lewat Instagram Login
 
-“Po Chai” saat ini adalah **profil pribadi mode profesional**. Dokumentasi resmi Meta: *“You can only publish Reels to Facebook Pages.”*
+Jalur utama adalah **Instagram API with Instagram Login** (`graph.instagram.com`): buat container `REELS` lalu `media_publish`, dengan `video_url` publik. Akun: **@achmad_radinal94** (professional) di **radinalachmad@gmail.com**.
 
-Artinya otomasi penuh **wajib** lewat **Facebook Page** (misalnya Page bernama “Po Chai”) di akun **radinalachmad@gmail.com**, plus Instagram **@achmad_radinal94** diubah ke **Creator atau Business** dan ditautkan ke Page itu.
+Profil Facebook “Po Chai” menerima Reel lewat **auto-share Instagram**, bukan Graph API ke profil pribadi. Facebook Page bersifat **opsional** (kalau `FB_PAGE_ID` / `FB_PAGE_TOKEN` diisi).
 
-- Profil pribadi **tetap dipertahankan**; API tidak menulis ke situ.
 - IG Content Publishing API **tidak punya parameter jadwal** — job `publish` dipanggil tepat di jam tayang.
-- FB Page API mendukung `SCHEDULED` (minimal >10 menit, maksimal 29 hari) dan **30 Reels/24 jam** (docs resmi, playbook).
+- Long-lived IG User token (~60 hari) di-refresh bulanan lewat `GET graph.instagram.com/refresh_access_token`. Penulisan ulang secret memakai `GH_PAT` (GITHUB_TOKEN Actions tidak bisa menulis secret).
+- FB Page API (opsional) mendukung `SCHEDULED` (minimal >10 menit, maksimal 29 hari) dan **30 Reels/24 jam**.
 - Kuota IG: guide 100/24 jam vs referensi `quota_total` 50 — **BELUM DIVERIFIKASI** untuk akun ini; cek endpoint setelah token ada.
 - Flag `is_ai_generated=true` dipasang (kebijakan label AI).
 
@@ -192,7 +192,7 @@ Estimasi menit Actions (Linux, already rounded up per job):
 - Tidak mengarang angka; gerbang safety menolak SARA, hoaks, tragedi, janji kesehatan/keuangan, bajakan.
 - Gambar stok hanya lisensi komersial; default tetap stickman orisinal.
 - Label AI di FB; caption jujur soal konten buatan.
-- Volume ≥5/hari lewat Page + IG professional — profil pribadi tidak bisa diotomatisasi.
+- Volume ≥5/hari lewat IG professional (auto-share ke profil Facebook); Facebook Page opsional.
 
 Mode approval default: **`veto`** (otonom, bro bisa `TOLAK N` sebelum jam tayang). `auto` = status saja. `required` = wajib setujui.
 

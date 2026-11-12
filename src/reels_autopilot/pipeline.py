@@ -266,13 +266,15 @@ class Pipeline:
             when_unix=when,
             video_state="PUBLISHED",
         )
-        if result.get("skipped") or result.get("reason") == "meta_secrets_missing":
-            log.warning("Publish slot %s dilewati: secret Meta belum diisi.", slot)
+        if result.get("skipped") or result.get("reason") in {"meta_secrets_missing", "ig_secrets_missing"}:
+            reason = result.get("reason") or "ig_secrets_missing"
+            log.warning("Publish slot %s dilewati: %s.", slot, reason)
             self.tg.send(
                 f"Slot {slot} ({v.get('slot_label')} WITA) — {v.get('judul')}\n"
-                "Publish dilewati: secret Meta (FB_PAGE_ID/TOKEN, IG_USER_ID/TOKEN) belum diisi."
+                "Publish dilewati: IG_USER_ID / IG_ACCESS_TOKEN belum diisi. "
+                "FB Page bersifat opsional."
             )
-            return {"ok": False, "reason": "meta_secrets_missing", "slot": slot, "publish": result}
+            return {"ok": False, "reason": reason, "slot": slot, "publish": result}
         v["status"] = "published" if not self.settings.dry_run else "dry_published"
         v["publish"] = {k: result.get(k) for k in ("dry_run", "fb", "ig", "host", "dry_run_path")}
         v["published_at"] = datetime.now(self.settings.tz).isoformat(timespec="seconds")

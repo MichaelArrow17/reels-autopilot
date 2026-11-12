@@ -1,0 +1,31 @@
+# Refresh long-lived Instagram User token (~60 hari).
+# 1 setiap bulan, 08:00 WITA (00:00 UTC tanggal 1).
+# GITHUB_TOKEN otomatis tidak bisa menulis secret — wajib secret GH_PAT.
+name: refresh-ig-token
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - run: pip install -r requirements.txt
+      - name: Refresh IG long-lived token
+        env:
+          PYTHONPATH: src
+          # Jangan diikat DRY_RUN: ini bukan publish Meta.
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN || secrets.IG_TOKEN }}
+          IG_TOKEN: ${{ secrets.IG_ACCESS_TOKEN || secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python -m reels_autopilot refresh-ig-token
