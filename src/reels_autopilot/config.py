@@ -102,7 +102,7 @@ class Settings:
     tz_name: str = field(default_factory=lambda: _str("TZ", "Asia/Makassar"))
 
     gemini_api_key: str = field(default_factory=lambda: _str("GEMINI_API_KEY"))
-    gemini_model: str = field(default_factory=lambda: _str("GEMINI_MODEL", "gemini-2.0-flash"))
+    gemini_model: str = field(default_factory=lambda: _str("GEMINI_MODEL", "gemini-3.5-flash-lite"))
     groq_api_key: str = field(default_factory=lambda: _str("GROQ_API_KEY"))
     groq_model: str = field(default_factory=lambda: _str("GROQ_MODEL", "llama-3.3-70b-versatile"))
     openrouter_api_key: str = field(default_factory=lambda: _str("OPENROUTER_API_KEY"))

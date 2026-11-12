@@ -102,7 +102,15 @@ class LLMClient:
 
     def _gemini(self, prompt: str, system: str, json_mode: bool) -> str:
         s = self.settings
-        models = [s.gemini_model, "gemini-2.0-flash", "gemini-2.5-flash", "gemini-flash-latest"]
+        models = [
+            s.gemini_model,
+            "gemini-3.5-flash-lite",
+            "gemini-3.8-flash",
+            "gemini-3.5-flash",
+            "gemini-flash-lite-latest",
+            "gemini-flash-latest",
+            "gemini-3.1-flash-lite",
+        ]
         seen = set()
         last_err: Exception | None = None
         for model in models:
@@ -111,7 +119,7 @@ class LLMClient:
             seen.add(model)
             url = (
                 f"https://generativelanguage.googleapis.com/v1beta/models/"
-                f"{model}:generateContent?key={s.gemini_api_key}"
+                f"{model}:generateContent"
             )
             body: dict[str, Any] = {
                 "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -122,15 +130,20 @@ class LLMClient:
             if system:
                 body["systemInstruction"] = {"parts": [{"text": system}]}
             try:
-                resp = requests.post(url, json=body, timeout=TIMEOUT)
+                resp = requests.post(
+                    url,
+                    json=body,
+                    headers={"x-goog-api-key": s.gemini_api_key, "Content-Type": "application/json"},
+                    timeout=TIMEOUT,
+                )
             except requests.RequestException as e:
                 last_err = e
                 continue
             _quota("gemini", resp)
             if resp.status_code >= 400:
                 last_err = RuntimeError(f"gemini {model} HTTP {resp.status_code}: {resp.text[:300]}")
-                # coba model lain hanya untuk 404/400 (nama model salah)
-                if resp.status_code in {400, 404}:
+                # 404/400: nama model usang; 503: demand tinggi — coba model lain
+                if resp.status_code in {400, 404, 503}:
                     continue
                 raise last_err
             data = resp.json()
