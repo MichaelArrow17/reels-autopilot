@@ -1,0 +1,70 @@
+{
+  "updated_at": "2026-11-12T13:48:03.721667+00:00",
+  "providers": {
+    "llm:gemini": {
+      "category": "llm",
+      "provider_id": "gemini",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "last_success_at": "2026-11-12T13:47:38.548809+00:00",
+      "cooldown_until": null,
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 2,
+      "failure_count": 0
+    },
+    "tts:edge_tts": {
+      "category": "tts",
+      "provider_id": "edge_tts",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "last_success_at": "2026-11-12T13:47:54.786693+00:00",
+      "cooldown_until": null,
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 1,
+      "failure_count": 0
+    },
+    "images:openverse": {
+      "category": "images",
+      "provider_id": "openverse",
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: openverse: tidak ada hasil berlisensi komersial",
+      "last_error_at": "2026-11-12T13:48:03.015556+00:00",
+      "last_success_at": null,
+      "cooldown_until": "2026-11-12T13:53:03.015576+00:00",
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 0,
+      "failure_count": 1
+    },
+    "images:wikimedia": {
+      "category": "images",
+      "provider_id": "wikimedia",
+      "consecutive_failures": 1,
+      "last_error": "RuntimeError: wikimedia: tidak ada berkas berlisensi komersial yang cocok",
+      "last_error_at": "2026-11-12T13:48:03.674214+00:00",
+      "last_success_at": null,
+      "cooldown_until": "2026-11-12T13:53:03.674233+00:00",
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 0,
+      "failure_count": 1
+    },
+    "images:local": {
+      "category": "images",
+      "provider_id": "local",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "last_success_at": "2026-11-12T13:48:03.721588+00:00",
+      "cooldown_until": null,
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 1,
+      "failure_count": 0
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa jawaban AI sering kaku dan nggak sesuai harapan?",
+      "isi": "Masalahnya ada di perintah yang terlalu pendek tanpa konteks. Solusinya simpel, cukup kasih AI peran spesifik dan tentukan target penontonmu.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Peran apa yang paling sering kamu berikan ke AI?",
+      "hashtag": [
+        "#TipsAI",
+        "#BelajarAI",
+        "#ArtificialIntelligence",
+        "#ProductivityHack",
+        "#Teknologi"
+      ]
+    },
+    {
+      "baris1": "Sering dapat jawaban AI yang asal-asalan dan nggak nyambung?",
+      "isi": "AI jadi bingung karena kamu cuma ngetik perintah pendek tanpa konteks. Coba kasih AI peran dulu dan jelaskan seperti apa hasil akhir yang kamu mau.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Udah pernah coba teknik kasih peran ke AI belum?",
+      "hashtag": [
+        "#TipsAI",
+        "#AIIndonesia",
+        "#ChatbotTips",
+        "#ContentCreator",
+        "#AI"
+      ]
+    },
+    {
+      "baris1": "Udah pakai AI tapi hasilnya malah kaku banget?",
+      "isi": "Bisa jadi karena perintahmu kurang konteks. Kasih AI peran dulu seperti penulis naskah santai agar jawabannya jauh lebih spesifik dan alami.",
+      "cta": "Komentar jawaban di bawah",
+      "pertanyaan": "Biasanya kamu pakai AI buat bantu bikin apa?",
+      "hashtag": [
+        "#BelajarAI",
+        "#TipsAI",
+        "#TeknologiAI",
+        "#TipsMenulis",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Biar AI Nggak Kaku Lagi",
+  "komentar_pin": "Tulis di komentar, peran apa yang biasa kamu berikan ke AI?",
+  "llm_provider": "gemini"
+}
