@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T14:19:28.994108+00:00",
+  "updated_at": "2026-11-12T14:36:28.419380+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
@@ -90,6 +90,19 @@
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 2,
+      "failure_count": 0
+    },
+    "hosting:github_release": {
+      "category": "hosting",
+      "provider_id": "github_release",
+      "consecutive_failures": 0,
+      "last_error": null,
+      "last_error_at": null,
+      "last_success_at": "2026-11-12T14:36:28.419308+00:00",
+      "cooldown_until": null,
+      "quota_exhausted": false,
+      "quota_reset_at": null,
+      "success_count": 1,
       "failure_count": 0
     }
   }

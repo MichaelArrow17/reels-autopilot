@@ -498,7 +498,7 @@
             "sinyal": "cara pakai ai",
             "rank": 1
           },
-          "status": "rendered",
+          "status": "published",
           "created_at": "2026-11-12T21:46:05+08:00",
           "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-12/slot1/reel.mp4",
           "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-12/slot1/script.json",
@@ -511,7 +511,21 @@
             "peak": -0.5,
             "duration": 37.166667,
             "errors": []
-          }
+          },
+          "publish": {
+            "dry_run": false,
+            "fb": null,
+            "ig": {
+              "id": "18418112578086444",
+              "permalink": "https://www.instagram.com/reel/DfpSYK-CuMW/"
+            },
+            "host": {
+              "provider": "github_release",
+              "url": "https://github.com/MichaelArrow17/reels-autopilot/releases/download/reels-20261112/2026-11-12-slot1-reel.mp4"
+            },
+            "dry_run_path": null
+          },
+          "published_at": "2026-11-12T22:38:45+08:00"
         },
         {
           "id": "2026-11-12-s2-a74257",
