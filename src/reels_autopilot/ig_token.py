@@ -297,8 +297,19 @@ def _run_exchange(
     current = token
     exchanged = False
 
+    # Token SYSTEM_USER / tanpa kedaluwarsa (expires_at=0) tidak perlu ditukar.
+    never_expires = False
+    try:
+        pre = debug_token(token, app_id, app_secret)
+        never_expires = bool(pre["is_valid"]) and (pre["expires_at"] is None or pre.get("type") == "SYSTEM_USER")
+    except Exception as e:
+        log.info("Pre-check debug_token gagal: %s", type(e).__name__)
+
     # Jangan tukar token kalau hasilnya tidak bisa disimpan — token lama bisa tidak berlaku.
-    if not pat:
+    if never_expires:
+        log.info("Token tidak kedaluwarsa (SYSTEM_USER); exchange dilewati.")
+        result["exchange_skipped"] = "never_expires"
+    elif not pat:
         log.warning("FB_APP_SECRET ada tapi GH_PAT kosong; exchange dilewati, debug_token saja.")
         result["exchange_skipped"] = "gh_pat_missing"
     elif not repo:

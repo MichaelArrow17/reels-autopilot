@@ -271,7 +271,7 @@ def test_run_skips_exchange_without_pat_but_still_debugs():
     ):
         out = run(S(), repo="owner/repo")  # type: ignore[arg-type]
     ex.assert_not_called()
-    dbg.assert_called_once()
+    assert dbg.called
     assert out["ok"] is True
     assert out["exchanged"] is False
     assert out["exchange_skipped"] == "gh_pat_missing"
@@ -288,3 +288,29 @@ def test_ig_graph_host_default_and_override(monkeypatch):
     monkeypatch.setenv("IG_GRAPH_VERSION", "v22.0")
     s2 = Settings()
     assert s2.ig_graph_base == "https://graph.instagram.com/v22.0"
+
+
+def test_run_skips_exchange_for_system_user_token():
+    class S:
+        ig_token = "TOK"
+        ig_user_id = "1784"
+        gh_pat = "pat"
+        github_releases_repo = "owner/repo"
+        fb_app_id = "111"
+        fb_app_secret = "sec"
+        ig_graph_base = "https://graph.facebook.com/v21.0"
+
+    with (
+        patch("reels_autopilot.ig_token.exchange_fb_token") as ex,
+        patch(
+            "reels_autopilot.ig_token.debug_token",
+            return_value={"is_valid": True, "expires_at": None, "remaining_seconds": None, "scopes_count": 6, "type": "SYSTEM_USER"},
+        ),
+        patch("reels_autopilot.ig_token.health_check", return_value={"ok": True, "username": "x"}),
+        patch("reels_autopilot.ig_token._alert") as alert,
+    ):
+        out = run(S(), repo="owner/repo")  # type: ignore[arg-type]
+    ex.assert_not_called()
+    alert.assert_not_called()
+    assert out["ok"] is True
+    assert out["exchange_skipped"] == "never_expires"
