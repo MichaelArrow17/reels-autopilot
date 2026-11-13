@@ -116,6 +116,10 @@ class HostingClient:
         upload_url = (release.get("upload_url") or "").split("{")[0]
         if not upload_url:
             raise RuntimeError("github release tanpa upload_url")
+        # retry-safe: hapus aset lama bernama sama (sisa percobaan gagal sebelumnya)
+        for a in release.get("assets") or []:
+            if a.get("name") == name and a.get("url"):
+                requests.delete(a["url"], headers=headers, timeout=30)
         with path.open("rb") as f:
             up = requests.post(
                 upload_url,
