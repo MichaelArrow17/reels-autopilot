@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa video profil orang terkenal sering terdengar lancar tapi kosong?",
+      "isi": "Banyak video profil yang terdengar sangat lancar padahal sumber aslinya kosong dan tidak bisa dibuktikan kebenarannya.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Pernahkah kamu hampir percaya informasi tanpa sumber yang jelas?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#CekFakta",
+        "#AIIndonesia",
+        "#FactCheck"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara tahu sebuah video punya sumber resmi atau tidak?",
+      "isi": "Kalau tidak ada tautan resmi yang disertakan, jangan langsung percaya dengan informasi yang disajikan dalam video tersebut.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Apa hal pertama yang kamu cek saat melihat video viral?",
+      "hashtag": [
+        "#AntiHoax",
+        "#LiterasiMedia",
+        "#Pendidikan",
+        "#MediaLiteracy"
+      ]
+    },
+    {
+      "baris1": "Apa yang harus dilakukan saat melihat skandal atau kabar duka?",
+      "isi": "Skandal, mundur jabatan, atau kabar duka apalagi: tanpa sumber yang jelas, sebaiknya jangan langsung disebar ke orang lain.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Bagaimana caramu memfilter informasi setiap hari?",
+      "hashtag": [
+        "#BijakSosmed",
+        "#SaringSebelumSharing",
+        "#Teknologi",
+        "#DigitalEthics"
+      ]
+    }
+  ],
+  "cover": "Cek Fakta Sebelum Percaya",
+  "komentar_pin": "Tulis di komentar kalau ada informasi yang mau kamu cek kebenarannya!",
+  "llm_provider": "gemini"
+}

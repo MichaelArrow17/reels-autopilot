@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+      "isi": "Selama ini HR sering pusing karena semua urusan dicatet secara manual. Padahal, teknologi terintegrasi bisa ubah cara kelola SDM jadi jauh lebih cepat dan akurat.",
+      "cta": "Follow buat part 2.",
+      "pertanyaan": "Menurut kamu, apa tantangan terbesar HR saat ini?",
+      "hashtag": [
+        "#ManajemenSDM",
+        "#TeknologiHR",
+        "#SistemDigital",
+        "#HumanResources",
+        "#HRTech"
+      ]
+    },
+    {
+      "baris1": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+      "isi": "HR sering pusing karena semua urusan dicatet secara manual. Penggunaan teknologi terintegrasi terbukti bisa membuat pengelolaan SDM jadi jauh lebih cepat.",
+      "cta": "Follow buat part 2.",
+      "pertanyaan": "Kantor kamu masih pakai cara manual atau sudah digital?",
+      "hashtag": [
+        "#KelolaKaryawan",
+        "#TipsHR",
+        "#DigitalisasiKantor",
+        "#ProduktivitasKerja",
+        "#Workplace"
+      ]
+    },
+    {
+      "baris1": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+      "isi": "Urusan administrasi yang dicatet secara manual bikin HR sering pusing. Padahal, sistem digital yang terintegrasi bisa bikin data tim makin akurat.",
+      "cta": "Follow buat part 2.",
+      "pertanyaan": "Apa software HR favorit tim kamu sekarang?",
+      "hashtag": [
+        "#AplikasiHR",
+        "#PengelolaanSDM",
+        "#BisnisModern",
+        "#TeknologiBisnis",
+        "#HR"
+      ]
+    }
+  ],
+  "cover": "Cara Mudah Kelola Ribuan Karyawan",
+  "komentar_pin": "Gimana, kantormu udah mulai beralih ke sistem digital belum? Coba cerita di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

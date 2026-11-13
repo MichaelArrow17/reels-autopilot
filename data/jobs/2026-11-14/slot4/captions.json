@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa AI kadang bisa ngarang fakta?",
+      "isi": "Sistem AI memprediksi kata berdasarkan pola, bukan benar-salah. Hal ini membuat informasi keliru terdengar sangat meyakinkan.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Pernahkah kamu tertipu jawaban AI?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#AIIndonesia",
+        "#Teknologi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Kenapa AI kadang suka ngarang bebas?",
+      "isi": "Cara kerja AI adalah mencocokkan pola bahasa. Ketika data kurang, sistem tetap merangkai kata agar terlihat meyakinkan.",
+      "cta": "Simpan",
+      "pertanyaan": "Menurutmu, apa solusi terbaik untuk masalah ini?",
+      "hashtag": [
+        "#FaktaAI",
+        "#DuniaAI",
+        "#TeknologiTerbaru",
+        "#TechTalk"
+      ]
+    },
+    {
+      "baris1": "Kenapa AI bisa memberikan informasi yang salah?",
+      "isi": "AI tidak memiliki pemahaman nyata, melainkan hanya menebak kata berikutnya yang paling sesuai secara statistik.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Apa pengalaman paling absurd saat pakai AI?",
+      "hashtag": [
+        "#EdukasiAI",
+        "#AIUpdate",
+        "#Inovasi",
+        "#MachineLearning"
+      ]
+    }
+  ],
+  "cover": "Kenapa AI Suka Ngarang?",
+  "komentar_pin": "Yuk share pengalamanmu waktu pakai AI di kolom komentar!",
+  "llm_provider": "gemini"
+}

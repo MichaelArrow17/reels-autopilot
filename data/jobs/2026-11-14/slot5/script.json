@@ -1,0 +1,200 @@
+{
+  "judul": "Kenapa hook dua detik menentukan Reels",
+  "hook": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?",
+  "angle": "Sudut kreator Indonesia: Kenapa hook dua detik menentukan Reels",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kenapa Reels kamu langsung dilewati padahal isinya bagus? Jawabannya ada di dua detik pertama. Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan. Padahal penonton cuma butuh alasan cepat buat berhenti scroll. Coba ganti kalimat awalmu jadi pertanyaan yang bikin penasaran. Simpan video ini supaya tidak lupa.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?",
+      "teks_layar": "Reels Dilewati?",
+      "pose": "idle",
+      "keyword": "dilewati",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused looking at phone"
+    },
+    {
+      "id": 2,
+      "nama": "konflik_1",
+      "narasi": "Jawabannya ada di dua detik pertama.",
+      "teks_layar": "Dua Detik Pertama",
+      "pose": "point",
+      "keyword": "dua detik",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at clock"
+    },
+    {
+      "id": 3,
+      "nama": "konflik_2",
+      "narasi": "Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan.",
+      "teks_layar": "Intro Panjang = Bosan",
+      "pose": "shrug",
+      "keyword": "bosan",
+      "latar": "studio minimalis",
+      "image_query": "stickman shrugging"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Padahal penonton cuma butuh alasan cepat buat berhenti scroll. Coba ganti kalimat awalmu jadi pertanyaan yang bikin penasaran.",
+      "teks_layar": "Ganti Pertanyaan Awal",
+      "pose": "typing",
+      "keyword": "pertanyaan",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing fast"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya tidak lupa.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "studio minimalis",
+      "image_query": "stickman smiling holding bookmark"
+    }
+  ],
+  "caption": "Kenapa Reels kamu sering dilewati? Masalahnya ada di detik pertama. Coba terapkan cara ini dan lihat perubahannya!",
+  "cta": "Simpan video ini supaya tidak lupa.",
+  "hashtag": [
+    "#KreatorAI",
+    "#TipsReels",
+    "#BelajarKreator",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Rahasia Hook Dua Detik",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?",
+        "layout": "kinetic_title",
+        "judul_layar": "Reels Dilewati?",
+        "subjudul": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?",
+        "kata_kunci": [
+          {
+            "kata": "dilewati",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik_1",
+        "narasi": "Jawabannya ada di dua detik pertama.",
+        "layout": "bullets",
+        "judul_layar": "Dua Detik Pertama",
+        "subjudul": "Jawabannya ada di dua detik pertama.",
+        "kata_kunci": [
+          {
+            "kata": "dua detik",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "konflik_2",
+        "narasi": "Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan.",
+        "layout": "bullets",
+        "judul_layar": "Intro Panjang = Bosan",
+        "subjudul": "Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan.",
+        "kata_kunci": [
+          {
+            "kata": "bosan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Padahal penonton cuma butuh alasan cepat buat berhenti scroll. Coba ganti kalimat awalmu jadi pertanyaan yang bikin penasaran.",
+        "layout": "bullets",
+        "judul_layar": "Ganti Pertanyaan Awal",
+        "subjudul": "Padahal penonton cuma butuh alasan cepat buat berhenti scroll. Coba ganti kalimat awalmu j",
+        "kata_kunci": [
+          {
+            "kata": "pertanyaan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya tidak lupa.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini supaya tidak lupa.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

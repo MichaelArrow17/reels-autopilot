@@ -1,0 +1,201 @@
+{
+  "judul": "Menambal Data Kesehatan Mental Pekerja",
+  "hook": "Gimana caranya kecerdasan buatan membaca sinyal kesehatan mental pekerja yang datanya bolong?",
+  "angle": "Cara kecerdasan buatan membaca sinyal kesehatan mental pekerja",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Gimana caranya kecerdasan buatan membaca sinyal kesehatan mental pekerja yang datanya bolong? Padahal biasanya kita ngira data cuma soal angka absen atau jam kerja. Padahal, teks chat atau pola ketikan kamu juga nyimpen sinyal stres yang sering kelewatan. Nah, sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian. Coba mulai perhatiin pola kerja kamu biar nggak burnout. Follow buat part 2.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Gimana caranya kecerdasan buatan membaca sinyal kesehatan mental pekerja yang datanya bolong?",
+      "teks_layar": "Data Mental Bolong?",
+      "pose": "shrug",
+      "keyword": "Data Mental",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused with missing data chart"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal biasanya kita ngira data cuma soal angka absen atau jam kerja.",
+      "teks_layar": "Bukan Cuma Absen",
+      "pose": "think",
+      "keyword": "angka absen",
+      "latar": "studio minimalis",
+      "image_query": "stickman looking at calendar and clock"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, teks chat atau pola ketikan kamu juga nyimpen sinyal stres yang sering kelewatan.",
+      "teks_layar": "Pola Ketikan & Chat",
+      "pose": "typing",
+      "keyword": "sinyal stres",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on laptop with message bubbles"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Nah, sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian.",
+      "teks_layar": "AI Menambal Celah",
+      "pose": "point",
+      "keyword": "analisis pola",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at glowing AI brain icon"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba mulai perhatiin pola kerja kamu biar nggak burnout. Follow buat part 2.",
+      "teks_layar": "Follow buat Part 2",
+      "pose": "cheer",
+      "keyword": "burnout",
+      "latar": "studio minimalis",
+      "image_query": "stickman smiling with checkmark"
+    }
+  ],
+  "caption": "Gimana AI bisa baca data kesehatan mental yang bolong? Simpan video ini dan tulis pendapatmu di komentar!",
+  "cta": "Follow buat part 2",
+  "hashtag": [
+    "#KreatorAI",
+    "#KesehatanMental",
+    "#KecerdasanBuatan",
+    "#NusaMandiri",
+    "#Produktivitas"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI Baca Mental Pekerja?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Gimana caranya kecerdasan buatan membaca sinyal kesehatan mental pekerja yang datanya bolong?",
+        "layout": "kinetic_title",
+        "judul_layar": "Data Mental Bolong?",
+        "subjudul": "Gimana caranya kecerdasan buatan membaca sinyal kesehatan mental pekerja yang datanya bolo",
+        "kata_kunci": [
+          {
+            "kata": "Data Mental",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal biasanya kita ngira data cuma soal angka absen atau jam kerja.",
+        "layout": "bullets",
+        "judul_layar": "Bukan Cuma Absen",
+        "subjudul": "Padahal biasanya kita ngira data cuma soal angka absen atau jam kerja.",
+        "kata_kunci": [
+          {
+            "kata": "angka absen",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, teks chat atau pola ketikan kamu juga nyimpen sinyal stres yang sering kelewatan.",
+        "layout": "bullets",
+        "judul_layar": "Pola Ketikan & Chat",
+        "subjudul": "Padahal, teks chat atau pola ketikan kamu juga nyimpen sinyal stres yang sering kelewatan.",
+        "kata_kunci": [
+          {
+            "kata": "sinyal stres",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Nah, sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian.",
+        "layout": "bullets",
+        "judul_layar": "AI Menambal Celah",
+        "subjudul": "Nah, sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian.",
+        "kata_kunci": [
+          {
+            "kata": "analisis pola",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba mulai perhatiin pola kerja kamu biar nggak burnout. Follow buat part 2.",
+        "layout": "cta",
+        "judul_layar": "Follow buat Part 2",
+        "subjudul": "Coba mulai perhatiin pola kerja kamu biar nggak burnout. Follow buat part 2.",
+        "kata_kunci": [
+          {
+            "kata": "burnout",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

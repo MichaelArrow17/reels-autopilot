@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?",
+      "isi": "Jawabannya ada di dua detik pertama. Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan, padahal penonton cuma butuh alasan cepat buat berhenti scroll.",
+      "cta": "Simpan video ini supaya tidak lupa.",
+      "pertanyaan": "Biasanya durasi intro kamu berapa detik sebelum masuk inti?",
+      "hashtag": [
+        "#TipsReels",
+        "#BelajarKonten",
+        "#KreatorAI",
+        "#ContentCreator",
+        "#EditingVideo"
+      ]
+    },
+    {
+      "baris1": "Kenapa penonton langsung lewatkan videomu?",
+      "isi": "Karena dua detik pertama menentukan segalanya. Intro yang panjang bikin bosan, sementara penonton cuma butuh alasan cepat buat berhenti scroll.",
+      "cta": "Simpan video ini supaya tidak lupa.",
+      "pertanyaan": "Bagian mana yang paling susah dibuat saat bikin Reels?",
+      "hashtag": [
+        "#RahasiaReels",
+        "#TipsKreator",
+        "#PenulisKonten",
+        "#Copywriting",
+        "#VideoTips"
+      ]
+    },
+    {
+      "baris1": "Apakah Reels kamu sering dilewati padahal isinya bagus?",
+      "isi": "Penyebabnya ada di dua detik pertama. Jangan buat intro panjang yang bikin bosan, karena penonton cuma butuh alasan cepat buat berhenti scroll.",
+      "cta": "Simpan video ini supaya tidak lupa.",
+      "pertanyaan": "Apa trik andalanmu untuk menahan penonton di awal video?",
+      "hashtag": [
+        "#StrategiReels",
+        "#TipsInstagram",
+        "#KreatorPemula",
+        "#IdeKonten",
+        "#InstagramReels"
+      ]
+    }
+  ],
+  "cover": "Kenapa Reels Kamu Dilewati?",
+  "komentar_pin": "Simpan video ini biar nggak lupa praktikkan di Reels berikutnya ya! 👇",
+  "llm_provider": "gemini"
+}

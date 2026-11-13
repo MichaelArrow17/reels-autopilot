@@ -1,0 +1,333 @@
+[
+  {
+    "text": "Kenapa Reels kamu langsung",
+    "start": 0.0,
+    "end": 1.5165467566666668,
+    "words": [
+      {
+        "word": "Kenapa",
+        "start": 0.242292,
+        "duration": 0.40667705000000004
+      },
+      {
+        "word": "Reels",
+        "start": 0.64896905,
+        "duration": 0.2168944266666668
+      },
+      {
+        "word": "kamu",
+        "start": 0.8658634766666669,
+        "duration": 0.2711180333333332
+      },
+      {
+        "word": "langsung",
+        "start": 1.13698151,
+        "duration": 0.3795652466666668
+      }
+    ]
+  },
+  {
+    "text": "dilewati padahal isinya bagus?",
+    "start": 1.5165467566666668,
+    "end": 4.248311563333333,
+    "words": [
+      {
+        "word": "dilewati",
+        "start": 1.5165467566666668,
+        "duration": 0.5422360666666666
+      },
+      {
+        "word": "padahal",
+        "start": 2.0587828233333334,
+        "duration": 0.43378885333333317
+      },
+      {
+        "word": "isinya",
+        "start": 2.4925716766666666,
+        "duration": 0.4066770499999999
+      },
+      {
+        "word": "bagus?",
+        "start": 2.8992487266666664,
+        "duration": 1.3490628366666666
+      }
+    ]
+  },
+  {
+    "text": "Jawabannya ada di dua",
+    "start": 4.248311563333333,
+    "end": 5.387007303333333,
+    "words": [
+      {
+        "word": "Jawabannya",
+        "start": 4.248311563333333,
+        "duration": 0.5964596733333334
+      },
+      {
+        "word": "ada",
+        "start": 4.844771236666666,
+        "duration": 0.2440062300000001
+      },
+      {
+        "word": "di",
+        "start": 5.0887774666666665,
+        "duration": 0.13555901666666692
+      },
+      {
+        "word": "dua",
+        "start": 5.2243364833333334,
+        "duration": 0.16267081999999977
+      }
+    ]
+  },
+  {
+    "text": "detik pertama.",
+    "start": 5.387007303333333,
+    "end": 6.1190259933333335,
+    "words": [
+      {
+        "word": "detik",
+        "start": 5.387007303333333,
+        "duration": 0.2982298366666667
+      },
+      {
+        "word": "pertama.",
+        "start": 5.68523714,
+        "duration": 0.4337888533333336
+      }
+    ]
+  },
+  {
+    "text": "Kebanyakan kreator salah fokus",
+    "start": 6.1190259933333335,
+    "end": 8.705627783333334,
+    "words": [
+      {
+        "word": "Kebanyakan",
+        "start": 6.1190259933333335,
+        "duration": 1.637688673333333
+      },
+      {
+        "word": "kreator",
+        "start": 7.756714666666666,
+        "duration": 0.3524534433333324
+      },
+      {
+        "word": "salah",
+        "start": 8.109168109999999,
+        "duration": 0.2982298366666676
+      },
+      {
+        "word": "fokus",
+        "start": 8.407397946666666,
+        "duration": 0.2982298366666676
+      }
+    ]
+  },
+  {
+    "text": "bikin intro panjang yang bikin bosan.",
+    "start": 8.705627783333334,
+    "end": 10.440783196666667,
+    "words": [
+      {
+        "word": "bikin",
+        "start": 8.705627783333334,
+        "duration": 0.2982298366666658
+      },
+      {
+        "word": "intro",
+        "start": 9.00385762,
+        "duration": 0.2982298366666658
+      },
+      {
+        "word": "panjang",
+        "start": 9.302087456666666,
+        "duration": 0.35245344333333506
+      },
+      {
+        "word": "yang",
+        "start": 9.6545409,
+        "duration": 0.18978262333333262
+      },
+      {
+        "word": "bikin",
+        "start": 9.844323523333333,
+        "duration": 0.2982298366666676
+      },
+      {
+        "word": "bosan.",
+        "start": 10.14255336,
+        "duration": 0.2982298366666658
+      }
+    ]
+  },
+  {
+    "text": "Padahal penonton cuma butuh",
+    "start": 10.440783196666667,
+    "end": 12.960800576666669,
+    "words": [
+      {
+        "word": "Padahal",
+        "start": 10.440783196666667,
+        "duration": 1.4897688533333344
+      },
+      {
+        "word": "penonton",
+        "start": 11.930552050000001,
+        "duration": 0.46090065666666646
+      },
+      {
+        "word": "cuma",
+        "start": 12.391452706666668,
+        "duration": 0.27111803333333384
+      },
+      {
+        "word": "butuh",
+        "start": 12.662570740000001,
+        "duration": 0.2982298366666676
+      }
+    ]
+  },
+  {
+    "text": "alasan cepat buat berhenti",
+    "start": 12.960800576666669,
+    "end": 14.316390743333335,
+    "words": [
+      {
+        "word": "alasan",
+        "start": 12.960800576666669,
+        "duration": 0.40667705000000076
+      },
+      {
+        "word": "cepat",
+        "start": 13.36747762666667,
+        "duration": 0.2982298366666658
+      },
+      {
+        "word": "buat",
+        "start": 13.665707463333336,
+        "duration": 0.18978262333333262
+      },
+      {
+        "word": "berhenti",
+        "start": 13.855490086666668,
+        "duration": 0.46090065666666646
+      }
+    ]
+  },
+  {
+    "text": "scroll. Coba ganti kalimat",
+    "start": 14.316390743333335,
+    "end": 16.59117969666667,
+    "words": [
+      {
+        "word": "scroll.",
+        "start": 14.316390743333335,
+        "duration": 0.2440062300000001
+      },
+      {
+        "word": "Coba",
+        "start": 14.560396973333335,
+        "duration": 1.2987640333333346
+      },
+      {
+        "word": "ganti",
+        "start": 15.85916100666667,
+        "duration": 0.29822983666666936
+      },
+      {
+        "word": "kalimat",
+        "start": 16.15739084333334,
+        "duration": 0.4337888533333327
+      }
+    ]
+  },
+  {
+    "text": "awalmu jadi pertanyaan yang",
+    "start": 16.59117969666667,
+    "end": 17.97388166666667,
+    "words": [
+      {
+        "word": "awalmu",
+        "start": 16.59117969666667,
+        "duration": 0.406677049999999
+      },
+      {
+        "word": "jadi",
+        "start": 16.99785674666667,
+        "duration": 0.27111803333333384
+      },
+      {
+        "word": "pertanyaan",
+        "start": 17.268974780000004,
+        "duration": 0.5151242633333339
+      },
+      {
+        "word": "yang",
+        "start": 17.784099043333338,
+        "duration": 0.18978262333333262
+      }
+    ]
+  },
+  {
+    "text": "bikin penasaran.",
+    "start": 17.97388166666667,
+    "end": 19.905980373333335,
+    "words": [
+      {
+        "word": "bikin",
+        "start": 17.97388166666667,
+        "duration": 0.298229836666664
+      },
+      {
+        "word": "penasaran.",
+        "start": 18.272111503333335,
+        "duration": 1.6338688700000006
+      }
+    ]
+  },
+  {
+    "text": "Simpan video ini supaya",
+    "start": 19.905980373333335,
+    "end": 21.180235130000003,
+    "words": [
+      {
+        "word": "Simpan",
+        "start": 19.905980373333335,
+        "duration": 0.32534163999999777
+      },
+      {
+        "word": "video",
+        "start": 20.231322013333333,
+        "duration": 0.29822983666667113
+      },
+      {
+        "word": "ini",
+        "start": 20.529551850000004,
+        "duration": 0.24400622999999655
+      },
+      {
+        "word": "supaya",
+        "start": 20.77355808,
+        "duration": 0.40667705000000254
+      }
+    ]
+  },
+  {
+    "text": "tidak lupa.",
+    "start": 21.180235130000003,
+    "end": 21.780235130000005,
+    "words": [
+      {
+        "word": "tidak",
+        "start": 21.180235130000003,
+        "duration": 0.2982298366666676
+      },
+      {
+        "word": "lupa.",
+        "start": 21.47846496666667,
+        "duration": 0.2711180333333303
+      }
+    ]
+  }
+]

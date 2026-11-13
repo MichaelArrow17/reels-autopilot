@@ -1,0 +1,321 @@
+[
+  {
+    "text": "Gimana caranya perusahaan ngurusin",
+    "start": 0.0,
+    "end": 2.0888783050847457,
+    "words": [
+      {
+        "word": "Gimana",
+        "start": 0.227563,
+        "duration": 0.3988532796610169
+      },
+      {
+        "word": "caranya",
+        "start": 0.6264162796610169,
+        "duration": 0.42544349830508477
+      },
+      {
+        "word": "perusahaan",
+        "start": 1.0518597779661016,
+        "duration": 0.5849848101694914
+      },
+      {
+        "word": "ngurusin",
+        "start": 1.636844588135593,
+        "duration": 0.4520337169491526
+      }
+    ]
+  },
+  {
+    "text": "banyak karyawan tanpa ribet?",
+    "start": 2.0888783050847457,
+    "end": 4.633062455932203,
+    "words": [
+      {
+        "word": "banyak",
+        "start": 2.0888783050847457,
+        "duration": 0.31908262372881335
+      },
+      {
+        "word": "karyawan",
+        "start": 2.407960928813559,
+        "duration": 0.4520337169491526
+      },
+      {
+        "word": "tanpa",
+        "start": 2.8599946457627117,
+        "duration": 1.4805754050847457
+      },
+      {
+        "word": "ribet?",
+        "start": 4.340570050847457,
+        "duration": 0.2924924050847455
+      }
+    ]
+  },
+  {
+    "text": "Selama ini, HR sering",
+    "start": 4.633062455932203,
+    "end": 6.183761420338982,
+    "words": [
+      {
+        "word": "Selama",
+        "start": 4.633062455932203,
+        "duration": 0.8593532796610166
+      },
+      {
+        "word": "ini,",
+        "start": 5.4924157355932195,
+        "duration": 0.23931196779661068
+      },
+      {
+        "word": "HR",
+        "start": 5.73172770338983,
+        "duration": 0.13295109322033927
+      },
+      {
+        "word": "sering",
+        "start": 5.864678796610169,
+        "duration": 0.31908262372881246
+      }
+    ]
+  },
+  {
+    "text": "pusing karena semua urusan",
+    "start": 6.183761420338982,
+    "end": 7.5930430084745755,
+    "words": [
+      {
+        "word": "pusing",
+        "start": 6.183761420338982,
+        "duration": 0.31908262372881424
+      },
+      {
+        "word": "karena",
+        "start": 6.502844044067796,
+        "duration": 0.3988532796610169
+      },
+      {
+        "word": "semua",
+        "start": 6.901697323728813,
+        "duration": 0.2924924050847455
+      },
+      {
+        "word": "urusan",
+        "start": 7.194189728813559,
+        "duration": 0.3988532796610169
+      }
+    ]
+  },
+  {
+    "text": "dicatet secara manual.",
+    "start": 7.5930430084745755,
+    "end": 9.75894341016949,
+    "words": [
+      {
+        "word": "dicatet",
+        "start": 7.5930430084745755,
+        "duration": 0.4254434983050839
+      },
+      {
+        "word": "secara",
+        "start": 8.01848650677966,
+        "duration": 1.4213742796610163
+      },
+      {
+        "word": "manual.",
+        "start": 9.439860786440676,
+        "duration": 0.31908262372881424
+      }
+    ]
+  },
+  {
+    "text": "Padahal, teknologi terintegrasi bisa",
+    "start": 9.75894341016949,
+    "end": 12.184619589830508,
+    "words": [
+      {
+        "word": "Padahal,",
+        "start": 9.75894341016949,
+        "duration": 0.8834434983050841
+      },
+      {
+        "word": "teknologi",
+        "start": 10.642386908474574,
+        "duration": 0.558394591525424
+      },
+      {
+        "word": "terintegrasi",
+        "start": 11.200781499999998,
+        "duration": 0.7179359033898312
+      },
+      {
+        "word": "bisa",
+        "start": 11.918717403389829,
+        "duration": 0.26590218644067853
+      }
+    ]
+  },
+  {
+    "text": "ubah cara perusahaan kelola",
+    "start": 12.184619589830508,
+    "end": 13.700262052542373,
+    "words": [
+      {
+        "word": "ubah",
+        "start": 12.184619589830508,
+        "duration": 0.26590218644067853
+      },
+      {
+        "word": "cara",
+        "start": 12.450521776271186,
+        "duration": 0.26590218644067853
+      },
+      {
+        "word": "perusahaan",
+        "start": 12.716423962711865,
+        "duration": 0.584984810169491
+      },
+      {
+        "word": "kelola",
+        "start": 13.301408772881356,
+        "duration": 0.3988532796610169
+      }
+    ]
+  },
+  {
+    "text": "SDM jadi jauh lebih",
+    "start": 13.700262052542373,
+    "end": 14.604329486440678,
+    "words": [
+      {
+        "word": "SDM",
+        "start": 13.700262052542373,
+        "duration": 0.15954131186440712
+      },
+      {
+        "word": "jadi",
+        "start": 13.85980336440678,
+        "duration": 0.26590218644067853
+      },
+      {
+        "word": "jauh",
+        "start": 14.125705550847458,
+        "duration": 0.18613153050847409
+      },
+      {
+        "word": "lebih",
+        "start": 14.311837081355932,
+        "duration": 0.2924924050847455
+      }
+    ]
+  },
+  {
+    "text": "cepat. Mulai pakai sistem",
+    "start": 14.604329486440678,
+    "end": 16.87547232542373,
+    "words": [
+      {
+        "word": "cepat.",
+        "start": 14.604329486440678,
+        "duration": 1.367075405084746
+      },
+      {
+        "word": "Mulai",
+        "start": 15.971404891525424,
+        "duration": 0.2924924050847473
+      },
+      {
+        "word": "pakai",
+        "start": 16.26389729661017,
+        "duration": 0.2924924050847437
+      },
+      {
+        "word": "sistem",
+        "start": 16.556389701694915,
+        "duration": 0.31908262372881424
+      }
+    ]
+  },
+  {
+    "text": "digital sekarang biar data",
+    "start": 16.87547232542373,
+    "end": 18.20498325762712,
+    "words": [
+      {
+        "word": "digital",
+        "start": 16.87547232542373,
+        "duration": 0.42544349830508565
+      },
+      {
+        "word": "sekarang",
+        "start": 17.300915823728815,
+        "duration": 0.4520337169491526
+      },
+      {
+        "word": "biar",
+        "start": 17.752949540677967,
+        "duration": 0.1861315305084723
+      },
+      {
+        "word": "data",
+        "start": 17.93908107118644,
+        "duration": 0.2659021864406803
+      }
+    ]
+  },
+  {
+    "text": "tim kamu makin akurat.",
+    "start": 18.20498325762712,
+    "end": 20.538147440677967,
+    "words": [
+      {
+        "word": "tim",
+        "start": 18.20498325762712,
+        "duration": 0.15954131186440534
+      },
+      {
+        "word": "kamu",
+        "start": 18.364524569491525,
+        "duration": 0.2659021864406803
+      },
+      {
+        "word": "makin",
+        "start": 18.630426755932206,
+        "duration": 0.2924924050847437
+      },
+      {
+        "word": "akurat.",
+        "start": 18.92291916101695,
+        "duration": 1.615228279661018
+      }
+    ]
+  },
+  {
+    "text": "Follow buat part 2.",
+    "start": 20.538147440677967,
+    "end": 21.335854,
+    "words": [
+      {
+        "word": "Follow",
+        "start": 20.538147440677967,
+        "duration": 0.3190826237288178
+      },
+      {
+        "word": "buat",
+        "start": 20.857230064406785,
+        "duration": 0.18613153050846876
+      },
+      {
+        "word": "part",
+        "start": 21.043361594915254,
+        "duration": 0.18613153050847586
+      },
+      {
+        "word": "2.",
+        "start": 21.22949312542373,
+        "duration": 0.10636087457627141
+      }
+    ]
+  }
+]

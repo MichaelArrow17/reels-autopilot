@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T22:02:26.800081+00:00",
+  "updated_at": "2026-11-13T22:35:01.102583+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
@@ -7,11 +7,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": "2026-11-12T14:19:04.739504+00:00",
-      "last_success_at": "2026-11-12T23:36:15.416956+00:00",
+      "last_success_at": "2026-11-13T22:34:50.985062+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 12,
+      "success_count": 22,
       "failure_count": 1
     },
     "tts:edge_tts": {
@@ -20,11 +20,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T23:36:26.492416+00:00",
+      "last_success_at": "2026-11-13T22:35:00.231512+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 11,
       "failure_count": 0
     },
     "images:openverse": {
@@ -32,26 +32,26 @@
       "provider_id": "openverse",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: openverse: tidak ada hasil berlisensi komersial",
-      "last_error_at": "2026-11-12T23:34:18.708960+00:00",
+      "last_error_at": "2026-11-13T22:31:16.718567+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T23:39:18.708978+00:00",
+      "cooldown_until": "2026-11-13T22:36:16.718585+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 4
+      "failure_count": 5
     },
     "images:wikimedia": {
       "category": "images",
       "provider_id": "wikimedia",
       "consecutive_failures": 1,
       "last_error": "RuntimeError: wikimedia: tidak ada berkas berlisensi komersial yang cocok",
-      "last_error_at": "2026-11-12T23:34:19.255452+00:00",
+      "last_error_at": "2026-11-13T22:31:17.230689+00:00",
       "last_success_at": null,
-      "cooldown_until": "2026-11-12T23:39:19.255483+00:00",
+      "cooldown_until": "2026-11-13T22:36:17.230706+00:00",
       "quota_exhausted": false,
       "quota_reset_at": null,
       "success_count": 0,
-      "failure_count": 4
+      "failure_count": 5
     },
     "images:local": {
       "category": "images",
@@ -59,11 +59,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-12T23:36:27.985518+00:00",
+      "last_success_at": "2026-11-13T22:35:01.102502+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 10,
       "failure_count": 0
     },
     "llm:github_models": {

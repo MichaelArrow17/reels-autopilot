@@ -1,0 +1,88 @@
+{
+  "style": "kolase",
+  "judul": "Pembatasan Chip AI Amerika Ancam ASEAN, Bagaimana dengan RI? - Bloomberg Technoz",
+  "hook": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong.",
+  "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+  "subjek": "",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Kalau ada tanggal, gelar, atau jumlah, tanya dulu dari mana angkanya. Kalau tidak ada tautan resmi, jangan langsung percaya. Skandal, mundur jabatan, atau kabar duka apalagi: tanpa sumber, jangan disebar. Simpan video ini, dan kalau ada yang mau kamu cek, tulis di komentar.",
+  "caption": "Banyak video profil terdengar lancar, padahal sumbernya kosong.\n\nKalau ada tanggal atau jumlah, tanya sumbernya. Klaim berat tanpa tautan resmi jangan disebar.\n\nKalau ada yang mau kamu cek, tulis di komentar.\n\n#KreatorAI #PoChai #CekSumber #ReelsIndonesia",
+  "cta": "Tulis di komentar kalau ada yang mau kamu cek.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#CekSumber",
+    "#ReelsIndonesia"
+  ],
+  "klaim": [],
+  "fakta_yang_wajib_dicek": [],
+  "is_ai_generated": true,
+  "cover_text": "CEK SUMBER",
+  "image_query": "",
+  "bab": [
+    {
+      "nama": "hook",
+      "label": "LANCAR, TAPI KOSONG?",
+      "gambar_query": "",
+      "kata_kunci": [
+        "lancar"
+      ],
+      "latar": [
+        46,
+        28,
+        24
+      ]
+    },
+    {
+      "nama": "timeline",
+      "label": "TANYA SUMBERNYA",
+      "gambar_query": "",
+      "kata_kunci": [
+        "sumber"
+      ],
+      "latar": [
+        22,
+        36,
+        38
+      ]
+    },
+    {
+      "nama": "twist",
+      "label": "TANPA TAUTAN, JANGAN SEBAR",
+      "gambar_query": "",
+      "kata_kunci": [
+        "jangan"
+      ],
+      "latar": [
+        28,
+        26,
+        46
+      ]
+    },
+    {
+      "nama": "tanya",
+      "label": "MAU CEK APA? TULIS DI KOMENTAR",
+      "gambar_query": "",
+      "kata_kunci": [
+        "komentar"
+      ],
+      "latar": [
+        40,
+        32,
+        22
+      ]
+    }
+  ],
+  "llm_provider": "gemini",
+  "struktur": [
+    "hook",
+    "timeline",
+    "twist",
+    "tanya"
+  ],
+  "storyboard_fallback": true,
+  "fact_guard_issues": [
+    "klaim #1 sumber belum terpercaya/resmi: host tidak dikenali"
+  ]
+}

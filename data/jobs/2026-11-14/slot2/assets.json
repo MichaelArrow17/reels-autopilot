@@ -1,0 +1,42 @@
+[
+  {
+    "query": "",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_1_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_1_cut.png"
+  },
+  {
+    "query": "",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_2_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_2_cut.png"
+  },
+  {
+    "query": "",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_3_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_3_cut.png"
+  },
+  {
+    "query": "",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_4_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/cutout_4_cut.png"
+  }
+]

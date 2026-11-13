@@ -1,0 +1,228 @@
+{
+  "style": "cerita",
+  "storyboard": {
+    "style": "cerita",
+    "environment": "office",
+    "durasi_detik": 24.0,
+    "label_kiri": "ASAL TEBAK",
+    "label_kanan": "CEK FAKTA",
+    "judul": "Kenapa AI kadang ngarang fakta",
+    "hook": "Kenapa AI kadang ngarang fakta?",
+    "karakter": [
+      {
+        "id": "a",
+        "warna": "abu",
+        "peran": "menyerah"
+      },
+      {
+        "id": "b",
+        "warna": "kuning",
+        "peran": "berjuang"
+      }
+    ],
+    "beats": [
+      {
+        "t": 0.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "sit",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": "kiri"
+        },
+        "properti": [],
+        "gelembung_a": "Asal jawab aja deh!",
+        "gelembung_b": "Cari tahu dulu sumbernya.",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "click"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 4.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "struggle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": ""
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Kok malah ngaco?",
+        "gelembung_b": "Nih data validnya.",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "ding"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 8.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "fall",
+          "x": 0.3,
+          "y": 0.65,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "stand",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": ""
+        },
+        "properti": [],
+        "gelembung_a": "Bingung...",
+        "gelembung_b": "Aman terkendali.",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "thud"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 12.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "kneel",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "push",
+          "x": 0.65,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Menyerah deh.",
+        "gelembung_b": "Tembus batas!",
+        "efek": [
+          "break"
+        ],
+        "sfx": [
+          "crack"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 16.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "idle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "celebrate",
+          "x": 0.7,
+          "y": 0.5,
+          "hadap": ""
+        },
+        "properti": [],
+        "gelembung_a": "",
+        "gelembung_b": "Fakta terbukti!",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "cheer"
+        ],
+        "klimaks": true,
+        "teks_klimaks": "Verifikasi Berhasil!"
+      },
+      {
+        "t": 20.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "look",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "wave",
+          "x": 0.7,
+          "y": 0.5,
+          "hadap": "kiri"
+        },
+        "properti": [],
+        "gelembung_a": "Oh begitu...",
+        "gelembung_b": "Jangan asal percaya ya!",
+        "efek": [],
+        "sfx": [
+          "success"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      }
+    ],
+    "klimaks": {
+      "t": 16.0,
+      "jenis": "capai_puncak",
+      "pemenang": "b"
+    },
+    "narasi_penuh": "",
+    "pakai_vo": false,
+    "moral": "Selalu periksa sumber sebelum percaya."
+  },
+  "judul": "Kenapa AI kadang ngarang fakta",
+  "hook": "Kenapa AI kadang ngarang fakta?",
+  "angle": "Sudut kreator Indonesia: Kenapa AI kadang ngarang fakta",
+  "bahasa": "id",
+  "durasi_target_detik": 24,
+  "narasi_penuh": "",
+  "adegan": [],
+  "caption": "Masih bingung soal Kenapa AI kadang ngarang fakta? Ini cara praktis yang bisa kamu coba.\n\nSelalu periksa sumber sebelum percaya.\n\nSimpan video ini, biar kamu ingat saat mau nyerah.\n\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsAI",
+  "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#Motivasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "CEK FAKTA",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "storyboard_fallback": false,
+  "pakai_vo": false,
+  "moral": "Selalu periksa sumber sebelum percaya."
+}

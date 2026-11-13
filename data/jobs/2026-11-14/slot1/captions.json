@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Gimana caranya AI membaca sinyal kesehatan mental pekerja yang datanya bolong?",
+      "isi": "Teks chat dan pola ketikan kamu ternyata nyimpen sinyal stres yang sering kelewatan. Sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Pernah sadar kalau pola ketikanmu berubah pas lagi stres?",
+      "hashtag": [
+        "#kesehatanmental",
+        "#ai",
+        "#burnout",
+        "#duniakerja",
+        "#mentalhealth"
+      ]
+    },
+    {
+      "baris1": "Data apa aja yang dibaca AI buat tahu stres pekerja?",
+      "isi": "Bukan cuma angka absen atau jam kerja, teks chat dan pola ketikan kamu juga nyimpen sinyal stres. AI bisa menganalisis kebiasaan harian buat menambal data yang bolong.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Menurutmu, aman gak sih kalau AI baca pola chat kerja kita?",
+      "hashtag": [
+        "#psikologikerja",
+        "#artificialintelligence",
+        "#produktivitas",
+        "#stresswork",
+        "#mentalhealth"
+      ]
+    },
+    {
+      "baris1": "Kenapa data absen aja gak cukup buat ukur stres kerja?",
+      "isi": "Karena teks chat atau pola ketikan kamu juga nyimpen sinyal stres yang sering kelewatan. AI pakai analisis pola kebiasaan harian buat menambal celah data tersebut.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa tanda paling gampang kalau kamu udah mau burnout?",
+      "hashtag": [
+        "#kesehatankaryawan",
+        "#aiindonesia",
+        "#burnoutprevention",
+        "#worklifebalance",
+        "#workplace"
+      ]
+    }
+  ],
+  "cover": "AI Baca Sinyal Stres Pekerja",
+  "komentar_pin": "Gimana menurutmu, AI bantu atau malah bikin parno? Tulis di komentar ya!",
+  "llm_provider": "gemini"
+}

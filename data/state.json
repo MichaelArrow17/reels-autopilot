@@ -41,6 +41,36 @@
       "tanggal": "2026-11-13",
       "angle": "Panduan praktis menjaga privasi data pribadi di internet untuk pengguna sehari-hari di Indonesia.",
       "slot": 5
+    },
+    {
+      "judul": "Menambal Data Kesehatan Mental Pekerja",
+      "tanggal": "2026-11-14",
+      "angle": "Cara kecerdasan buatan membaca sinyal kesehatan mental pekerja",
+      "slot": 1
+    },
+    {
+      "judul": "Pembatasan Chip AI Amerika Ancam ASEAN, Bagaimana dengan RI? - Bloomberg Technoz",
+      "tanggal": "2026-11-14",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 2
+    },
+    {
+      "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
+      "tanggal": "2026-11-14",
+      "angle": "Sudut kreator Indonesia: Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
+      "slot": 3
+    },
+    {
+      "judul": "Kenapa AI kadang ngarang fakta",
+      "tanggal": "2026-11-14",
+      "angle": "Sudut kreator Indonesia: Kenapa AI kadang ngarang fakta",
+      "slot": 4
+    },
+    {
+      "judul": "Kenapa hook dua detik menentukan Reels",
+      "tanggal": "2026-11-14",
+      "angle": "Sudut kreator Indonesia: Kenapa hook dua detik menentukan Reels",
+      "slot": 5
     }
   ],
   "days": {
@@ -1951,7 +1981,7 @@
           "id": "2026-11-14-s1-eb3d75",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Menambal Data yang Bolong: Cara Kecerdasan Buatan Membaca Sinyal Kesehatan Mental Pekerja - Universitas Nusa Mandiri",
+          "judul": "Menambal Data Kesehatan Mental Pekerja",
           "hook": "Menambal Data yang Bolong: Cara Kecerdasan Buatan Membaca Sinyal Kesehatan Mental Pekerja?",
           "topic": {
             "judul": "Menambal Data yang Bolong: Cara Kecerdasan Buatan Membaca Sinyal Kesehatan Mental Pekerja - Universitas Nusa Mandiri",
@@ -1983,8 +2013,22 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-14T06:02:33+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-14T06:02:33+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot1/script.json",
+          "caption": "Gimana caranya AI membaca sinyal kesehatan mental pekerja yang datanya bolong?\nTeks chat dan pola ketikan kamu ternyata nyimpen sinyal stres yang sering kelewatan. Sistem AI sekarang bisa menambal celah itu lewat analisis pola kebiasaan harian.\nFollow untuk part berikutnya.\nPernah sadar kalau pola ketikanmu berubah pas lagi stres?\n#kesehatanmental #ai #burnout #duniakerja #mentalhealth",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 27.624,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-14-s2-81bfc2",
@@ -2022,14 +2066,30 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-14T06:02:33+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-14T06:02:33+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot2/script.json",
+          "caption": "Kenapa video profil orang terkenal sering terdengar lancar tapi kosong?\nBanyak video profil yang terdengar sangat lancar padahal sumber aslinya kosong dan tidak bisa dibuktikan kebenarannya.\nSimpan video ini\nPernahkah kamu hampir percaya informasi tanpa sumber yang jelas?\n#LiterasiDigital #CekFakta #AIIndonesia #FactCheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-14-s3-ca26d0",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM - MetroTVNews.com",
+          "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
           "hook": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM - MetroTVNews.com?",
           "topic": {
             "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM - MetroTVNews.com",
@@ -2061,8 +2121,22 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-14T06:02:33+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-14T06:02:33+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot3/script.json",
+          "caption": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?\nSelama ini HR sering pusing karena semua urusan dicatet secara manual. Padahal, teknologi terintegrasi bisa ubah cara kelola SDM jadi jauh lebih cepat dan akurat.\nFollow buat part 2.\nMenurut kamu, apa tantangan terbesar HR saat ini?\n#ManajemenSDM #TeknologiHR #SistemDigital #HumanResources #HRTech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 22.233333,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-14-s4-9e2f7a",
@@ -2100,8 +2174,23 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-14T06:02:33+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-14T06:02:33+08:00",
+          "style": "cerita",
+          "style_reason": "rotasi setelah 3× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot4/script.json",
+          "caption": "Kenapa AI kadang bisa ngarang fakta?\nSistem AI memprediksi kata berdasarkan pola, bukan benar-salah. Hal ini membuat informasi keliru terdengar sangat meyakinkan.\nKomentar jawaban\nPernahkah kamu tertipu jawaban AI?\n#KecerdasanBuatan #AIIndonesia #Teknologi #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.5,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-14-s5-8e81eb",
@@ -2139,8 +2228,22 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-14T06:02:33+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-14T06:02:33+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-14/slot5/script.json",
+          "caption": "Kenapa Reels kamu langsung dilewati padahal isinya bagus?\nJawabannya ada di dua detik pertama. Kebanyakan kreator salah fokus bikin intro panjang yang bikin bosan, padahal penonton cuma butuh alasan cepat buat berhenti scroll.\nSimpan video ini supaya tidak lupa.\nBiasanya durasi intro kamu berapa detik sebelum masuk inti?\n#TipsReels #BelajarKonten #KreatorAI #ContentCreator #EditingVideo",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 22.666016,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-14T06:02:32+08:00",
@@ -2152,5 +2255,42 @@
     "chat_id": "7568757522"
   },
   "paused": false,
-  "paused_until": null
+  "paused_until": null,
+  "style_history": [
+    {
+      "date": "2026-11-14",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Menambal Data Kesehatan Mental Pekerja",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 2,
+      "style": "kolase",
+      "judul": "Pembatasan Chip AI Amerika Ancam ASEAN, Bagaimana dengan RI? - Bloomberg Technoz",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "Kenapa AI kadang ngarang fakta",
+      "reason": "rotasi setelah 3× penjelas"
+    },
+    {
+      "date": "2026-11-14",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "Kenapa hook dua detik menentukan Reels",
+      "reason": "topik info"
+    }
+  ]
 }

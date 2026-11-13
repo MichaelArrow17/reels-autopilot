@@ -1,0 +1,200 @@
+{
+  "judul": "Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
+  "hook": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+  "angle": "Sudut kreator Indonesia: Teknologi Terintegrasi Ubah Cara Perusahaan Kelola SDM",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet? Selama ini, HR sering pusing karena semua urusan dicatet secara manual. Padahal, teknologi terintegrasi bisa ubah cara perusahaan kelola SDM jadi jauh lebih cepat. Mulai pakai sistem digital sekarang biar data tim kamu makin akurat. Follow buat part 2.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+      "teks_layar": "HR Ribet?",
+      "pose": "idle",
+      "keyword": "perusahaan",
+      "latar": "kantor",
+      "image_query": "busy office stickman"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Selama ini, HR sering pusing karena semua urusan dicatet secara manual.",
+      "teks_layar": "Manual Bikin Pusing",
+      "pose": "think",
+      "keyword": "manual",
+      "latar": "kantor",
+      "image_query": "confused HR stickman"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, teknologi terintegrasi bisa ubah cara perusahaan kelola SDM jadi jauh lebih cepat.",
+      "teks_layar": "Teknologi Terintegrasi",
+      "pose": "point",
+      "keyword": "teknologi",
+      "latar": "kantor",
+      "image_query": "digital system stickman"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Mulai pakai sistem digital sekarang biar data tim kamu makin akurat.",
+      "teks_layar": "Data Akurat",
+      "pose": "typing",
+      "keyword": "digital",
+      "latar": "kantor",
+      "image_query": "laptop work stickman"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part 2.",
+      "teks_layar": "Follow",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "kantor",
+      "image_query": "happy stickman"
+    }
+  ],
+  "caption": "Gimana cara perusahaan kelola SDM di era modern? Teknologi terintegrasi jawabannya! Simpan video ini dan follow buat tips seputar AI dan teknologi.",
+  "cta": "Follow buat part 2.",
+  "hashtag": [
+    "#KreatorAI",
+    "#TeknologiSDM",
+    "#HRDigital",
+    "#TipsKerja"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Teknologi Kelola SDM",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+        "layout": "kinetic_title",
+        "judul_layar": "HR Ribet?",
+        "subjudul": "Gimana caranya perusahaan ngurusin banyak karyawan tanpa ribet?",
+        "kata_kunci": [
+          {
+            "kata": "perusahaan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Selama ini, HR sering pusing karena semua urusan dicatet secara manual.",
+        "layout": "bullets",
+        "judul_layar": "Manual Bikin Pusing",
+        "subjudul": "Selama ini, HR sering pusing karena semua urusan dicatet secara manual.",
+        "kata_kunci": [
+          {
+            "kata": "manual",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, teknologi terintegrasi bisa ubah cara perusahaan kelola SDM jadi jauh lebih cepat.",
+        "layout": "bullets",
+        "judul_layar": "Teknologi Terintegrasi",
+        "subjudul": "Padahal, teknologi terintegrasi bisa ubah cara perusahaan kelola SDM jadi jauh lebih cepat",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Mulai pakai sistem digital sekarang biar data tim kamu makin akurat.",
+        "layout": "bullets",
+        "judul_layar": "Data Akurat",
+        "subjudul": "Mulai pakai sistem digital sekarang biar data tim kamu makin akurat.",
+        "kata_kunci": [
+          {
+            "kata": "digital",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow buat part 2.",
+        "layout": "cta",
+        "judul_layar": "Follow",
+        "subjudul": "Follow buat part 2.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}
