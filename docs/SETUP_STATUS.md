@@ -1,6 +1,6 @@
 # SETUP_STATUS — reels-autopilot
 
-Status setup per 12 November 2026 (WITA). Dokumen ini merangkum arsitektur yang sudah jalan, akun, ID, jadwal, rantai failover, dan sisa pekerjaan. Tidak berisi password, token, atau kunci API. Bahan untuk PDF operasional nanti.
+Status setup per 13 November 2026 (WITA). Dokumen ini merangkum arsitektur yang sudah jalan, akun, ID, jadwal, rantai failover, dan sisa pekerjaan. Tidak berisi password, token, atau kunci API. Bahan untuk PDF operasional nanti.
 
 Repo publik: [MichaelArrow17/reels-autopilot](https://github.com/MichaelArrow17/reels-autopilot). Kode di `/workspace/reels_autopilot`. Secret lokal hanya di `.secrets/` (gitignored, chmod 600).
 
@@ -79,6 +79,13 @@ Semua workflow di `.github/workflows/`. Bisa juga dijalankan manual (`workflow_d
 | `refresh-ig-token.yml` | `0 0 1 * *` | tanggal 1, 08:00 | Exchange token jika app secret ada |
 | `refresh-ig-token.yml` | `0 1 * * 1` | Senin 09:00 | Health check mingguan (atau exchange jika secret app ada) |
 
+Cadangan pemicu jadwal: cron-job.org (akun arrowmichael17, folder `reels-autopilot`).
+Job memanggil `workflow_dispatch` di jam WITA yang sama (timezone Asia/Makassar, bukan Jakarta).
+Daftar id ada di `docs/CRON_JOB_ORG.md`. Guard idempoten di workflow mencegah double-publish
+jika cron GitHub dan cron-job.org terpicu bersama. PAT pemicu: `CRON_DISPATCH_PAT`
+(fine-grained, Actions RW pada repo ini saja, **kedaluwarsa 11 Februari 2027**).
+Nilai token hanya di `.secrets/cron_dispatch.env` (gitignored), bukan di dokumen ini.
+
 Cadangan compute: `.gitlab-ci.yml` (hanya darurat; menit GitLab belum diverifikasi).
 
 Setelah `produce` / `publish` / `poll`, state JSON di-commit otomatis ke `main` (tanpa file media).
@@ -94,6 +101,11 @@ Repo: `MichaelArrow17/reels-autopilot`. Nilai tidak dicatat di sini.
 `GEMINI_API_KEY`, `GH_PAT`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `IG_USER_ID`, `IG_ACCESS_TOKEN`.
 
 `GH_PAT` adalah fine-grained PAT (Secrets / Variables / Workflows / Contents RW pada repo ini). Dipakai menulis ulang `IG_ACCESS_TOKEN` saat exchange berhasil. `GITHUB_TOKEN` otomatis Actions **tidak** bisa menulis secret.
+
+Pemicu cron-job.org **tidak** memakai `GH_PAT`. Nama secret lokal: `CRON_DISPATCH_PAT`
+(Actions: Read and write, hanya repo ini) dan `CRONJOB_API_KEY`.
+`CRON_DISPATCH_PAT` **kedaluwarsa 11 Februari 2027** — perpanjang sebelum tanggal itu.
+Kedua nilai hanya ada di `.secrets/cron_dispatch.env`, tidak di GitHub Actions secrets, dan tidak dicatat di sini.
 
 ### Variables yang sudah diisi
 

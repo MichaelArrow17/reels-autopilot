@@ -6,20 +6,25 @@ jam yang sama. Dua pemicu boleh jalan bersamaan: job menunggu antrean concurrenc
 lalu membaca `data/state.json` terbaru dan melewati scout/produce/publish yang
 sudah dikerjakan.
 
-## Token
+## Token (nama saja, tanpa nilai)
 
-Jangan tempel PAT yang sudah dipakai untuk GH_PAT / `.secrets/github.env`.
+Jangan tempel PAT yang sudah dipakai untuk `GH_PAT` / `.secrets/github.env`.
 PAT itu longgar (bisa baca Actions secrets dan isi repo).
 
-Buat **PAT fine-grained terpisah**, hak minimum:
+Pemicu cron-job.org memakai **PAT fine-grained terpisah**:
 
+- Nama: `CRON_DISPATCH_PAT`
 - Resource owner: `MichaelArrow17`
 - Repository access: hanya `MichaelArrow17/reels-autopilot`
 - Permissions: **Actions: Read and write** (Metadata: Read ikut otomatis)
-- Expiration: 90 hari, lalu rotasi
-- Simpan di pengelola kata sandi. Nilai token tidak dicatat di repo ini.
+- **Kedaluwarsa: 11 Februari 2027** — perpanjang sebelum tanggal itu
+- Disimpan di `.secrets/cron_dispatch.env` (gitignored) dan pengelola kata sandi
+- Nilai token tidak dicatat di repo ini
 
-Buat di: https://github.com/settings/personal-access-tokens/new
+API cron-job.org memakai Bearer `CRONJOB_API_KEY` (nama saja), file yang sama.
+Kunci itu punya batas harian dan sekitar 1 permintaan/detik; jangan di-commit.
+
+Buat PAT cadangan baru di: https://github.com/settings/personal-access-tokens/new
 
 ## Pengaturan umum tiap job (cron-job.org)
 
@@ -80,3 +85,22 @@ Ini cadangan timbal-balik, jangan dihapus:
 - poll `0,20,40 22-23 * * *` dan `0,20,40 0 * * *`
 - publish `30 23 * * *`, `0 4 * * *`, `0 9 * * *`, `0 11 * * *`, `0 13 * * *`
 - refresh `0 1 * * 1` (Senin 09:00 WITA) dan `0 0 1 * *` (tgl 1 08:00 WITA)
+
+## Job yang sudah dibuat (akun arrowmichael17)
+
+Folder `reels-autopilot` (`folderId` 68266). Timezone `Asia/Makassar`, POST, notifikasi gagal aktif.
+Uji hidup: job poll memicu `workflow_dispatch` poll-telegram 13 Nov 2026 08:00:30 WITA, sukses
+(https://github.com/MichaelArrow17/reels-autopilot/actions/runs/43333528856).
+
+| Job id | Judul | Jadwal WITA |
+|---|---|---|
+| 8853723 | reels poll Telegram | 06:00, 06:20, 06:40, 07:00, 07:20, 07:40, 08:00, 08:20, 08:40 setiap hari |
+| 8853725 | reels scout 06:00 | 06:00 setiap hari |
+| 8853726 | reels produce 06:30 | 06:30 setiap hari |
+| 8853728 | reels publish slot 1 07:30 | 07:30 setiap hari |
+| 8853730 | reels publish slot 2 12:00 | 12:00 setiap hari |
+| 8853731 | reels publish slot 3 17:00 | 17:00 setiap hari |
+| 8853734 | reels publish slot 4 19:00 | 19:00 setiap hari |
+| 8853735 | reels publish slot 5 21:00 | 21:00 setiap hari |
+| 8853737 | reels IG token health Senin 09:00 | Senin 09:00 |
+| 8853740 | reels IG token monthly tgl 1 08:00 | tanggal 1, 08:00 |

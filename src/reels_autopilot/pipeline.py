@@ -29,7 +29,8 @@ from reels_autopilot.providers.tts import TTSClient, Word
 from reels_autopilot.publisher import Publisher
 from reels_autopilot.qc import QCRejected, inspect, pre_publish_gate, report_text
 from reels_autopilot.renderer import render_video
-from reels_autopilot.script_writer import ScriptWriter, _word_count, fallback_script, trim_to_word_budget
+from reels_autopilot.script_writer import ScriptWriter, assemble_public_caption, fallback_captions, _word_count, fallback_script, trim_to_word_budget
+from reels_autopilot.caption_guard import public_caption_issues
 from reels_autopilot.state import State, today_wita
 from reels_autopilot.telegram_bot import TelegramBot
 from reels_autopilot.topic_scout import TopicScout
@@ -183,22 +184,12 @@ class Pipeline:
         script = self.writer.write(topic)
         (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         caps = self.writer.captions(script)
+        caption = assemble_public_caption(script, caps)
+        # jika varian LLM bocor, assemble sudah jatuh ke template — simpan paket yang selaras
+        if public_caption_issues(json.dumps(caps, ensure_ascii=False)):
+            caps = fallback_captions(script)
+            caption = assemble_public_caption(script, caps)
         (job / "captions.json").write_text(json.dumps(caps, ensure_ascii=False, indent=2), encoding="utf-8")
-        caption = script.get("caption") or ""
-        if caps.get("varian"):
-            v0 = caps["varian"][0]
-            caption = "\n".join(
-                filter(
-                    None,
-                    [
-                        v0.get("baris1"),
-                        v0.get("isi"),
-                        v0.get("cta"),
-                        v0.get("pertanyaan"),
-                        " ".join(v0.get("hashtag") or []),
-                    ],
-                )
-            )
         tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
         if tts.duration > HARD_MAX_DURATION:
             ratio = max(0.5, (HARD_MAX_DURATION - 1.0) / tts.duration)
@@ -305,7 +296,7 @@ class Pipeline:
 
         # Gerbang QC pra-publish: durasi & timing caption wajib lolos.
         try:
-            gate = pre_publish_gate(mp4, words=_load_job_words(v))
+            gate = pre_publish_gate(mp4, words=_load_job_words(v), caption=v.get("caption") or "")
         except QCRejected as e:
             v["status"] = "qc_failed"
             v["qc_ok"] = False

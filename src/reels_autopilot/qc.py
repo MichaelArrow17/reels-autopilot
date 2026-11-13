@@ -8,6 +8,7 @@ import subprocess
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
+from reels_autopilot.caption_guard import public_caption_issues
 from reels_autopilot.captions import CaptionChunk, chunk_captions, validate_caption_chunks
 from reels_autopilot.config import (
     HARD_MAX_DURATION,
@@ -219,9 +220,17 @@ def pre_publish_gate(
     *,
     words: list[Word] | None = None,
     chunks: list[CaptionChunk] | None = None,
+    caption: str | None = None,
 ) -> QCResult:
-    """Tolak publish jika durasi atau timing caption gagal (error, bukan sekadar peringatan)."""
+    """Tolak publish jika durasi, timing caption, atau teks caption publik gagal."""
     result = inspect(path, words=words, chunks=chunks)
+    if caption is not None:
+        leaks = public_caption_issues(caption)
+        if leaks:
+            result.errors.extend(leaks)
+            result.ok = False
+            result.caption_ok = False
+            result.caption_errors = list(result.caption_errors or []) + leaks
     if not result.ok:
         raise QCRejected(result)
     return result

@@ -21,6 +21,7 @@ from reels_autopilot.config import (
     Settings,
     get_settings,
 )
+from reels_autopilot.caption_guard import public_caption_issues
 from reels_autopilot.providers.llm import LLMClient
 from reels_autopilot.providers.router import ProviderRouter
 
@@ -83,13 +84,15 @@ def enrich_hook_line(hook: str, judul: str | None = None) -> str:
     topic = (judul or hook or "AI").strip()
     topic = re.sub(r"[?!.]+$", "", topic).strip() or "AI"
     # jangan mengarang fakta; bungkus topik jadi hook rasa penasaran
-    return f"Masih bingung soal {topic}? Ini cara praktisnya, tanpa angka yang dikarang."
+    return f"Masih bingung soal {topic}? Ini cara praktis yang bisa kamu coba."
 
 
 def template_value_lines(topic: str = "") -> list[str]:
+    """1–2 baris nilai tentang topik, bukan instruksi gaya/rubrik."""
+    clean = re.sub(r"[?!.]+$", "", (topic or "").strip()) or "ini"
     return [
-        "Explainer singkat: satu gagasan per adegan, klaim hanya yang bisa dicek.",
-        "Alurnya sederhana — kamu yang tetap pegang arah, AI cuma bantu eksekusi.",
+        f"Banyak yang sudah dengar soal {clean}, tapi jarang dijelaskan pelan biar bisa langsung dicoba.",
+        "Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.",
     ]
 
 
@@ -142,7 +145,53 @@ def build_template_caption(
     if len(values) > 1:
         parts.append(values[1])
     parts += ["", cta_line, "", " ".join(tags)]
-    return "\n".join(parts)
+    text = "\n".join(parts)
+    if public_caption_issues(text):
+        raise RuntimeError("template caption masih memuat instruksi internal")
+    return text
+
+
+def assemble_public_caption(script: dict, caps: dict | None = None) -> str:
+    """Susun caption publik dari varian LLM, atau template bersih jika bocor/kosong."""
+    if caps and caps.get("varian"):
+        v0 = caps["varian"][0] or {}
+        text = "\n".join(
+            filter(
+                None,
+                [
+                    v0.get("baris1"),
+                    v0.get("isi"),
+                    v0.get("cta"),
+                    v0.get("pertanyaan"),
+                    " ".join(v0.get("hashtag") or []),
+                ],
+            )
+        )
+        if text.strip() and not public_caption_issues(text):
+            return text
+    raw = (script.get("caption") or "").strip()
+    if raw and not public_caption_issues(raw):
+        return raw
+    return build_template_caption(
+        hook=script.get("hook") or "",
+        judul=script.get("judul") or "",
+        cta=script.get("cta"),
+        hashtag=script.get("hashtag") if isinstance(script.get("hashtag"), list) else None,
+    )
+
+
+def _caption_pack_is_clean(data: dict) -> bool:
+    for varian in data.get("varian") or []:
+        if not isinstance(varian, dict):
+            return False
+        blob = " ".join(
+            str(varian.get(k) or "")
+            for k in ("baris1", "isi", "cta", "pertanyaan")
+        )
+        blob += " " + " ".join(varian.get("hashtag") or [])
+        if public_caption_issues(blob):
+            return False
+    return bool(data.get("varian"))
 
 
 class ScriptWriter:
@@ -188,8 +237,10 @@ class ScriptWriter:
                 system=system,
             )
             if provider != "template" and isinstance(data, dict) and not data.get("_template"):
-                data["llm_provider"] = provider
-                return data
+                if _caption_pack_is_clean(data):
+                    data["llm_provider"] = provider
+                    return data
+                log.warning("Caption LLM memuat instruksi internal; ganti template bersih")
         except Exception as e:
             log.info("caption LLM gagal: %s", e)
         return fallback_captions(script)
@@ -237,7 +288,16 @@ def _normalize(data: dict, topic: dict) -> dict:
         "durasi_target_detik": clamp_duration_target(data.get("durasi_target_detik")),
         "narasi_penuh": narasi,
         "adegan": clean,
-        "caption": data.get("caption") or "",
+        "caption": (
+            data.get("caption")
+            if (data.get("caption") and not public_caption_issues(data.get("caption")))
+            else build_template_caption(
+                hook=str(hook or ""),
+                judul=str(data.get("judul") or topic.get("judul") or ""),
+                cta=data.get("cta"),
+                hashtag=data.get("hashtag") if isinstance(data.get("hashtag"), list) else None,
+            )
+        ),
         "cta": data.get("cta") or "Simpan video ini.",
         "hashtag": data.get("hashtag") or ["#KreatorAI", "#PoChai", "#ReelsIndonesia", "#FacelessContent"],
         "fakta_yang_wajib_dicek": data.get("fakta_yang_wajib_dicek") or topic.get("fakta_yang_wajib_dicek") or [],
@@ -263,8 +323,8 @@ def fallback_script(topic: dict) -> dict:
         "Satu naskah, satu suara, dan gambar dari kode sudah cukup jadi video vertikal siap tayang. "
         "Bukan sihir, dan bukan aplikasi yang tinggal ketik prompt lalu selesai. Ini workflow programmatic. "
         "Pagi, pilih topik yang punya rasa penasaran, buang yang berbahaya atau sudah pernah dibuat. "
-        "Naskah ditulis untuk telinga. Hook selesai dalam dua detik. Satu gagasan per adegan, setiap klaim dicek. "
-        "Suara otomatis, stickman dirender, lalu file dijadwalkan. Kamu setujui atau tolak lewat Telegram. "
+        "Naskahnya singkat, hook-nya cepat, dan tiap langkah jelas. "
+        "Suara otomatis, gambar dirender, lalu file dijadwalkan. Kamu setujui atau tolak lewat Telegram. "
         "AI yang kerja, kamu yang punya arah. Simpan video ini."
     )
     # jika topik spesifik, bungkus hook + kerangka tanpa mengarang fakta
@@ -272,16 +332,16 @@ def fallback_script(topic: dict) -> dict:
         narasi = (
             f"{hook.rstrip('.')}. "
             f"Banyak yang sudah mendengar soal “{judul.rstrip('?')}”, tapi jarang dijelaskan pelan. "
-            "Kita mulai dari rasa penasaran, bukan definisi. Satu gagasan per adegan, biar mudah diingat. "
-            "Klaim hanya yang bisa dicek — tidak ada angka yang dikarang. "
-            "Visualnya sederhana: stickman, teks di layar, suara yang jelas. "
+            "Kita mulai dari rasa penasaran, bukan definisi, biar mudah diingat. "
+            "Yang dibahas hanya yang masuk akal dan bisa kamu cek sendiri. "
+            "Visualnya sederhana: karakter, teks di layar, suara yang jelas. "
             "Tujuannya biar kamu tahan nonton sampai akhir, lalu bisa coba sendiri. "
             "Kalau nyambung, simpan videonya. AI bisa bantu naskah, arah tetap di tangan kamu."
         )
     adegan = [
         {"id": 1, "nama": "hook", "narasi": hook, "teks_layar": hook, "pose": "idle", "keyword": "HOOK", "latar": "", "image_query": ""},
         {"id": 2, "nama": "konteks", "narasi": beats[0] if beats else "", "teks_layar": "Bukan sihir", "pose": "think", "keyword": "WORKFLOW", "latar": "", "image_query": ""},
-        {"id": 3, "nama": "konflik", "narasi": beats[1] if len(beats) > 1 else "", "teks_layar": "Satu gagasan, satu adegan", "pose": "point", "keyword": "1 IDE", "latar": "", "image_query": ""},
+        {"id": 3, "nama": "konflik", "narasi": beats[1] if len(beats) > 1 else "", "teks_layar": "Satu ide, satu langkah", "pose": "point", "keyword": "1 IDE", "latar": "", "image_query": ""},
         {"id": 4, "nama": "payoff", "narasi": beats[2] if len(beats) > 2 else "", "teks_layar": "Cek fakta, baru tayang", "pose": "typing", "keyword": "CEK FAKTA", "latar": "", "image_query": ""},
         {"id": 5, "nama": "cta", "narasi": "Simpan video ini kalau mau ikut alurnya.", "teks_layar": "Simpan · Follow", "pose": "cheer", "keyword": "SIMPAN", "latar": "", "image_query": ""},
     ]
