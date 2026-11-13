@@ -27,7 +27,9 @@ from reels_autopilot.storyboard import (
 )
 from reels_autopilot.styles import (
     STYLE_CERITA,
+    STYLE_KOLASE,
     STYLE_PENJELAS,
+    STYLES,
     assign_styles,
     classify_topic,
     preferred_style,
@@ -37,10 +39,10 @@ from reels_autopilot.telegram_bot import uji_sample_html
 
 
 def test_classify_info_vs_motivasi():
-    s, info, motiv = classify_topic({"judul": "Cara pakai ChatGPT tanpa ngarang", "hook": "Tips AI"})
-    assert s == STYLE_PENJELAS and info > motiv
-    s, info, motiv = classify_topic({"judul": "Jangan menyerah saat sudah hampir sampai"})
-    assert s == STYLE_CERITA and motiv > info
+    s, info, motiv, profil = classify_topic({"judul": "Cara pakai ChatGPT tanpa ngarang", "hook": "Tips AI"})
+    assert s == STYLE_PENJELAS and info > motiv and info > profil
+    s, info, motiv, profil = classify_topic({"judul": "Jangan menyerah saat sudah hampir sampai"})
+    assert s == STYLE_CERITA and motiv > info and motiv > profil
 
 
 def test_assign_styles_ensures_variety_in_batch_of_five():
@@ -53,9 +55,9 @@ def test_assign_styles_ensures_variety_in_batch_of_five():
     ]
     plan = assign_styles(topics, history=[])
     styles = [p["style"] for p in plan]
-    assert STYLE_PENJELAS in styles and STYLE_CERITA in styles
-    assert styles.count(STYLE_CERITA) >= 2
-    assert styles.count(STYLE_PENJELAS) >= 2
+    assert set(styles) == set(STYLES)
+    for s in STYLES:
+        assert styles.count(s) >= 1
 
 
 def test_preferred_style_breaks_streak():

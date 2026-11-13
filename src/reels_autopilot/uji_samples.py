@@ -16,7 +16,9 @@ from reels_autopilot.qc import inspect, report_text
 from reels_autopilot.script_writer import assemble_public_caption, fallback_captions
 from reels_autopilot.storyboard import cerita_caption, derive_penjelas_visual, fallback_cerita, validate_cerita
 from reels_autopilot.style_cerita import build_cerita_audio, render_cerita
+from reels_autopilot.style_kolase import kolase_caption, render_kolase, sample_kartini_script
 from reels_autopilot.style_penjelas import render_penjelas
+from reels_autopilot.styles import STYLE_KOLASE
 
 log = logging.getLogger("reels.uji")
 
@@ -133,7 +135,7 @@ def verify_sample(mp4: Path, *, caption: str, style: str, words: list[Word] | No
         issues.append("tidak ada audio")
     if style == "cerita" and not (20 <= qc.duration <= 32):
         issues.append(f"durasi cerita {qc.duration:.1f}s di luar 20–30s")
-    if style == "penjelas" and qc.duration > 45.1:
+    if style in {"penjelas", "kolase"} and qc.duration > 45.1:
         issues.append(f"durasi {qc.duration:.1f}s > 45s")
     return {
         "ok": len(issues) == 0 and (qc.ok or style == "cerita"),
@@ -143,115 +145,203 @@ def verify_sample(mp4: Path, *, caption: str, style: str, words: list[Word] | No
     }
 
 
-def render_uji_samples(
-    out_dir: Path | None = None,
+def render_uji_kolase(
+    out_dir: Path,
+    build: Path,
+    frames_dir: Path,
     *,
-    settings: Settings | None = None,
-    frames_dir: Path | None = None,
+    settings: Settings,
 ) -> dict:
-    """Render 1 sampel per gaya ke out_dir. Tidak menulis state produksi."""
-    settings = settings or get_settings()
-    out_dir = Path(out_dir or (settings.root / "samples"))
-    out_dir.mkdir(parents=True, exist_ok=True)
-    build = out_dir / "_uji_build"
-    build.mkdir(parents=True, exist_ok=True)
-    frames_dir = Path(frames_dir or (out_dir / "frames_uji"))
-    result: dict = {"penjelas": {}, "cerita": {}}
-
-    # ---- gaya A ----
+    """Satu sampel gaya kolase (Kartini, bersumber). Suara Ardi dokumenter."""
     t0 = time.time()
-    # suara: coba GadisNeural (lebih hidup) lalu jatuh ke default Ardi
+    script = sample_kartini_script()
     original_voice = settings.tts_voice
     original_rate = settings.tts_rate
-    used_voice = original_voice
-    used_rate = original_rate
+    used_voice = "id-ID-ArdiNeural"
+    used_rate = "-5%"
     tts = None
-    # Gadis lebih natural tapi pelan; +10% biasanya masuk 30–40 dtk.
     attempts = [
-        ("id-ID-GadisNeural", "+10%"),
-        ("id-ID-GadisNeural", "+20%"),
-        (original_voice or "id-ID-ArdiNeural", original_rate or "-5%"),
+        ("id-ID-ArdiNeural", "-5%"),
+        ("id-ID-ArdiNeural", "+0%"),
         ("id-ID-ArdiNeural", "+10%"),
     ]
     for voice, rate in attempts:
         settings.tts_voice = voice
         settings.tts_rate = rate
         try:
-            cand = TTSClient(settings).synthesize(SCRIPT_PENJELAS["narasi_penuh"], build, stem="uji_penjelas")
+            cand = TTSClient(settings).synthesize(script["narasi_penuh"], build, stem="uji_kolase")
         except Exception as e:
-            log.warning("TTS %s %s gagal: %s", voice, rate, e)
+            log.warning("TTS kolase %s %s gagal: %s", voice, rate, e)
             continue
         tts = cand
         used_voice, used_rate = voice, rate
-        if cand.duration <= 40.5:
+        if 30.0 <= cand.duration <= 40.5:
             break
-        log.info("TTS %s %s durasi %.1fs, coba lebih cepat", voice, rate, cand.duration)
+        if cand.duration > 40.5:
+            log.info("TTS kolase %s %s durasi %.1fs, coba lebih cepat", voice, rate, cand.duration)
+            continue
+        # terlalu pendek: tetap pakai, jangan percepat
+        break
     settings.tts_voice = original_voice
     settings.tts_rate = original_rate
     if tts is None:
-        raise RuntimeError("TTS sampel penjelas gagal")
+        raise RuntimeError("TTS sampel kolase gagal")
     if tts.duration > 44.5:
         from reels_autopilot.providers.tts import atempo_fit
         audio, words, dur = atempo_fit(
             tts.audio_path, list(tts.words or []), tts.duration, 40.0,
-            dest=build / "uji_penjelas_fit.wav",
+            dest=build / "uji_kolase_fit.wav",
         )
         tts.audio_path = audio
         tts.words = words
         tts.duration = dur
         used_rate = f"{used_rate}+atempo"
-        log.warning("TTS dipercepat atempo ke %.1fs", dur)
-    mp4_a = out_dir / "uji_penjelas.mp4"
-    render_penjelas(SCRIPT_PENJELAS, tts, mp4_a, settings=settings)
-    cap_a = SCRIPT_PENJELAS.get("caption") or assemble_public_caption(SCRIPT_PENJELAS, fallback_captions(SCRIPT_PENJELAS))
-    ver_a = verify_sample(mp4_a, caption=cap_a, style="penjelas", words=list(tts.words or []))
-    dur_a = float(ver_a.get("qc", {}).get("duration") or tts.duration)
-    times_a = sorted({round(x, 1) for x in [
-        0.5, 2.0, 6.0, 10.0, 15.0, 20.0, max(3, dur_a * 0.35),
-        dur_a * 0.55, dur_a * 0.75, max(0.5, dur_a - 1.5),
-    ] if 0 <= x < dur_a - 0.05})
-    frames_a = _extract_frames(mp4_a, frames_dir, times_a)
-    dt_a = time.time() - t0
-    result["penjelas"] = {
-        "mp4": str(mp4_a),
-        "caption": cap_a,
-        "duration": dur_a,
+    mp4 = out_dir / "uji_kolase.mp4"
+    render_kolase(script, tts, mp4, settings=settings, assets_dir=build / "kolase_assets")
+    cap = kolase_caption(script)
+    ver = verify_sample(mp4, caption=cap, style="kolase", words=list(tts.words or []))
+    dur = float(ver.get("qc", {}).get("duration") or tts.duration)
+    times = sorted({round(x, 1) for x in [
+        0.4, 2.0, 6.0, 10.0, 16.0, 22.0, dur * 0.55, dur * 0.8, max(0.5, dur - 1.5),
+    ] if 0 <= x < dur - 0.05})
+    frames = _extract_frames(mp4, frames_dir, times)
+    return {
+        "mp4": str(mp4),
+        "caption": cap,
+        "duration": dur,
         "tts_duration": tts.duration,
         "voice": used_voice,
         "tts_rate": used_rate,
         "tts_provider": tts.provider_id,
-        "render_seconds": round(dt_a, 2),
-        "verify": ver_a,
-        "frames": [str(p) for p in frames_a],
+        "render_seconds": round(time.time() - t0, 2),
+        "verify": ver,
+        "frames": [str(p) for p in frames],
         "words": len(tts.words or []),
+        "credits": script.get("credits") or "",
+        "style": STYLE_KOLASE,
     }
 
+
+def render_uji_samples(
+    out_dir: Path | None = None,
+    *,
+    settings: Settings | None = None,
+    frames_dir: Path | None = None,
+    only: str | None = None,
+) -> dict:
+    """Render sampel uji ke out_dir. Tidak menulis state produksi.
+
+    only: None = semua gaya aktif; atau satu nama gaya ('kolase', 'penjelas', 'cerita').
+    """
+    settings = settings or get_settings()
+    out_dir = Path(out_dir or (settings.root / "samples"))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    build = out_dir / "_uji_build"
+    build.mkdir(parents=True, exist_ok=True)
+    frames_dir = Path(frames_dir or (out_dir / "frames_uji"))
+    want = {only} if only else {"penjelas", "cerita", "kolase"}
+    result: dict = {}
+
+    # ---- gaya A ----
+    if "penjelas" in want:
+        t0 = time.time()
+        # suara: coba GadisNeural (lebih hidup) lalu jatuh ke default Ardi
+        original_voice = settings.tts_voice
+        original_rate = settings.tts_rate
+        used_voice = original_voice
+        used_rate = original_rate
+        tts = None
+        # Gadis lebih natural tapi pelan; +10% biasanya masuk 30–40 dtk.
+        attempts = [
+            ("id-ID-GadisNeural", "+10%"),
+            ("id-ID-GadisNeural", "+20%"),
+            (original_voice or "id-ID-ArdiNeural", original_rate or "-5%"),
+            ("id-ID-ArdiNeural", "+10%"),
+        ]
+        for voice, rate in attempts:
+            settings.tts_voice = voice
+            settings.tts_rate = rate
+            try:
+                cand = TTSClient(settings).synthesize(SCRIPT_PENJELAS["narasi_penuh"], build, stem="uji_penjelas")
+            except Exception as e:
+                log.warning("TTS %s %s gagal: %s", voice, rate, e)
+                continue
+            tts = cand
+            used_voice, used_rate = voice, rate
+            if cand.duration <= 40.5:
+                break
+            log.info("TTS %s %s durasi %.1fs, coba lebih cepat", voice, rate, cand.duration)
+        settings.tts_voice = original_voice
+        settings.tts_rate = original_rate
+        if tts is None:
+            raise RuntimeError("TTS sampel penjelas gagal")
+        if tts.duration > 44.5:
+            from reels_autopilot.providers.tts import atempo_fit
+            audio, words, dur = atempo_fit(
+                tts.audio_path, list(tts.words or []), tts.duration, 40.0,
+                dest=build / "uji_penjelas_fit.wav",
+            )
+            tts.audio_path = audio
+            tts.words = words
+            tts.duration = dur
+            used_rate = f"{used_rate}+atempo"
+            log.warning("TTS dipercepat atempo ke %.1fs", dur)
+        mp4_a = out_dir / "uji_penjelas.mp4"
+        render_penjelas(SCRIPT_PENJELAS, tts, mp4_a, settings=settings)
+        cap_a = SCRIPT_PENJELAS.get("caption") or assemble_public_caption(SCRIPT_PENJELAS, fallback_captions(SCRIPT_PENJELAS))
+        ver_a = verify_sample(mp4_a, caption=cap_a, style="penjelas", words=list(tts.words or []))
+        dur_a = float(ver_a.get("qc", {}).get("duration") or tts.duration)
+        times_a = sorted({round(x, 1) for x in [
+            0.5, 2.0, 6.0, 10.0, 15.0, 20.0, max(3, dur_a * 0.35),
+            dur_a * 0.55, dur_a * 0.75, max(0.5, dur_a - 1.5),
+        ] if 0 <= x < dur_a - 0.05})
+        frames_a = _extract_frames(mp4_a, frames_dir, times_a)
+        dt_a = time.time() - t0
+        result["penjelas"] = {
+            "mp4": str(mp4_a),
+            "caption": cap_a,
+            "duration": dur_a,
+            "tts_duration": tts.duration,
+            "voice": used_voice,
+            "tts_rate": used_rate,
+            "tts_provider": tts.provider_id,
+            "render_seconds": round(dt_a, 2),
+            "verify": ver_a,
+            "frames": [str(p) for p in frames_a],
+            "words": len(tts.words or []),
+        }
+
     # ---- gaya B ----
-    t0 = time.time()
-    sb = sample_cerita_storyboard()
-    audio = build_cerita_audio(sb, build / "uji_cerita.wav", settings=settings)
-    mp4_b = out_dir / "uji_cerita.mp4"
-    render_cerita(sb, audio, mp4_b, settings=settings)
-    cap_b = cerita_caption(sb)
-    ver_b = verify_sample(mp4_b, caption=cap_b, style="cerita")
-    dur_b = float(sb["durasi_detik"])
-    frames_b = _extract_frames(mp4_b, frames_dir, [0.5, 4, 8, 12, 16, 19, 22])
-    dt_b = time.time() - t0
-    result["cerita"] = {
-        "mp4": str(mp4_b),
-        "caption": cap_b,
-        "duration": dur_b,
-        "render_seconds": round(dt_b, 2),
-        "verify": ver_b,
-        "frames": [str(p) for p in frames_b],
-        "environment": sb.get("environment"),
-    }
+    if "cerita" in want:
+        t0 = time.time()
+        sb = sample_cerita_storyboard()
+        audio = build_cerita_audio(sb, build / "uji_cerita.wav", settings=settings)
+        mp4_b = out_dir / "uji_cerita.mp4"
+        render_cerita(sb, audio, mp4_b, settings=settings)
+        cap_b = cerita_caption(sb)
+        ver_b = verify_sample(mp4_b, caption=cap_b, style="cerita")
+        dur_b = float(sb["durasi_detik"])
+        frames_b = _extract_frames(mp4_b, frames_dir, [0.5, 4, 8, 12, 16, 19, 22])
+        dt_b = time.time() - t0
+        result["cerita"] = {
+            "mp4": str(mp4_b),
+            "caption": cap_b,
+            "duration": dur_b,
+            "render_seconds": round(dt_b, 2),
+            "verify": ver_b,
+            "frames": [str(p) for p in frames_b],
+            "environment": sb.get("environment"),
+        }
+
+    # ---- gaya C ----
+    if "kolase" in want:
+        result["kolase"] = render_uji_kolase(out_dir, build, frames_dir, settings=settings)
     (build / "uji_report.json").write_text(json.dumps(result, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
     return result
 
 
 def send_uji_samples(result: dict, *, settings: Settings | None = None) -> dict:
-    """Kirim kedua sampel ke Telegram sebagai SAMPEL UJI, tanpa ACC dan tanpa menyentuh state."""
+    """Kirim sampel yang ada di result ke Telegram sebagai SAMPEL UJI, tanpa ACC dan tanpa menyentuh state."""
     from reels_autopilot.telegram_bot import TelegramBot
 
     settings = settings or get_settings()
@@ -276,15 +366,21 @@ def send_uji_samples(result: dict, *, settings: Settings | None = None) -> dict:
     # jangan load() dari state produksi
     tg = TelegramBot(settings, st)
     sent = {}
-    for key, label in (("penjelas", "penjelas (motion graphics + suara)"),
-                       ("cerita", "cerita stickman (tanpa suara, kiasan)")):
+    labels = {
+        "penjelas": "penjelas (motion graphics + suara)",
+        "cerita": "cerita stickman (tanpa suara, kiasan)",
+        "kolase": "kolase scrapbook (foto lisensi bebas + mesin tik + piano)",
+    }
+    for key, label in labels.items():
         info = result.get(key) or {}
+        if not info:
+            continue
         mp4 = Path(info.get("mp4") or "")
         notes = (
             f"Durasi ±{float(info.get('duration') or 0):.0f} dtk, "
             f"render {info.get('render_seconds')} dtk."
         )
-        if key == "penjelas" and info.get("voice"):
+        if info.get("voice"):
             notes += f" Suara: {info['voice']}."
         res = tg.send_uji_sample(
             mp4, style_name=label, public_caption=info.get("caption") or "", notes=notes,

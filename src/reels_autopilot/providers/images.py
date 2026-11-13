@@ -9,6 +9,7 @@ berisiko untuk video komersial. Atribusi disimpan dan harus tampil di kredit/cap
 from __future__ import annotations
 
 import logging
+import time
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -31,6 +32,7 @@ COMMERCIAL_OK = {
     "cc by 2.5",
 }
 COMMERCIAL_BLOCK = {"sa", "nc", "nd", "sharealike", "noncommercial", "noderiv"}
+_LOGO_RE = re.compile(r"\b(logo|wordmark|trademark|word mark|coat of arms|official seal|word-mark)\b", re.I)
 
 
 def _ok_license(name: str) -> bool:
@@ -105,6 +107,19 @@ class ImageClient:
         img.query = query
         return img
 
+    def search_commons(self, query: str, out_dir: Path, *, stem: str = "cutout") -> ImageResult:
+        """Hanya Wikimedia Commons berlisensi bebas, dengan lisensi+pembuat tercatat.
+
+        Tidak memakai Pexels/Pixabay/Unsplash/Openverse/web acak. Jika kosong, pemanggil
+        harus jatuh ke ilustrasi buatan sendiri.
+        """
+        query = (query or "").strip()
+        if not query:
+            raise RuntimeError("wikimedia: kueri kosong")
+        out_dir.mkdir(parents=True, exist_ok=True)
+        dest = out_dir / f"{stem}.jpg"
+        return self._wikimedia(query, dest, skip_logos=True)
+
     def _headers(self, extra: dict | None = None) -> dict:
         h = {"User-Agent": self.settings.http_user_agent, "Accept": "application/json"}
         if extra:
@@ -112,12 +127,27 @@ class ImageClient:
         return h
 
     def _download(self, url: str, dest: Path, headers: dict | None = None) -> Path:
-        r = requests.get(url, headers=headers or self._headers(), timeout=TIMEOUT, stream=True)
-        r.raise_for_status()
-        dest.write_bytes(r.content)
-        if dest.stat().st_size < 500:
-            raise RuntimeError("gambar terlalu kecil / kosong")
-        return dest
+        last = None
+        for attempt in range(3):
+            try:
+                r = requests.get(url, headers=headers or self._headers(), timeout=TIMEOUT, stream=True)
+                if r.status_code == 429:
+                    wait = 3 * (attempt + 1)
+                    log.info("unduhan Commons 429, tunggu %ss (percobaan %s)", wait, attempt + 1)
+                    time.sleep(wait)
+                    last = RuntimeError(f"HTTP 429: {url[:120]}")
+                    continue
+                r.raise_for_status()
+                dest.write_bytes(r.content)
+                if dest.stat().st_size < 500:
+                    raise RuntimeError("gambar terlalu kecil / kosong")
+                return dest
+            except Exception as e:
+                last = e
+                log.info("unduhan gagal (%s): %s", type(e).__name__, e)
+                if attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+        raise last or RuntimeError("unduh gagal")
 
     def _pexels(self, query: str, dest: Path) -> ImageResult:
         r = requests.get(
@@ -219,7 +249,7 @@ class ImageClient:
             return ImageResult(dest, "openverse", author, page, lic.strip(), attr, True)
         raise RuntimeError("openverse: tidak ada hasil berlisensi komersial")
 
-    def _wikimedia(self, query: str, dest: Path) -> ImageResult:
+    def _wikimedia(self, query: str, dest: Path, *, skip_logos: bool = False) -> ImageResult:
         # API resmi Commons; User-Agent deskriptif wajib menurut kebijakan Wikimedia
         params = {
             "action": "query",
@@ -227,7 +257,7 @@ class ImageClient:
             "generator": "search",
             "gsrsearch": query,
             "gsrnamespace": 6,  # File
-            "gsrlimit": 8,
+            "gsrlimit": 24,
             "prop": "imageinfo",
             "iiprop": "url|extmetadata|mime|size",
             "iiurlwidth": 1200,
@@ -242,12 +272,18 @@ class ImageClient:
         r.raise_for_status()
         pages = ((r.json() or {}).get("query") or {}).get("pages") or {}
         for page in pages.values():
+            title = str(page.get("title") or "")
+            if skip_logos and _LOGO_RE.search(title):
+                log.info("wikimedia lewati logo: %s", title)
+                continue
             infos = page.get("imageinfo") or []
             if not infos:
                 continue
             info = infos[0]
             mime = (info.get("mime") or "")
             if not mime.startswith("image/") or "svg" in mime:
+                continue
+            if any(x in mime for x in ("tiff", "tif")) and not info.get("thumburl"):
                 continue
             meta = info.get("extmetadata") or {}
             lic = (meta.get("LicenseShortName") or {}).get("value") or (meta.get("License") or {}).get("value") or ""

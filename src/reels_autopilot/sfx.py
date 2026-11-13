@@ -307,6 +307,57 @@ def surface_triumph(duration: float = 2.5, rate: int = SAMPLE_RATE) -> list[floa
     return out
 
 
+
+def somber_piano(duration: float, *, gain: float = 0.10, rate: int = SAMPLE_RATE, seed: int = 3) -> list[float]:
+    """Piano minor prosedural yang tenang — bukan rekaman berhak cipta."""
+    n = max(1, int(duration * rate))
+    out = [0.0] * n
+
+    def add_note(freq: float, start: float, decay: float = 2.4, amp: float = 1.0) -> None:
+        start_i = int(start * rate)
+        # cukup 3.2 detik ekor
+        length = int(3.2 * rate)
+        for i in range(length):
+            j = start_i + i
+            if j >= n:
+                break
+            t = i / rate
+            env = (1.0 - math.exp(-28.0 * t)) * math.exp(-decay * t)
+            s = (
+                math.sin(2 * math.pi * freq * t)
+                + 0.32 * math.sin(2 * math.pi * freq * 2.003 * t)
+                + 0.12 * math.sin(2 * math.pi * freq * 3.01 * t)
+            )
+            out[j] += amp * env * s
+
+    # Progresi Am–F–C–Em, 2 detik per langkah.
+    bass = [110.00, 87.31, 130.81, 82.41]
+    fifths = [164.81, 130.81, 196.00, 123.47]
+    melody = [220.00, 261.63, 293.66, 329.63, 392.00, 329.63, 261.63, 246.94]
+    t = 0.0
+    step = 2.0
+    mi = 0
+    while t < duration:
+        ci = int(t / step) % len(bass)
+        add_note(bass[ci], t, decay=1.6, amp=0.55)
+        add_note(fifths[ci], t + 0.04, decay=1.8, amp=0.32)
+        add_note(melody[mi % len(melody)], t + 0.18, decay=2.5, amp=0.72)
+        mi += 1
+        if (ci % 2) == 1:
+            add_note(melody[(mi + 3) % len(melody)], t + 1.05, decay=2.8, amp=0.48)
+            mi += 1
+        t += step
+    # fade in/out + gain
+    for i in range(n):
+        tt = i / rate
+        edge = min(1.0, tt / 1.0, max(0.0, (duration - tt) / 1.6))
+        out[i] *= gain * edge
+    peak = max((abs(x) for x in out), default=1.0)
+    if peak > 0.9:
+        out = [x * 0.9 / peak for x in out]
+    return out
+
+
 def mix_to_wav(
     dest: Path,
     duration: float,

@@ -1,4 +1,4 @@
-"""Pemilih gaya visual: penjelas (info) vs cerita stickman (motivasi), plus rotasi agar beragam."""
+"""Pemilih gaya visual: penjelas, cerita stickman, kolase scrapbook; rotasi agar 3 gaya muncul tiap hari."""
 
 from __future__ import annotations
 
@@ -10,7 +10,9 @@ log = logging.getLogger("reels.styles")
 
 STYLE_PENJELAS = "penjelas"
 STYLE_CERITA = "cerita"
-STYLES = (STYLE_PENJELAS, STYLE_CERITA)
+STYLE_KOLASE = "kolase"
+# Gaya lama (renderer stickman+keyword asli) TIDAK masuk daftar ini — tidak bisa dipilih.
+STYLES = (STYLE_PENJELAS, STYLE_CERITA, STYLE_KOLASE)
 
 # Kata kunci topik info (teknologi, AI, keuangan, tips).
 _INFO_WORDS = (
@@ -37,6 +39,17 @@ _MOTIV_WORDS = (
     "pantang", "tabah", "harapan", "impian", "tujuan", "komitmen",
     "jangan nyerah", "terus mencoba", "bangkit lagi", "lebih kuat",
     "nasib", "keberuntungan", "usaha penuh",
+)
+
+# Kata kunci profil / sejarah / biografi → kolase scrapbook.
+_PROFIL_WORDS = (
+    "profil", "biografi", "biografis", "riwayat hidup", "kisah hidup",
+    "tokoh", "tokoh sejarah", "sejarah hidup", "sejarahnya",
+    "pendiri", "penemu", "penemuannya", "founder", "inventor",
+    "lahir tahun", "lahir pada", "dilahirkan",
+    "masa muda", "warisan hidup", "jejak hidup",
+    "timeline hidup", "perjalanan hidup", "kisah tokoh",
+    "siapa dia", "siapa beliau", "mengenal sosok",
 )
 
 _WORD_RE = re.compile(r"[a-z0-9]+", re.I)
@@ -74,16 +87,25 @@ def _score(text: str, words: tuple[str, ...]) -> int:
     return score
 
 
-def classify_topic(topic: dict | str | None) -> tuple[str, int, int]:
-    """Kembalikan (gaya_pilihan, skor_info, skor_motivasi)."""
+def classify_topic(topic: dict | str | None) -> tuple[str, int, int, int]:
+    """Kembalikan (gaya_pilihan, skor_info, skor_motivasi, skor_profil)."""
     text = _blob(topic)
     info = _score(text, _INFO_WORDS)
     motiv = _score(text, _MOTIV_WORDS)
-    if info > motiv:
-        return STYLE_PENJELAS, info, motiv
-    if motiv > info:
-        return STYLE_CERITA, info, motiv
-    return "", info, motiv  # seri / tidak jelas
+    profil = _score(text, _PROFIL_WORDS)
+    best = max(info, motiv, profil)
+    if best == 0:
+        return "", info, motiv, profil
+    winners = []
+    if info == best:
+        winners.append(STYLE_PENJELAS)
+    if motiv == best:
+        winners.append(STYLE_CERITA)
+    if profil == best:
+        winners.append(STYLE_KOLASE)
+    if len(winners) == 1:
+        return winners[0], info, motiv, profil
+    return "", info, motiv, profil  # seri / tidak jelas
 
 
 def _history_styles(history: list[dict] | None) -> list[str]:
@@ -111,6 +133,26 @@ def _streak(styles: list[str]) -> tuple[str, int]:
     return last, n
 
 
+
+def _next_style(last: str) -> str:
+    if last in STYLES:
+        return STYLES[(STYLES.index(last) + 1) % len(STYLES)]
+    return STYLE_PENJELAS
+
+
+def _least_recent(styles: list[str], *, exclude: str | None = None) -> str:
+    """Gaya yang paling lama tidak muncul (atau belum pernah), selain exclude."""
+    remaining = [s for s in STYLES if s != exclude]
+    if not remaining:
+        return _next_style(exclude or STYLE_PENJELAS)
+    last_seen = {s: -1 for s in remaining}
+    for i, s in enumerate(styles):
+        if s in last_seen:
+            last_seen[s] = i
+    # yang belum pernah (-1) dulu, urutan STYLES stabil
+    return min(remaining, key=lambda s: (last_seen[s], STYLES.index(s)))
+
+
 def preferred_style(
     topic: dict | str | None,
     history: list[dict] | None = None,
@@ -120,21 +162,24 @@ def preferred_style(
     """Pilih gaya untuk satu topik. Kembalikan (style, alasan, keyakinan 0–100)."""
     if force in STYLES:
         return force, "dipaksa", 100
-    choice, info, motiv = classify_topic(topic)
+    choice, info, motiv, profil = classify_topic(topic)
     hist = _history_styles(history)
     last, streak = _streak(hist)
     confidence = 0
     reason = "rotasi"
     if choice == STYLE_PENJELAS:
-        confidence = min(100, 50 + info * 12 - motiv * 6)
+        confidence = min(100, 50 + info * 12 - max(motiv, profil) * 6)
         reason = "topik info"
     elif choice == STYLE_CERITA:
-        confidence = min(100, 50 + motiv * 12 - info * 6)
+        confidence = min(100, 50 + motiv * 12 - max(info, profil) * 6)
         reason = "topik motivasi"
+    elif choice == STYLE_KOLASE:
+        confidence = min(100, 50 + profil * 12 - max(info, motiv) * 6)
+        reason = "topik profil/sejarah"
     else:
-        # tidak jelas: lawan dari gaya terakhir, atau penjelas sebagai default pertama
+        # tidak jelas: rotasi dari gaya terakhir, atau penjelas sebagai default pertama
         if last:
-            choice = STYLE_CERITA if last == STYLE_PENJELAS else STYLE_PENJELAS
+            choice = _next_style(last)
             reason = "rotasi (topik netral)"
             confidence = 30
         else:
@@ -144,7 +189,7 @@ def preferred_style(
 
     # Hindari 4+ beruntun gaya yang sama, kecuali keyakinan sangat tinggi.
     if last and choice == last and streak >= 3 and confidence < 85:
-        other = STYLE_CERITA if choice == STYLE_PENJELAS else STYLE_PENJELAS
+        other = _least_recent(hist, exclude=choice)
         return other, f"rotasi setelah {streak}× {last}", max(20, confidence - 25)
     return choice, reason, max(0, min(100, confidence))
 
@@ -155,7 +200,7 @@ def assign_styles(
     *,
     min_each: int | None = None,
 ) -> list[dict[str, Any]]:
-    """Rencanakan gaya untuk satu batch (mis. 5 video/hari) agar keduanya muncul.
+    """Rencanakan gaya untuk satu batch (mis. 5 video/hari) agar ketiga gaya muncul.
 
     Kembalikan daftar dict: {style, reason, confidence}.
     Topik dengan sinyal kuat dipertahankan; yang keyakinannya rendah boleh dibalik
@@ -163,9 +208,16 @@ def assign_styles(
     """
     n = len(topics)
     if min_each is None:
-        min_each = 1 if n >= 2 else 0
+        # Batch 5 video, 3 gaya: masing-masing minimal 1 (semua muncul).
+        # Tidak bisa min_each=2 (butuh 6 slot).
         if n >= 5:
-            min_each = 2
+            min_each = 1
+        elif n >= len(STYLES):
+            min_each = 1
+        elif n >= 2:
+            min_each = 1 if len(STYLES) <= n else 0
+        else:
+            min_each = 0
     hist = list(history or [])
     planned: list[dict[str, Any]] = []
     running = list(hist)
@@ -186,9 +238,10 @@ def assign_styles(
     for needed in STYLES:
         while count(needed) < min_each and n > count(needed):
             # kandidat: gaya lain, keyakinan terendah
+            # jangan merampas gaya lain sampai di bawah min_each
             candidates = [
                 (i, p) for i, p in enumerate(planned)
-                if p["style"] != needed
+                if p["style"] != needed and count(p["style"]) > min_each
             ]
             if not candidates:
                 break

@@ -201,9 +201,11 @@ class ScriptWriter:
         self.llm = LLMClient(self.settings, self.router)
 
     def write(self, topic: dict, style: str | None = None) -> dict:
-        from reels_autopilot.styles import STYLE_CERITA, STYLE_PENJELAS
+        from reels_autopilot.styles import STYLE_CERITA, STYLE_KOLASE, STYLE_PENJELAS
         if (style or "") == STYLE_CERITA:
             return self._write_cerita(topic)
+        if (style or "") == STYLE_KOLASE:
+            return self._write_kolase(topic)
         system = _load_prompt(self.settings, "script_writer.txt", _DEFAULT_SCRIPT_PROMPT)
         user = json.dumps(
             {
@@ -298,6 +300,54 @@ class ScriptWriter:
             "moral": sb.get("moral") or "",
         }
 
+
+    def _write_kolase(self, topic: dict) -> dict:
+        from reels_autopilot.fact_guard import validate_kolase_facts
+        from reels_autopilot.style_kolase import derive_kolase, fallback_kolase, kolase_caption
+        from reels_autopilot.styles import STYLE_KOLASE
+
+        system = _load_prompt(self.settings, "script_kolase.txt", _DEFAULT_KOLASE_PROMPT)
+        user = json.dumps(
+            {
+                "TOPIK": topic,
+                "DURASI_TARGET_DETIK": 35,
+                "DURASI_MIN_DETIK": 30,
+                "DURASI_MAX_DETIK": 40,
+                "BAHASA": "Indonesia dokumenter tenang",
+                "CATATAN": (
+                    "Struktur hook-linimasa-twist-tanya. Setiap klaim wajib sumber_url. "
+                    "Jangan mengarang angka. Klaim berat tanpa sumber dilarang."
+                ),
+            },
+            ensure_ascii=False,
+        )
+        try:
+            data, provider = self.llm.generate_json(user, system=system)
+        except Exception as e:
+            log.warning("LLM naskah kolase gagal (%s), pakai templat", e)
+            data, provider = None, "template"
+        used_fallback = False
+        if provider == "template" or not isinstance(data, dict) or data.get("_template"):
+            script = fallback_kolase(topic)
+            script["llm_provider"] = "template"
+            script["storyboard_fallback"] = True
+            return script
+        script = derive_kolase(_normalize_kolase(data, topic))
+        script["llm_provider"] = provider
+        issues = validate_kolase_facts(script)
+        cap_issues = public_caption_issues(script.get("caption") or "")
+        if issues or cap_issues:
+            log.warning("naskah kolase ditolak penjaga fakta/caption (%s %s), templat aman", issues, cap_issues)
+            script = fallback_kolase(topic, educational=True)
+            script["llm_provider"] = provider
+            script["storyboard_fallback"] = True
+            script["fact_guard_issues"] = issues + cap_issues
+            return script
+        script["caption"] = kolase_caption(script)
+        script["storyboard_fallback"] = False
+        script["style"] = STYLE_KOLASE
+        return script
+
     def captions(self, script: dict) -> dict:
         """3 varian caption (playbook 9.4). Template jika LLM absen."""
         system = _load_prompt(self.settings, "caption.txt", _DEFAULT_CAPTION_PROMPT)
@@ -314,6 +364,44 @@ class ScriptWriter:
         except Exception as e:
             log.info("caption LLM gagal: %s", e)
         return fallback_captions(script)
+
+
+
+def _normalize_kolase(data: dict, topic: dict) -> dict:
+    from reels_autopilot.styles import STYLE_KOLASE
+
+    narasi = (data.get("narasi_penuh") or "").strip()
+    if _word_count(narasi) < TARGET_WORDS_MIN:
+        parts = [a.get("narasi") or a.get("label") or "" for a in (data.get("bab") or data.get("adegan") or [])]
+        if parts:
+            narasi = " ".join(str(p) for p in parts if p)
+    narasi = trim_to_word_budget(narasi, TARGET_WORDS_MAX)
+    hook = data.get("hook") or topic.get("hook") or (narasi.split(".")[0] if narasi else topic.get("judul"))
+    klaim = data.get("klaim") or data.get("fakta_bersumber") or []
+    if not isinstance(klaim, list):
+        klaim = []
+    caption = (data.get("caption") or "").strip()
+    if public_caption_issues(caption):
+        caption = ""
+    return {
+        "judul": data.get("judul") or topic.get("judul") or "Tanpa judul",
+        "hook": hook,
+        "angle": data.get("angle") or topic.get("angle") or "",
+        "subjek": data.get("subjek") or topic.get("subjek") or topic.get("tokoh") or "",
+        "bahasa": "id",
+        "durasi_target_detik": clamp_duration_target(data.get("durasi_target_detik")),
+        "narasi_penuh": narasi,
+        "caption": caption,
+        "cta": data.get("cta") or "Tulis jawabanmu di komentar.",
+        "hashtag": data.get("hashtag") or ["#KreatorAI", "#PoChai"],
+        "klaim": klaim,
+        "fakta_yang_wajib_dicek": data.get("fakta_yang_wajib_dicek") or [c.get("teks") for c in klaim if isinstance(c, dict)],
+        "cover_text": data.get("cover_text") or "",
+        "image_query": data.get("image_query") or "",
+        "is_ai_generated": True,
+        "bab": data.get("bab") or data.get("adegan") or [],
+        "style": STYLE_KOLASE,
+    }
 
 
 def _load_prompt(settings: Settings, name: str, default: str) -> str:
@@ -485,4 +573,11 @@ DILARANG menulis Python/Pygame/MoviePy. Lingkungan: underwater, staircase, mount
 Aksi: idle, walk, climb, swim, sink, fall, push, celebrate, sit, reach, limp, stand, look, struggle, kneel, wave.
 20–30 detik, tanpa VO, dua karakter (abu menyerah, kuning berusaha), satu klimaks, gelembung Indonesia singkat, tanpa angka karangan.
 OUTPUT HANYA JSON: {"style":"cerita","environment":"underwater","durasi_detik":24,"label_kiri":"","label_kanan":"","judul":"","hook":"","moral":"","karakter":[],"beats":[],"klimaks":{},"narasi_penuh":"","pakai_vo":false}
+"""
+
+_DEFAULT_KOLASE_PROMPT = """PERAN: penulis naskah dokumenter Reels kolase scrapbook, bahasa Indonesia, akun Po Chai.
+Struktur: hook, linimasa, twist, pertanyaan komentar. 85–95 kata, 30–40 detik.
+Setiap klaim faktual wajib sumber_url http(s) terpercaya. Jangan mengarang angka.
+Klaim berat (skandal, mundur, kematian) dilarang tanpa sumber. Jika sumber kurang, tulis edukasi cek sumber.
+OUTPUT HANYA JSON: {"judul":"","hook":"","angle":"","subjek":"","narasi_penuh":"","caption":"","cta":"","hashtag":[],"klaim":[{"teks":"","sumber_url":"https://","sumber_nama":""}],"bab":[{"nama":"hook","label":"","gambar_query":"","kata_kunci":[]}],"is_ai_generated":true}
 """

@@ -156,7 +156,7 @@ class Pipeline:
             # belum ada antrian — jalankan scout dulu
             self.scout_and_notify()
             vids = list(self.state.videos(date))
-        # Rencana gaya untuk batch yang belum diproduksi — ragam penjelas + cerita.
+        # Rencana gaya untuk batch yang belum diproduksi — ragam 3 gaya.
         pending = [v for v in vids if not already_produced(v)]
         if pending:
             try:
@@ -197,6 +197,7 @@ class Pipeline:
         from reels_autopilot.affiliate import apply_affiliate_cta
         from reels_autopilot.styles import (
             STYLE_CERITA,
+            STYLE_KOLASE,
             history_from_state,
             preferred_style,
             record_style,
@@ -227,6 +228,10 @@ class Pipeline:
         (job / "captions.json").write_text(json.dumps(caps, ensure_ascii=False, indent=2), encoding="utf-8")
         if style == STYLE_CERITA:
             return self._produce_cerita(
+                video, date, job, script, caption, locked_status, notify=notify
+            )
+        if style == STYLE_KOLASE:
+            return self._produce_kolase(
                 video, date, job, script, caption, locked_status, notify=notify
             )
         tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
@@ -398,6 +403,117 @@ class Pipeline:
         if notify:
             self.tg.send_preview(video, mp4 if qc.ok else None)
         log.info("Slot %s (cerita) siap: %s\n%s", slot, mp4, report_text(qc))
+        return video
+
+
+    def _produce_kolase(
+        self,
+        video: dict,
+        date: str,
+        job,
+        script: dict,
+        caption: str,
+        locked_status,
+        *,
+        notify: bool = True,
+    ) -> dict:
+        from reels_autopilot.fact_guard import validate_kolase_facts
+        from reels_autopilot.style_kolase import (
+            append_credit,
+            derive_kolase,
+            fallback_kolase,
+            fetch_kolase_assets,
+            kolase_caption,
+        )
+        from reels_autopilot.styles import STYLE_KOLASE, record_style
+
+        slot = video["slot"]
+        issues = validate_kolase_facts(script)
+        if issues:
+            log.warning("slot %s kolase ditolak penjaga fakta: %s — templat aman", slot, issues)
+            script = fallback_kolase(video.get("topic") or video, educational=True)
+            script["fact_guard_issues"] = issues
+            if not (video.get("caption") or "").strip():
+                caption = kolase_caption(script)
+        script = derive_kolase(script)
+        (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
+        fetch_kolase_assets(script, job, settings=self.settings)
+        (job / "assets.json").write_text(
+            json.dumps(script.get("gambar") or [], ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        cred = script.get("credits") or ""
+        if cred and not (video.get("caption") or "").strip():
+            caption = append_credit(caption or kolase_caption(script), cred)
+        elif cred:
+            caption = append_credit(caption, cred)
+        tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
+        if tts.duration > HARD_MAX_DURATION:
+            ratio = max(0.5, (HARD_MAX_DURATION - 1.0) / tts.duration)
+            max_words = max(60, int(_word_count(script["narasi_penuh"]) * ratio))
+            script["narasi_penuh"] = trim_to_word_budget(script["narasi_penuh"], max_words)
+            (job / "script.json").write_text(
+                json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
+        (job / "words.json").write_text(
+            json.dumps([{"word": w.word, "start": w.start, "duration": w.duration} for w in tts.words],
+                       ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        chunks = chunk_captions(tts.words, audio_duration=min(tts.duration, HARD_MAX_DURATION))
+        (job / "chunks.json").write_text(
+            json.dumps(
+                [
+                    {
+                        "text": c.text,
+                        "start": c.start,
+                        "end": c.end,
+                        "words": [{"word": w.word, "start": w.start, "duration": w.duration} for w in c.words],
+                    }
+                    for c in chunks
+                ],
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+        mp4 = job / "reel.mp4"
+        script = dict(script)
+        script["style"] = STYLE_KOLASE
+        render_video(script, tts, mp4, settings=self.settings, style=STYLE_KOLASE)
+        qc = inspect(mp4, words=tts.words, chunks=chunks)
+        (job / "qc.json").write_text(json.dumps(qc.to_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
+        video.update({
+            "status": "rendered",
+            "mp4": str(mp4),
+            "script_path": str(job / "script.json"),
+            "caption": caption,
+            "tts_provider": tts.provider_id,
+            "llm_provider": script.get("llm_provider"),
+            "qc_ok": qc.ok,
+            "qc": {"lufs": qc.integrated_lufs, "peak": qc.true_peak_dbtp, "duration": qc.duration, "errors": qc.errors},
+            "judul": script.get("judul") or video.get("judul"),
+            "style": STYLE_KOLASE,
+            "credits": cred,
+            "klaim": script.get("klaim") or [],
+        })
+        if not qc.ok:
+            video["status"] = "qc_failed"
+        elif locked_status == "approved":
+            video["status"] = "approved"
+        self.state.upsert_video(video, date)
+        self.state.add_past_topic(video.get("judul") or "", angle=script.get("angle"), slot=slot)
+        try:
+            record_style(
+                self.state, date=date, slot=slot, style=STYLE_KOLASE,
+                judul=video.get("judul") or "", reason=video.get("style_reason") or "",
+            )
+        except Exception as e:
+            log.info("catat gaya: %s", e)
+        if notify:
+            self.tg.send_preview(video, mp4 if qc.ok else None)
+        log.info("Slot %s (kolase) siap: %s\n%s", slot, mp4, report_text(qc))
         return video
 
     def publish_slot(self, slot: int, date: str | None = None) -> dict:
