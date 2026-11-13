@@ -294,3 +294,159 @@ def test_send_video_sets_supports_streaming(tmp_path, monkeypatch):
     assert seen["method"] == "sendVideo"
     assert seen["kwargs"].get("supports_streaming") == "true"
     assert "files" in seen["kwargs"]
+
+
+def test_preview_message_html_is_one_copyable_packet():
+    from reels_autopilot.telegram_bot import (
+        FB_HANDOFF_HOWTO,
+        TG_VIDEO_CAPTION_MAX,
+        preview_message_html,
+        published_notice_text,
+    )
+
+    caption = (
+        "Beli saham sekarang beneran bisa cuma modal chat?\n"
+        "Kecerdasan buatan kini mampu menganalisis pasar hingga eksekusi trading "
+        "langsung dari kolom obrolan. Kamu tidak perlu lagi menghabiskan waktu lama "
+        "hanya untuk membaca grafik rumit.\n"
+        "Follow akun Po Chai untuk tips AI lainnya.\n"
+        "Menurutmu, apakah AI bakal bikin investasi saham jadi lebih aman?\n"
+        "#InvestasiSaham #TipsAI #TeknologiFinansial #ArtificialIntelligence #EdukasiSaham"
+    )
+    video = {
+        "slot": 2,
+        "slot_label": "12:00",
+        "judul": "AI Ubah Cara Investasi Saham Lewat Chat",
+        "caption": caption,
+        "status": "rendered",
+    }
+    text = preview_message_html(video)
+    assert "<pre><code>" in text and "</code></pre>" in text
+    assert caption in text  # exact final caption, unescaped here (no special chars)
+    assert "Caption siap tempel ke IG dan FB Po Chai" in text
+    assert "Share ke FB Po Chai" in text
+    assert "ACC 2" in text
+    assert "TOLAK 2" in text
+    assert "Sudah ACC" not in text
+    assert len(text) <= TG_VIDEO_CAPTION_MAX
+
+    approved = dict(video, status="approved")
+    acc = preview_message_html(approved)
+    assert "Sudah ACC, tayang jam 12:00 WITA." in acc
+    assert "tidak perlu ACC lagi" in acc
+    assert "TOLAK 2" in acc
+    assert caption in acc
+    assert len(acc) <= TG_VIDEO_CAPTION_MAX
+
+    escaped = preview_message_html({
+        "slot": 1, "slot_label": "07:30", "judul": "A & B",
+        "caption": "A & B <C>", "status": "rendered",
+    })
+    assert "A &amp; B &lt;C&gt;" in escaped
+    assert "A & B <C>" not in escaped
+
+    notice = published_notice_text(approved, "https://www.instagram.com/reel/XXXX/")
+    assert "Sudah tayang slot 2 (12:00 WITA)" in notice
+    assert "https://www.instagram.com/reel/XXXX/" in notice
+    assert caption not in notice
+    assert "<pre>" not in notice
+    assert "Siap share" not in notice
+    assert FB_HANDOFF_HOWTO not in notice
+
+
+def test_send_preview_uses_html_and_exact_caption(tmp_path, monkeypatch):
+    from reels_autopilot.config import Settings
+    from reels_autopilot.telegram_bot import TelegramBot
+
+    s = Settings()
+    s.telegram_bot_token = "dummy-token"
+    s.telegram_chat_id = "7568757522"
+    s.approval_mode = "required"
+    bot = TelegramBot(s)
+    mp4 = tmp_path / "reel.mp4"
+    mp4.write_bytes(b"fake-video")
+    seen = {}
+
+    def fake_call(method, **kwargs):
+        seen["method"] = method
+        seen["kwargs"] = kwargs
+        return {"ok": True, "result": {"message_id": 99}}
+
+    monkeypatch.setattr(bot, "_call", fake_call)
+    video = {
+        "slot": 3,
+        "slot_label": "17:00",
+        "judul": "Kenapa Fitur Otonom Xpeng Belum Aktif di RI?",
+        "caption": "Hook topik.\nBaris nilai.\n#PoChai",
+        "status": "approved",
+    }
+    res = bot.send_preview(video, mp4)
+    assert res["ok"] is True
+    assert seen["method"] == "sendVideo"
+    assert seen["kwargs"].get("parse_mode") == "HTML"
+    cap = seen["kwargs"].get("caption") or ""
+    assert "Hook topik.\nBaris nilai.\n#PoChai" in cap
+    assert "Sudah ACC, tayang jam 17:00 WITA." in cap
+    assert "<pre><code>" in cap
+
+
+def test_produce_one_keeps_locked_caption(tmp_path, monkeypatch):
+    from reels_autopilot.config import Settings
+    from reels_autopilot.pipeline import Pipeline
+    from reels_autopilot.state import State
+    from reels_autopilot.qc import QCResult
+
+    settings = Settings()
+    settings.root = tmp_path
+    settings.dry_run = True
+    settings.telegram_bot_token = ""
+    settings.approval_mode = "required"
+    pipe = Pipeline(settings)
+    pipe.state = State(settings)
+    locked = "Caption final yang sudah dipreview.\nSimpan ini.\n#PoChai #KreatorAI #ReelsIndonesia"
+    video = {
+        "id": "2026-11-13-s2-test",
+        "slot": 2,
+        "slot_label": "12:00",
+        "judul": "Tes",
+        "hook": "Hook tes cukup panjang untuk lolos?",
+        "topic": {"judul": "Tes", "hook": "Hook tes cukup panjang untuk lolos?"},
+        "caption": locked,
+        "status": "approved",
+    }
+
+    def fake_write(topic):
+        return {
+            "judul": "BARU",
+            "hook": "hook baru",
+            "narasi_penuh": "narasi " * 20,
+            "adegan": [],
+            "caption": "CAPTION BARU YANG BERBEDA\n#X",
+            "cta": "Simpan",
+            "hashtag": ["#X"],
+            "llm_provider": "template",
+            "image_query": "",
+        }
+
+    class FakeTTS:
+        provider_id = "edge_tts"
+        duration = 30.0
+        words = []
+
+    monkeypatch.setattr(pipe.writer, "write", fake_write)
+    monkeypatch.setattr(pipe.writer, "captions", lambda script: {"varian": []})
+    monkeypatch.setattr(pipe.tts, "synthesize", lambda *a, **k: FakeTTS())
+    monkeypatch.setattr("reels_autopilot.pipeline.chunk_captions", lambda *a, **k: [])
+    monkeypatch.setattr("reels_autopilot.pipeline.render_video", lambda *a, **k: None)
+    monkeypatch.setattr(
+        "reels_autopilot.pipeline.inspect",
+        lambda *a, **k: QCResult(path="x", ok=True, duration=30, width=1080, height=1920, fps=30, has_audio=True, has_video=True),
+    )
+    monkeypatch.setattr(pipe.images, "search", lambda *a, **k: (_ for _ in ()).throw(RuntimeError("skip")))
+    sent = {"n": 0}
+    monkeypatch.setattr(pipe.tg, "send_preview", lambda *a, **k: sent.__setitem__("n", sent["n"] + 1) or {"ok": True})
+
+    out = pipe.produce_one(video, "2026-11-13", notify=False)
+    assert out["caption"] == locked
+    assert out["status"] == "approved"
+    assert sent["n"] == 0

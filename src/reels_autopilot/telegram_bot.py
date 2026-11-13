@@ -23,13 +23,66 @@ API = "https://api.telegram.org/bot{token}/{method}"
 TG_VIDEO_MAX_BYTES = 50 * 1024 * 1024
 FB_HANDOFF_VIDEO_CAPTION = "Siap share ke FB Po Chai"
 FB_HANDOFF_HOWTO = (
-    "Tahan video > Bagikan/Share > Facebook > Reels "
-    "(atau simpan ke galeri lalu buka FB > Reels > pilih video), tempel caption, Bagikan."
+    "Share ke FB Po Chai: tahan video ini → Bagikan → Facebook → Reels, tempel caption, Bagikan."
 )
+TG_VIDEO_CAPTION_MAX = 1024
 
 
 def html_escape(text: str) -> str:
     return (text or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def preview_message_html(video: dict, *, already_approved: bool | None = None, approval_mode: str = "required") -> str:
+    """Satu pesan preview: header + caption final (blok salin) + cara share FB + ACC/TOLAK."""
+    slot = video.get("slot")
+    judul = html_escape(str(video.get("judul") or ""))
+    jam = html_escape(str(video.get("slot_label") or ""))
+    cap = html_escape((video.get("caption") or "").strip() or "(caption kosong)")
+    if already_approved is None:
+        already_approved = video.get("status") == "approved"
+    header = f"Preview slot {slot} — {judul}"
+    if already_approved:
+        status = f"Sudah ACC, tayang jam {jam} WITA."
+        gate = (
+            f"Balas TOLAK {slot} untuk batal. ACC sudah tercatat, tidak perlu ACC lagi."
+        )
+    elif approval_mode == "required":
+        status = f"Jam tayang: {jam} WITA."
+        gate = (
+            f"Balas OK atau ACC {slot} supaya boleh tayang di IG. "
+            f"Tanpa ACC, slot ini tidak dipublish. TOLAK {slot} untuk batal."
+        )
+    else:
+        status = f"Jam tayang: {jam} WITA."
+        gate = (
+            f"Balas TOLAK {slot} untuk batal, atau biarkan untuk tayang "
+            f"(mode {html_escape(approval_mode)})."
+        )
+    return "\n".join(
+        [
+            header,
+            status,
+            "",
+            "Caption siap tempel ke IG dan FB Po Chai (ketuk blok, lalu salin):",
+            "",
+            f"<pre><code>{cap}</code></pre>",
+            "",
+            html_escape(FB_HANDOFF_HOWTO),
+            "",
+            gate,
+        ]
+    )
+
+
+def published_notice_text(video: dict, permalink: str | None = None) -> str:
+    """Setelah tayang: catatan singkat + tautan IG, tanpa file atau caption ulang."""
+    slot = video.get("slot")
+    jam = video.get("slot_label") or ""
+    judul = video.get("judul") or ""
+    lines = [f"Sudah tayang slot {slot} ({jam} WITA) — {judul}"]
+    if permalink:
+        lines.append(str(permalink))
+    return "\n".join(lines)
 
 
 def fb_handoff_text(caption: str, permalink: str | None = None) -> str:
@@ -101,11 +154,14 @@ class TelegramBot:
         *,
         chat_id: str | None = None,
         supports_streaming: bool = True,
+        parse_mode: str | None = None,
     ) -> dict:
         cid = chat_id or self.chat_id
         extra: dict[str, Any] = {}
         if supports_streaming:
             extra["supports_streaming"] = "true"
+        if parse_mode:
+            extra["parse_mode"] = parse_mode
         if not self.configured:
             return self._call(
                 "sendVideo",
@@ -117,11 +173,16 @@ class TelegramBot:
         if not cid:
             log.warning("TELEGRAM_CHAT_ID kosong, video tidak terkirim")
             return {"ok": False, "reason": "no chat_id"}
+        text = caption or ""
+        if len(text) > TG_VIDEO_CAPTION_MAX:
+            # jangan potong blok HTML/caption final di tengah jalan
+            log.error("Caption video Telegram %s karakter > %s", len(text), TG_VIDEO_CAPTION_MAX)
+            return {"ok": False, "reason": "caption_too_long", "length": len(text)}
         with Path(mp4).open("rb") as f:
             return self._call(
                 "sendVideo",
                 chat_id=cid,
-                caption=caption[:1024],
+                caption=text,
                 files={"video": (Path(mp4).name, f, "video/mp4")},
                 **extra,
             )
@@ -243,28 +304,30 @@ class TelegramBot:
             lines.append(f"\nFilter: {result['filter_provider']}")
         return self.send("\n".join(lines))
 
-    def send_preview(self, video: dict, mp4: Path | None = None) -> dict:
-        slot = video.get("slot")
-        judul = video.get("judul") or ""
-        if self.settings.approval_mode == "required":
-            gate = (
-                f"Balas OK atau ACC {slot} supaya boleh tayang di IG. "
-                f"Tanpa ACC, slot ini tidak dipublish. TOLAK {slot} untuk batal."
-            )
-        else:
-            gate = (
-                f"Balas TOLAK {slot} untuk batal, atau biarkan untuk tayang "
-                f"(mode {self.settings.approval_mode})."
-            )
-        caption = (
-            f"Preview slot {slot} — {judul}\n"
-            f"Status: {video.get('status')}\n"
-            f"Jam tayang: {video.get('slot_label') or ''} WITA\n"
-            f"{gate}"
+    def send_preview(
+        self,
+        video: dict,
+        mp4: Path | None = None,
+        *,
+        already_approved: bool | None = None,
+    ) -> dict:
+        text = preview_message_html(
+            video,
+            already_approved=already_approved,
+            approval_mode=self.settings.approval_mode,
         )
         if mp4 and Path(mp4).exists() and Path(mp4).stat().st_size < 49_000_000:
-            return self.send_video(Path(mp4), caption)
-        return self.send(caption)
+            return self.send_video(Path(mp4), text, parse_mode="HTML")
+        return self.send(text, parse_mode="HTML")
+
+    def send_published_notice(
+        self,
+        video: dict,
+        permalink: str | None = None,
+        *,
+        chat_id: str | None = None,
+    ) -> dict:
+        return self.send(published_notice_text(video, permalink), chat_id=chat_id)
 
     def poll(self) -> list[dict]:
         """Ambil update baru, proses perintah, kembalikan aksi yang terjadi."""

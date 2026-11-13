@@ -177,10 +177,12 @@ class Pipeline:
                 self.tg.send(f"Produksi slot {v.get('slot')} gagal: {e}")
         return out
 
-    def produce_one(self, video: dict, date: str) -> dict:
+    def produce_one(self, video: dict, date: str, *, notify: bool = True) -> dict:
         slot = video["slot"]
         job = _job_dir(self.settings, date, slot)
         topic = video.get("topic") or {"judul": video.get("judul"), "hook": video.get("hook")}
+        locked_caption = (video.get("caption") or "").strip()
+        locked_status = video.get("status")
         script = self.writer.write(topic)
         (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         caps = self.writer.captions(script)
@@ -189,6 +191,9 @@ class Pipeline:
         if public_caption_issues(json.dumps(caps, ensure_ascii=False)):
             caps = fallback_captions(script)
             caption = assemble_public_caption(script, caps)
+        # Caption yang sudah dipreview/ACC tidak boleh diganti saat render ulang.
+        if locked_caption and not public_caption_issues(locked_caption):
+            caption = locked_caption
         (job / "captions.json").write_text(json.dumps(caps, ensure_ascii=False, indent=2), encoding="utf-8")
         tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
         if tts.duration > HARD_MAX_DURATION:
@@ -252,9 +257,13 @@ class Pipeline:
         })
         if not qc.ok:
             video["status"] = "qc_failed"
+        elif locked_status == "approved":
+            # render ulang saat publish tidak boleh menghapus ACC
+            video["status"] = "approved"
         self.state.upsert_video(video, date)
         self.state.add_past_topic(video.get("judul") or "", angle=script.get("angle"), slot=slot)
-        self.tg.send_preview(video, mp4 if qc.ok else None)
+        if notify:
+            self.tg.send_preview(video, mp4 if qc.ok else None)
         log.info("Slot %s siap: %s\n%s", slot, mp4, report_text(qc))
         return video
 
@@ -287,7 +296,7 @@ class Pipeline:
             allow = os.environ.get("ALLOW_RERENDER", "true").strip().lower() not in {"0", "false", "no"}
             if allow:
                 # fallback: produksi ulang dari topik
-                v = self.produce_one(v, date)
+                v = self.produce_one(v, date, notify=False)
                 mp4 = Path(v.get("mp4") or "")
             else:
                 log.error("MP4 slot %s tidak ada dan ALLOW_RERENDER=false; tidak render ulang", slot)
@@ -328,9 +337,6 @@ class Pipeline:
         v["published_at"] = datetime.now(self.settings.tz).isoformat(timespec="seconds")
         self.state.upsert_video(v, date)
         permalink = (result.get("ig") or {}).get("permalink") if isinstance(result.get("ig"), dict) else None
-        public_url = None
-        if isinstance(result.get("host"), dict):
-            public_url = result["host"].get("url")
         try:
             if self.settings.dry_run:
                 lines = [
@@ -341,14 +347,9 @@ class Pipeline:
                     lines.append(str(permalink))
                 self.tg.send("\n".join(lines))
             else:
-                handoff = self.tg.send_fb_handoff(
-                    mp4=mp4,
-                    caption=v.get("caption") or "",
-                    permalink=permalink,
-                    public_url=public_url,
-                )
-                if not handoff.get("ok"):
-                    log.error("Paket share FB ke Telegram gagal (publish IG tetap sukses): %s", handoff)
+                notice = self.tg.send_published_notice(v, permalink)
+                if not notice.get("ok"):
+                    log.error("Catatan tayang ke Telegram gagal (publish IG tetap sukses): %s", notice)
         except Exception as e:
             log.error("Telegram setelah publish tidak boleh menggagalkan tayang: %s", e)
         return {"ok": True, "video": v, "publish": result}

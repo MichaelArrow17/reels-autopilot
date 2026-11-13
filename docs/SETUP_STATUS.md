@@ -149,8 +149,8 @@ QC: resolusi, fps, audio, durasi (batas keras 45 dtk), LUFS, timing caption (chu
 
 ## 7. Perilaku Telegram
 
-- Preview produksi: video + teks slot, judul, jam tayang, dan permintaan **ACC/OK** (mode `required`). `TOLAK N` membatalkan.
-- Setelah publish IG nyata: **2 pesan** handoff FB — (1) MP4 bercaption `Siap share ke FB Po Chai`; (2) caption identik dengan IG di blok monospace, cara share (`Tahan video > Bagikan/Share > Facebook > Reels …`), dan permalink IG. Baris lama `cek FB Po Chai` dihapus. Gagal kirim di-retry sekali lalu di-log, tanpa menggagalkan publish.
+- Preview produksi (satu pesan): MP4 + **caption final yang akan di-publish ke IG** (blok `<pre><code>` siap salin ke IG/FB) + cara singkat share ke FB Po Chai + instruksi ACC/TOLAK. Caption itu disimpan di state dan dipublish apa adanya setelah ACC (tidak digenerate ulang).
+- Setelah publish IG nyata: **satu catatan singkat** “sudah tayang” + permalink IG. File dan caption tidak dikirim ulang (sudah ada di preview).
 - Dry-run publish: status `dry_published` saja, tanpa paket share FB (karena API Meta tidak dipanggil).
 - Alert token: hanya jika health check gagal, token invalid, `debug_token` gagal, atau sisa umur &lt; 10 hari.
 - Bot tidak membalas instan di luar jendela poll/job.
