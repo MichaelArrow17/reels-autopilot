@@ -1,0 +1,5 @@
+Semua ikon, efek suara, musik latar, dan lingkungan visual di pipeline ini
+dihasilkan secara programatik (kode Python di reels_autopilot), bukan dari
+aset berhak cipta pihak ketiga.
+
+Font Inter (assets/fonts) dilisensikan SIL Open Font License — lihat OFL.txt.

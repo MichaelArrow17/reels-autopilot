@@ -415,7 +415,7 @@ def test_produce_one_keeps_locked_caption(tmp_path, monkeypatch):
         "status": "approved",
     }
 
-    def fake_write(topic):
+    def fake_write(topic, style=None, **kwargs):
         return {
             "judul": "BARU",
             "hook": "hook baru",

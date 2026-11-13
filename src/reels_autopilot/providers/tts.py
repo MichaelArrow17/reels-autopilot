@@ -178,6 +178,8 @@ def probe_duration(path: Path) -> float:
 
 def loudnorm(src: Path, dest: Path, i: float = TARGET_LUFS, tp: float = TARGET_TRUE_PEAK) -> Path:
     """Normalisasi loudness dua pass (I target, true peak di bawah batas)."""
+    # Sisakan ruang −1 dB di bawah target agar mux AAC tidak melewati batas QC.
+    tp = min(tp, -1.5)
     dest.parent.mkdir(parents=True, exist_ok=True)
     # Pass 1: ukur
     measure = subprocess.run(
@@ -203,6 +205,9 @@ def loudnorm(src: Path, dest: Path, i: float = TARGET_LUFS, tp: float = TARGET_T
         )
     else:
         af = f"loudnorm=I={i}:TP={tp}:LRA=11"
+    # Limiter setelah loudnorm: AAC sering menaikkan true peak ~1 dB.
+    # 0.84139514 ≈ -1.5 dBFS.
+    af = af + ",alimiter=limit=0.84139514:attack=5:release=50:level=false"
     dest_wav = dest if dest.suffix.lower() in {".wav", ".mp3", ".m4a"} else dest.with_suffix(".wav")
     cmd = [
         "ffmpeg", "-hide_banner", "-y", "-i", str(src),
@@ -222,6 +227,42 @@ def loudnorm(src: Path, dest: Path, i: float = TARGET_LUFS, tp: float = TARGET_T
         )
         log.warning("loudnorm gagal, audio tanpa normalisasi: %s", r.stderr[-400:] if r.stderr else "")
     return dest_wav
+
+
+def atempo_fit(
+    audio: Path,
+    words: list[Word],
+    duration: float,
+    max_duration: float,
+    dest: Path | None = None,
+) -> tuple[Path, list[Word], float]:
+    """Percepat audio (atempo) agar muat batas durasi, lalu skala timestamp kata."""
+    audio = Path(audio)
+    if duration <= max_duration or duration <= 0:
+        return audio, list(words), duration
+    factor = duration / max_duration
+    # atempo hanya 0.5–2.0; rantai jika perlu
+    parts: list[str] = []
+    rest = factor
+    while rest > 2.0 + 1e-6:
+        parts.append("atempo=2.0")
+        rest /= 2.0
+    rest = max(0.5, min(2.0, rest))
+    parts.append(f"atempo={rest:.5f}")
+    dest = Path(dest) if dest else audio.with_name(audio.stem + "_fit.wav")
+    cmd = [
+        "ffmpeg", "-hide_banner", "-y", "-i", str(audio),
+        "-af", ",".join(parts),
+        "-ar", "48000", "-ac", "1", "-c:a", "pcm_s16le",
+        str(dest),
+    ]
+    r = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if r.returncode != 0 or not dest.exists():
+        raise RuntimeError(f"atempo gagal: {(r.stderr or '')[-400:]}")
+    new_dur = probe_duration(dest) or (duration / factor)
+    tempo = duration / new_dur if new_dur else factor
+    new_words = [Word(w.word, w.start / tempo, w.duration / tempo) for w in words]
+    return dest, new_words, new_dur
 
 
 def _parse_loudnorm_json(stderr: str) -> dict | None:

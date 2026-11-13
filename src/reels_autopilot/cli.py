@@ -61,6 +61,10 @@ def main(argv: list[str] | None = None) -> int:
     p_sample = sub.add_parser("sample", help="Render sampel resmi ke samples/")
     p_sample.add_argument("--out", default=None)
 
+    p_ss = sub.add_parser("sample-styles", help="Render 2 sampel uji (penjelas + cerita), opsional kirim Telegram")
+    p_ss.add_argument("--out-dir", default=None, help="Folder output (default: samples/)")
+    p_ss.add_argument("--send", action="store_true", help="Kirim ke Telegram sebagai SAMPEL UJI (bukan ACC)")
+
     p_qc = sub.add_parser("qc", help="Periksa sebuah MP4")
     p_qc.add_argument("path")
 
@@ -156,6 +160,28 @@ def main(argv: list[str] | None = None) -> int:
         print(json.dumps(res, ensure_ascii=False, indent=2))
         qc_ok = (res.get("qc") or {}).get("ok")
         return 0 if qc_ok else 2
+
+    if args.cmd == "sample-styles":
+        from reels_autopilot.uji_samples import render_uji_samples, send_uji_samples
+        dest = Path(args.out_dir) if args.out_dir else (settings.samples_dir)
+        res = render_uji_samples(dest, settings=settings)
+        # jangan cetak teks panjang berlebih; ringkas
+        summary = {}
+        for k, v in res.items():
+            summary[k] = {
+                "mp4": v.get("mp4"),
+                "duration": v.get("duration"),
+                "render_seconds": v.get("render_seconds"),
+                "voice": v.get("voice"),
+                "verify_ok": (v.get("verify") or {}).get("ok"),
+                "issues": (v.get("verify") or {}).get("issues"),
+            }
+        if args.send:
+            sent = send_uji_samples(res, settings=settings)
+            summary["telegram"] = sent
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
+        ok = all((res[k].get("verify") or {}).get("ok") for k in ("penjelas", "cerita") if k in res)
+        return 0 if ok else 2
 
     if args.cmd == "qc":
         q = inspect(args.path)

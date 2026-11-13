@@ -50,3 +50,10 @@ data/cache/
 # Panduan cadangan berisi ID akun — jangan di-commit ke repo publik
 docs/Panduan_Reels_Autopilot.pdf
 docs/_panduan_build/
+
+
+samples/uji_*.mp4
+samples/uji_*.wav
+samples/*_mix*.wav
+samples/frames_uji/
+samples/_uji_build/

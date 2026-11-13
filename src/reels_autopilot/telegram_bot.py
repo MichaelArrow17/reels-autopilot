@@ -74,6 +74,27 @@ def preview_message_html(video: dict, *, already_approved: bool | None = None, a
     )
 
 
+def uji_sample_html(style_name: str, *, public_caption: str = "", notes: str = "") -> str:
+    """Pesan sampel uji: jelas bukan untuk diposting, tanpa instruksi ACC."""
+    gaya = html_escape(style_name or "")
+    lines = [
+        "<b>SAMPEL UJI – bukan untuk diposting</b>",
+        f"Gaya: {gaya}",
+        "Ini contoh visual baru, belum masuk antrian tayang, dan tidak perlu ACC.",
+    ]
+    cap = (public_caption or "").strip()
+    if cap:
+        lines += [
+            "",
+            "Contoh caption (tidak akan diposting):",
+            "",
+            f"<pre><code>{html_escape(cap)}</code></pre>",
+        ]
+    if notes:
+        lines += ["", html_escape(notes)]
+    return "\n".join(lines)
+
+
 def published_notice_text(video: dict, permalink: str | None = None) -> str:
     """Setelah tayang: catatan singkat + tautan IG, tanpa file atau caption ulang."""
     slot = video.get("slot")
@@ -328,6 +349,24 @@ class TelegramBot:
         chat_id: str | None = None,
     ) -> dict:
         return self.send(published_notice_text(video, permalink), chat_id=chat_id)
+
+    def send_uji_sample(
+        self,
+        mp4: Path,
+        *,
+        style_name: str,
+        public_caption: str = "",
+        notes: str = "",
+        chat_id: str | None = None,
+    ) -> dict:
+        """Kirim sampel uji. BUKAN preview ACC — tidak masuk antrian publish."""
+        text = uji_sample_html(style_name, public_caption=public_caption, notes=notes)
+        if len(text) > TG_VIDEO_CAPTION_MAX:
+            log.error("Caption sampel uji %s karakter > %s", len(text), TG_VIDEO_CAPTION_MAX)
+            return {"ok": False, "reason": "caption_too_long", "length": len(text)}
+        if mp4 and Path(mp4).exists() and Path(mp4).stat().st_size < 49_000_000:
+            return self.send_video(Path(mp4), text, chat_id=chat_id, parse_mode="HTML", supports_streaming=True)
+        return self.send(text, chat_id=chat_id, parse_mode="HTML")
 
     def poll(self) -> list[dict]:
         """Ambil update baru, proses perintah, kembalikan aksi yang terjadi."""

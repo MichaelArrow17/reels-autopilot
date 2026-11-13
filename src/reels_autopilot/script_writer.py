@@ -200,7 +200,10 @@ class ScriptWriter:
         self.router = router or ProviderRouter(self.settings)
         self.llm = LLMClient(self.settings, self.router)
 
-    def write(self, topic: dict) -> dict:
+    def write(self, topic: dict, style: str | None = None) -> dict:
+        from reels_autopilot.styles import STYLE_CERITA, STYLE_PENJELAS
+        if (style or "") == STYLE_CERITA:
+            return self._write_cerita(topic)
         system = _load_prompt(self.settings, "script_writer.txt", _DEFAULT_SCRIPT_PROMPT)
         user = json.dumps(
             {
@@ -211,7 +214,8 @@ class ScriptWriter:
                 "KATA_MIN": TARGET_WORDS_MIN,
                 "KATA_MAX": TARGET_WORDS_MAX,
                 "BAHASA": "Indonesia santai, orang kedua (kamu)",
-                "GAYA": "explainer stickman Po Chai, Kreator AI",
+                "GAYA": "penjelas motion graphics Po Chai, Kreator AI",
+                "STYLE": STYLE_PENJELAS,
             },
             ensure_ascii=False,
         )
@@ -223,10 +227,76 @@ class ScriptWriter:
         if provider == "template" or (isinstance(data, dict) and data.get("_template")):
             script = enforce_script_budget(fallback_script(topic))
             script["llm_provider"] = "template"
-            return script
+            script["style"] = STYLE_PENJELAS
+            from reels_autopilot.storyboard import derive_penjelas_visual
+            return derive_penjelas_visual(script)
         script = enforce_script_budget(_normalize(data, topic))
         script["llm_provider"] = provider
-        return script
+        script["style"] = STYLE_PENJELAS
+        if isinstance(data, dict) and isinstance(data.get("visual"), dict):
+            script["visual"] = data["visual"]
+        from reels_autopilot.storyboard import derive_penjelas_visual
+        return derive_penjelas_visual(script)
+
+    def _write_cerita(self, topic: dict) -> dict:
+        from reels_autopilot.storyboard import (
+            cerita_caption,
+            fallback_cerita,
+            validate_cerita,
+        )
+        from reels_autopilot.styles import STYLE_CERITA
+
+        system = _load_prompt(self.settings, "storyboard_cerita.txt", _DEFAULT_CERITA_PROMPT)
+        user = json.dumps(
+            {
+                "TOPIK": topic,
+                "DURASI_TARGET_DETIK": 24,
+                "DURASI_MIN_DETIK": 20,
+                "DURASI_MAX_DETIK": 30,
+                "BAHASA": "Indonesia santai",
+                "CATATAN": "Hanya isi JSON storyboard. Dilarang menulis kode.",
+            },
+            ensure_ascii=False,
+        )
+        try:
+            data, provider = self.llm.generate_json(user, system=system)
+        except Exception as e:
+            log.warning("LLM storyboard cerita gagal (%s), pakai templat", e)
+            data, provider = None, "template"
+        used_fallback = False
+        errors: list = []
+        if provider == "template" or not isinstance(data, dict) or (isinstance(data, dict) and data.get("_template")):
+            sb = fallback_cerita(topic)
+            used_fallback = True
+            provider = "template"
+        else:
+            sb, used_fallback, errors = validate_cerita(data, topic)
+            if used_fallback:
+                log.warning("storyboard tidak valid, templat aman: %s", errors)
+                provider = provider or "template"
+        caption = cerita_caption(sb)
+        return {
+            "style": STYLE_CERITA,
+            "storyboard": sb,
+            "judul": sb.get("judul") or topic.get("judul") or "Cerita singkat",
+            "hook": sb.get("hook") or sb.get("moral") or topic.get("hook") or "",
+            "angle": topic.get("angle") or sb.get("moral") or "",
+            "bahasa": "id",
+            "durasi_target_detik": int(sb.get("durasi_detik") or 24),
+            "narasi_penuh": sb.get("narasi_penuh") or "",
+            "adegan": [],
+            "caption": caption,
+            "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+            "hashtag": ["#KreatorAI", "#PoChai", "#Motivasi"],
+            "fakta_yang_wajib_dicek": topic.get("fakta_yang_wajib_dicek") or [],
+            "is_ai_generated": True,
+            "cover_text": sb.get("label_kanan") or sb.get("judul") or "",
+            "image_query": "",
+            "llm_provider": provider if not used_fallback else "template",
+            "storyboard_fallback": used_fallback,
+            "pakai_vo": bool(sb.get("pakai_vo")),
+            "moral": sb.get("moral") or "",
+        }
 
     def captions(self, script: dict) -> dict:
         """3 varian caption (playbook 9.4). Template jika LLM absen."""
@@ -407,4 +477,12 @@ OUTPUT HANYA JSON valid:
 _DEFAULT_CAPTION_PROMPT = """PERAN: copywriter caption Reels "Po Chai" (Kreator AI + Penulis).
 Buat 3 varian: baris 1 ≤90 karakter (ulangi hook), 2–3 baris isi HANYA dari naskah, 1 CTA, 1 pertanyaan komentar, 3–5 hashtag (ID + 1 EN).
 OUTPUT HANYA JSON: {"varian":[...],"cover":"","komentar_pin":""}
+"""
+
+
+_DEFAULT_CERITA_PROMPT = """PERAN: penulis STORYBOARD Reels cerita stickman (bukan kode). HANYA JSON.
+DILARANG menulis Python/Pygame/MoviePy. Lingkungan: underwater, staircase, mountain, road, office, scale.
+Aksi: idle, walk, climb, swim, sink, fall, push, celebrate, sit, reach, limp, stand, look, struggle, kneel, wave.
+20–30 detik, tanpa VO, dua karakter (abu menyerah, kuning berusaha), satu klimaks, gelembung Indonesia singkat, tanpa angka karangan.
+OUTPUT HANYA JSON: {"style":"cerita","environment":"underwater","durasi_detik":24,"label_kiri":"","label_kanan":"","judul":"","hook":"","moral":"","karakter":[],"beats":[],"klimaks":{},"narasi_penuh":"","pakai_vo":false}
 """

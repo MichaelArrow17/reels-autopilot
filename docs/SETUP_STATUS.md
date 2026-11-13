@@ -175,3 +175,18 @@ QC: resolusi, fps, audio, durasi (batas keras 45 dtk), LUFS, timing caption (chu
 3. **Opsional:** isi cadangan LLM/gambar/R2 jika ingin rantai lebih tebal; Piper offline di runner; Page Facebook tetap tidak diperlukan.
 
 Tidak ada KYC, deposit, atau upgrade berbayar pada setup ini. Akun iklan tetap kosong dan tanpa metode bayar.
+
+---
+
+## 10. Gaya visual (mulai 14 November 2026)
+
+Dua gaya bergantian, dipilih dari topik plus rotasi agar batch harian beragam. Tercatat di state (`style`, `style_history`).
+
+- **Penjelas** — motion graphics 2D (teks kinetik sinkron kata, ikon vektor, perbandingan, counter, penanda bab 01/05, SFX). Untuk topik info: teknologi, AI, keuangan, tips. Suara TTS edge-tts (cadangan GadisNeural / ArdiNeural) dengan WordBoundary.
+- **Cerita stickman** — lingkungan dan karakter dari pustaka tetap (bukan kode yang ditulis LLM per video). Gemini hanya mengisi JSON storyboard; jika tidak valid, templat aman dipakai. Untuk konten motivasi/kiasan, 20–30 detik, tanpa voice-over (ambien + SFX). Lingkungan: underwater, staircase, mountain, road, office, scale.
+
+Safeguard lama tetap: caption_guard, gerbang QC, idempotensi, preview Telegram satu pesan dengan caption final, tanpa angka karangan.
+
+**Affiliate:** `config/affiliate.yaml` kosong secara default (`enabled: false`). Deng Aji yang mengatur produk, kata kunci, dan CTA (mis. "Cek link di bio."). Tautan tidak disisipkan ke caption kecuali kelak `insert_url: true` (default false). Bot tidak mengarang tautan.
+
+Sampel uji dikirim ke Telegram sebagai **SAMPEL UJI – bukan untuk diposting**, tidak masuk antrian ACC/publish.

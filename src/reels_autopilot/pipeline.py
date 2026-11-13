@@ -156,6 +156,22 @@ class Pipeline:
             # belum ada antrian — jalankan scout dulu
             self.scout_and_notify()
             vids = list(self.state.videos(date))
+        # Rencana gaya untuk batch yang belum diproduksi — ragam penjelas + cerita.
+        pending = [v for v in vids if not already_produced(v)]
+        if pending:
+            try:
+                from reels_autopilot.styles import assign_styles, history_from_state
+                plan = assign_styles(
+                    [v.get("topic") or v for v in pending],
+                    history_from_state(self.state),
+                )
+                for v, pl in zip(pending, plan):
+                    if not v.get("style"):
+                        v["style"] = pl["style"]
+                        v["style_reason"] = pl.get("reason") or ""
+                        self.state.upsert_video(v, date)
+            except Exception as e:
+                log.warning("pemilih gaya gagal, lanjut default: %s", e)
         out = []
         n = 0
         for v in vids:
@@ -178,12 +194,25 @@ class Pipeline:
         return out
 
     def produce_one(self, video: dict, date: str, *, notify: bool = True) -> dict:
+        from reels_autopilot.affiliate import apply_affiliate_cta
+        from reels_autopilot.styles import (
+            STYLE_CERITA,
+            history_from_state,
+            preferred_style,
+            record_style,
+        )
+
         slot = video["slot"]
         job = _job_dir(self.settings, date, slot)
         topic = video.get("topic") or {"judul": video.get("judul"), "hook": video.get("hook")}
         locked_caption = (video.get("caption") or "").strip()
         locked_status = video.get("status")
-        script = self.writer.write(topic)
+        if not video.get("style"):
+            style, reason, _conf = preferred_style(topic, history_from_state(self.state))
+            video["style"] = style
+            video["style_reason"] = reason
+        style = video.get("style") or "penjelas"
+        script = self.writer.write(topic, style=style)
         (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
         caps = self.writer.captions(script)
         caption = assemble_public_caption(script, caps)
@@ -191,10 +220,15 @@ class Pipeline:
         if public_caption_issues(json.dumps(caps, ensure_ascii=False)):
             caps = fallback_captions(script)
             caption = assemble_public_caption(script, caps)
+        caption = apply_affiliate_cta(caption, topic, script, settings=self.settings)
         # Caption yang sudah dipreview/ACC tidak boleh diganti saat render ulang.
         if locked_caption and not public_caption_issues(locked_caption):
             caption = locked_caption
         (job / "captions.json").write_text(json.dumps(caps, ensure_ascii=False, indent=2), encoding="utf-8")
+        if style == STYLE_CERITA:
+            return self._produce_cerita(
+                video, date, job, script, caption, locked_status, notify=notify
+            )
         tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
         if tts.duration > HARD_MAX_DURATION:
             ratio = max(0.5, (HARD_MAX_DURATION - 1.0) / tts.duration)
@@ -241,7 +275,11 @@ class Pipeline:
         except Exception as e:
             log.info("gambar stok dilewati: %s", e)
         mp4 = job / "reel.mp4"
-        render_video(script, tts, mp4, settings=self.settings, background_photo=bg, attribution=attr or "")
+        render_video(
+            script, tts, mp4,
+            settings=self.settings, background_photo=bg, attribution=attr or "",
+            style=style,
+        )
         qc = inspect(mp4, words=tts.words, chunks=chunks)
         (job / "qc.json").write_text(json.dumps(qc.to_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
         video.update({
@@ -260,11 +298,106 @@ class Pipeline:
         elif locked_status == "approved":
             # render ulang saat publish tidak boleh menghapus ACC
             video["status"] = "approved"
+        video["style"] = style
         self.state.upsert_video(video, date)
         self.state.add_past_topic(video.get("judul") or "", angle=script.get("angle"), slot=slot)
+        try:
+            record_style(
+                self.state,
+                date=date,
+                slot=slot,
+                style=style,
+                judul=video.get("judul") or "",
+                reason=video.get("style_reason") or "",
+            )
+        except Exception as e:
+            log.info("catat gaya: %s", e)
         if notify:
             self.tg.send_preview(video, mp4 if qc.ok else None)
         log.info("Slot %s siap: %s\n%s", slot, mp4, report_text(qc))
+        return video
+
+    def _produce_cerita(
+        self,
+        video: dict,
+        date: str,
+        job,
+        script: dict,
+        caption: str,
+        locked_status,
+        *,
+        notify: bool = True,
+    ) -> dict:
+        from reels_autopilot.providers.tts import TTSResult
+        from reels_autopilot.storyboard import fallback_cerita, validate_cerita
+        from reels_autopilot.style_cerita import build_cerita_audio
+        from reels_autopilot.styles import record_style
+
+        slot = video["slot"]
+        sb_raw = script.get("storyboard") or script
+        sb, used_fb, errors = validate_cerita(sb_raw, video.get("topic"))
+        if used_fb:
+            log.warning("storyboard slot %s tidak valid, templat: %s", slot, errors)
+        (job / "storyboard.json").write_text(
+            json.dumps(sb, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        voice_path = None
+        tts = None
+        words: list = []
+        if script.get("pakai_vo") and (script.get("narasi_penuh") or "").strip():
+            tts = self.tts.synthesize(script["narasi_penuh"], job, stem="voice")
+            voice_path = tts.audio_path
+            words = list(tts.words or [])
+            (job / "words.json").write_text(
+                json.dumps(
+                    [{"word": w.word, "start": w.start, "duration": w.duration} for w in words],
+                    ensure_ascii=False, indent=2,
+                ),
+                encoding="utf-8",
+            )
+        audio = build_cerita_audio(sb, job / "cerita_audio.wav", voice=voice_path, settings=self.settings)
+        dummy = TTSResult(
+            audio_path=audio,
+            words=words,
+            duration=float(sb.get("durasi_detik") or 24),
+            provider_id=(tts.provider_id if tts else "ambient"),
+        )
+        mp4 = job / "reel.mp4"
+        script = dict(script)
+        script["style"] = "cerita"
+        script["storyboard"] = sb
+        render_video(script, dummy, mp4, settings=self.settings, style="cerita")
+        qc = inspect(mp4, words=words or None)
+        (job / "qc.json").write_text(json.dumps(qc.to_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
+        video.update({
+            "status": "rendered",
+            "mp4": str(mp4),
+            "script_path": str(job / "script.json"),
+            "caption": caption,
+            "tts_provider": dummy.provider_id,
+            "llm_provider": script.get("llm_provider"),
+            "qc_ok": qc.ok,
+            "qc": {"lufs": qc.integrated_lufs, "peak": qc.true_peak_dbtp, "duration": qc.duration, "errors": qc.errors},
+            "judul": script.get("judul") or video.get("judul"),
+            "style": "cerita",
+            "storyboard_fallback": used_fb,
+        })
+        if not qc.ok:
+            video["status"] = "qc_failed"
+        elif locked_status == "approved":
+            video["status"] = "approved"
+        self.state.upsert_video(video, date)
+        self.state.add_past_topic(video.get("judul") or "", angle=script.get("angle"), slot=slot)
+        try:
+            record_style(
+                self.state, date=date, slot=slot, style="cerita",
+                judul=video.get("judul") or "", reason=video.get("style_reason") or "",
+            )
+        except Exception as e:
+            log.info("catat gaya: %s", e)
+        if notify:
+            self.tg.send_preview(video, mp4 if qc.ok else None)
+        log.info("Slot %s (cerita) siap: %s\n%s", slot, mp4, report_text(qc))
         return video
 
     def publish_slot(self, slot: int, date: str | None = None) -> dict:

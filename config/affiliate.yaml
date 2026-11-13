@@ -1,0 +1,24 @@
+# Konfigurasi affiliate — diatur oleh Deng Aji, bukan oleh bot.
+# Kosong / enabled: false = tidak ada CTA atau tautan yang disisipkan ke caption.
+#
+# Cara pakai nanti:
+#   1. Ubah enabled menjadi true
+#   2. Tambah produk di bawah products, dengan keywords yang cocok ke topik
+#   3. Tulis cta (mis. "Cek link di bio kalau mau cobain.")
+#   4. url boleh diisi sebagai catatan sendiri — secara default TIDAK
+#      dimasukkan ke caption (insert_url: false). Caption cukup mengarah ke bio.
+#
+# Bot tidak akan mengisi atau mengarang tautan.
+
+enabled: false
+insert_url: false
+cta_default: "Cek link di bio."
+products: []
+
+# Contoh (biarkan ter-komentar sampai bro mengisinya):
+# products:
+#   - id: contoh
+#     keywords: ["contoh-produk"]
+#     cta: "Cek link di bio kalau mau cobain."
+#     url: ""
+#     topics: []

@@ -31,3 +31,13 @@ OUTPUT: HANYA JSON valid:
   "cover_text": "",
   "is_ai_generated": true
 }
+
+- Gaya visual "penjelas": motion graphics (teks besar, ikon, perbandingan, counter). Boleh isi objek "visual" (opsional). Jika ragu, biarkan kosong — sistem akan menyusunnya.
+- visual.mode: "light" atau "dark".
+- visual.bab sejajar dengan adegan. layout hanya: kinetic_title, hero_number, comparison, steps, progress, card, cta, icons, bullets.
+- kata_kunci: kata yang ditekankan, warna hanya merah/hijau/aksen/emas/abu.
+- counter.ke HANYA angka yang sudah ada di narasi_penuh. Jangan menambah angka baru.
+- perbandingan: sisi kiri (lama/salah) vs kanan (baru/benar), tanpa angka baru.
+
+Jika mengisi visual, tambahkan ke JSON:
+"visual":{"mode":"light","bab":[{"layout":"kinetic_title","judul_layar":"","subjudul":"","kata_kunci":[{"kata":"","warna":"merah"}],"ikon":["check"],"perbandingan":null,"counter":null,"langkah":[],"progress_poin":[],"sfx":["pop"]}]}

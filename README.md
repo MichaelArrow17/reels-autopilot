@@ -2,6 +2,8 @@
 
 Pipeline **gratis** dan **otonom** untuk Reels Instagram: riset topik → naskah → TTS → render 9:16 → QC → **ACC di Telegram** → publish ke IG @achmad_radinal94, lalu paket share manual ke profil Facebook Po Chai. Jalan di **GitHub Actions**, tanpa PC/VPS.
 
+Visual: dua gaya bergantian — **penjelas** (motion graphics + suara) dan **cerita stickman** (kiasan motivasi, pustaka tetap, tanpa kode per video). Tautan affiliate diatur sendiri di `config/affiliate.yaml` (kosong secara default).
+
 Variable repo **`DRY_RUN=false`** saat pipeline resmi jalan (5 slot/hari). Lokal, default kode tetap aman jika `DRY_RUN` tidak diisi. **`APPROVAL_MODE=required`**: tanpa ACC/OK, job publish tidak menayangkan Reel.
 
 Baca dulu:

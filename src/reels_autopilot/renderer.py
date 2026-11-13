@@ -284,7 +284,21 @@ def render_video(
     background_photo: Path | None = None,
     attribution: str = "",
     fps: int = TARGET_FPS,
+    style: str | None = None,
 ) -> Path:
+    style = style or (script or {}).get("style") or "penjelas"
+    if style == "cerita":
+        from reels_autopilot.style_cerita import render_cerita
+        sb = (script or {}).get("storyboard") or script or {}
+        audio = getattr(tts, "audio_path", None) if tts is not None else None
+        return render_cerita(sb, audio, dest, settings=settings, fps=fps)
+    if style == "penjelas":
+        from reels_autopilot.style_penjelas import render_penjelas
+        try:
+            return render_penjelas(script, tts, dest, settings=settings, fps=fps)
+        except Exception as e:
+            log.warning("render penjelas gagal, jatuh ke gaya lama: %s", e)
+            # lanjut ke renderer lama di bawah
     settings = settings or get_settings()
     dest = Path(dest)
     dest.parent.mkdir(parents=True, exist_ok=True)
