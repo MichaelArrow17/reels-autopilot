@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Gimana caranya kerjaan IT malah bikin bumi makin panas?",
+      "isi": "Banyak yang mengira server canggih itu ramah lingkungan, padahal kuncinya ada di data yang transparan. Kini CIO mulai andalkan teknologi digital untuk pantau emisi secara real-time.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Menurutmu, seberapa besar dampak server kantor kita terhadap lingkungan?",
+      "hashtag": [
+        "#KeberlanjutanIT",
+        "#GreenTech",
+        "#TeknologiDigital",
+        "#JejakKarbon",
+        "#Sustainability"
+      ]
+    },
+    {
+      "baris1": "Yakin server canggih di kantor kamu ramah lingkungan?",
+      "isi": "Faktanya, aktivitas IT bisa bikin bumi makin panas. Makanya, transparansi data jadi kunci dan para CIO mulai memanfaatkan teknologi digital untuk memantau emisi secara real-time.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Apakah kantormu sudah mulai memantau emisi karbon dari teknologi?",
+      "hashtag": [
+        "#CIOIndonesia",
+        "#GreenIT",
+        "#InovasiDigital",
+        "#KarbonNetral",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Kenapa kerjaan IT justru bisa bikin bumi makin panas?",
+      "isi": "Padahal banyak yang mengira server canggih itu ramah lingkungan. Solusinya ada pada data yang transparan, di mana CIO mulai memakai teknologi digital untuk pantau emisi secara real-time.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa tantangan terbesar dalam membuat sistem IT yang ramah lingkungan?",
+      "hashtag": [
+        "#Digitalisasi",
+        "#TeknologiHijau",
+        "#PerubahanIklim",
+        "#GreenBusiness",
+        "#FutureOfWork"
+      ]
+    }
+  ],
+  "cover": "Kerjaan IT Bikin Bumi Panas?",
+  "komentar_pin": "Gimana pendapatmu tentang jejak karbon dari server IT saat ini? Tulis di komentar ya!",
+  "llm_provider": "gemini"
+}

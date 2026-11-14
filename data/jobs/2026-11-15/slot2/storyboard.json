@@ -1,0 +1,213 @@
+{
+  "style": "cerita",
+  "environment": "office",
+  "durasi_detik": 24.0,
+  "label_kiri": "BINGUNG",
+  "label_kanan": "MENCOBA",
+  "judul": "Kenapa Suara TTS Makin Natural",
+  "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "menyerah"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "berjuang"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Kok suaranya kaku?",
+      "gelembung_b": "Makin natural nih.",
+      "efek": [
+        "dust"
+      ],
+      "sfx": [
+        "click"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 4.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "push",
+        "x": 0.65,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Gimana caranya?",
+      "gelembung_b": "Coba pelajari sistemnya!",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "whoosh"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 8.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "limp",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "climb",
+        "x": 0.6,
+        "y": 0.5,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "ladder",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Susah ya...",
+      "gelembung_b": "Makin paham!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "step"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 12.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.7,
+        "y": 0.4,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Nyerah deh.",
+      "gelembung_b": "Ketemu kuncinya!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 16.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "fall",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.7,
+        "y": 0.5,
+        "hadap": "kiri"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Ah, tertinggal.",
+      "gelembung_b": "Suaranya pas banget!",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "success"
+      ],
+      "klimaks": true,
+      "teks_klimaks": "Teknologi makin canggih!"
+    },
+    {
+      "t": 20.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "wave",
+        "x": 0.7,
+        "y": 0.5,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Ikutan coba ah.",
+      "gelembung_b": "Yuk praktekkan!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "taada"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 16.0,
+    "jenis": "reaches_peak",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Terus coba teknologi baru."
+}

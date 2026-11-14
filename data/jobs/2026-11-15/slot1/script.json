@@ -1,0 +1,226 @@
+{
+  "judul": "Cara Teknologi Digital Bantu Keberlanjutan CIO",
+  "hook": "Gimana caranya kerjaan IT malah bikin bumi makin panas?",
+  "angle": "Sudut kreator Indonesia: Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Gimana caranya kerjaan IT malah bikin bumi makin panas? Padahal kamu kira server canggih itu ramah lingkungan. Padahal kuncinya ada di data yang transparan. Makanya CIO mulai pakai teknologi digital buat pantau emisi secara real-time. Langsung cek laporan jejak karbonmu hari ini.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Gimana caranya kerjaan IT malah bikin bumi makin panas?",
+      "teks_layar": "IT Bikin Panas?",
+      "pose": "think",
+      "keyword": "panas",
+      "latar": "kantor",
+      "image_query": "stickman thinking about hot earth"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal kamu kira server canggih itu ramah lingkungan.",
+      "teks_layar": "Server Ramah Lingkungan?",
+      "pose": "shrug",
+      "keyword": "server",
+      "latar": "kantor",
+      "image_query": "stickman shrugging near server rack"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal kuncinya ada di data yang transparan.",
+      "teks_layar": "Kunci: Data Transparan",
+      "pose": "point",
+      "keyword": "data",
+      "latar": "kantor",
+      "image_query": "stickman pointing at transparent data"
+    },
+    {
+      "id": 4,
+      "nama": "aksi",
+      "narasi": "Makanya CIO mulai pakai teknologi digital buat pantau emisi secara real-time.",
+      "teks_layar": "Pantau Emisi Digital",
+      "pose": "typing",
+      "keyword": "emisi",
+      "latar": "kantor",
+      "image_query": "stickman typing on laptop monitoring emissions"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Langsung cek laporan jejak karbonmu hari ini.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "karbon",
+      "latar": "kantor",
+      "image_query": "stickman cheering with carbon report"
+    }
+  ],
+  "caption": "Gimana teknologi digital bantu CIO wujudkan keberlanjutan? Simpan video ini buat panduan kerjamu!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Keberlanjutan",
+    "#TeknologiDigital",
+    "#CIO",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Teknologi Digital & Keberlanjutan CIO",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Gimana caranya kerjaan IT malah bikin bumi makin panas?",
+        "layout": "kinetic_title",
+        "judul_layar": "IT Bikin Panas?",
+        "subjudul": "Mitos atau fakta?",
+        "kata_kunci": [
+          {
+            "kata": "panas",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "fire"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal kamu kira server canggih itu ramah lingkungan.",
+        "layout": "comparison",
+        "judul_layar": "Server Canggih",
+        "subjudul": "Kenyataan vs Asumsi",
+        "kata_kunci": [
+          {
+            "kata": "server",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "server"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal kuncinya ada di data yang transparan.",
+        "layout": "icons",
+        "judul_layar": "Kunci Utama",
+        "subjudul": "Transparansi Data",
+        "kata_kunci": [
+          {
+            "kata": "data",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "chart"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "aksi",
+        "narasi": "Makanya CIO mulai pakai teknologi digital buat pantau emisi secara real-time.",
+        "layout": "steps",
+        "judul_layar": "Solusi CIO",
+        "subjudul": "Pantau Emisi Digital",
+        "kata_kunci": [
+          {
+            "kata": "emisi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "cloud"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Pantau",
+          "Analisis",
+          "Kurangi"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Langsung cek laporan jejak karbonmu hari ini.",
+        "layout": "cta",
+        "judul_layar": "Cek Karbonmu",
+        "subjudul": "Simpan video ini",
+        "kata_kunci": [
+          {
+            "kata": "karbon",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

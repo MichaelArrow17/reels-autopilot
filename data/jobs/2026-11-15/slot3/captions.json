@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah langsung posting teks buatan AI tanpa dicek dulu?",
+      "isi": "Jangan asal percaya karena AI bisa mengarang data. Kesalahan fatal ini bisa bikin kredibilitas kamu hancur kalau tidak verifikasi ulang sumber aslinya.",
+      "cta": "Simpan video ini supaya kamu tidak salah langkah.",
+      "pertanyaan": "Pernah nemu data ngawur yang dibuat sama AI?",
+      "hashtag": [
+        "#PenulisAI",
+        "#KreatorKonten",
+        "#TipsMenulis",
+        "#AICreator"
+      ]
+    },
+    {
+      "baris1": "Yakin teks AI yang kamu gunakan sudah 100% akurat?",
+      "isi": "AI punya potensi mengarang data sendiri. Luangkan waktu sebentar untuk cek sumber asli naskah final agar reputasimu tetap terjaga.",
+      "cta": "Simpan postingan ini buat pengingat sebelum publish konten!",
+      "pertanyaan": "Seberapa sering kamu pakai AI buat bantu nulis?",
+      "hashtag": [
+        "#TipsAI",
+        "#PenulisIndonesia",
+        "#FaktaAI",
+        "#ContentWriter"
+      ]
+    },
+    {
+      "baris1": "Kenapa jangan pernah asal copas teks dari AI?",
+      "isi": "Asal percaya teks buatan AI bisa merusak kredibilitas kamu. Selalu verifikasi data dari sumber asli sebelum menentukan naskah final.",
+      "cta": "Follow akun ini untuk tips AI dan menulis berikutnya!",
+      "pertanyaan": "Apa tools AI favoritmu untuk bikin naskah?",
+      "hashtag": [
+        "#BelajarAI",
+        "#TipsKreator",
+        "#EdukasiAI",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Cek Fakta AI Sebelum Diposting!",
+  "komentar_pin": "Jangan sampai kredibilitasmu turun cuma gara-gara data AI yang ngawur! Kamu biasanya selalu cek ulang teks dari AI atau langsung posting nih?",
+  "llm_provider": "gemini"
+}

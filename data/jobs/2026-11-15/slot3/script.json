@@ -1,0 +1,200 @@
+{
+  "judul": "Cara Cek Fakta Hasil AI Sebelum Diposting",
+  "hook": "Cara cek fakta hasil AI sebelum diposting?",
+  "angle": "Sudut kreator Indonesia: Cara cek fakta hasil AI sebelum diposting",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah posting teks buatan AI tanpa dicek dulu? Jangan asal percaya karena AI bisa mengarang data. Kesalahan fatal ini bikin kredibilitas kamu langsung hancur. Cukup luangkan waktu sebentar untuk verifikasi ulang sumber aslinya sebelum naskah final. Simpan video ini supaya kamu tidak salah langkah.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah posting teks buatan AI tanpa dicek dulu?",
+      "teks_layar": "Posting Teks AI Tanpa Cek?",
+      "pose": "shrug",
+      "keyword": "AI",
+      "latar": "studio bersih",
+      "image_query": "stickman confused facing computer"
+    },
+    {
+      "id": 2,
+      "nama": "konflik_1",
+      "narasi": "Jangan asal percaya karena AI bisa mengarang data.",
+      "teks_layar": "AI Suka Mengarang Data!",
+      "pose": "point",
+      "keyword": "mengarang",
+      "latar": "studio bersih",
+      "image_query": "stickman warning sign"
+    },
+    {
+      "id": 3,
+      "nama": "konflik_2",
+      "narasi": "Kesalahan fatal ini bikin kredibilitas kamu langsung hancur.",
+      "teks_layar": "Kredibilitas Hancur",
+      "pose": "think",
+      "keyword": "kredibilitas",
+      "latar": "studio bersih",
+      "image_query": "stickman stressed holding head"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Cukup luangkan waktu sebentar untuk verifikasi ulang sumber aslinya sebelum naskah final.",
+      "teks_layar": "Verifikasi Sebelum Final",
+      "pose": "typing",
+      "keyword": "verifikasi",
+      "latar": "studio bersih",
+      "image_query": "stickman typing fast"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya kamu tidak salah langkah.",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "studio bersih",
+      "image_query": "stickman holding save icon"
+    }
+  ],
+  "caption": "Jangan asal percaya sama hasil tulisan AI ya. Selalu cek ulang faktanya sebelum kamu posting biar kredibilitas tetap aman!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#CekFakta",
+    "#TipsKonten",
+    "#PenulisAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Cara Cek Fakta AI Sebelum Posting!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah posting teks buatan AI tanpa dicek dulu?",
+        "layout": "kinetic_title",
+        "judul_layar": "Posting Teks AI Tanpa Cek?",
+        "subjudul": "Pernah posting teks buatan AI tanpa dicek dulu?",
+        "kata_kunci": [
+          {
+            "kata": "AI",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik_1",
+        "narasi": "Jangan asal percaya karena AI bisa mengarang data.",
+        "layout": "bullets",
+        "judul_layar": "AI Suka Mengarang Data!",
+        "subjudul": "Jangan asal percaya karena AI bisa mengarang data.",
+        "kata_kunci": [
+          {
+            "kata": "mengarang",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "konflik_2",
+        "narasi": "Kesalahan fatal ini bikin kredibilitas kamu langsung hancur.",
+        "layout": "bullets",
+        "judul_layar": "Kredibilitas Hancur",
+        "subjudul": "Kesalahan fatal ini bikin kredibilitas kamu langsung hancur.",
+        "kata_kunci": [
+          {
+            "kata": "kredibilitas",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Cukup luangkan waktu sebentar untuk verifikasi ulang sumber aslinya sebelum naskah final.",
+        "layout": "bullets",
+        "judul_layar": "Verifikasi Sebelum Final",
+        "subjudul": "Cukup luangkan waktu sebentar untuk verifikasi ulang sumber aslinya sebelum naskah final.",
+        "kata_kunci": [
+          {
+            "kata": "verifikasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya kamu tidak salah langkah.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini!",
+        "subjudul": "Simpan video ini supaya kamu tidak salah langkah.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+  "hook": "Kenapa kreator perlu mirroring ke beberapa platform?",
+  "angle": "Sudut kreator Indonesia: Kenapa kreator perlu mirroring ke beberapa platform",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kenapa kreator perlu mirroring ke beberapa platform? Kamu mungkin capek upload video satu per satu. Mengandalkan satu tempat bikin jangkauanmu mandek. Padahal, penontonmu ada di mana-mana. Cukup buat sekali, lalu sebarkan ke tempat lain. Hasilnya, usahamu efisien tanpa buang waktu. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kenapa kreator perlu mirroring ke beberapa platform?",
+      "teks_layar": "Kenapa kreator perlu mirroring?",
+      "pose": "idle",
+      "keyword": "mirroring",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused looking at phone"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kamu mungkin capek upload video satu per satu. Mengandalkan satu tempat bikin jangkauanmu mandek.",
+      "teks_layar": "Capek upload satu per satu?",
+      "pose": "shrug",
+      "keyword": "capek",
+      "latar": "studio minimalis",
+      "image_query": "stickman tired laptop"
+    },
+    {
+      "id": 3,
+      "nama": "fakta",
+      "narasi": "Padahal, penontonmu ada di mana-mana.",
+      "teks_layar": "Penonton ada di mana-mana",
+      "pose": "point",
+      "keyword": "penonton",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at globe"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Cukup buat sekali, lalu sebarkan ke tempat lain. Hasilnya, usahamu efisien tanpa buang waktu.",
+      "teks_layar": "Buat sekali, sebarkan semua",
+      "pose": "typing",
+      "keyword": "efisien",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing fast"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part dua.",
+      "teks_layar": "Follow buat part dua",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "studio minimalis",
+      "image_query": "stickman smiling waving"
+    }
+  ],
+  "caption": "Pernah merasa capek karena upload video satu per satu? Saatnya pakai strategi mirroring supaya kontenmu makin luas jangkauannya tanpa buang waktu.",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#TipsKreator",
+    "#ContentCreator",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Rahasia Kreator Multi-Platform",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Kenapa kreator perlu mirroring ke beberapa platform?",
+        "layout": "kinetic_title",
+        "judul_layar": "Kenapa Mirroring?",
+        "subjudul": "Strategi Hemat Waktu",
+        "kata_kunci": [
+          {
+            "kata": "mirroring",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "share"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kamu mungkin capek upload video satu per satu. Mengandalkan satu tempat bikin jangkauanmu mandek.",
+        "layout": "comparison",
+        "judul_layar": "Satu vs Banyak",
+        "subjudul": "Jangkauan konten",
+        "kata_kunci": [
+          {
+            "kata": "mandek",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "smartphone"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "fakta",
+        "narasi": "Padahal, penontonmu ada di mana-mana.",
+        "layout": "icons",
+        "judul_layar": "Target Luas",
+        "subjudul": "Penonton di mana-mana",
+        "kata_kunci": [
+          {
+            "kata": "penonton",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "users"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Cukup buat sekali, lalu sebarkan ke tempat lain. Hasilnya, usahamu efisien tanpa buang waktu.",
+        "layout": "steps",
+        "judul_layar": "Cara Kerja",
+        "subjudul": "Efisien dan cepat",
+        "kata_kunci": [
+          {
+            "kata": "efisien",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "zap"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Buat sekali",
+          "Sebarkan"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Jangan Ketinggalan",
+        "subjudul": "Tips berikutnya",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "arrow-right"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      }
+    ]
+  }
+}

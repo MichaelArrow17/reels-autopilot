@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa prompt pendek kadang lebih jitu?",
+      "isi": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Selalu cek tanggal, gelar, atau jumlah yang disebutkan.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Ada informasi yang mau kamu cek kebenarannya hari ini?",
+      "hashtag": [
+        "#literasidigital",
+        "#cekfakta",
+        "#aiindonesia",
+        "#penulis",
+        "#factcheck"
+      ]
+    },
+    {
+      "baris1": "Benarkah prompt pendek lebih jitu?",
+      "isi": "Tanpa tautan resmi atau sumber yang jelas, jangan langsung percaya pada kabar duka, skandal, atau kabar mundur jabatan.",
+      "cta": "Komentar jawaban.",
+      "pertanyaan": "Bagaimana cara biasa kamu memastikan kebenaran sebuah informasi?",
+      "hashtag": [
+        "#antihox",
+        "#literasi",
+        "#kreatorai",
+        "#menulis",
+        "#criticalthinking"
+      ]
+    },
+    {
+      "baris1": "Kenapa prompt pendek kadang bisa lebih jitu?",
+      "isi": "Banyak profil orang terkenal terdengar lancar padahal sumbernya kosong. Pastikan selalu memeriksa asal usul setiap angka yang ada.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Pernahkah kamu hampir percaya berita tanpa sumber yang jelas?",
+      "hashtag": [
+        "#waspadahoaks",
+        "#tipsmenulis",
+        "#aiwriter",
+        "#penulismuda",
+        "#education"
+      ]
+    }
+  ],
+  "cover": "Kenapa Prompt Pendek Lebih Jitu",
+  "komentar_pin": "Tulis di komentar kalau ada informasi atau berita yang mau kamu bantu cek faktanya ya!",
+  "llm_provider": "gemini"
+}

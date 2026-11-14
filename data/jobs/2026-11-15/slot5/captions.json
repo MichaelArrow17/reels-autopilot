@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa kreator perlu mirroring ke beberapa platform?",
+      "isi": "Mengandalkan satu tempat bikin jangkauanmu mandek karena penontonmu ada di mana-mana. Cukup buat sekali lalu sebarkan agar usahamu efisien.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Platform mana yang jadi andalanmu untuk upload video selama ini?",
+      "hashtag": [
+        "#KreatorKonten",
+        "#TipsKreator",
+        "#ContentCreator",
+        "#StrategiKonten"
+      ]
+    },
+    {
+      "baris1": "Capek upload video satu per satu ke banyak tempat?",
+      "isi": "Penontonmu ada di mana-mana dan mengandalkan satu tempat bikin jangkauanmu mandek. Cukup buat sekali dan sebarkan untuk efisiensi.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa kendala terbesarmu saat harus sebar konten ke banyak platform?",
+      "hashtag": [
+        "#TipsSosmed",
+        "#KreatorPemula",
+        "#ContentStrategy",
+        "#BelajarKreator"
+      ]
+    },
+    {
+      "baris1": "Bikin jangkauan mandek karena cuma pakai satu platform?",
+      "isi": "Padahal penontonmu ada di mana-mana. Cukup buat konten sekali, lalu sebarkan tanpa buang waktu agar usahamu jauh lebih efisien.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Sudah coba sebar konten ke berapa platform sejauh ini?",
+      "hashtag": [
+        "#SocialMediaTips",
+        "#KreatorIndonesia",
+        "#Productivity",
+        "#TipsKonten"
+      ]
+    }
+  ],
+  "cover": "Kenapa kreator wajib mirroring konten?",
+  "komentar_pin": "Tulis jawabanmu di komentar dan jangan lupa follow akun Po Chai untuk tips seputar kreator dan AI selanjutnya!",
+  "llm_provider": "gemini"
+}

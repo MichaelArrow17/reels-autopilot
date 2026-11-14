@@ -1,0 +1,289 @@
+[
+  {
+    "text": "Gimana caranya kerjaan IT",
+    "start": 0.0,
+    "end": 1.5393682563106799,
+    "words": [
+      {
+        "word": "Gimana",
+        "start": 0.236771,
+        "duration": 0.3987542621359224
+      },
+      {
+        "word": "caranya",
+        "start": 0.6355252621359224,
+        "duration": 0.4253378796116505
+      },
+      {
+        "word": "kerjaan",
+        "start": 1.060863141747573,
+        "duration": 0.3455870271844661
+      },
+      {
+        "word": "IT",
+        "start": 1.406450168932039,
+        "duration": 0.13291808737864086
+      }
+    ]
+  },
+  {
+    "text": "malah bikin bumi makin",
+    "start": 1.5393682563106799,
+    "end": 2.6824638077669904,
+    "words": [
+      {
+        "word": "malah",
+        "start": 1.5393682563106799,
+        "duration": 0.2924197922330096
+      },
+      {
+        "word": "bikin",
+        "start": 1.8317880485436895,
+        "duration": 0.2924197922330096
+      },
+      {
+        "word": "bumi",
+        "start": 2.124207840776699,
+        "duration": 0.2658361747572817
+      },
+      {
+        "word": "makin",
+        "start": 2.390044015533981,
+        "duration": 0.2924197922330096
+      }
+    ]
+  },
+  {
+    "text": "panas? Padahal kamu kira",
+    "start": 2.6824638077669904,
+    "end": 4.998643829126214,
+    "words": [
+      {
+        "word": "panas?",
+        "start": 2.6824638077669904,
+        "duration": 1.3591697922330104
+      },
+      {
+        "word": "Padahal",
+        "start": 4.041633600000001,
+        "duration": 0.42533787961165004
+      },
+      {
+        "word": "kamu",
+        "start": 4.466971479611651,
+        "duration": 0.2658361747572817
+      },
+      {
+        "word": "kira",
+        "start": 4.732807654368933,
+        "duration": 0.2658361747572817
+      }
+    ]
+  },
+  {
+    "text": "server canggih itu ramah",
+    "start": 4.998643829126214,
+    "end": 6.1949066155339825,
+    "words": [
+      {
+        "word": "server",
+        "start": 4.998643829126214,
+        "duration": 0.3190034097087384
+      },
+      {
+        "word": "canggih",
+        "start": 5.317647238834953,
+        "duration": 0.3455870271844663
+      },
+      {
+        "word": "itu",
+        "start": 5.663234266019419,
+        "duration": 0.23925255728155292
+      },
+      {
+        "word": "ramah",
+        "start": 5.902486823300972,
+        "duration": 0.2924197922330105
+      }
+    ]
+  },
+  {
+    "text": "lingkungan. Padahal kuncinya ada",
+    "start": 6.1949066155339825,
+    "end": 8.8697782815534,
+    "words": [
+      {
+        "word": "lingkungan.",
+        "start": 6.1949066155339825,
+        "duration": 1.5583597320388343
+      },
+      {
+        "word": "Padahal",
+        "start": 7.753266347572817,
+        "duration": 0.42533787961165004
+      },
+      {
+        "word": "kuncinya",
+        "start": 8.178604227184467,
+        "duration": 0.45192149708737794
+      },
+      {
+        "word": "ada",
+        "start": 8.630525724271845,
+        "duration": 0.2392525572815547
+      }
+    ]
+  },
+  {
+    "text": "di data yang transparan.",
+    "start": 8.8697782815534,
+    "end": 11.006851598058253,
+    "words": [
+      {
+        "word": "di",
+        "start": 8.8697782815534,
+        "duration": 0.13291808737863953
+      },
+      {
+        "word": "data",
+        "start": 9.002696368932039,
+        "duration": 0.2658361747572826
+      },
+      {
+        "word": "yang",
+        "start": 9.268532543689322,
+        "duration": 0.1860853223300971
+      },
+      {
+        "word": "transparan.",
+        "start": 9.454617866019419,
+        "duration": 1.5522337320388342
+      }
+    ]
+  },
+  {
+    "text": "Makanya CIO mulai pakai",
+    "start": 11.006851598058253,
+    "end": 12.176530766990295,
+    "words": [
+      {
+        "word": "Makanya",
+        "start": 11.006851598058253,
+        "duration": 0.4253378796116518
+      },
+      {
+        "word": "CIO",
+        "start": 11.432189477669905,
+        "duration": 0.1595017048543692
+      },
+      {
+        "word": "mulai",
+        "start": 11.591691182524274,
+        "duration": 0.2924197922330105
+      },
+      {
+        "word": "pakai",
+        "start": 11.884110974757284,
+        "duration": 0.2924197922330105
+      }
+    ]
+  },
+  {
+    "text": "teknologi digital buat pantau",
+    "start": 12.176530766990295,
+    "end": 13.665213345631072,
+    "words": [
+      {
+        "word": "teknologi",
+        "start": 12.176530766990295,
+        "duration": 0.5582559669902913
+      },
+      {
+        "word": "digital",
+        "start": 12.734786733980586,
+        "duration": 0.42533787961165004
+      },
+      {
+        "word": "buat",
+        "start": 13.160124613592236,
+        "duration": 0.1860853223300971
+      },
+      {
+        "word": "pantau",
+        "start": 13.346209935922333,
+        "duration": 0.3190034097087384
+      }
+    ]
+  },
+  {
+    "text": "emisi secara real-time.",
+    "start": 13.665213345631072,
+    "end": 15.941934749514566,
+    "words": [
+      {
+        "word": "emisi",
+        "start": 13.665213345631072,
+        "duration": 0.3721706446601942
+      },
+      {
+        "word": "secara",
+        "start": 14.037383990291266,
+        "duration": 0.39875426213592213
+      },
+      {
+        "word": "real-time.",
+        "start": 14.436138252427188,
+        "duration": 1.5057964970873776
+      }
+    ]
+  },
+  {
+    "text": "Langsung cek laporan jejak",
+    "start": 15.941934749514566,
+    "end": 17.19136477087379,
+    "words": [
+      {
+        "word": "Langsung",
+        "start": 15.941934749514566,
+        "duration": 0.3721706446601942
+      },
+      {
+        "word": "cek",
+        "start": 16.31410539417476,
+        "duration": 0.15950170485437098
+      },
+      {
+        "word": "laporan",
+        "start": 16.47360709902913,
+        "duration": 0.4253378796116465
+      },
+      {
+        "word": "jejak",
+        "start": 16.898944978640777,
+        "duration": 0.2924197922330123
+      }
+    ]
+  },
+  {
+    "text": "karbonmu hari ini.",
+    "start": 17.19136477087379,
+    "end": 18.148375,
+    "words": [
+      {
+        "word": "karbonmu",
+        "start": 17.19136477087379,
+        "duration": 0.45192149708737617
+      },
+      {
+        "word": "hari",
+        "start": 17.643286267961166,
+        "duration": 0.2658361747572826
+      },
+      {
+        "word": "ini.",
+        "start": 17.90912244271845,
+        "duration": 0.23925255728155292
+      }
+    ]
+  }
+]

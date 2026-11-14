@@ -71,6 +71,36 @@
       "tanggal": "2026-11-14",
       "angle": "Sudut kreator Indonesia: Kenapa hook dua detik menentukan Reels",
       "slot": 5
+    },
+    {
+      "judul": "Cara Teknologi Digital Bantu Keberlanjutan CIO",
+      "tanggal": "2026-11-15",
+      "angle": "Sudut kreator Indonesia: Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+      "slot": 1
+    },
+    {
+      "judul": "Kenapa Suara TTS Makin Natural",
+      "tanggal": "2026-11-15",
+      "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+      "slot": 2
+    },
+    {
+      "judul": "Cara Cek Fakta Hasil AI Sebelum Diposting",
+      "tanggal": "2026-11-15",
+      "angle": "Sudut kreator Indonesia: Cara cek fakta hasil AI sebelum diposting",
+      "slot": 3
+    },
+    {
+      "judul": "Kenapa prompt pendek kadang lebih jitu",
+      "tanggal": "2026-11-15",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 4
+    },
+    {
+      "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+      "tanggal": "2026-11-15",
+      "angle": "Sudut kreator Indonesia: Kenapa kreator perlu mirroring ke beberapa platform",
+      "slot": 5
     }
   ],
   "days": {
@@ -2777,7 +2807,7 @@
           "id": "2026-11-15-s1-aa1764",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+          "judul": "Cara Teknologi Digital Bantu Keberlanjutan CIO",
           "hook": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM?",
           "topic": {
             "judul": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
@@ -2809,14 +2839,28 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-15T06:01:20+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-15T06:01:20+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot1/script.json",
+          "caption": "Gimana caranya kerjaan IT malah bikin bumi makin panas?\nBanyak yang mengira server canggih itu ramah lingkungan, padahal kuncinya ada di data yang transparan. Kini CIO mulai andalkan teknologi digital untuk pantau emisi secara real-time.\nSimpan video ini.\nMenurutmu, seberapa besar dampak server kantor kita terhadap lingkungan?\n#KeberlanjutanIT #GreenTech #TeknologiDigital #JejakKarbon #Sustainability",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 19.066016,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-15-s2-8d439d",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "judul": "Kenapa Suara TTS Makin Natural",
           "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
           "topic": {
             "judul": "Apa itu TTS dan kenapa suaranya makin natural",
@@ -2848,14 +2892,29 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-15T06:01:20+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-15T06:01:20+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 62)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot2/script.json",
+          "caption": "Kenapa suara AI sekarang makin mirip manusia asli?\nPerkembangan teknologi Text-to-Speech memanfaatkan model deep learning untuk menirukan intonasi, jeda, dan emosi manusia secara akurat.\nKomentar jawaban\nMenurutmu suara AI mana yang paling mirip manusia asli?\n#TeknologiAI #TextToSpeech #KecerdasanBuatan #AIIndonesia #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.3,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-15-s3-7d969c",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Cara cek fakta hasil AI sebelum diposting",
+          "judul": "Cara Cek Fakta Hasil AI Sebelum Diposting",
           "hook": "Cara cek fakta hasil AI sebelum diposting?",
           "topic": {
             "judul": "Cara cek fakta hasil AI sebelum diposting",
@@ -2887,8 +2946,22 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-15T06:01:20+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-15T06:01:20+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot3/script.json",
+          "caption": "Pernah langsung posting teks buatan AI tanpa dicek dulu?\nJangan asal percaya karena AI bisa mengarang data. Kesalahan fatal ini bisa bikin kredibilitas kamu hancur kalau tidak verifikasi ulang sumber aslinya.\nSimpan video ini supaya kamu tidak salah langkah.\nPernah nemu data ngawur yang dibuat sama AI?\n#PenulisAI #KreatorKonten #TipsMenulis #AICreator",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 20.0,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-15-s4-3c63c2",
@@ -2926,8 +2999,24 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-15T06:01:20+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-15T06:01:20+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 4× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot4/script.json",
+          "caption": "Kenapa prompt pendek kadang lebih jitu?\nBanyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Selalu cek tanggal, gelar, atau jumlah yang disebutkan.\nSimpan video ini.\nAda informasi yang mau kamu cek kebenarannya hari ini?\n#literasidigital #cekfakta #aiindonesia #penulis #factcheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-15-s5-bc8038",
@@ -2965,8 +3054,22 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-15T06:01:20+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-15T06:01:20+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-15/slot5/script.json",
+          "caption": "Kenapa kreator perlu mirroring ke beberapa platform?\nMengandalkan satu tempat bikin jangkauanmu mandek karena penontonmu ada di mana-mana. Cukup buat sekali lalu sebarkan agar usahamu efisien.\nFollow untuk part berikutnya.\nPlatform mana yang jadi andalanmu untuk upload video selama ini?\n#KreatorKonten #TipsKreator #ContentCreator #StrategiKonten",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 24.096,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-15T06:01:19+08:00",
@@ -3013,6 +3116,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "Kenapa hook dua detik menentukan Reels",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Cara Teknologi Digital Bantu Keberlanjutan CIO",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 2,
+      "style": "cerita",
+      "judul": "Kenapa Suara TTS Makin Natural",
+      "reason": "keragaman batch (dari penjelas, yakin 62)"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "Cara Cek Fakta Hasil AI Sebelum Diposting",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 4,
+      "style": "kolase",
+      "judul": "Kenapa prompt pendek kadang lebih jitu",
+      "reason": "rotasi setelah 4× penjelas"
+    },
+    {
+      "date": "2026-11-15",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
       "reason": "topik info"
     }
   ]
