@@ -2318,6 +2318,659 @@
       ],
       "scouted_at": "2026-11-14T06:02:32+08:00",
       "notified": false
+    },
+    "2026-11-15": {
+      "date": "2026-11-15",
+      "shortlist": [
+        {
+          "judul": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+          "sumber": [
+            "google_news_tech"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM?",
+          "angle": "Sudut kreator Indonesia: Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 1
+        },
+        {
+          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+          "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 2
+        },
+        {
+          "judul": "Cara cek fakta hasil AI sebelum diposting",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Cara cek fakta hasil AI sebelum diposting?",
+          "angle": "Sudut kreator Indonesia: Cara cek fakta hasil AI sebelum diposting",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 3
+        },
+        {
+          "judul": "Kenapa prompt pendek kadang lebih jitu",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Kenapa prompt pendek kadang lebih jitu?",
+          "angle": "Sudut kreator Indonesia: Kenapa prompt pendek kadang lebih jitu",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 4
+        },
+        {
+          "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Kenapa kreator perlu mirroring ke beberapa platform?",
+          "angle": "Sudut kreator Indonesia: Kenapa kreator perlu mirroring ke beberapa platform",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 5
+        },
+        {
+          "judul": "Kenapa caption Reels tetap penting meski ada suara",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Kenapa caption Reels tetap penting meski ada suara?",
+          "angle": "Sudut kreator Indonesia: Kenapa caption Reels tetap penting meski ada suara",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 6
+        },
+        {
+          "judul": "Kenapa label konten AI itu penting",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Kenapa label konten AI itu penting?",
+          "angle": "Sudut kreator Indonesia: Kenapa label konten AI itu penting",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 7
+        },
+        {
+          "judul": "Kecerdasan Buatan Jadi Bahan Diskusi, Jaksa Harus Melek Teknologi - Adhyaksa Digital",
+          "sumber": [
+            "google_news_ai",
+            "google_news_tech"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 10,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 75.0,
+          "hook": "Kecerdasan Buatan Jadi Bahan Diskusi, Jaksa Harus Melek Teknologi - Adhyaksa Digital?",
+          "angle": "Sudut kreator Indonesia: Kecerdasan Buatan Jadi Bahan Diskusi, Jaksa Harus Melek Teknologi - Adhyaksa Digital",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 8
+        }
+      ],
+      "ditolak": [
+        {
+          "judul": "cara pakai ai",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "cara pakai ai capcut",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "cara pakai shisha",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "BRIN Ungkap Titik Tsunami di Jakarta jika Gempa Megathrust Mengguncang",
+          "alasan": "tragedi / berita duka — gerbang safety",
+          "tahap": "gerbang_safety"
+        },
+        {
+          "judul": "Kenapa AI kadang ngarang fakta",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Kenapa hook dua detik menentukan Reels",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "al-nassr fc",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "bruno fernandes",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "concacaf nations league",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "masyarakat sipil",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "mads hermansen",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "klasemen uefa nations league 2026",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "robert lewandowski",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "subuh hari ini",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "gustav isaksen",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "jadwal salat",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "cara pakai air fryer",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai air mawar yang benar",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai air beras untuk wajah",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai shizuku",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai shizuku zarchiver",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "faceless content",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content creator",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content ideas 2026",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content full course",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "We're trying something new. On Tuesdays, we're doing text posts only",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Long Horizontal Coherence",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "This Technology Is Far Too Powerful For Mere Mortals To Wield",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "The next generation will never see a real video",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Anyone else having a stoke?",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Worth a Shot 💔🥀",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Whole cinematic universe be like",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Tell me I’m not the only one..",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Day in the life of Jensen Huang",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Is this normal?",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Asked Chat to Draw Someone Writing with Their Left Hand",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Jensen Huang singing his resignation, 2026, colorized",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Nvidia leaks confirmed?",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Context window crap",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Chat usage limit on pro?",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Kecerdasan Buatan dan Runtuhnya Ilmu Pengetahuan - Tirto.id",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Khofifah: Integritas Wartawan Tak Boleh Tergantikan oleh Kecerdasan Buatan - kanalsatu.com",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "SK Innovation E&S Kembali Menjaring Wirausahawan Muda di Bidang Transformasi Kecerdasan Buatan / AX dan Energi di Indonesia - ANTARA News",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Perkuat Kolaborasi Akademik, PT SILINDO Dukung Penyelenggaraan MIC 2026 Halaman 1 - Kompasiana.com",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Guru di dunia kecerdasan buatan: Menciptakan metode pengajaran yang sesuai untuk daerah pegunungan. - Vietnam.vn",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Hadapi Era Kecerdasan Buatan, Wahyu Dorong Penguatan Talenta Digital di Cimahi - Reformasi Aktual",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Ketika Kecerdasan Buatan Mulai Memahami Cara Belajar Anak Indonesia Lebih Dari Siapapun - Harianmemokepri.com",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "Kecerdasan Buatan Tak Menggantikan Peran Guru dalam Pembentukan Karakter - RRI.co.id",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Wamen Stella Soroti Masa Depan Perguruan Tinggi di Era Kecerdasan Buatan - SINDOnews Edukasi",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Waspada Modus Penipuan Kloning Suara dan Deepfake, Kenali Ciri-Cirinya - katakini.com",
+          "alasan": "skor 56.0 < 65"
+        }
+      ],
+      "videos": [
+        {
+          "id": "2026-11-15-s1-aa1764",
+          "slot": 1,
+          "slot_label": "07:30",
+          "judul": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+          "hook": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM?",
+          "topic": {
+            "judul": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+            "sumber": [
+              "google_news_tech"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM?",
+            "angle": "Sudut kreator Indonesia: Cara Teknologi Digital Dapat Membantu Mengoperasionalkan Keberlanjutan bagi CIO - IBM",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 1
+          },
+          "status": "pending",
+          "created_at": "2026-11-15T06:01:20+08:00"
+        },
+        {
+          "id": "2026-11-15-s2-8d439d",
+          "slot": 2,
+          "slot_label": "12:00",
+          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+          "topic": {
+            "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+            "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 2
+          },
+          "status": "pending",
+          "created_at": "2026-11-15T06:01:20+08:00"
+        },
+        {
+          "id": "2026-11-15-s3-7d969c",
+          "slot": 3,
+          "slot_label": "17:00",
+          "judul": "Cara cek fakta hasil AI sebelum diposting",
+          "hook": "Cara cek fakta hasil AI sebelum diposting?",
+          "topic": {
+            "judul": "Cara cek fakta hasil AI sebelum diposting",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Cara cek fakta hasil AI sebelum diposting?",
+            "angle": "Sudut kreator Indonesia: Cara cek fakta hasil AI sebelum diposting",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 3
+          },
+          "status": "pending",
+          "created_at": "2026-11-15T06:01:20+08:00"
+        },
+        {
+          "id": "2026-11-15-s4-3c63c2",
+          "slot": 4,
+          "slot_label": "19:00",
+          "judul": "Kenapa prompt pendek kadang lebih jitu",
+          "hook": "Kenapa prompt pendek kadang lebih jitu?",
+          "topic": {
+            "judul": "Kenapa prompt pendek kadang lebih jitu",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Kenapa prompt pendek kadang lebih jitu?",
+            "angle": "Sudut kreator Indonesia: Kenapa prompt pendek kadang lebih jitu",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 4
+          },
+          "status": "pending",
+          "created_at": "2026-11-15T06:01:20+08:00"
+        },
+        {
+          "id": "2026-11-15-s5-bc8038",
+          "slot": 5,
+          "slot_label": "21:00",
+          "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+          "hook": "Kenapa kreator perlu mirroring ke beberapa platform?",
+          "topic": {
+            "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Kenapa kreator perlu mirroring ke beberapa platform?",
+            "angle": "Sudut kreator Indonesia: Kenapa kreator perlu mirroring ke beberapa platform",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 5
+          },
+          "status": "pending",
+          "created_at": "2026-11-15T06:01:20+08:00"
+        }
+      ],
+      "scouted_at": "2026-11-15T06:01:19+08:00",
+      "notified": false
     }
   },
   "telegram": {
