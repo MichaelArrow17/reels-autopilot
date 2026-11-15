@@ -3667,7 +3667,7 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "rendered",
+          "status": "approved",
           "created_at": "2026-11-16T06:01:27+08:00",
           "style": "penjelas",
           "style_reason": "topik info",
@@ -3720,7 +3720,7 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "rendered",
+          "status": "approved",
           "created_at": "2026-11-16T06:01:27+08:00",
           "style": "kolase",
           "style_reason": "keragaman batch (dari penjelas, yakin 86)",
@@ -3775,7 +3775,7 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "rendered",
+          "status": "approved",
           "created_at": "2026-11-16T06:01:27+08:00",
           "style": "penjelas",
           "style_reason": "topik info",
@@ -3828,7 +3828,7 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "rendered",
+          "status": "approved",
           "created_at": "2026-11-16T06:01:27+08:00",
           "style": "cerita",
           "style_reason": "rotasi setelah 4× penjelas",
@@ -3882,7 +3882,7 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "rendered",
+          "status": "approved",
           "created_at": "2026-11-16T06:01:27+08:00",
           "style": "penjelas",
           "style_reason": "topik info",
@@ -3905,7 +3905,7 @@
     }
   },
   "telegram": {
-    "last_update_id": 966393066,
+    "last_update_id": 966393068,
     "chat_id": "7568757522"
   },
   "paused": false,
