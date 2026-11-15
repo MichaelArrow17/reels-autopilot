@@ -2906,7 +2906,7 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "approved",
+          "status": "published",
           "created_at": "2026-11-15T06:01:20+08:00",
           "style": "cerita",
           "style_reason": "keragaman batch (dari penjelas, yakin 62)",
@@ -2922,7 +2922,21 @@
             "duration": 24.0,
             "errors": []
           },
-          "storyboard_fallback": false
+          "storyboard_fallback": false,
+          "publish": {
+            "dry_run": false,
+            "fb": null,
+            "ig": {
+              "id": "18103305980429620",
+              "permalink": "https://www.instagram.com/reel/Dfv4AW1EdTY/"
+            },
+            "host": {
+              "provider": "github_release",
+              "url": "https://github.com/MichaelArrow17/reels-autopilot/releases/download/reels-20261115/2026-11-15-slot2-reel.mp4"
+            },
+            "dry_run_path": null
+          },
+          "published_at": "2026-11-15T12:02:43+08:00"
         },
         {
           "id": "2026-11-15-s3-7d969c",
