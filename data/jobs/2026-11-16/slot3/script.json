@@ -1,0 +1,201 @@
+{
+  "judul": "Cara Bikin Video AI Gratis di HP",
+  "hook": "Mau bikin video AI keren cuma pakai HP dan gratis?",
+  "angle": "Sudut kreator Indonesia: Cara Membuat Video AI di HP Gratis dengan Canva dan Google Flow",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau bikin video AI keren cuma pakai HP dan gratis? Banyak yang kira harus pakai laptop mahal atau software ribet. Padahal, kamu bisa gabungkan Google Flow dan Canva langsung dari layar HP. Prosesnya cepat, hasilnya mulus, dan sama sekali tidak butuh keahlian edit tingkat dewa. Penasaran caranya? Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau bikin video AI keren cuma pakai HP dan gratis?",
+      "teks_layar": "Video AI Gratis di HP?",
+      "pose": "idle",
+      "keyword": "video AI",
+      "latar": "minimalis",
+      "image_query": "smartphone AI video creation"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang kira harus pakai laptop mahal atau software ribet.",
+      "teks_layar": "Bukan Laptop Mahal",
+      "pose": "shrug",
+      "keyword": "laptop mahal",
+      "latar": "minimalis",
+      "image_query": "frustrated phone user"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, kamu bisa gabungkan Google Flow dan Canva langsung dari layar HP.",
+      "teks_layar": "Google Flow + Canva",
+      "pose": "typing",
+      "keyword": "Google Flow",
+      "latar": "minimalis",
+      "image_query": "mobile app editing"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Prosesnya cepat, hasilnya mulus, dan sama sekali tidak butuh keahlian edit tingkat dewa.",
+      "teks_layar": "Tanpa Keahlian Edit",
+      "pose": "cheer",
+      "keyword": "mulus",
+      "latar": "minimalis",
+      "image_query": "happy content creator"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Penasaran caranya? Follow buat part dua.",
+      "teks_layar": "Follow Buat Part 2",
+      "pose": "point",
+      "keyword": "Follow",
+      "latar": "minimalis",
+      "image_query": "follow button icon"
+    }
+  ],
+  "caption": "Mau bikin video AI gratis lewat HP? Gampang banget! Simpan video ini dan tulis di kolom komentar kalau kamu mau tutorial lengkapnya.",
+  "cta": "Follow buat part 2",
+  "hashtag": [
+    "#KreatorAI",
+    "#VideoAI",
+    "#TipsEditing",
+    "#Canva",
+    "#GoogleFlow"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Pastikan Google Flow dan Canva dapat diakses melalui HP."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Video AI Gratis di HP",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau bikin video AI keren cuma pakai HP dan gratis?",
+        "layout": "kinetic_title",
+        "judul_layar": "Video AI Gratis di HP?",
+        "subjudul": "Mau bikin video AI keren cuma pakai HP dan gratis?",
+        "kata_kunci": [
+          {
+            "kata": "video AI",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang kira harus pakai laptop mahal atau software ribet.",
+        "layout": "bullets",
+        "judul_layar": "Bukan Laptop Mahal",
+        "subjudul": "Banyak yang kira harus pakai laptop mahal atau software ribet.",
+        "kata_kunci": [
+          {
+            "kata": "laptop mahal",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, kamu bisa gabungkan Google Flow dan Canva langsung dari layar HP.",
+        "layout": "bullets",
+        "judul_layar": "Google Flow + Canva",
+        "subjudul": "Padahal, kamu bisa gabungkan Google Flow dan Canva langsung dari layar HP.",
+        "kata_kunci": [
+          {
+            "kata": "Google Flow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Prosesnya cepat, hasilnya mulus, dan sama sekali tidak butuh keahlian edit tingkat dewa.",
+        "layout": "bullets",
+        "judul_layar": "Tanpa Keahlian Edit",
+        "subjudul": "Prosesnya cepat, hasilnya mulus, dan sama sekali tidak butuh keahlian edit tingkat dewa.",
+        "kata_kunci": [
+          {
+            "kata": "mulus",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Penasaran caranya? Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Part 2",
+        "subjudul": "Penasaran caranya? Follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

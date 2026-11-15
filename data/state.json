@@ -101,6 +101,36 @@
       "tanggal": "2026-11-15",
       "angle": "Sudut kreator Indonesia: Kenapa kreator perlu mirroring ke beberapa platform",
       "slot": 5
+    },
+    {
+      "judul": "Satu Hektare Sawah Cukup Empat Jam di Blora",
+      "tanggal": "2026-11-16",
+      "angle": "Teknologi Pertanian Ubah Cara Petani Blora Mengolah Sawah",
+      "slot": 1
+    },
+    {
+      "judul": "Bagaimana Teknologi DeFi Mencatat Pendapatan Bersih Q3 Sebesar $22,3 Juta Meskipun Pendapatan Menurun? - KuCoin",
+      "tanggal": "2026-11-16",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 2
+    },
+    {
+      "judul": "Cara Bikin Video AI Gratis di HP",
+      "tanggal": "2026-11-16",
+      "angle": "Sudut kreator Indonesia: Cara Membuat Video AI di HP Gratis dengan Canva dan Google Flow",
+      "slot": 3
+    },
+    {
+      "judul": "Suara TTS Makin Natural",
+      "tanggal": "2026-11-16",
+      "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+      "slot": 4
+    },
+    {
+      "judul": "Kenapa caption Reels tetap penting meski ada suara",
+      "tanggal": "2026-11-16",
+      "angle": "Sudut kreator Indonesia: Kenapa caption Reels tetap penting meski ada suara",
+      "slot": 5
     }
   ],
   "days": {
@@ -3605,7 +3635,7 @@
           "id": "2026-11-16-s1-81893e",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Teknologi Pertanian Ubah Cara Petani Blora Mengolah Sawah, Satu Hektare Cukup Empat Jam - Kabarjateng.id",
+          "judul": "Satu Hektare Sawah Cukup Empat Jam di Blora",
           "hook": "Teknologi Pertanian Ubah Cara Petani Blora Mengolah Sawah, Satu Hektare Cukup Empat?",
           "topic": {
             "judul": "Teknologi Pertanian Ubah Cara Petani Blora Mengolah Sawah, Satu Hektare Cukup Empat Jam - Kabarjateng.id",
@@ -3637,8 +3667,22 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-16T06:01:27+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-16T06:01:27+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot1/script.json",
+          "caption": "Satu hektare sawah cukup diolah dalam empat jam?\nPetani di Blora sekarang mengandalkan mesin modern untuk menyelesaikan pekerjaan sawah jauh lebih cepat dibanding cara konvensional yang butuh seharian penuh.\nFollow untuk part berikutnya\nApakah di daerahmu sudah mulai banyak yang beralih pakai alat modern ini?\n#TeknologiPertanian #PetaniModern #SawahBlora #InovasiDesa #farmingtech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 23.3,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-16-s2-e1fabd",
@@ -3676,14 +3720,30 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-16T06:01:27+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-16T06:01:27+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 86)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot2/script.json",
+          "caption": "Banyak video profil terdengar lancar, padahal sumbernya kosong.\n\nKalau ada tanggal atau jumlah, tanya sumbernya. Klaim berat tanpa tautan resmi jangan disebar.\n\nKalau ada yang mau kamu cek, tulis di komentar.\n\n#KreatorAI #PoChai #CekSumber #ReelsIndonesia",
+          "tts_provider": "edge_tts",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-16-s3-c85309",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Cara Membuat Video AI di HP Gratis dengan Canva dan Google Flow - bsinews.id",
+          "judul": "Cara Bikin Video AI Gratis di HP",
           "hook": "Cara Membuat Video AI di HP Gratis dengan Canva dan Google Flow?",
           "topic": {
             "judul": "Cara Membuat Video AI di HP Gratis dengan Canva dan Google Flow - bsinews.id",
@@ -3715,14 +3775,28 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-16T06:01:27+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-16T06:01:27+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot3/script.json",
+          "caption": "Bisa bikin video AI keren cuma pakai HP dan gratis?\nKamu bisa gabungkan Google Flow dan Canva langsung dari layar HP tanpa butuh keahlian edit tingkat dewa.\nFollow untuk part berikutnya.\nAplikasi HP apa yang paling sering kamu pakai buat ngedit?\n#bikinvideoai #aigratis #videohp #canvatutorial #aitools",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 23.3,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-16-s4-940e53",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "judul": "Suara TTS Makin Natural",
           "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
           "topic": {
             "judul": "Apa itu TTS dan kenapa suaranya makin natural",
@@ -3754,8 +3828,23 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-16T06:01:27+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-16T06:01:27+08:00",
+          "style": "cerita",
+          "style_reason": "rotasi setelah 4× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot4/script.json",
+          "caption": "Kenapa suara TTS sekarang bisa senatural ini?\nPerkembangan teknologi kecerdasan buatan membuat intonasi suara teks menjadi ucapan terdengar semakin mirip manusia.\nSimpan video ini biar nggak lupa.\nMenurutmu, apa bedanya suara TTS dulu sama sekarang?\n#TeknologiAI #KreatorAI #PenulisKonten #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-16-s5-c4cae9",
@@ -3793,8 +3882,22 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-16T06:01:27+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-16T06:01:27+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-16/slot5/script.json",
+          "caption": "Kenapa caption Reels tetap penting meski ada suara?\nBanyak orang nonton video sambil mute di tempat umum. Ditambah lagi, algoritma membaca tulisan untuk paham isi videomu.\nSimpan video ini buat panduan.\nBiasanya kamu selalu pakai caption atau langsung upload aja?\n#tipsreels #copywritingindonesia #algoritmainstagram #contentcreatortips #instagramgrowth",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 25.7,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-16T06:01:26+08:00",
@@ -3876,6 +3979,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Satu Hektare Sawah Cukup Empat Jam di Blora",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 2,
+      "style": "kolase",
+      "judul": "Bagaimana Teknologi DeFi Mencatat Pendapatan Bersih Q3 Sebesar $22,3 Juta Meskipun Pendapatan Menurun? - KuCoin",
+      "reason": "keragaman batch (dari penjelas, yakin 86)"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "Cara Bikin Video AI Gratis di HP",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "Suara TTS Makin Natural",
+      "reason": "rotasi setelah 4× penjelas"
+    },
+    {
+      "date": "2026-11-16",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "Kenapa caption Reels tetap penting meski ada suara",
       "reason": "topik info"
     }
   ]

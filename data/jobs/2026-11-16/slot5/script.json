@@ -1,0 +1,224 @@
+{
+  "judul": "Kenapa caption Reels tetap penting meski ada suara",
+  "hook": "Kenapa caption Reels tetap penting meski ada suara?",
+  "angle": "Sudut kreator Indonesia: Kenapa caption Reels tetap penting meski ada suara",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kenapa caption Reels tetap penting meski ada suara? Seringnya, kamu mikir orang cuma mau dengar videomu. Padahal, banyak yang nonton sambil mute di tempat umum. Caption bikin pesanmu tetap nyampe tanpa suara. Plus, algoritma baca tulisan buat paham isi videomu. Mulai sekarang, tulis caption yang jelas ya. Simpan video ini buat panduan.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kenapa caption Reels tetap penting meski ada suara?",
+      "teks_layar": "Caption Penting Padahal Ada Suara?",
+      "pose": "think",
+      "keyword": "caption",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking about social media caption"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Seringnya, kamu mikir orang cuma mau dengar videomu. Padahal, banyak yang nonton sambil mute di tempat umum.",
+      "teks_layar": "Nonton Sambil Mute",
+      "pose": "shrug",
+      "keyword": "mute",
+      "latar": "studio minimalis",
+      "image_query": "stickman looking at phone with silent icon"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan_satu",
+      "narasi": "Caption bikin pesanmu tetap nyampe tanpa suara. Plus, algoritma baca tulisan buat paham isi videomu.",
+      "teks_layar": "Dibaca Algoritma",
+      "pose": "point",
+      "keyword": "algoritma",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at search text"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Mulai sekarang, tulis caption yang jelas ya.",
+      "teks_layar": "Tulis Caption Jelas",
+      "pose": "typing",
+      "keyword": "jelas",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on smartphone"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini buat panduan.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with bookmark icon"
+    }
+  ],
+  "caption": "Kenapa caption Reels tetap penting meski ada suara? Simpan video ini buat panduan.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#TipsReels",
+    "#BelajarContentCreator",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Kenapa Caption Reels Tetap Penting?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Kenapa caption Reels tetap penting meski ada suara?",
+        "layout": "kinetic_title",
+        "judul_layar": "Kenapa Caption Penting?",
+        "subjudul": "Meskipun ada suara",
+        "kata_kunci": [
+          {
+            "kata": "caption",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "help"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Seringnya, kamu mikir orang cuma mau dengar videomu. Padahal, banyak yang nonton sambil mute di tempat umum.",
+        "layout": "comparison",
+        "judul_layar": "Fakta Penonton",
+        "subjudul": "Kebiasaan nonton",
+        "kata_kunci": [
+          {
+            "kata": "mute",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "volume_off"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "swish"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan_satu",
+        "narasi": "Caption bikin pesanmu tetap nyampe tanpa suara. Plus, algoritma baca tulisan buat paham isi videomu.",
+        "layout": "icons",
+        "judul_layar": "Fungsi Ganda",
+        "subjudul": "Manfaat caption",
+        "kata_kunci": [
+          {
+            "kata": "algoritma",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "search",
+          "eye"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Mulai sekarang, tulis caption yang jelas ya.",
+        "layout": "steps",
+        "judul_layar": "Solusi Praktis",
+        "subjudul": "Mulai sekarang",
+        "kata_kunci": [
+          {
+            "kata": "jelas",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "edit"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Tulis caption yang jelas"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini buat panduan.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Buat panduanmu",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa caption Reels tetap penting meski ada suara?",
+      "isi": "Banyak orang nonton video sambil mute di tempat umum. Ditambah lagi, algoritma membaca tulisan untuk paham isi videomu.",
+      "cta": "Simpan video ini buat panduan.",
+      "pertanyaan": "Biasanya kamu selalu pakai caption atau langsung upload aja?",
+      "hashtag": [
+        "#tipsreels",
+        "#copywritingindonesia",
+        "#algoritmainstagram",
+        "#contentcreatortips",
+        "#instagramgrowth"
+      ]
+    },
+    {
+      "baris1": "Kenapa caption Reels tetap penting meski ada suara?",
+      "isi": "Pesanmu tetap bisa tersampaikan dengan baik walau tanpa suara. Algoritma juga mengandalkan tulisan untuk memahami isi videomu.",
+      "cta": "Simpan video ini buat panduan.",
+      "pertanyaan": "Seberapa penting peran caption menurut kamu saat bikin konten?",
+      "hashtag": [
+        "#tipsinstagram",
+        "#belajarbikinvideo",
+        "#captionreels",
+        "#kreatorai",
+        "#socialmediatips"
+      ]
+    },
+    {
+      "baris1": "Kenapa caption Reels tetap penting meski ada suara?",
+      "isi": "Penonton bisa menangkap pesanmu meski sedang berada di tempat umum tanpa audio. Algoritma juga membaca tulisan tersebut untuk mengenali isi video.",
+      "cta": "Simpan video ini buat panduan.",
+      "pertanyaan": "Kamu tim yang nulis caption panjang atau pendek?",
+      "hashtag": [
+        "#strategikonten",
+        "#tipsreelsinstagram",
+        "#penuliskonten",
+        "#instagramtips",
+        "#contentcreator"
+      ]
+    }
+  ],
+  "cover": "Kenapa caption Reels tetap penting?",
+  "komentar_pin": "Simpan videonya supaya gak lupa pas mau bikin konten ya! 👇",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa suara TTS sekarang bisa senatural ini?",
+      "isi": "Perkembangan teknologi kecerdasan buatan membuat intonasi suara teks menjadi ucapan terdengar semakin mirip manusia.",
+      "cta": "Simpan video ini biar nggak lupa.",
+      "pertanyaan": "Menurutmu, apa bedanya suara TTS dulu sama sekarang?",
+      "hashtag": [
+        "#TeknologiAI",
+        "#KreatorAI",
+        "#PenulisKonten",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara kerja suara TTS yang makin natural?",
+      "isi": "Sistem AI kini mampu memproses jeda dan emosi agar pembacaan teks terasa lebih hidup dan organik.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Pernah terkecoh sama suara AI pas dengerin video?",
+      "hashtag": [
+        "#SuaraAI",
+        "#TipsKreator",
+        "#ContentWriter",
+        "#MachineLearning"
+      ]
+    },
+    {
+      "baris1": "Kok bisa suara AI sekarang nggak kaku lagi?",
+      "isi": "Algoritma terbaru pada model suara tiruan mampu meniru pola bicara asli dengan lebih presisi.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa fitur AI favoritmu untuk bikin konten?",
+      "hashtag": [
+        "#AIIndonesia",
+        "#MediaSosial",
+        "#DigitalCreator",
+        "#TechTrends"
+      ]
+    }
+  ],
+  "cover": "Kenapa suara AI makin natural?",
+  "komentar_pin": "Tulis pendapatmu di kolom komentar ya! Jangan lupa follow akun ini untuk update seputar AI dan kepenulisan.",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,200 @@
+{
+  "judul": "Satu Hektare Sawah Cukup Empat Jam di Blora",
+  "hook": "Satu hektare sawah cukup diolah dalam empat jam?",
+  "angle": "Teknologi Pertanian Ubah Cara Petani Blora Mengolah Sawah",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Satu hektare sawah cukup diolah dalam empat jam? Biasanya kamu butuh waktu seharian penuh buat ngerjain ini sendirian. Petani di Blora sekarang pakai teknologi mesin modern buat ngebut kerjaan sawah. Bukan cuma cepat, tapi tenaga kamu juga jadi jauh lebih hemat. Coba intip cara kerja alat modern ini di daerahmu. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Satu hektare sawah cukup diolah dalam empat jam?",
+      "teks_layar": "1 Hektare Sawah 4 Jam?",
+      "pose": "idle",
+      "keyword": "empat jam",
+      "latar": "sawah",
+      "image_query": "stickman looking confused at rice field"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Biasanya kamu butuh waktu seharian penuh buat ngerjain ini sendirian.",
+      "teks_layar": "Biasanya Seharian Penuh",
+      "pose": "shrug",
+      "keyword": "seharian",
+      "latar": "sawah",
+      "image_query": "stickman tired working manual"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Petani di Blora sekarang pakai teknologi mesin modern buat ngebut kerjaan sawah.",
+      "teks_layar": "Teknologi Modern di Blora",
+      "pose": "point",
+      "keyword": "teknologi",
+      "latar": "traktor",
+      "image_query": "stickman pointing at modern tractor"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Bukan cuma cepat, tapi tenaga kamu juga jadi jauh lebih hemat.",
+      "teks_layar": "Tenaga Lebih Hemat",
+      "pose": "cheer",
+      "keyword": "hemat",
+      "latar": "sawah hijau",
+      "image_query": "stickman celebrating happy"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba intip cara kerja alat modern ini di daerahmu. Follow buat part dua.",
+      "teks_layar": "Follow Buat Part 2",
+      "pose": "typing",
+      "keyword": "Follow",
+      "latar": "polos",
+      "image_query": "stickman pointing to follow button"
+    }
+  ],
+  "caption": "Teknologi pertanian modern ubah cara petani Blora mengolah sawah. Satu hektare cuma butuh empat jam! Gimana menurutmu?",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PertanianModern",
+    "#Blora",
+    "#TeknologiPertanian"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Satu hektare sawah selesai dalam empat jam di Blora"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Sawah 1 Hektare 4 Jam Selesai!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Satu hektare sawah cukup diolah dalam empat jam?",
+        "layout": "kinetic_title",
+        "judul_layar": "1 Hektare Sawah 4 Jam?",
+        "subjudul": "Satu hektare sawah cukup diolah dalam empat jam?",
+        "kata_kunci": [
+          {
+            "kata": "empat jam",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Biasanya kamu butuh waktu seharian penuh buat ngerjain ini sendirian.",
+        "layout": "bullets",
+        "judul_layar": "Biasanya Seharian Penuh",
+        "subjudul": "Biasanya kamu butuh waktu seharian penuh buat ngerjain ini sendirian.",
+        "kata_kunci": [
+          {
+            "kata": "seharian",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Petani di Blora sekarang pakai teknologi mesin modern buat ngebut kerjaan sawah.",
+        "layout": "bullets",
+        "judul_layar": "Teknologi Modern di Blora",
+        "subjudul": "Petani di Blora sekarang pakai teknologi mesin modern buat ngebut kerjaan sawah.",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Bukan cuma cepat, tapi tenaga kamu juga jadi jauh lebih hemat.",
+        "layout": "bullets",
+        "judul_layar": "Tenaga Lebih Hemat",
+        "subjudul": "Bukan cuma cepat, tapi tenaga kamu juga jadi jauh lebih hemat.",
+        "kata_kunci": [
+          {
+            "kata": "hemat",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba intip cara kerja alat modern ini di daerahmu. Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Part 2",
+        "subjudul": "Coba intip cara kerja alat modern ini di daerahmu. Follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Bisa bikin video AI keren cuma pakai HP dan gratis?",
+      "isi": "Kamu bisa gabungkan Google Flow dan Canva langsung dari layar HP tanpa butuh keahlian edit tingkat dewa.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Aplikasi HP apa yang paling sering kamu pakai buat ngedit?",
+      "hashtag": [
+        "#bikinvideoai",
+        "#aigratis",
+        "#videohp",
+        "#canvatutorial",
+        "#aitools"
+      ]
+    },
+    {
+      "baris1": "Yakin bikin video AI harus pakai laptop mahal?",
+      "isi": "Prosesnya cepat dan hasilnya mulus cukup dengan menggabungkan Google Flow dan Canva dari HP.",
+      "cta": "Simpan video ini biar nggak lupa.",
+      "pertanyaan": "Udah pernah coba Google Flow belum?",
+      "hashtag": [
+        "#tutorialai",
+        "#editvideohp",
+        "#googleflow",
+        "#contentcreator",
+        "#artificialintelligence"
+      ]
+    },
+    {
+      "baris1": "Mau tahu cara bikin video AI tanpa software ribet?",
+      "isi": "Kamu nggak butuh laptop mahal karena semuanya bisa dikerjakan langsung dari layar HP.",
+      "cta": "Komentar jawaban kamu di bawah.",
+      "pertanyaan": "Menurutmu bikin video AI paling susah di bagian mana?",
+      "hashtag": [
+        "#aigenerator",
+        "#tipskonten",
+        "#belajarai",
+        "#videocreator",
+        "#contenthacks"
+      ]
+    }
+  ],
+  "cover": "Bikin Video AI Gratis di HP",
+  "komentar_pin": "Gimana, gampang banget kan? Tulis di komentar kalau kamu mau dibuatkan tutorial step-by-stepnya!",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,199 @@
+{
+  "style": "cerita",
+  "environment": "road",
+  "durasi_detik": 24.0,
+  "label_kiri": "BIASA",
+  "label_kanan": "NATURAL",
+  "judul": "Suara TTS Makin Natural",
+  "hook": "Kenapa suara robot makin mirip manusia?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "kaku"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "natural"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Kok masih kaku?",
+      "gelembung_b": "Makin mirip manusia!",
+      "efek": [
+        "dust"
+      ],
+      "sfx": [
+        "click"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 4.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "walk",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "walk",
+        "x": 0.65,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Gimana caranya?",
+      "gelembung_b": "Pakai AI dan data besar.",
+      "efek": [],
+      "sfx": [
+        "step"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 8.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "push",
+        "x": 0.6,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Bingung...",
+      "gelembung_b": "Terus belajar intonasi.",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "whoosh"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 12.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "look",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.55,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Oh begitu.",
+      "gelembung_b": "Hasilnya natural!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 16.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.5,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [],
+      "gelembung_a": "",
+      "gelembung_b": "Siap dicoba!",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "cheer"
+      ],
+      "klimaks": true,
+      "teks_klimaks": "Suara makin natural!"
+    },
+    {
+      "t": 20.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "wave",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "wave",
+        "x": 0.5,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Yuk coba.",
+      "gelembung_b": "Mantap!",
+      "efek": [],
+      "sfx": [
+        "pop"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 16.0,
+    "jenis": "puncak",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Teknologi berkembang untuk mendekatkan kemiripan."
+}

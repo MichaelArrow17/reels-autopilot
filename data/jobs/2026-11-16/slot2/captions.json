@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa banyak profil terkenal terdengar lancar padahal sumbernya kosong?",
+      "isi": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Kalau ada tanggal, gelar, atau jumlah, pastikan tanyakan dulu dari mana angkanya.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Pernahkah kamu hampir percaya informasi tanpa sumber yang jelas?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#CekFakta",
+        "#AntiHoax",
+        "#FactCheck"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara menyikapi tanggal, gelar, atau jumlah dalam sebuah video?",
+      "isi": "Kalau ada tanggal, gelar, atau jumlah dalam sebuah video, tanyakan dulu dari mana angkanya. Tanpa tautan resmi, jangan langsung percaya begitu saja.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Informasi apa yang paling sering bikin kamu ragu di media sosial?",
+      "hashtag": [
+        "#PikirKritis",
+        "#SaringSebelumSharing",
+        "#EdukasiDigital",
+        "#CriticalThinking"
+      ]
+    },
+    {
+      "baris1": "Kenapa kabar duka atau skandal tanpa sumber tidak boleh disebar?",
+      "isi": "Skandal, mundur jabatan, atau kabar duka apalagi: tanpa sumber yang jelas, jangan pernah disebar ke orang lain.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Menurutmu, apa alasan orang mudah percaya kabar bohong?",
+      "hashtag": [
+        "#BijakSosmed",
+        "#CerdasBerinternet",
+        "#LiterasiMedia",
+        "#DigitalLiteracy"
+      ]
+    }
+  ],
+  "cover": "Jangan Asal Percaya, Cek Sumbernya!",
+  "komentar_pin": "Tulis di kolom komentar kalau ada informasi atau berita yang mau kamu bantu cek faktanya bersama-sama!",
+  "llm_provider": "gemini"
+}

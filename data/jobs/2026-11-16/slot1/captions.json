@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Satu hektare sawah cukup diolah dalam empat jam?",
+      "isi": "Petani di Blora sekarang mengandalkan mesin modern untuk menyelesaikan pekerjaan sawah jauh lebih cepat dibanding cara konvensional yang butuh seharian penuh.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Apakah di daerahmu sudah mulai banyak yang beralih pakai alat modern ini?",
+      "hashtag": [
+        "#TeknologiPertanian",
+        "#PetaniModern",
+        "#SawahBlora",
+        "#InovasiDesa",
+        "#farmingtech"
+      ]
+    },
+    {
+      "baris1": "Bisa nggak ya satu hektare sawah selesai cuma empat jam?",
+      "isi": "Biasanya butuh waktu seharian penuh untuk mengerjakannya sendirian, tapi teknologi mesin modern membuat tenaga jauh lebih hemat dan kerjaan jadi ngebut.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Menurutmu, seberapa besar pengaruh mesin ini buat efisiensi kerja petani?",
+      "hashtag": [
+        "#AlatPertanian",
+        "#PertanianIndonesia",
+        "#KabarBlora",
+        "#TeknologiTepatGuna",
+        "#agriculture"
+      ]
+    },
+    {
+      "baris1": "Empat jam saja buat olah satu hektare sawah?",
+      "isi": "Pekerjaan yang biasanya memakan waktu seharian penuh kini bisa dipangkas drastis berkat penggunaan mesin modern oleh petani di Blora.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Kira-kira kapan teknologi seperti ini merata di seluruh wilayah ya?",
+      "hashtag": [
+        "#InfoPertanian",
+        "#PetaniBlora",
+        "#ModernisasiPertanian",
+        "#TeknologiPertanianModern",
+        "#smartfarming"
+      ]
+    }
+  ],
+  "cover": "Satu Hektare Sawah Empat Jam",
+  "komentar_pin": "Gimana menurutmu efisiensi kerja pakai mesin modern ini? Tulis pendapatmu di bawah ya!",
+  "llm_provider": "gemini"
+}
