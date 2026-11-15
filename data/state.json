@@ -3041,7 +3041,7 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "approved",
+          "status": "published",
           "created_at": "2026-11-15T06:01:20+08:00",
           "style": "kolase",
           "style_reason": "rotasi setelah 4× penjelas",
@@ -3058,7 +3058,21 @@
             "errors": []
           },
           "credits": "",
-          "klaim": []
+          "klaim": [],
+          "publish": {
+            "dry_run": false,
+            "fb": null,
+            "ig": {
+              "id": "18135612193742745",
+              "permalink": "https://www.instagram.com/reel/DfwoB6ajZOF/"
+            },
+            "host": {
+              "provider": "github_release",
+              "url": "https://github.com/MichaelArrow17/reels-autopilot/releases/download/reels-20261115/2026-11-15-slot4-reel.mp4"
+            },
+            "dry_run_path": null
+          },
+          "published_at": "2026-11-15T19:02:13+08:00"
         },
         {
           "id": "2026-11-15-s5-bc8038",
