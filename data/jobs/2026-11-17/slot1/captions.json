@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Data rahasia kantormu bocor gara-gara pakai AI?",
+      "isi": "Data kerjaan yang kamu ketik ternyata dipakai buat melatih sistem AI mereka. Alhasil, informasi penting perusahaan bisa nyebar ke orang lain.",
+      "cta": "Follow akun Po Chai buat tips AI lainnya.",
+      "pertanyaan": "Pernah nggak sengaja input dokumen penting ke aplikasi AI?",
+      "hashtag": [
+        "#KeamananData",
+        "#TipsAI",
+        "#EtikaAI",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Benarkah data kantormu bisa bocor lewat aplikasi AI?",
+      "isi": "Setiap data kerjaan yang kamu masukkan ke AI bisa dipakai buat melatih sistem mereka sehingga informasi penting perusahaan berisiko nyebar.",
+      "cta": "Follow akun Po Chai buat tips AI lainnya.",
+      "pertanyaan": "Apakah kamu sudah mulai rutin menghapus riwayat pencarian AI?",
+      "hashtag": [
+        "#PrivasiData",
+        "#TipsTeknologi",
+        "#KeamananSiber",
+        "#AICybersecurity"
+      ]
+    },
+    {
+      "baris1": "Hati-hati, data rahasia perusahaan bisa bocor lewat AI!",
+      "isi": "Tanpa disadari, data yang kamu ketik untuk mempercepat kerjaan dipakai untuk melatih sistem mereka dan membuat informasi penting perusahaan nyebar.",
+      "cta": "Follow akun Po Chai buat tips AI lainnya.",
+      "pertanyaan": "Biasanya pakai mode privat atau langsung ketik begitu saja?",
+      "hashtag": [
+        "#DataKantor",
+        "#KecerdasanBuatan",
+        "#TipsKerja",
+        "#AI"
+      ]
+    }
+  ],
+  "cover": "Data Kantor Bocor Lewat AI?",
+  "komentar_pin": "Gimana cara kamu menjaga kerahasiaan data kantor saat pakai AI? Tulis di komentar ya!",
+  "llm_provider": "gemini"
+}

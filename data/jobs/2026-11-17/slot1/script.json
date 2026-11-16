@@ -1,0 +1,201 @@
+{
+  "judul": "Risiko Data Rahasia Perusahaan Bocor lewat AI",
+  "hook": "Data rahasia kantormu bocor gara-gara pakai AI?",
+  "angle": "Sudut kreator Indonesia: Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Data rahasia kantormu bocor gara-gara pakai AI? Kamu mungkin sering ketik data kerjaan ke aplikasi AI biar cepat. Masalahnya, data itu dipakai buat melatih sistem mereka. Alhasil, informasi penting perusahaan bisa nyebar ke orang lain. Jangan asal input dokumen penting. Mulai sekarang, pakai mode privat atau hapus riwayat pencarianmu. Follow akun Po Chai buat tips AI lainnya.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Data rahasia kantormu bocor gara-gara pakai AI?",
+      "teks_layar": "Data Bocor karena AI?",
+      "pose": "idle",
+      "keyword": "bocor",
+      "latar": "kantor",
+      "image_query": "stickman confused at computer"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kamu mungkin sering ketik data kerjaan ke aplikasi AI biar cepat.",
+      "teks_layar": "Ketik data ke AI",
+      "pose": "typing",
+      "keyword": "data kerjaan",
+      "latar": "kantor",
+      "image_query": "stickman typing fast"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Masalahnya, data itu dipakai buat melatih sistem mereka. Alhasil, informasi penting perusahaan bisa nyebar ke orang lain.",
+      "teks_layar": "Data dipakai melatih AI",
+      "pose": "think",
+      "keyword": "informasi penting",
+      "latar": "kantor",
+      "image_query": "stickman thinking"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Jangan asal input dokumen penting. Mulai sekarang, pakai mode privat atau hapus riwayat pencarianmu.",
+      "teks_layar": "Pakai mode privat",
+      "pose": "point",
+      "keyword": "mode privat",
+      "latar": "kantor",
+      "image_query": "stickman pointing to secure screen"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow akun Po Chai buat tips AI lainnya.",
+      "teks_layar": "Follow Po Chai",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "kantor",
+      "image_query": "stickman cheering"
+    }
+  ],
+  "caption": "Hati-hati kalau masukin data perusahaan ke AI. Jangan sampai bocor!",
+  "cta": "Follow buat tips AI lainnya.",
+  "hashtag": [
+    "#KreatorAI",
+    "#KeamananData",
+    "#KecerdasanBuatan",
+    "#TipsTeknologi",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Data Kantor Bocor Lewat AI?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Data rahasia kantormu bocor gara-gara pakai AI?",
+        "layout": "kinetic_title",
+        "judul_layar": "Data Bocor karena AI?",
+        "subjudul": "Data rahasia kantormu bocor gara-gara pakai AI?",
+        "kata_kunci": [
+          {
+            "kata": "bocor",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kamu mungkin sering ketik data kerjaan ke aplikasi AI biar cepat.",
+        "layout": "bullets",
+        "judul_layar": "Ketik data ke AI",
+        "subjudul": "Kamu mungkin sering ketik data kerjaan ke aplikasi AI biar cepat.",
+        "kata_kunci": [
+          {
+            "kata": "data kerjaan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Masalahnya, data itu dipakai buat melatih sistem mereka. Alhasil, informasi penting perusahaan bisa nyebar ke orang lain.",
+        "layout": "bullets",
+        "judul_layar": "Data dipakai melatih AI",
+        "subjudul": "Masalahnya, data itu dipakai buat melatih sistem mereka. Alhasil, informasi penting perusa",
+        "kata_kunci": [
+          {
+            "kata": "informasi penting",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Jangan asal input dokumen penting. Mulai sekarang, pakai mode privat atau hapus riwayat pencarianmu.",
+        "layout": "bullets",
+        "judul_layar": "Pakai mode privat",
+        "subjudul": "Jangan asal input dokumen penting. Mulai sekarang, pakai mode privat atau hapus riwayat pe",
+        "kata_kunci": [
+          {
+            "kata": "mode privat",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow akun Po Chai buat tips AI lainnya.",
+        "layout": "cta",
+        "judul_layar": "Follow Po Chai",
+        "subjudul": "Follow akun Po Chai buat tips AI lainnya.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

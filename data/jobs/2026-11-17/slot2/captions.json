@@ -1,0 +1,19 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa suara AI sekarang bisa makin natural?",
+      "isi": "Perkembangan teknologi kecerdasan buatan membuat intonasi dan emosi suara tiruan semakin mirip manusia asli.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Menurutmu, suara AI sudah mirip manusia belum?",
+      "hashtag": [
+        "#TeknologiAI",
+        "#KecerdasanBuatan",
+        "#AIIndonesia",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Kenapa Suara AI Makin Natural?",
+  "komentar_pin": "Tulis pendapatmu di komentar ya!",
+  "llm_provider": "gemini"
+}

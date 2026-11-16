@@ -1,0 +1,199 @@
+{
+  "judul": "Kenapa label konten AI itu penting",
+  "hook": "Kenapa label konten AI itu penting?",
+  "angle": "Sudut kreator Indonesia: Kenapa label konten AI itu penting",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah bingung kenapa video buatanmu tiba-tiba sepi penonton? Banyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform. Padahal kuncinya ada di transparansi penonton. Cukup pasang satu label kecil sebelum upload. Simpan video ini dan coba nanti.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah bingung kenapa video buatanmu tiba-tiba sepi penonton?",
+      "teks_layar": "Video AI sepi penonton?",
+      "pose": "shrug",
+      "keyword": "sepi",
+      "latar": "studio bersih",
+      "image_query": "confused stickman looking at empty screen"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform.",
+      "teks_layar": "Mitos: AI pasti dibanned",
+      "pose": "think",
+      "keyword": "salah kaprah",
+      "latar": "studio bersih",
+      "image_query": "stickman thinking with question marks"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal kuncinya ada di transparansi penonton.",
+      "teks_layar": "Kuncinya: Transparansi",
+      "pose": "point",
+      "keyword": "transparansi",
+      "latar": "studio bersih",
+      "image_query": "stickman pointing at glowing light"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Cukup pasang satu label kecil sebelum upload.",
+      "teks_layar": "Pasang label sebelum upload",
+      "pose": "typing",
+      "keyword": "label kecil",
+      "latar": "studio bersih",
+      "image_query": "stickman typing on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini dan coba nanti.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "studio bersih",
+      "image_query": "happy stickman cheering"
+    }
+  ],
+  "caption": "Kenapa label konten AI itu penting buat kreator? Simpan video ini buat panduan uploadmu nanti! #KreatorAI",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#TipsKreator",
+    "#AIIndonesia"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Transparansi penggunaan AI pada platform konten"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Kenapa Label AI Penting?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah bingung kenapa video buatanmu tiba-tiba sepi penonton?",
+        "layout": "kinetic_title",
+        "judul_layar": "Video AI sepi penonton?",
+        "subjudul": "Pernah bingung kenapa video buatanmu tiba-tiba sepi penonton?",
+        "kata_kunci": [
+          {
+            "kata": "sepi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform.",
+        "layout": "bullets",
+        "judul_layar": "Mitos: AI pasti dibanned",
+        "subjudul": "Banyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform.",
+        "kata_kunci": [
+          {
+            "kata": "salah kaprah",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal kuncinya ada di transparansi penonton.",
+        "layout": "bullets",
+        "judul_layar": "Kuncinya: Transparansi",
+        "subjudul": "Padahal kuncinya ada di transparansi penonton.",
+        "kata_kunci": [
+          {
+            "kata": "transparansi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Cukup pasang satu label kecil sebelum upload.",
+        "layout": "bullets",
+        "judul_layar": "Pasang label sebelum upload",
+        "subjudul": "Cukup pasang satu label kecil sebelum upload.",
+        "kata_kunci": [
+          {
+            "kata": "label kecil",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini dan coba nanti.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini dan coba nanti.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "judul": "chatgpt ai agent",
+  "hook": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?",
+  "angle": "Sudut kreator Indonesia: chatgpt ai agent",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang? Padahal sekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data. Kamu gak perlu lagi copy paste manual satu-satu. Cukup kasih satu perintah, biar si agent yang kerjain semuanya sampai beres. Mau coba otomatisasi tugas harianmu sekarang? Follow buat tahu trik AI lainnya.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?",
+      "teks_layar": "Cuma Jawab Teks Doang?",
+      "pose": "idle",
+      "keyword": "ChatGPT",
+      "latar": "polos",
+      "image_query": "stickman confused looking at screen"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal sekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data.",
+      "teks_layar": "Agent AI Gerakin Browser!",
+      "pose": "point",
+      "keyword": "agent AI",
+      "latar": "polos",
+      "image_query": "stickman pointing at browser automation"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Kamu gak perlu lagi copy paste manual satu-satu.",
+      "teks_layar": "Bebas Copy Paste",
+      "pose": "shrug",
+      "keyword": "manual",
+      "latar": "polos",
+      "image_query": "stickman relaxing no work"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Cukup kasih satu perintah, biar si agent yang kerjain semuanya sampai beres.",
+      "teks_layar": "Satu Perintah Beres",
+      "pose": "typing",
+      "keyword": "perintah",
+      "latar": "polos",
+      "image_query": "stickman typing fast on computer"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Mau coba otomatisasi tugas harianmu sekarang? Follow buat tahu trik AI lainnya.",
+      "teks_layar": "Follow Buat Trik AI",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "polos",
+      "image_query": "stickman cheering with text follow"
+    }
+  ],
+  "caption": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang? Padahal agent AI sekarang makin canggih. Simpan video ini dan coba otomatisasi tugasmu hari ini!",
+  "cta": "Follow buat tahu trik AI lainnya.",
+  "hashtag": [
+    "#KreatorAI",
+    "#AIAgent",
+    "#ChatGPT",
+    "#Otomatisasi",
+    "#Teknologi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Kemampuan agent AI dalam menggerakkan browser."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "ChatGPT AI Agent Bisa Apa?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?",
+        "layout": "kinetic_title",
+        "judul_layar": "Cuma Jawab Teks Doang?",
+        "subjudul": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?",
+        "kata_kunci": [
+          {
+            "kata": "ChatGPT",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal sekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data.",
+        "layout": "bullets",
+        "judul_layar": "Agent AI Gerakin Browser!",
+        "subjudul": "Padahal sekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data.",
+        "kata_kunci": [
+          {
+            "kata": "agent AI",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Kamu gak perlu lagi copy paste manual satu-satu.",
+        "layout": "bullets",
+        "judul_layar": "Bebas Copy Paste",
+        "subjudul": "Kamu gak perlu lagi copy paste manual satu-satu.",
+        "kata_kunci": [
+          {
+            "kata": "manual",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Cukup kasih satu perintah, biar si agent yang kerjain semuanya sampai beres.",
+        "layout": "bullets",
+        "judul_layar": "Satu Perintah Beres",
+        "subjudul": "Cukup kasih satu perintah, biar si agent yang kerjain semuanya sampai beres.",
+        "kata_kunci": [
+          {
+            "kata": "perintah",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Mau coba otomatisasi tugas harianmu sekarang? Follow buat tahu trik AI lainnya.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Trik AI",
+        "subjudul": "Mau coba otomatisasi tugas harianmu sekarang? Follow buat tahu trik AI lainnya.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

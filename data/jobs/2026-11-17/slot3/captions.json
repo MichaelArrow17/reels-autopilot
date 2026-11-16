@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa video buatanmu tiba-tiba sepi penonton?",
+      "isi": "Banyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform. Padahal kuncinya ada di transparansi penonton dengan memasang satu label kecil.",
+      "cta": "Simpan video ini dan coba nanti.",
+      "pertanyaan": "Apakah kamu selalu mencantumkan label pada konten buatan AI?",
+      "hashtag": [
+        "#KontenAI",
+        "#KreatorAI",
+        "#TipsEditing",
+        "#AIAssistant",
+        "#ContentCreator"
+      ]
+    },
+    {
+      "baris1": "Kenapa video buatanmu tiba-tiba sepi penonton?",
+      "isi": "Akun tidak otomatis dibanned karena pakai AI, melainkan butuh transparansi penonton. Cukup pasang satu label kecil sebelum upload.",
+      "cta": "Simpan video ini dan coba nanti.",
+      "pertanyaan": "Bagaimana pengalamanmu saat mengunggah video buatan AI akhir-akhir ini?",
+      "hashtag": [
+        "#KreatorPemula",
+        "#EtikaAI",
+        "#TipsKonten",
+        "#SocialMediaTips",
+        "#AIContent"
+      ]
+    },
+    {
+      "baris1": "Kenapa video buatanmu tiba-tiba sepi penonton?",
+      "isi": "Kunci agar aman dan tidak salah kaprah adalah transparansi penonton dengan memasang satu label kecil sebelum upload.",
+      "cta": "Simpan video ini dan coba nanti.",
+      "pertanyaan": "Menurutmu, seberapa penting fitur label konten AI saat ini?",
+      "hashtag": [
+        "#BelajarAI",
+        "#StrategiKonten",
+        "#TipsVideo",
+        "#MediaSosial",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Kenapa video AI sepi penonton?",
+  "komentar_pin": "Simpan dulu videonya biar gampang dicari pas mau upload konten AI berikutnya ya!",
+  "llm_provider": "gemini"
+}

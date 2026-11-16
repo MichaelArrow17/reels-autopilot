@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?",
+      "isi": "Sekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data.\nKamu gak perlu lagi copy paste manual satu-satu.\nCukup kasih satu perintah, si agent kerjain semuanya sampai beres.",
+      "cta": "Simpan postingan ini buat dicoba nanti!",
+      "pertanyaan": "Tugas mana yang paling bikin kamu capek kalau harus copy paste manual?",
+      "hashtag": [
+        "#TeknologiAI",
+        "#ChatGPTIndonesia",
+        "#OtomatisasiTugas",
+        "#TipsAI",
+        "#AIAgent"
+      ]
+    },
+    {
+      "baris1": "Masih copy paste data satu-satu secara manual?",
+      "isi": "Sekarang agent AI bisa gerakin browser sendiri buat carikan datanya.\nTinggal kasih satu perintah saja, tugas harianmu bisa selesai otomatis.",
+      "cta": "Follow untuk tahu trik AI bermanfaat lainnya!",
+      "pertanyaan": "Mau coba otomatisasi tugas harianmu pakai AI sekarang?",
+      "hashtag": [
+        "#KreatorAI",
+        "#BelajarAI",
+        "#KecerdasanBuatan",
+        "#Otomatisasi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Gimana cara biar AI kerjain nyari data sampai beres?",
+      "isi": "Padahal sekarang ada agent AI yang bisa browsing sendiri buat kumpulin data.\nGak perlu ribet copy paste manual, tugas beres cuma dengan satu perintah.",
+      "cta": "Komen jawaban kamu di bawah ya!",
+      "pertanyaan": "Kira-kira AI Agent ini cocok buat bantu pekerjaan apa nih?",
+      "hashtag": [
+        "#TipsTeknologi",
+        "#KecerdasanBuatan",
+        "#ChatGPTTips",
+        "#OtomatisasiKerja",
+        "#AITools"
+      ]
+    }
+  ],
+  "cover": "ChatGPT Bisa Gerakin Browser Sendiri!",
+  "komentar_pin": "Pekerjaan harian apa nih yang paling pengen kamu otomatisasi pakai AI Agent ini? Tulis di kolom komentar ya! 👇",
+  "llm_provider": "gemini"
+}

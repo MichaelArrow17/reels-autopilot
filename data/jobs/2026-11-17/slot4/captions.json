@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Yakin video profil orang terkenal yang kamu tonton itu fakta?",
+      "isi": "Banyak video profil terdengar sangat lancar padahal sumbernya kosong.\nData seperti tanggal, gelar, hingga kabar duka tanpa tautan resmi sebaiknya jangan langsung dipercaya atau disebar.",
+      "cta": "Simpan video ini biar tidak gampang terkecoh informasi tanpa sumber.",
+      "pertanyaan": "Pernah nemu kabar duka atau skandal figur publik yang ternyata tidak ada sumbernya?",
+      "hashtag": [
+        "#EdukasiAI",
+        "#FaktaAtauHoaks",
+        "#LiterasiDigital",
+        "#CekFakta",
+        "#AITips"
+      ]
+    },
+    {
+      "baris1": "Kenapa data di video profil sering terasa meyakinkan padahal salah?",
+      "isi": "Informasi gelar, jumlah, hingga isu mundur jabatan sering dibuat seolah valid.\nPadahal, jika tidak menyertakan tautan resmi, informasi tersebut wajib dipertanyakan kebenarannya.",
+      "cta": "Tulis di kolom komentar kalau ada profil tokoh yang mau kamu cek kebenarannya!",
+      "pertanyaan": "Berita profil tokoh siapa yang belakangan ini paling bikin kamu curiga?",
+      "hashtag": [
+        "#CekFakta",
+        "#BelajarAI",
+        "#TipsInternet",
+        "#KritisInformasi",
+        "#FactCheck"
+      ]
+    },
+    {
+      "baris1": "Sebelum sebar kabar skandal atau duka, sudah cek sumber resminya?",
+      "isi": "Banyak konten narasi profil terdengar lancar meski tanpa data yang jelas.\nKalau tidak ada tautan resmi untuk klaim tanggal atau jabatan, jangan asal sebar.",
+      "cta": "Simpan video ini sebagai pengingat untuk selalu verifikasi informasi.",
+      "pertanyaan": "Seberapa sering kamu cek sumber resmi sebelum menyebarkan suatu kabar?",
+      "hashtag": [
+        "#LiterasiMedia",
+        "#InfoViral",
+        "#KreatorAI",
+        "#BijakBermedia",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Video Profil Orang Terkenal Tanpa Sumber?",
+  "komentar_pin": "Ada profil orang terkenal atau berita viral yang bikin kamu ragu? Tulis namanya di kolom komentar, mari kita cek bareng sumber resminya! 👇",
+  "llm_provider": "gemini"
+}

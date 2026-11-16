@@ -131,6 +131,36 @@
       "tanggal": "2026-11-16",
       "angle": "Sudut kreator Indonesia: Kenapa caption Reels tetap penting meski ada suara",
       "slot": 5
+    },
+    {
+      "judul": "Risiko Data Rahasia Perusahaan Bocor lewat AI",
+      "tanggal": "2026-11-17",
+      "angle": "Sudut kreator Indonesia: Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+      "slot": 1
+    },
+    {
+      "judul": "Kenapa Suara AI Makin Natural?",
+      "tanggal": "2026-11-17",
+      "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+      "slot": 2
+    },
+    {
+      "judul": "Kenapa label konten AI itu penting",
+      "tanggal": "2026-11-17",
+      "angle": "Sudut kreator Indonesia: Kenapa label konten AI itu penting",
+      "slot": 3
+    },
+    {
+      "judul": "chatgpt",
+      "tanggal": "2026-11-17",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 4
+    },
+    {
+      "judul": "chatgpt ai agent",
+      "tanggal": "2026-11-17",
+      "angle": "Sudut kreator Indonesia: chatgpt ai agent",
+      "slot": 5
     }
   ],
   "days": {
@@ -4434,7 +4464,7 @@
           "id": "2026-11-17-s1-1acd73",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+          "judul": "Risiko Data Rahasia Perusahaan Bocor lewat AI",
           "hook": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI?",
           "topic": {
             "judul": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
@@ -4466,14 +4496,28 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-17T06:01:48+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-17T06:01:48+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot1/script.json",
+          "caption": "Data rahasia kantormu bocor gara-gara pakai AI?\nData kerjaan yang kamu ketik ternyata dipakai buat melatih sistem AI mereka. Alhasil, informasi penting perusahaan bisa nyebar ke orang lain.\nFollow akun Po Chai buat tips AI lainnya.\nPernah nggak sengaja input dokumen penting ke aplikasi AI?\n#KeamananData #TipsAI #EtikaAI #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 27.8,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-17-s2-b3b21a",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "judul": "Kenapa Suara AI Makin Natural?",
           "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
           "topic": {
             "judul": "Apa itu TTS dan kenapa suaranya makin natural",
@@ -4505,8 +4549,23 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-17T06:01:48+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-17T06:01:48+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 62)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot2/script.json",
+          "caption": "Kenapa suara AI sekarang bisa makin natural?\nPerkembangan teknologi kecerdasan buatan membuat intonasi dan emosi suara tiruan semakin mirip manusia asli.\nSimpan video ini\nMenurutmu, suara AI sudah mirip manusia belum?\n#TeknologiAI #KecerdasanBuatan #AIIndonesia #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-17-s3-f0a73c",
@@ -4544,8 +4603,22 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-17T06:01:48+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-17T06:01:48+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot3/script.json",
+          "caption": "Kenapa video buatanmu tiba-tiba sepi penonton?\nBanyak yang salah kaprah mengira pakai AI bikin akun langsung otomatis dibanned platform. Padahal kuncinya ada di transparansi penonton dengan memasang satu label kecil.\nSimpan video ini dan coba nanti.\nApakah kamu selalu mencantumkan label pada konten buatan AI?\n#KontenAI #KreatorAI #TipsEditing #AIAssistant #ContentCreator",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 19.224,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-17-s4-a333cb",
@@ -4583,8 +4656,24 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-17T06:01:48+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-17T06:01:48+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 4× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot4/script.json",
+          "caption": "Yakin video profil orang terkenal yang kamu tonton itu fakta?\nBanyak video profil terdengar sangat lancar padahal sumbernya kosong.\nData seperti tanggal, gelar, hingga kabar duka tanpa tautan resmi sebaiknya jangan langsung dipercaya atau disebar.\nSimpan video ini biar tidak gampang terkecoh informasi tanpa sumber.\nPernah nemu kabar duka atau skandal figur publik yang ternyata tidak ada sumbernya?\n#EdukasiAI #FaktaAtauHoaks #LiterasiDigital #CekFakta #AITips",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-17-s5-1033bc",
@@ -4622,8 +4711,22 @@
             "sinyal": "chatgpt",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-17T06:01:48+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-17T06:01:48+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-17/slot5/script.json",
+          "caption": "Pernah ngerasa ChatGPT cuma bisa jawab teks doang?\nSekarang ada agent AI yang bisa gerakin browser sendiri buat nyari data.\nKamu gak perlu lagi copy paste manual satu-satu.\nCukup kasih satu perintah, si agent kerjain semuanya sampai beres.\nSimpan postingan ini buat dicoba nanti!\nTugas mana yang paling bikin kamu capek kalau harus copy paste manual?\n#TeknologiAI #ChatGPTIndonesia #OtomatisasiTugas #TipsAI #AIAgent",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 23.566016,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-17T06:01:47+08:00",
@@ -4740,6 +4843,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "Kenapa caption Reels tetap penting meski ada suara",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Risiko Data Rahasia Perusahaan Bocor lewat AI",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 2,
+      "style": "cerita",
+      "judul": "Kenapa Suara AI Makin Natural?",
+      "reason": "keragaman batch (dari penjelas, yakin 62)"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "Kenapa label konten AI itu penting",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 4,
+      "style": "kolase",
+      "judul": "chatgpt",
+      "reason": "rotasi setelah 4× penjelas"
+    },
+    {
+      "date": "2026-11-17",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "chatgpt ai agent",
       "reason": "topik info"
     }
   ]
