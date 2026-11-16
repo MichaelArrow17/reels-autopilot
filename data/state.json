@@ -3972,6 +3972,662 @@
       ],
       "scouted_at": "2026-11-16T06:01:26+08:00",
       "notified": false
+    },
+    "2026-11-17": {
+      "date": "2026-11-17",
+      "shortlist": [
+        {
+          "judul": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+          "sumber": [
+            "cnn_tekno"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI?",
+          "angle": "Sudut kreator Indonesia: Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 1
+        },
+        {
+          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+          "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 2
+        },
+        {
+          "judul": "Kenapa label konten AI itu penting",
+          "sumber": [
+            "evergreen_bank"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 8,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 76.5,
+          "hook": "Kenapa label konten AI itu penting?",
+          "angle": "Sudut kreator Indonesia: Kenapa label konten AI itu penting",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": null,
+          "rank": 3
+        },
+        {
+          "judul": "chatgpt",
+          "sumber": [
+            "yt_autocomplete"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 69.0,
+          "hook": "chatgpt?",
+          "angle": "Sudut kreator Indonesia: chatgpt",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": "chatgpt",
+          "rank": 4
+        },
+        {
+          "judul": "chatgpt ai agent",
+          "sumber": [
+            "yt_autocomplete"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 69.0,
+          "hook": "chatgpt ai agent?",
+          "angle": "Sudut kreator Indonesia: chatgpt ai agent",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": "chatgpt",
+          "rank": 5
+        },
+        {
+          "judul": "chatgpt free",
+          "sumber": [
+            "yt_autocomplete"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 69.0,
+          "hook": "chatgpt free?",
+          "angle": "Sudut kreator Indonesia: chatgpt free",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": "chatgpt",
+          "rank": 6
+        },
+        {
+          "judul": "chatgpt plus gratis",
+          "sumber": [
+            "yt_autocomplete"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 69.0,
+          "hook": "chatgpt plus gratis?",
+          "angle": "Sudut kreator Indonesia: chatgpt plus gratis",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": "chatgpt",
+          "rank": 7
+        },
+        {
+          "judul": "chatgpt aaron matheney",
+          "sumber": [
+            "yt_autocomplete"
+          ],
+          "tipe": "evergreen",
+          "kedaluwarsa_jam": null,
+          "skor": {
+            "curiosity_gap": 5,
+            "niche_fit": 8,
+            "trend_velocity": 7,
+            "evergreen_vs_viral": 7,
+            "bisa_stickman": 8,
+            "safety": 8
+          },
+          "skor_total": 69.0,
+          "hook": "chatgpt aaron matheney?",
+          "angle": "Sudut kreator Indonesia: chatgpt aaron matheney",
+          "beats": [
+            "Hook: taruh penonton di dalam pertanyaan.",
+            "Konflik: apa yang biasanya disalahpahami.",
+            "Payoff: satu langkah yang bisa langsung dicoba."
+          ],
+          "fakta_yang_wajib_dicek": [
+            "Jangan mengarang angka; cek klaim sebelum naskah final."
+          ],
+          "angle_baru": false,
+          "sinyal": "chatgpt",
+          "rank": 8
+        }
+      ],
+      "ditolak": [
+        {
+          "judul": "cara pakai ai",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "cara pakai ai capcut",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "cara pakai shisha",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "BRIN Ungkap Titik Tsunami di Jakarta jika Gempa Megathrust Mengguncang",
+          "alasan": "tragedi / berita duka — gerbang safety",
+          "tahap": "gerbang_safety"
+        },
+        {
+          "judul": "Kenapa AI kadang ngarang fakta",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Kenapa hook dua detik menentukan Reels",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Cara cek fakta hasil AI sebelum diposting",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Kenapa prompt pendek kadang lebih jitu",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Kenapa kreator perlu mirroring ke beberapa platform",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "Kenapa caption Reels tetap penting meski ada suara",
+          "alasan": "sudah pernah dibuat (dedupe)",
+          "tahap": "dedupe"
+        },
+        {
+          "judul": "ruben van bommel",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "liga negara",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "emiten",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "yassierli",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "denmark vs norwegia",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "klasemen timnas jerman vs timnas belanda",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "klasemen uefa nations league 2026",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "bmkg hari ini",
+          "alasan": "skor 54.5 < 65"
+        },
+        {
+          "judul": "cara pakai air fryer",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai air mawar yang benar",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai air beras untuk wajah",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai shizuku",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "cara pakai shizuku zarchiver",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "faceless content",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content creator",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content ideas 2026",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "faceless content full course",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "We're trying something new. On Tuesdays, we're doing text posts only",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Barack Obama: “The machines are starting to teach themselves. We're now hitting the hockey stick where the models are getting smarter and smarter at an exponential pace.\" ... \"If they start setting their own agendas, you may get misalignment between what they want to do vs what we want them to do.\"",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "It's so over",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "ironically, Nvidia made this video possible",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "I wonder how much OpenAi pays Google for this",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Goodbye. It's been a great and wild ride.",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "\"One important distiction\", \"One thing I'm curious about\", \"One important caveat\", \"One important catch\"",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Extensive Image Censorship as of today",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "DeepSeek is aware of its own censorship filter and works around it.",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "some tools are temporarily unavailable.... ??",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Is anyone else getting a pop-up “some tools are available.” Specifically files won’t upload?",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Safety tuning is causing assumptions of bad faith. Discuss.",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Menuju Evaluasi Kecerdasan Buatan yang Lebih Bertanggung Jawab - UIN Suska Riau",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Di Balik Jutaan Kata: Bagaimana Kecerdasan Buatan Menemukan Cerita dari Bahasa Manusia? - UIN Suska Riau",
+          "alasan": "skor 63.5 < 65"
+        },
+        {
+          "judul": "Luis Gurule Kalahkan Bilal Hasan di UFC 334 - Demokratis.co.id",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Tuyen Quang menerapkan Strategi Nasional tentang Kecerdasan Buatan, yang bertujuan untuk mengembangkan pemerintahan digital dan ekonomi digital. - Vietnam.vn",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Sagara Buoy Buatan UPI Bisa Prediksi Tinggi Gelombang Laut, Dukung Keselamatan Pelayaran - rentak.id",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Penerapan kecerdasan buatan dalam pengelolaan air bertujuan untuk meningkatkan efisiensi eksploitasi dan perlindungan sumber daya air. - Vietnam.vn",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Norwegia dan Inggris Jajaki Kerja Sama Bidang Kecerdasan Buatan - IDN Times",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Fenomena Pacaran dengan Kecerdasan Buatan Mulai Ganggu Kesehatan Mental Dokter Jiwa Sarankan Teknik Grounding - inforadar.disway.id - Inforadar.id",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Menyingkap Deklarasi Mineral Kritis ASEAN Menuju Masa Depan Kecerdasan Buatan - Info Indonesia - Info Indonesia",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "Sport Massage: Profesi yang Tak Mudah Digantikan Kecerdasan Buatan - kumparan.com - Kumparan.com",
+          "alasan": "skor 56.0 < 65"
+        },
+        {
+          "judul": "PT Taspen Siapkan Layanan Customer Service Berbasis Kecerdasan Buatan Nonstop Pada Tahun 2027 - inforadar.disway.id - Inforadar.id",
+          "alasan": "skor 56.0 < 65"
+        }
+      ],
+      "videos": [
+        {
+          "id": "2026-11-17-s1-1acd73",
+          "slot": 1,
+          "slot_label": "07:30",
+          "judul": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+          "hook": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI?",
+          "topic": {
+            "judul": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+            "sumber": [
+              "cnn_tekno"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI?",
+            "angle": "Sudut kreator Indonesia: Bos TI Soroti Risiko Data Rahasia Perusahaan Bocor lewat AI",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 1
+          },
+          "status": "pending",
+          "created_at": "2026-11-17T06:01:48+08:00"
+        },
+        {
+          "id": "2026-11-17-s2-b3b21a",
+          "slot": 2,
+          "slot_label": "12:00",
+          "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+          "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+          "topic": {
+            "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Apa itu TTS dan kenapa suaranya makin natural?",
+            "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 2
+          },
+          "status": "pending",
+          "created_at": "2026-11-17T06:01:48+08:00"
+        },
+        {
+          "id": "2026-11-17-s3-f0a73c",
+          "slot": 3,
+          "slot_label": "17:00",
+          "judul": "Kenapa label konten AI itu penting",
+          "hook": "Kenapa label konten AI itu penting?",
+          "topic": {
+            "judul": "Kenapa label konten AI itu penting",
+            "sumber": [
+              "evergreen_bank"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 8,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 76.5,
+            "hook": "Kenapa label konten AI itu penting?",
+            "angle": "Sudut kreator Indonesia: Kenapa label konten AI itu penting",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": null,
+            "rank": 3
+          },
+          "status": "pending",
+          "created_at": "2026-11-17T06:01:48+08:00"
+        },
+        {
+          "id": "2026-11-17-s4-a333cb",
+          "slot": 4,
+          "slot_label": "19:00",
+          "judul": "chatgpt",
+          "hook": "chatgpt?",
+          "topic": {
+            "judul": "chatgpt",
+            "sumber": [
+              "yt_autocomplete"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 5,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 69.0,
+            "hook": "chatgpt?",
+            "angle": "Sudut kreator Indonesia: chatgpt",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": "chatgpt",
+            "rank": 4
+          },
+          "status": "pending",
+          "created_at": "2026-11-17T06:01:48+08:00"
+        },
+        {
+          "id": "2026-11-17-s5-1033bc",
+          "slot": 5,
+          "slot_label": "21:00",
+          "judul": "chatgpt ai agent",
+          "hook": "chatgpt ai agent?",
+          "topic": {
+            "judul": "chatgpt ai agent",
+            "sumber": [
+              "yt_autocomplete"
+            ],
+            "tipe": "evergreen",
+            "kedaluwarsa_jam": null,
+            "skor": {
+              "curiosity_gap": 5,
+              "niche_fit": 8,
+              "trend_velocity": 7,
+              "evergreen_vs_viral": 7,
+              "bisa_stickman": 8,
+              "safety": 8
+            },
+            "skor_total": 69.0,
+            "hook": "chatgpt ai agent?",
+            "angle": "Sudut kreator Indonesia: chatgpt ai agent",
+            "beats": [
+              "Hook: taruh penonton di dalam pertanyaan.",
+              "Konflik: apa yang biasanya disalahpahami.",
+              "Payoff: satu langkah yang bisa langsung dicoba."
+            ],
+            "fakta_yang_wajib_dicek": [
+              "Jangan mengarang angka; cek klaim sebelum naskah final."
+            ],
+            "angle_baru": false,
+            "sinyal": "chatgpt",
+            "rank": 5
+          },
+          "status": "pending",
+          "created_at": "2026-11-17T06:01:48+08:00"
+        }
+      ],
+      "scouted_at": "2026-11-17T06:01:47+08:00",
+      "notified": false
     }
   },
   "telegram": {
