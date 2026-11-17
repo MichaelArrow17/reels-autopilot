@@ -4496,7 +4496,7 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "approved",
+          "status": "published",
           "created_at": "2026-11-17T06:01:48+08:00",
           "style": "penjelas",
           "style_reason": "topik info",
@@ -4511,7 +4511,21 @@
             "peak": -1.5,
             "duration": 27.8,
             "errors": []
-          }
+          },
+          "publish": {
+            "dry_run": false,
+            "fb": null,
+            "ig": {
+              "id": "17957479308035503",
+              "permalink": "https://www.instagram.com/reel/Df1JhMDExj5/"
+            },
+            "host": {
+              "provider": "github_release",
+              "url": "https://github.com/MichaelArrow17/reels-autopilot/releases/download/reels-20261117/2026-11-17-slot1-reel.mp4"
+            },
+            "dry_run_path": null
+          },
+          "published_at": "2026-11-17T13:11:57+08:00"
         },
         {
           "id": "2026-11-17-s2-b3b21a",
