@@ -1,0 +1,200 @@
+{
+  "judul": "chatgpt plus free",
+  "hook": "Mau pakai ChatGPT Plus tapi males bayar?",
+  "angle": "Sudut kreator Indonesia: chatgpt plus free",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau pakai ChatGPT Plus tapi males bayar? Tenang, kamu enggak sendirian. Banyak yang keliru mikir fitur canggihnya harus berlangganan mahal. Padahal, ada trik pakai model terbaru tanpa keluar duit. Fokus ke ekstensi browser open source yang aman. Langsung praktekin sekarang dan rasakan bedanya. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau pakai ChatGPT Plus tapi males bayar?",
+      "teks_layar": "ChatGPT Plus Gratis?",
+      "pose": "shrug",
+      "keyword": "Plus",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused looking at phone screen"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Tenang, kamu enggak sendirian. Banyak yang keliru mikir fitur canggihnya harus berlangganan mahal.",
+      "teks_layar": "Mitos Berlangganan Mahal",
+      "pose": "think",
+      "keyword": "mahal",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking about money"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, ada trik pakai model terbaru tanpa keluar duit.",
+      "teks_layar": "Trik Tanpa Biaya",
+      "pose": "point",
+      "keyword": "gratis",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at brilliant idea"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Fokus ke ekstensi browser open source yang aman.",
+      "teks_layar": "Ekstensi Aman",
+      "pose": "typing",
+      "keyword": "aman",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Langsung praktekin sekarang dan rasakan bedanya. Follow buat part dua.",
+      "teks_layar": "Follow Buat Part Dua",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with success"
+    }
+  ],
+  "caption": "Mau nikmatin fitur canggih tanpa boncos? Simpan trik ini biar enggak lupa!",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#ChatGPT",
+    "#TipsAI",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "ChatGPT Plus Gratis?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau pakai ChatGPT Plus tapi males bayar?",
+        "layout": "kinetic_title",
+        "judul_layar": "ChatGPT Plus Gratis?",
+        "subjudul": "Mau pakai ChatGPT Plus tapi males bayar?",
+        "kata_kunci": [
+          {
+            "kata": "Plus",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Tenang, kamu enggak sendirian. Banyak yang keliru mikir fitur canggihnya harus berlangganan mahal.",
+        "layout": "bullets",
+        "judul_layar": "Mitos Berlangganan Mahal",
+        "subjudul": "Tenang, kamu enggak sendirian. Banyak yang keliru mikir fitur canggihnya harus berlanggana",
+        "kata_kunci": [
+          {
+            "kata": "mahal",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, ada trik pakai model terbaru tanpa keluar duit.",
+        "layout": "bullets",
+        "judul_layar": "Trik Tanpa Biaya",
+        "subjudul": "Padahal, ada trik pakai model terbaru tanpa keluar duit.",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Fokus ke ekstensi browser open source yang aman.",
+        "layout": "bullets",
+        "judul_layar": "Ekstensi Aman",
+        "subjudul": "Fokus ke ekstensi browser open source yang aman.",
+        "kata_kunci": [
+          {
+            "kata": "aman",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Langsung praktekin sekarang dan rasakan bedanya. Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Part Dua",
+        "subjudul": "Langsung praktekin sekarang dan rasakan bedanya. Follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau pakai ChatGPT Plus tapi males bayar?",
+      "isi": "Banyak yang ngira harus langganan mahal tiap bulan. Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Apa trik prompt favorit kamu sejauh ini?",
+      "hashtag": [
+        "#ChatGPTIndonesia",
+        "#AIhacks",
+        "#Teknologi",
+        "#PromptEngineering",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Gimana cara pakai fitur ChatGPT Plus tanpa keluar duit?",
+      "isi": "Kamu enggak perlu keluar duit buat nikmatin fiturnya. Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar.",
+      "cta": "follow buat part berikutnya",
+      "pertanyaan": "Kira-kira apa kendala utama kamu waktu nulis prompt?",
+      "hashtag": [
+        "#TipsAI",
+        "#ChatGPTPlus",
+        "#BelajarAI",
+        "#ProductivityHacks",
+        "#TechTips"
+      ]
+    },
+    {
+      "baris1": "Emang bisa pakai fitur ChatGPT Plus secara gratis?",
+      "isi": "Banyak yang ngira harus langganan mahal tiap bulan. Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar.",
+      "cta": "komentar jawaban",
+      "pertanyaan": "Lebih sering pakai versi gratis atau berbayar?",
+      "hashtag": [
+        "#AIgratis",
+        "#TutorialAI",
+        "#KreatorAI",
+        "#PenulisAI",
+        "#TechTrends"
+      ]
+    }
+  ],
+  "cover": "ChatGPT Plus Gratis Pakai Trik Ini",
+  "komentar_pin": "Simpan videonya sekarang biar gak lupa trik prompt-nya, terus tulis di komentar apa topik AI selanjutnya yang mau dibahas!",
+  "llm_provider": "gemini"
+}

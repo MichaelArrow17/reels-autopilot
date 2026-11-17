@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau pakai ChatGPT Plus tapi males bayar?",
+      "isi": "Banyak yang keliru mikir fitur canggihnya harus berlangganan mahal. Padahal, ada trik pakai model terbaru tanpa keluar duit lewat ekstensi browser open source yang aman.",
+      "cta": "Simpan video ini biar nggak lupa caranya.",
+      "pertanyaan": "Kamu lebih sering pakai ChatGPT lewat HP atau laptop?",
+      "hashtag": [
+        "#ChatGPTPlus",
+        "#TipsAI",
+        "#AIIndonesia",
+        "#Teknologi",
+        "#OpenSource"
+      ]
+    },
+    {
+      "baris1": "Banyak yang keliru mikir fitur canggihnya harus berlangganan mahal.",
+      "isi": "Padahal, ada trik pakai model terbaru tanpa keluar duit menggunakan ekstensi browser open source yang aman.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Ekstensi browser apa yang jadi andalanmu sehari-hari?",
+      "hashtag": [
+        "#TrikAI",
+        "#ChatGPTGratis",
+        "#KreatorAI",
+        "#Produktivitas",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Gimana caranya pakai model terbaru tanpa keluar duit?",
+      "isi": "Fokus ke ekstensi browser open source yang aman agar bisa menikmati fitur canggih tanpa harus langganan mahal.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Fitur ChatGPT apa yang paling sering kamu pakai?",
+      "hashtag": [
+        "#BelajarAI",
+        "#ToolsAI",
+        "#TipsTeknologi",
+        "#AsistenAI",
+        "#TechTips"
+      ]
+    }
+  ],
+  "cover": "Trik ChatGPT Plus Gratis Aman",
+  "komentar_pin": "Mau tahu ekstensi browser open-source apa yang aman dipakai? Coba tulis di komentar!",
+  "llm_provider": "gemini"
+}

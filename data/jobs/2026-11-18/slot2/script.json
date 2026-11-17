@@ -1,0 +1,201 @@
+{
+  "judul": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+  "hook": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+  "angle": "Sudut kreator Indonesia: Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kacamata AI sekarang mulai dilarang di sekolah sampai bioskop. Padahal alat ini bikin hidup kamu makin praktis. Masalahnya ada di fitur rekam diam-diam yang bisa ambil data pribadi orang lain tanpa izin. Privasi publik mendadak terancam karena siapa saja bisa direkam kapan pun. Makanya aturan ketat mulai diberbagai tempat umum. Simpan video ini supaya kamu nggak salah pakai teknologi.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kacamata AI sekarang mulai dilarang di sekolah sampai bioskop.",
+      "teks_layar": "Kacamata AI Dilarang?",
+      "pose": "shrug",
+      "keyword": "Dilarang",
+      "latar": "sekolah dan bioskop",
+      "image_query": "ai glasses banned school cinema"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal alat ini bikin hidup kamu makin praktis.",
+      "teks_layar": "Padahal Praktis",
+      "pose": "point",
+      "keyword": "praktis",
+      "latar": "teknologi canggih",
+      "image_query": "smart glasses tech"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Masalahnya ada di fitur rekam diam-diam yang bisa ambil data pribadi orang lain tanpa izin.",
+      "teks_layar": "Rekam Diam-Diam",
+      "pose": "think",
+      "keyword": "izin",
+      "latar": "kamera tersembunyi",
+      "image_query": "hidden recording privacy"
+    },
+    {
+      "id": 4,
+      "nama": "dampak",
+      "narasi": "Privasi publik mendadak terancam karena siapa saja bisa direkam kapan pun.",
+      "teks_layar": "Privasi Terancam",
+      "pose": "walk",
+      "keyword": "privasi",
+      "latar": "tempat umum",
+      "image_query": "public surveillance"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Makanya aturan ketat mulai diberbagai tempat umum. Simpan video ini supaya kamu nggak salah pakai teknologi.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "peringatan",
+      "image_query": "save video icon"
+    }
+  ],
+  "caption": "Kacamata AI dilarang di berbagai tempat? Ini alasannya. Simpan video ini supaya kamu tetap update!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#KacamataAI",
+    "#Teknologi",
+    "#Privasi",
+    "#Edukasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Larangan kacamata AI di sekolah dan bioskop"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "KACAMATA AI DILARANG?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Kacamata AI sekarang mulai dilarang di sekolah sampai bioskop.",
+        "layout": "kinetic_title",
+        "judul_layar": "Kacamata AI Dilarang?",
+        "subjudul": "Kacamata AI sekarang mulai dilarang di sekolah sampai bioskop.",
+        "kata_kunci": [
+          {
+            "kata": "Dilarang",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal alat ini bikin hidup kamu makin praktis.",
+        "layout": "bullets",
+        "judul_layar": "Padahal Praktis",
+        "subjudul": "Padahal alat ini bikin hidup kamu makin praktis.",
+        "kata_kunci": [
+          {
+            "kata": "praktis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Masalahnya ada di fitur rekam diam-diam yang bisa ambil data pribadi orang lain tanpa izin.",
+        "layout": "bullets",
+        "judul_layar": "Rekam Diam-Diam",
+        "subjudul": "Masalahnya ada di fitur rekam diam-diam yang bisa ambil data pribadi orang lain tanpa izin",
+        "kata_kunci": [
+          {
+            "kata": "izin",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "dampak",
+        "narasi": "Privasi publik mendadak terancam karena siapa saja bisa direkam kapan pun.",
+        "layout": "bullets",
+        "judul_layar": "Privasi Terancam",
+        "subjudul": "Privasi publik mendadak terancam karena siapa saja bisa direkam kapan pun.",
+        "kata_kunci": [
+          {
+            "kata": "privasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Makanya aturan ketat mulai diberbagai tempat umum. Simpan video ini supaya kamu nggak salah pakai teknologi.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Makanya aturan ketat mulai diberbagai tempat umum. Simpan video ini supaya kamu nggak sala",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa suara AI sekarang makin mirip manusia asli?",
+      "isi": "Perkembangan teknologi Text to Speech membuat komputer bisa menirukan intonasi bicara dengan sangat akurat dan natural.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Menurutmu, suara AI di video mana yang paling mirip manusia?",
+      "hashtag": [
+        "#TextToSpeech",
+        "#TeknologiAI",
+        "#KecerdasanBuatan",
+        "#AIIndonesia"
+      ]
+    },
+    {
+      "baris1": "Bagaimana sistem Text to Speech bekerja?",
+      "isi": "Teknologi ini mengubah teks tertulis menjadi suara lisan secara instan menggunakan pemodelan suara modern.",
+      "cta": "Simpan",
+      "pertanyaan": "Pernahkah kamu tertipu suara AI di video reels?",
+      "hashtag": [
+        "#TTS",
+        "#AIUpdate",
+        "#InovasiDigital",
+        "#TeknologiTerbaru"
+      ]
+    },
+    {
+      "baris1": "Kenapa teknologi suara AI sekarang tidak kaku lagi?",
+      "isi": "Sistem TTS modern mampu memahami konteks kalimat untuk menghasilkan jeda dan nada bicara yang pas.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Apa kelebihan dan kekurangan suara AI menurutmu?",
+      "hashtag": [
+        "#SuaraAI",
+        "#ContentCreatorAI",
+        "#DuniaDigital",
+        "#FutureTech"
+      ]
+    }
+  ],
+  "cover": "Kenapa Suara AI Makin Natural?",
+  "komentar_pin": "Gimana menurutmu, apakah suara AI bakal sepenuhnya menggantikan narator manusia di masa depan? Tulis di komentar ya!",
+  "llm_provider": "gemini"
+}

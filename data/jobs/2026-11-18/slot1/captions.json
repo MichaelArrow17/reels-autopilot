@@ -1,0 +1,20 @@
+{
+  "varian": [
+    {
+      "baris1": "Mengapa AI tak akan pernah bisa berpikir layaknya manusia?",
+      "isi": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Kalau ada tanggal, gelar, atau jumlah, kita harus tanya dulu dari mana angkanya. Tanpa tautan resmi dan sumber yang jelas, informasi tersebut jangan langsung disebar.",
+      "cta": "Simpan video ini, dan kalau ada yang mau kamu cek, tulis di komentar.",
+      "pertanyaan": "Pernahkah kamu hampir percaya video AI tanpa sumber yang jelas?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#LiterasiDigital",
+        "#Hoaks",
+        "#AIIndonesia",
+        "#FactCheck"
+      ]
+    }
+  ],
+  "cover": "Kenapa AI Tak Bisa Berpikir?",
+  "komentar_pin": "Tulis di balasan komentar ini kalau ada video atau informasi yang mau kamu bantu cek faktanya ya!",
+  "llm_provider": "gemini"
+}

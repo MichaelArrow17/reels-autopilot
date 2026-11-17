@@ -1,0 +1,19 @@
+{
+  "varian": [
+    {
+      "baris1": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+      "isi": "Kacamata AI membuat hidup makin praktis, namun ada masalah pada fitur rekam diam-diam yang bisa mengambil data pribadi orang lain tanpa izin. Privasi publik terancam karena siapa saja bisa direkam kapan pun sehingga aturan ketat mulai diterapkan di berbagai tempat umum.",
+      "cta": "Simpan video ini supaya kamu nggak salah pakai teknologi.",
+      "pertanyaan": "Menurutmu, apakah pelarangan kacamata AI ini sudah tepat untuk melindungi privasi?",
+      "hashtag": [
+        "#KacamataAI",
+        "#PrivasiPublik",
+        "#TeknologiTerbaru",
+        "#AIgadgets"
+      ]
+    }
+  ],
+  "cover": "Kenapa Kacamata AI Mulai Dilarang?",
+  "komentar_pin": "Gimana pendapatmu soal aturan baru ini? Coba tulis di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

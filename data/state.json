@@ -161,6 +161,36 @@
       "tanggal": "2026-11-17",
       "angle": "Sudut kreator Indonesia: chatgpt ai agent",
       "slot": 5
+    },
+    {
+      "judul": "Mengapa AI Tak Akan Pernah Bisa Berpikir Layaknya Manusia? - Mashable Indonesia",
+      "tanggal": "2026-11-18",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 1
+    },
+    {
+      "judul": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+      "tanggal": "2026-11-18",
+      "angle": "Sudut kreator Indonesia: Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+      "slot": 2
+    },
+    {
+      "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+      "tanggal": "2026-11-18",
+      "angle": "Sudut kreator Indonesia: Apa itu TTS dan kenapa suaranya makin natural",
+      "slot": 3
+    },
+    {
+      "judul": "chatgpt plus free",
+      "tanggal": "2026-11-18",
+      "angle": "Sudut kreator Indonesia: chatgpt plus free",
+      "slot": 4
+    },
+    {
+      "judul": "chatgpt plus gratis",
+      "tanggal": "2026-11-18",
+      "angle": "Sudut kreator Indonesia: chatgpt plus gratis",
+      "slot": 5
     }
   ],
   "days": {
@@ -5298,8 +5328,24 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-18T06:01:12+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-18T06:01:12+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot1/script.json",
+          "caption": "Mengapa AI tak akan pernah bisa berpikir layaknya manusia?\nBanyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Kalau ada tanggal, gelar, atau jumlah, kita harus tanya dulu dari mana angkanya. Tanpa tautan resmi dan sumber yang jelas, informasi tersebut jangan langsung disebar.\nSimpan video ini, dan kalau ada yang mau kamu cek, tulis di komentar.\nPernahkah kamu hampir percaya video AI tanpa sumber yang jelas?\n#KecerdasanBuatan #LiterasiDigital #Hoaks #AIIndonesia #FactCheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-18-s2-81e0c8",
@@ -5337,8 +5383,22 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-18T06:01:12+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-18T06:01:12+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot2/script.json",
+          "caption": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?\nKacamata AI membuat hidup makin praktis, namun ada masalah pada fitur rekam diam-diam yang bisa mengambil data pribadi orang lain tanpa izin. Privasi publik terancam karena siapa saja bisa direkam kapan pun sehingga aturan ketat mulai diterapkan di berbagai tempat umum.\nSimpan video ini supaya kamu nggak salah pakai teknologi.\nMenurutmu, apakah pelarangan kacamata AI ini sudah tepat untuk melindungi privasi?\n#KacamataAI #PrivasiPublik #TeknologiTerbaru #AIgadgets",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 25.224,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-18-s3-09bf91",
@@ -5376,8 +5436,23 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-18T06:01:12+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-18T06:01:12+08:00",
+          "style": "cerita",
+          "style_reason": "rotasi setelah 3× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot3/script.json",
+          "caption": "Kenapa suara AI sekarang makin mirip manusia asli?\nPerkembangan teknologi Text to Speech membuat komputer bisa menirukan intonasi bicara dengan sangat akurat dan natural.\nKomentar jawaban\nMenurutmu, suara AI di video mana yang paling mirip manusia?\n#TextToSpeech #TeknologiAI #KecerdasanBuatan #AIIndonesia",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.1,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-18-s4-257c21",
@@ -5415,8 +5490,22 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-18T06:01:12+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-18T06:01:12+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot4/script.json",
+          "caption": "Mau pakai ChatGPT Plus tapi males bayar?\nBanyak yang keliru mikir fitur canggihnya harus berlangganan mahal. Padahal, ada trik pakai model terbaru tanpa keluar duit lewat ekstensi browser open source yang aman.\nSimpan video ini biar nggak lupa caranya.\nKamu lebih sering pakai ChatGPT lewat HP atau laptop?\n#ChatGPTPlus #TipsAI #AIIndonesia #Teknologi #OpenSource",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 23.928,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-18-s5-651a85",
@@ -5454,8 +5543,22 @@
             "sinyal": "chatgpt",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-18T06:01:12+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-18T06:01:12+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-18/slot5/script.json",
+          "caption": "Mau pakai ChatGPT Plus tapi males bayar?\nBanyak yang ngira harus langganan mahal tiap bulan. Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar.\nSimpan video ini\nApa trik prompt favorit kamu sejauh ini?\n#ChatGPTIndonesia #AIhacks #Teknologi #PromptEngineering #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 26.2,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-18T06:01:11+08:00",
@@ -5607,6 +5710,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "chatgpt ai agent",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 1,
+      "style": "kolase",
+      "judul": "Mengapa AI Tak Akan Pernah Bisa Berpikir Layaknya Manusia? - Mashable Indonesia",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "Kacamata AI Mulai Dilarang di Sekolah hingga Bioskop, Kenapa?",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 3,
+      "style": "cerita",
+      "judul": "Apa itu TTS dan kenapa suaranya makin natural",
+      "reason": "rotasi setelah 3× penjelas"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 4,
+      "style": "penjelas",
+      "judul": "chatgpt plus free",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-18",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "chatgpt plus gratis",
       "reason": "topik info"
     }
   ]

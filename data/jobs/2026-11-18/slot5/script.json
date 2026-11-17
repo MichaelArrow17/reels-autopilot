@@ -1,0 +1,199 @@
+{
+  "judul": "chatgpt plus gratis",
+  "hook": "Mau pakai ChatGPT Plus tapi males bayar?",
+  "angle": "Sudut kreator Indonesia: chatgpt plus gratis",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau pakai ChatGPT Plus tapi males bayar? Tenang, kamu enggak perlu keluar duit buat nikmatin fiturnya. Banyak yang ngira harus langganan mahal tiap bulan. Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar. Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar. Mau tahu trik lengkapnya? Simpan video ini dan follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau pakai ChatGPT Plus tapi males bayar?",
+      "teks_layar": "ChatGPT Plus Gratis?",
+      "pose": "shrug",
+      "keyword": "gratis",
+      "latar": "studio polos",
+      "image_query": "stickman confused"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Tenang, kamu enggak perlu keluar duit buat nikmatin fiturnya. Banyak yang ngira harus langganan mahal tiap bulan.",
+      "teks_layar": "Tanpa Langganan",
+      "pose": "point",
+      "keyword": "mahal",
+      "latar": "studio polos",
+      "image_query": "stickman pointing"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar.",
+      "teks_layar": "Trik Prompt Pintar",
+      "pose": "typing",
+      "keyword": "prompt",
+      "latar": "studio polos",
+      "image_query": "stickman typing"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar.",
+      "teks_layar": "Hasil Setara",
+      "pose": "cheer",
+      "keyword": "setara",
+      "latar": "studio polos",
+      "image_query": "stickman happy"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Mau tahu trik lengkapnya? Simpan video ini dan follow buat part dua.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "point",
+      "keyword": "Simpan",
+      "latar": "studio polos",
+      "image_query": "stickman cta"
+    }
+  ],
+  "caption": "Mau pakai ChatGPT Plus tapi males bayar? Simpan video ini buat coba nanti!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#ChatGPT",
+    "#TipsAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "ChatGPT Plus Gratis?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau pakai ChatGPT Plus tapi males bayar?",
+        "layout": "kinetic_title",
+        "judul_layar": "ChatGPT Plus Gratis?",
+        "subjudul": "Mau pakai ChatGPT Plus tapi males bayar?",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Tenang, kamu enggak perlu keluar duit buat nikmatin fiturnya. Banyak yang ngira harus langganan mahal tiap bulan.",
+        "layout": "bullets",
+        "judul_layar": "Tanpa Langganan",
+        "subjudul": "Tenang, kamu enggak perlu keluar duit buat nikmatin fiturnya. Banyak yang ngira harus lang",
+        "kata_kunci": [
+          {
+            "kata": "mahal",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar.",
+        "layout": "bullets",
+        "judul_layar": "Trik Prompt Pintar",
+        "subjudul": "Padahal, kamu bisa manfaatin versi gratis dengan trik prompt pintar.",
+        "kata_kunci": [
+          {
+            "kata": "prompt",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar.",
+        "layout": "bullets",
+        "judul_layar": "Hasil Setara",
+        "subjudul": "Cukup atur cara kamu nulis perintah biar hasilnya setara versi berbayar.",
+        "kata_kunci": [
+          {
+            "kata": "setara",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Mau tahu trik lengkapnya? Simpan video ini dan follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Mau tahu trik lengkapnya? Simpan video ini dan follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}
