@@ -5464,7 +5464,7 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "approved",
+          "status": "published",
           "created_at": "2026-11-18T06:01:12+08:00",
           "style": "cerita",
           "style_reason": "rotasi setelah 3× penjelas",
@@ -5480,7 +5480,21 @@
             "duration": 24.0,
             "errors": []
           },
-          "storyboard_fallback": false
+          "storyboard_fallback": false,
+          "publish": {
+            "dry_run": false,
+            "fb": null,
+            "ig": {
+              "id": "18134043871682906",
+              "permalink": "https://www.instagram.com/reel/Df4IsUJgD0s/"
+            },
+            "host": {
+              "provider": "github_release",
+              "url": "https://github.com/MichaelArrow17/reels-autopilot/releases/download/reels-20261118/2026-11-18-slot3-reel.mp4"
+            },
+            "dry_run_path": null
+          },
+          "published_at": "2026-11-18T17:02:28+08:00"
         },
         {
           "id": "2026-11-18-s4-257c21",
