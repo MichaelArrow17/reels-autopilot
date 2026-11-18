@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T22:36:06.572706+00:00",
+  "updated_at": "2026-11-18T04:01:10.655037+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
@@ -98,11 +98,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-17T13:01:10.900793+00:00",
+      "last_success_at": "2026-11-18T04:01:10.654959+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 26,
+      "success_count": 27,
       "failure_count": 0
     },
     "topics:google_trends_rss": {
