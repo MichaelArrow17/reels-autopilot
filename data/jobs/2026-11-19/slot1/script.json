@@ -1,0 +1,201 @@
+{
+  "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
+  "hook": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti?",
+  "angle": "Sudut kreator Indonesia: Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti? Banyak yang mengira semua dikerjakan manual oleh jutaan orang. Padahal, sistem pintar di baliknya mengatur jadwal dan fasilitas secara otomatis. Kamu bisa tiru efisiensi sistem ini untuk atur rutinitas harianmu. Simpan video ini buat dicoba nanti.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti?",
+      "teks_layar": "Masjid Nabawi 24 Jam?",
+      "pose": "think",
+      "keyword": "24 jam",
+      "latar": "minimalis",
+      "image_query": "mosque technology control room"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang mengira semua dikerjakan manual oleh jutaan orang.",
+      "teks_layar": "Kira-kira manual?",
+      "pose": "shrug",
+      "keyword": "manual",
+      "latar": "minimalis",
+      "image_query": "crowded mosque"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, sistem pintar di baliknya mengatur jadwal dan fasilitas secara otomatis.",
+      "teks_layar": "Sistem Pintar Otomatis",
+      "pose": "typing",
+      "keyword": "otomatis",
+      "latar": "minimalis",
+      "image_query": "smart system dashboard"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Kamu bisa tiru efisiensi sistem ini untuk atur rutinitas harianmu.",
+      "teks_layar": "Tiru Efisiensinya",
+      "pose": "point",
+      "keyword": "efisiensi",
+      "latar": "minimalis",
+      "image_query": "daily routine planning"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini buat dicoba nanti.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "minimalis",
+      "image_query": "save button icon"
+    }
+  ],
+  "caption": "Pernah penasaran nggak gimana teknologi di Masjid Nabawi bekerja? Tonton sampai habis ya!",
+  "cta": "Simpan video ini buat dicoba nanti.",
+  "hashtag": [
+    "#KreatorAI",
+    "#MasjidNabawi",
+    "#Teknologi",
+    "#Efisiensi",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Operasional Masjid Nabawi menggunakan sistem manajemen pintar terpadu."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Teknologi Masjid Nabawi 24 Jam",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti?",
+        "layout": "kinetic_title",
+        "judul_layar": "Masjid Nabawi 24 Jam?",
+        "subjudul": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti?",
+        "kata_kunci": [
+          {
+            "kata": "24 jam",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang mengira semua dikerjakan manual oleh jutaan orang.",
+        "layout": "bullets",
+        "judul_layar": "Kira-kira manual?",
+        "subjudul": "Banyak yang mengira semua dikerjakan manual oleh jutaan orang.",
+        "kata_kunci": [
+          {
+            "kata": "manual",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, sistem pintar di baliknya mengatur jadwal dan fasilitas secara otomatis.",
+        "layout": "bullets",
+        "judul_layar": "Sistem Pintar Otomatis",
+        "subjudul": "Padahal, sistem pintar di baliknya mengatur jadwal dan fasilitas secara otomatis.",
+        "kata_kunci": [
+          {
+            "kata": "otomatis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Kamu bisa tiru efisiensi sistem ini untuk atur rutinitas harianmu.",
+        "layout": "bullets",
+        "judul_layar": "Tiru Efisiensinya",
+        "subjudul": "Kamu bisa tiru efisiensi sistem ini untuk atur rutinitas harianmu.",
+        "kata_kunci": [
+          {
+            "kata": "efisiensi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini buat dicoba nanti.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini buat dicoba nanti.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

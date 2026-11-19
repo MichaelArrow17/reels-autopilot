@@ -191,6 +191,12 @@
       "tanggal": "2026-11-18",
       "angle": "Sudut kreator Indonesia: chatgpt plus gratis",
       "slot": 5
+    },
+    {
+      "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
+      "tanggal": "2026-11-19",
+      "angle": "Sudut kreator Indonesia: Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
+      "slot": 1
     }
   ],
   "days": {
@@ -6103,7 +6109,7 @@
           "id": "2026-11-19-s1-f4fc81",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam - detikcom",
+          "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
           "hook": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam - detikcom?",
           "topic": {
             "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam - detikcom",
@@ -6135,29 +6141,22 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "qc_failed",
+          "status": "rendered",
           "created_at": "2026-11-19T06:01:23+08:00",
-          "qc_ok": false,
+          "qc_ok": true,
           "qc": {
-            "path": ".",
-            "ok": false,
-            "errors": [
-              "ffprobe gagal: .: Is a directory\n"
-            ],
-            "warnings": [],
-            "width": 0,
-            "height": 0,
-            "fps": 0.0,
-            "duration": 0.0,
-            "has_audio": false,
-            "has_video": false,
-            "integrated_lufs": null,
-            "true_peak_dbtp": null,
-            "mean_volume_db": null,
-            "file_size": 4096,
-            "caption_ok": null,
-            "caption_errors": []
-          }
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 22.152,
+            "errors": []
+          },
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-19/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-19/slot1/script.json",
+          "caption": "Bagaimana bisa Masjid Nabawi beroperasi penuh 24 jam tanpa henti?\nBanyak yang mengira semua dikerjakan manual oleh jutaan orang. Padahal, sistem pintar di baliknya mengatur jadwal dan fasilitas secara otomatis.\nSimpan video ini buat dicoba nanti.\nSistem otomatis apa yang paling ingin kamu terapkan di rumah?\n#MasjidNabawi #TeknologiPintar #EfisiensiWaktu #Produktivitas #SmartSystem",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini"
         },
         {
           "id": "2026-11-19-s2-e08d08",
@@ -6501,6 +6500,13 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "chatgpt plus gratis",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-19",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
       "reason": "topik info"
     }
   ]
