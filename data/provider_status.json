@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T03:45:27.501150+00:00",
+  "updated_at": "2026-11-19T22:01:31.196162+00:00",
   "providers": {
     "llm:gemini": {
       "category": "llm",
@@ -111,11 +111,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:11.389530+00:00",
+      "last_success_at": "2026-11-19T22:01:13.560444+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     },
     "topics:youtube_autocomplete": {
@@ -124,11 +124,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:11.892098+00:00",
+      "last_success_at": "2026-11-19T22:01:14.173255+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     },
     "topics:youtube_api": {
@@ -137,11 +137,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:11.892656+00:00",
+      "last_success_at": "2026-11-19T22:01:14.174040+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     },
     "topics:reddit_rss": {
@@ -150,11 +150,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:12.129826+00:00",
+      "last_success_at": "2026-11-19T22:01:14.453950+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     },
     "topics:news_rss": {
@@ -163,11 +163,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:16.959580+00:00",
+      "last_success_at": "2026-11-19T22:01:31.195147+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     },
     "topics:evergreen_bank": {
@@ -176,11 +176,11 @@
       "consecutive_failures": 0,
       "last_error": null,
       "last_error_at": null,
-      "last_success_at": "2026-11-18T22:01:16.960369+00:00",
+      "last_success_at": "2026-11-19T22:01:31.196141+00:00",
       "cooldown_until": null,
       "quota_exhausted": false,
       "quota_reset_at": null,
-      "success_count": 7,
+      "success_count": 8,
       "failure_count": 0
     }
   }
