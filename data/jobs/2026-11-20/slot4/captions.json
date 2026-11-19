@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Bagaimana cara kerja ChatGPT?",
+      "isi": "Eksplorasi teknologi kecerdasan buatan dan bagaimana sistem pintar ini memproses berbagai informasi teks.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Apa hal pertama yang biasa kamu tanyakan ke AI?",
+      "hashtag": [
+        "#ChatGPT",
+        "#KecerdasanBuatan",
+        "#TeknologiAI",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Benarkah ChatGPT tahu segalanya?",
+      "isi": "Memahami batasan serta cara kerja sistem AI dalam menghasilkan jawaban dari data yang dipelajarinya.",
+      "cta": "Komentar jawaban kamu.",
+      "pertanyaan": "Seberapa sering kamu mengandalkan AI untuk pekerjaan sehari-hari?",
+      "hashtag": [
+        "#ChatGPT",
+        "#BelajarAI",
+        "#Teknologi",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Apa yang membuat ChatGPT begitu populer?",
+      "isi": "Melihat perkembangan teknologi bahasa alami yang mengubah cara kita berinteraksi dengan komputer.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Menurutmu, apa masa depan dari teknologi AI seperti ini?",
+      "hashtag": [
+        "#ChatGPT",
+        "#Inovasi",
+        "#DuniaDigital",
+        "#FutureTech"
+      ]
+    }
+  ],
+  "cover": "Sisi Lain ChatGPT",
+  "komentar_pin": "Tulis pendapatmu di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

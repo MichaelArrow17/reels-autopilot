@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kerjaan birokrasi masih ribet dan lama?",
+      "isi": "Wihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi biar makin cepat dan layanan publik tidak ketinggalan zaman.",
+      "cta": "Simpan video ini supaya kamu tidak lupa.",
+      "pertanyaan": "Menurutmu, seberapa cepat instansi pemerintah bisa menerapkan AI sepenuhnya?",
+      "hashtag": [
+        "#BirokrasiIndonesia",
+        "#KecerdasanBuatan",
+        "#LayananPublik",
+        "#TeknologiPemerintah",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Sering frustrasi ngurus dokumen berhari-hari?",
+      "isi": "Alasannya sederhana, pemanfaatan alat bantu AI untuk urusan administratif diperlukan supaya layanan publik tidak lagi ketinggalan zaman.",
+      "cta": "Simpan video ini supaya kamu tidak lupa.",
+      "pertanyaan": "Apa urusan administratif paling ribet yang pernah kamu alami?",
+      "hashtag": [
+        "#AdministrasiNegara",
+        "#TransformasiDigital",
+        "#InovasiBirokrasi",
+        "#RegulasiPublik",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Kenapa birokrasi butuh adaptasi AI?",
+      "isi": "Wihaji menyampaikan bahwa teknologi kecerdasan buatan diperlukan dalam birokrasi agar proses kerja cepat dan layanan publik tidak ketinggalan zaman.",
+      "cta": "Simpan video ini supaya kamu tidak lupa.",
+      "pertanyaan": "Siapkah sistem administrasi kita beralih sepenuhnya ke AI?",
+      "hashtag": [
+        "#SistemPemerintahan",
+        "#DigitalisasiBirokrasi",
+        "#KebijakanPublik",
+        "#MasaDepanKerja",
+        "#AIAdoption"
+      ]
+    }
+  ],
+  "cover": "Kenapa Birokrasi Harus Pakai AI?",
+  "komentar_pin": "Tulis pengalamanmu mengurus dokumen birokrasi di kolom komentar, ya! Jangan lupa simpan videonya.",
+  "llm_provider": "gemini"
+}

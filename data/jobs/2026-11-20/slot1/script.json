@@ -1,0 +1,225 @@
+{
+  "judul": "Kenali Deepfake: Cara Mudah Deteksi Video Palsu AI",
+  "hook": "Pernah lihat video tokoh terkenal ngomong hal aneh yang ternyata palsu?",
+  "angle": "Sudut kreator Indonesia: Apa Itu Deepfake Literacy? Cara Mengenali Konten Palsu Buatan AI",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah lihat video tokoh terkenal ngomong hal aneh yang ternyata palsu? Namanya deepfake, video buatan AI yang makin mirip aslinya. Masalahnya, kita sering langsung percaya tanpa ngecek. Padahal ada cara gampang buat mendeteksinya. Coba perhatikan kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah. Simpan video ini biar kamu tidak gampang tertipu!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah lihat video tokoh terkenal ngomong hal aneh yang ternyata palsu?",
+      "teks_layar": "Video ini PALSU?",
+      "pose": "shrug",
+      "keyword": "palsu",
+      "latar": "studio minimalis",
+      "image_query": "fake video doubt stickman"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Namanya deepfake, video buatan AI yang makin mirip aslinya.",
+      "teks_layar": "Bahaya Deepfake AI",
+      "pose": "think",
+      "keyword": "deepfake",
+      "latar": "studio minimalis",
+      "image_query": "AI robot editing video"
+    },
+    {
+      "id": 3,
+      "nama": "masalah",
+      "narasi": "Masalahnya, kita sering langsung percaya tanpa ngecek.",
+      "teks_layar": "Langsung Percaya?",
+      "pose": "point",
+      "keyword": "percaya",
+      "latar": "studio minimalis",
+      "image_query": "confused person looking at phone"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Padahal ada cara gampang buat mendeteksinya. Coba perhatikan kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah.",
+      "teks_layar": "Cek Kedipan Mata & Cahaya",
+      "pose": "typing",
+      "keyword": "deteksi",
+      "latar": "studio minimalis",
+      "image_query": "detecting fake video details"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini biar kamu tidak gampang tertipu!",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "studio minimalis",
+      "image_query": "save button social media"
+    }
+  ],
+  "caption": "Jangan sampai tertipu video editan AI! Kenali ciri-ciri deepfake dan cara mendeteksinya di video ini. Punya pengalaman serupa? Tulis di komentar.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Deepfake",
+    "#EdukasiAI",
+    "#Teknologi",
+    "#AntiHoax"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Pastikan definisi deepfake sesuai dengan standar literasi digital."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Awas Video Palsu AI!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah lihat video tokoh terkenal ngomong hal aneh yang ternyata palsu?",
+        "layout": "kinetic_title",
+        "judul_layar": "Video ini PALSU?",
+        "subjudul": "Kenali Deepfake",
+        "kata_kunci": [
+          {
+            "kata": "PALSU",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "alert"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Namanya deepfake, video buatan AI yang makin mirip aslinya.",
+        "layout": "card",
+        "judul_layar": "Bahaya Deepfake AI",
+        "subjudul": "Semakin mirip aslinya",
+        "kata_kunci": [
+          {
+            "kata": "deepfake",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "robot"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "masalah",
+        "narasi": "Masalahnya, kita sering langsung percaya tanpa ngecek.",
+        "layout": "comparison",
+        "judul_layar": "Jangan Langsung Percaya",
+        "subjudul": "Waspada konten termanipulasi",
+        "kata_kunci": [
+          {
+            "kata": "percaya",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "eye"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Padahal ada cara gampang buat mendeteksinya. Coba perhatikan kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah.",
+        "layout": "steps",
+        "judul_layar": "Cara Deteksi",
+        "subjudul": "Perhatikan detail kecil",
+        "kata_kunci": [
+          {
+            "kata": "deteksi",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "search"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Kedipan mata",
+          "Pencahayaan wajah"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini biar kamu tidak gampang tertipu!",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini!",
+        "subjudul": "Biar tidak tertipu",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

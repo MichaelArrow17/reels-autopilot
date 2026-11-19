@@ -197,6 +197,30 @@
       "tanggal": "2026-11-19",
       "angle": "Sudut kreator Indonesia: Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
       "slot": 1
+    },
+    {
+      "judul": "Kenali Deepfake: Cara Mudah Deteksi Video Palsu AI",
+      "tanggal": "2026-11-20",
+      "angle": "Sudut kreator Indonesia: Apa Itu Deepfake Literacy? Cara Mengenali Konten Palsu Buatan AI",
+      "slot": 1
+    },
+    {
+      "judul": "Adaptasi AI dalam Birokrasi",
+      "tanggal": "2026-11-20",
+      "angle": "Sudut kreator Indonesia: Wihaji Tekankan Pentingnya Adaptasi Teknologi Kecerdasan Buatan dalam Birokrasi - Golkarpedia",
+      "slot": 2
+    },
+    {
+      "judul": "chatgpt codex",
+      "tanggal": "2026-11-20",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 3
+    },
+    {
+      "judul": "AI Gratis",
+      "tanggal": "2026-11-20",
+      "angle": "Sudut kreator Indonesia: AI gratis",
+      "slot": 5
     }
   ],
   "days": {
@@ -6872,7 +6896,7 @@
           "id": "2026-11-20-s1-2534a7",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Apa Itu Deepfake Literacy? Cara Mengenali Konten Palsu Buatan AI - Tribunjogja.com",
+          "judul": "Kenali Deepfake: Cara Mudah Deteksi Video Palsu AI",
           "hook": "Apa Itu Deepfake Literacy? Cara Mengenali Konten Palsu Buatan AI - Tribunjogja.com?",
           "topic": {
             "judul": "Apa Itu Deepfake Literacy? Cara Mengenali Konten Palsu Buatan AI - Tribunjogja.com",
@@ -6904,14 +6928,28 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-20T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-20T06:01:39+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot1/script.json",
+          "caption": "Pernah lihat video tokoh terkenal ngomong hal aneh?\nDeepfake adalah video buatan AI yang makin mirip aslinya. Cara gampang mendeteksinya cukup perhatikan kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah.\nSimpan video ini biar kamu tidak gampang tertipu!\nPernahkah kamu hampir tertipu dengan video deepfake di media sosial?\n#deepfake #kecerdasanbuatan #literasidigital #teknologiai #AI",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 24.5,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-20-s2-be5b39",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Wihaji Tekankan Pentingnya Adaptasi Teknologi Kecerdasan Buatan dalam Birokrasi - Golkarpedia",
+          "judul": "Adaptasi AI dalam Birokrasi",
           "hook": "Wihaji Tekankan Pentingnya Adaptasi Teknologi Kecerdasan Buatan dalam Birokrasi - Golkarpedia?",
           "topic": {
             "judul": "Wihaji Tekankan Pentingnya Adaptasi Teknologi Kecerdasan Buatan dalam Birokrasi - Golkarpedia",
@@ -6944,8 +6982,22 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-20T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-20T06:01:39+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot2/script.json",
+          "caption": "Kerjaan birokrasi masih ribet dan lama?\nWihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi biar makin cepat dan layanan publik tidak ketinggalan zaman.\nSimpan video ini supaya kamu tidak lupa.\nMenurutmu, seberapa cepat instansi pemerintah bisa menerapkan AI sepenuhnya?\n#BirokrasiIndonesia #KecerdasanBuatan #LayananPublik #TeknologiPemerintah #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 28.766667,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-20-s3-4022c0",
@@ -6983,14 +7035,30 @@
             "sinyal": "chatgpt",
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-20T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-20T06:01:39+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 5× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot3/script.json",
+          "caption": "Yakin video profil orang terkenal yang lewat di FYP-mu itu beneran?\nBanyak video terdengar lancar padahal sumbernya kosong. Jangan langsung percaya tanggal, gelar, skandal, atau kabar duka kalau tidak ada tautan resminya.\nSimpan video ini agar kamu tidak mudah terkecoh berita tanpa sumber.\nBerita tokoh siapa yang paling sering bikin kamu ragu kebenarannya?\n#CekFakta #LiterasiDigital #EdukasiMedia #FactCheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-20-s4-e79c59",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "chatgpt aaron matheney",
+          "judul": "ChatGPT?",
           "hook": "chatgpt aaron matheney?",
           "topic": {
             "judul": "chatgpt aaron matheney",
@@ -7022,14 +7090,29 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-20T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-20T06:01:39+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot4/script.json",
+          "caption": "Bagaimana cara kerja ChatGPT?\nEksplorasi teknologi kecerdasan buatan dan bagaimana sistem pintar ini memproses berbagai informasi teks.\nSimpan video ini.\nApa hal pertama yang biasa kamu tanyakan ke AI?\n#ChatGPT #KecerdasanBuatan #TeknologiAI #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-20-s5-dcaf6d",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "ai gratis",
+          "judul": "AI Gratis",
           "hook": "ai gratis?",
           "topic": {
             "judul": "ai gratis",
@@ -7061,8 +7144,22 @@
             "sinyal": "ai gratis",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-20T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-20T06:01:39+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-20/slot5/script.json",
+          "caption": "Mau pakai AI tapi males bayar langganan bulanan mahal?\nBanyak alat canggih yang bisa dipakai tanpa keluar duit. Kesalahannya adalah sering buru-buru menyerah saat melihat menu berbayar di awal.\nSimpan video ini supaya gak lupa.\nApa alat AI gratis favorit yang biasa kamu pakai?\n#AIGratis #KreatorAI #TipsAI #Produktivitas #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 25.392,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-20T06:01:38+08:00",
@@ -7256,6 +7353,41 @@
       "slot": 1,
       "style": "penjelas",
       "judul": "Ini Cara Teknologi Jaga Operasional Masjid Nabawi 24 Jam",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Kenali Deepfake: Cara Mudah Deteksi Video Palsu AI",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "Adaptasi AI dalam Birokrasi",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 3,
+      "style": "kolase",
+      "judul": "chatgpt codex",
+      "reason": "rotasi setelah 5× penjelas"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "ChatGPT?",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-20",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "AI Gratis",
       "reason": "topik info"
     }
   ]

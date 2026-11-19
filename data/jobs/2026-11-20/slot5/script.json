@@ -1,0 +1,224 @@
+{
+  "judul": "AI Gratis",
+  "hook": "Mau pakai AI tapi males bayar langganan bulanan mahal?",
+  "angle": "Sudut kreator Indonesia: AI gratis",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau pakai AI tapi males bayar langganan bulanan mahal? Tenang, banyak kok alat canggih yang bisa kamu pakai tanpa keluar duit sepeser pun. Kesalahannya, kamu sering buru-buru nyerah pas lihat menu berbayar di awal. Padahal versi gratisnya sudah lebih dari cukup buat bantu kerjaan harianmu. Coba cari tahu platform yang ramah kantong kreator hari ini. Simpan video ini supaya gak lupa.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau pakai AI tapi males bayar langganan bulanan mahal?",
+      "teks_layar": "AI GRATIS?",
+      "pose": "shrug",
+      "keyword": "AI gratis",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused money"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Tenang, banyak kok alat canggih yang bisa kamu pakai tanpa keluar duit sepeser pun.",
+      "teks_layar": "BANYAK PILIHAN",
+      "pose": "point",
+      "keyword": "tanpa keluar duit",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing screen"
+    },
+    {
+      "id": 3,
+      "nama": "miskonsepsi",
+      "narasi": "Kesalahannya, kamu sering buru-buru nyerah pas lihat menu berbayar di awal.",
+      "teks_layar": "JANGAN NYERAH",
+      "pose": "think",
+      "keyword": "menu berbayar",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Padahal versi gratisnya sudah lebih dari cukup buat bantu kerjaan harianmu. Coba cari tahu platform yang ramah kantong kreator hari ini.",
+      "teks_layar": "CUKUP UNTUK KERJAAN",
+      "pose": "cheer",
+      "keyword": "ramah kantong",
+      "latar": "studio minimalis",
+      "image_query": "stickman happy"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya gak lupa.",
+      "teks_layar": "SIMPAN VIDEO INI",
+      "pose": "typing",
+      "keyword": "Simpan",
+      "latar": "studio minimalis",
+      "image_query": "stickman saving"
+    }
+  ],
+  "caption": "Mau pakai AI tapi gak bikin dompet jebol? Tonton sampai habis ya!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#AIGratis",
+    "#TipsKreator",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI Gratis Tapi Canggih!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau pakai AI tapi males bayar langganan bulanan mahal?",
+        "layout": "kinetic_title",
+        "judul_layar": "AI GRATIS",
+        "subjudul": "Tanpa biaya langganan",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Tenang, banyak kok alat canggih yang bisa kamu pakai tanpa keluar duit sepeser pun.",
+        "layout": "icons",
+        "judul_layar": "Bebas Biaya",
+        "subjudul": "Banyak pilihan alat canggih",
+        "kata_kunci": [
+          {
+            "kata": "tanpa",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "sparkles"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "miskonsepsi",
+        "narasi": "Kesalahannya, kamu sering buru-buru nyerah pas lihat menu berbayar di awal.",
+        "layout": "comparison",
+        "judul_layar": "Miskonsepsi Umum",
+        "subjudul": "Jangan langsung nyerah",
+        "kata_kunci": [
+          {
+            "kata": "berbayar",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "x"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Padahal versi gratisnya sudah lebih dari cukup buat bantu kerjaan harianmu. Coba cari tahu platform yang ramah kantong kreator hari ini.",
+        "layout": "steps",
+        "judul_layar": "Solusi Praktis",
+        "subjudul": "Cukup untuk kerjaan harian",
+        "kata_kunci": [
+          {
+            "kata": "cukup",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Cari platform",
+          "Gunakan versi gratis"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya gak lupa.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video",
+        "subjudul": "Supaya gak lupa",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

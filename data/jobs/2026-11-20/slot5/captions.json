@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau pakai AI tapi males bayar langganan bulanan mahal?",
+      "isi": "Banyak alat canggih yang bisa dipakai tanpa keluar duit. Kesalahannya adalah sering buru-buru menyerah saat melihat menu berbayar di awal.",
+      "cta": "Simpan video ini supaya gak lupa.",
+      "pertanyaan": "Apa alat AI gratis favorit yang biasa kamu pakai?",
+      "hashtag": [
+        "#AIGratis",
+        "#KreatorAI",
+        "#TipsAI",
+        "#Produktivitas",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Kenapa buru-buru nyerah pas lihat menu berbayar AI?",
+      "isi": "Padahal versi gratisnya sudah lebih dari cukup untuk membantu kerjaan harianmu tanpa harus langganan mahal.",
+      "cta": "Simpan video ini supaya gak lupa.",
+      "pertanyaan": "Udah coba cari tahu platform AI yang ramah kantong belum hari ini?",
+      "hashtag": [
+        "#AIGratis",
+        "#PenulisAI",
+        "#ToolsAI",
+        "#KerjaCerdas",
+        "#AI"
+      ]
+    },
+    {
+      "baris1": "Yakin mau langganan AI mahal padahal ada yang gratis?",
+      "isi": "Banyak alat canggih tanpa keluar duit sepeser pun. Versi gratisnya sudah lebih dari cukup buat bantu kerjaan.",
+      "cta": "Simpan video ini supaya gak lupa.",
+      "pertanyaan": "Bagian mana dari AI gratis yang paling kamu butuhkan?",
+      "hashtag": [
+        "#AIGratis",
+        "#TipsKreator",
+        "#AlatAI",
+        "#Hemat",
+        "#TechTips"
+      ]
+    }
+  ],
+  "cover": "Alat AI Gratis Tanpa Langganan",
+  "komentar_pin": "Tulis di komentar, AI gratis apa yang lagi sering kamu pakai?",
+  "llm_provider": "gemini"
+}

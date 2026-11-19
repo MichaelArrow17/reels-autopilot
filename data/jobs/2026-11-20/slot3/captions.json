@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Yakin video profil orang terkenal yang lewat di FYP-mu itu beneran?",
+      "isi": "Banyak video terdengar lancar padahal sumbernya kosong. Jangan langsung percaya tanggal, gelar, skandal, atau kabar duka kalau tidak ada tautan resminya.",
+      "cta": "Simpan video ini agar kamu tidak mudah terkecoh berita tanpa sumber.",
+      "pertanyaan": "Berita tokoh siapa yang paling sering bikin kamu ragu kebenarannya?",
+      "hashtag": [
+        "#CekFakta",
+        "#LiterasiDigital",
+        "#EdukasiMedia",
+        "#FactCheck"
+      ]
+    },
+    {
+      "baris1": "Kenapa kabar duka atau skandal tokoh sering disebar tanpa sumber?",
+      "isi": "Informasi penting seperti mundur jabatan hingga berita duka sering dibuat seolah meyakinkan. Tanpa adanya tautan resmi, informasi tersebut jangan disebar.",
+      "cta": "Tulis di komentar kalau ada informasi tokoh yang ingin kamu cek kebenarannya.",
+      "pertanyaan": "Pernah ketipu kabar hoax tentang tokoh terkenal di media sosial?",
+      "hashtag": [
+        "#BijakBermedia",
+        "#InfoValid",
+        "#LiterasiInformasi",
+        "#FakeNews"
+      ]
+    },
+    {
+      "baris1": "Jangan langsung percaya angka dan gelar di video profil tokoh!",
+      "isi": "Video profil sering kali terdengar lancar padahal tanpa data. Kalau ada tanggal, gelar, atau jumlah yang disebutkan, tanyakan dulu dari mana sumber angkanya.",
+      "cta": "Simpan video ini sebagai pengingat sebelum membagikan informasi.",
+      "pertanyaan": "Apa hal pertama yang biasa kamu cek saat nemu informasi mencurigakan?",
+      "hashtag": [
+        "#CerdasBermedia",
+        "#TipsEdukasi",
+        "#StopHoax",
+        "#DigitalLiteracy"
+      ]
+    }
+  ],
+  "cover": "Cek Sumber Sebelum Disebar!",
+  "komentar_pin": "Pernah nemu info profil tokoh yang terasa mencurigakan? Tulis nama tokoh atau beritanya di bawah, yuk kita cek bareng!",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,201 @@
+{
+  "judul": "Adaptasi AI dalam Birokrasi",
+  "hook": "Kerjaan birokrasi masih ribet dan lama?",
+  "angle": "Sudut kreator Indonesia: Wihaji Tekankan Pentingnya Adaptasi Teknologi Kecerdasan Buatan dalam Birokrasi - Golkarpedia",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Kerjaan birokrasi masih ribet dan lama? Kamu pasti sering merasa frustrasi saat ngurus dokumen penting yang butuh waktu berhari-hari. Padahal, Wihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi biar makin cepat. Alasannya sederhana, supaya layanan publik tidak lagi ketinggalan zaman. Mulai sekarang, manfaatkan alat bantu AI untuk urusan administratifmu. Simpan video ini supaya kamu tidak lupa.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Kerjaan birokrasi masih ribet dan lama?",
+      "teks_layar": "Birokrasi Masih Ribet?",
+      "pose": "idle",
+      "keyword": "ribet",
+      "latar": "kantor",
+      "image_query": "frustrated person at desk"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kamu pasti sering merasa frustrasi saat ngurus dokumen penting yang butuh waktu berhari-hari.",
+      "teks_layar": "Dokumen Lama",
+      "pose": "think",
+      "keyword": "frustrasi",
+      "latar": "kantor",
+      "image_query": "stack of papers"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, Wihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi biar makin cepat.",
+      "teks_layar": "Adaptasi AI",
+      "pose": "point",
+      "keyword": "kecerdasan buatan",
+      "latar": "kantor",
+      "image_query": "artificial intelligence concept"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Alasannya sederhana, supaya layanan publik tidak lagi ketinggalan zaman. Mulai sekarang, manfaatkan alat bantu AI untuk urusan administratifmu.",
+      "teks_layar": "Layanan Cepat",
+      "pose": "typing",
+      "keyword": "administratif",
+      "latar": "kantor",
+      "image_query": "typing on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya kamu tidak lupa.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "kantor",
+      "image_query": "bookmark icon"
+    }
+  ],
+  "caption": "Kerjaan birokrasi makin cepat dengan AI! Simpan video ini buat panduanmu.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Birokrasi",
+    "#Teknologi",
+    "#Wihaji",
+    "#AI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Wihaji menekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Birokrasi Pakai AI?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Kerjaan birokrasi masih ribet dan lama?",
+        "layout": "kinetic_title",
+        "judul_layar": "Birokrasi Masih Ribet?",
+        "subjudul": "Kerjaan birokrasi masih ribet dan lama?",
+        "kata_kunci": [
+          {
+            "kata": "ribet",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kamu pasti sering merasa frustrasi saat ngurus dokumen penting yang butuh waktu berhari-hari.",
+        "layout": "bullets",
+        "judul_layar": "Dokumen Lama",
+        "subjudul": "Kamu pasti sering merasa frustrasi saat ngurus dokumen penting yang butuh waktu berhari-ha",
+        "kata_kunci": [
+          {
+            "kata": "frustrasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, Wihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi biar makin cepat.",
+        "layout": "bullets",
+        "judul_layar": "Adaptasi AI",
+        "subjudul": "Padahal, Wihaji tekankan pentingnya adaptasi teknologi kecerdasan buatan dalam birokrasi b",
+        "kata_kunci": [
+          {
+            "kata": "kecerdasan buatan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Alasannya sederhana, supaya layanan publik tidak lagi ketinggalan zaman. Mulai sekarang, manfaatkan alat bantu AI untuk urusan administratifmu.",
+        "layout": "bullets",
+        "judul_layar": "Layanan Cepat",
+        "subjudul": "Alasannya sederhana, supaya layanan publik tidak lagi ketinggalan zaman. Mulai sekarang, m",
+        "kata_kunci": [
+          {
+            "kata": "administratif",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya kamu tidak lupa.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini supaya kamu tidak lupa.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

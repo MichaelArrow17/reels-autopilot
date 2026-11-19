@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah lihat video tokoh terkenal ngomong hal aneh?",
+      "isi": "Deepfake adalah video buatan AI yang makin mirip aslinya. Cara gampang mendeteksinya cukup perhatikan kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah.",
+      "cta": "Simpan video ini biar kamu tidak gampang tertipu!",
+      "pertanyaan": "Pernahkah kamu hampir tertipu dengan video deepfake di media sosial?",
+      "hashtag": [
+        "#deepfake",
+        "#kecerdasanbuatan",
+        "#literasidigital",
+        "#teknologiai",
+        "#AI"
+      ]
+    },
+    {
+      "baris1": "Kenapa video tokoh terkenal bisa ngomong hal aneh?",
+      "isi": "Itu namanya deepfake, video buatan AI yang makin mirip aslinya. Kita bisa mendeteksinya dengan melihat kedipan mata yang tidak wajar serta pencahayaan aneh di wajah.",
+      "cta": "Simpan video ini biar kamu tidak gampang tertipu!",
+      "pertanyaan": "Menurutmu, seberapa bahaya deepfake untuk informasi publik saat ini?",
+      "hashtag": [
+        "#deepfake",
+        "#videopalsu",
+        "#tipsai",
+        "#keamananiber",
+        "#artificialintelligence"
+      ]
+    },
+    {
+      "baris1": "Benarkah video AI yang mirip aslinya bisa dideteksi?",
+      "isi": "Bisa! Lewat deepfake, kita sering langsung percaya tanpa ngecek. Padahal kamu bisa mendeteksinya lewat kedipan mata yang tidak wajar atau pencahayaan yang aneh di wajah.",
+      "cta": "Simpan video ini biar kamu tidak gampang tertipu!",
+      "pertanyaan": "Pernahkah kamu notice kejanggalan pencahayaan pada video AI?",
+      "hashtag": [
+        "#deepfake",
+        "#faktamenarik",
+        "#edukasiai",
+        "#waspadahoaks",
+        "#tech"
+      ]
+    }
+  ],
+  "cover": "Cara Mudah Deteksi Video Deepfake",
+  "komentar_pin": "Tonton sampai habis dan simpan videonya biar kamu makin jeli bedain video asli dan buatan AI!",
+  "llm_provider": "gemini"
+}

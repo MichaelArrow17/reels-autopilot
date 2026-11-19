@@ -1,0 +1,238 @@
+{
+  "style": "cerita",
+  "storyboard": {
+    "style": "cerita",
+    "environment": "office",
+    "durasi_detik": 24.0,
+    "label_kiri": "BINGUNG",
+    "label_kanan": "MENCOBA",
+    "judul": "ChatGPT?",
+    "hook": "Bingung mulai dari mana?",
+    "karakter": [
+      {
+        "id": "a",
+        "warna": "abu",
+        "peran": "menyerah"
+      },
+      {
+        "id": "b",
+        "warna": "kuning",
+        "peran": "berjuang"
+      }
+    ],
+    "beats": [
+      {
+        "t": 0.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "sit",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [],
+        "gelembung_a": "Gimana mulainya?",
+        "gelembung_b": "Cari tahu yuk!",
+        "efek": [],
+        "sfx": [
+          "click"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 4.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "idle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "push",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Susah banget...",
+        "gelembung_b": "Coba terus!",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "tap"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 8.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "limp",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.7,
+          "y": 0.5,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Nyerah deh",
+        "gelembung_b": "Ketemu celahnya!",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "success"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 12.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "climb",
+          "x": 0.7,
+          "y": 0.4,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "ladder",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Kok bisa?",
+        "gelembung_b": "Fokus satu arah",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "whoosh"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 16.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "kneel",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.7,
+          "y": 0.3,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "",
+        "gelembung_b": "Berhasil!",
+        "efek": [
+          "break"
+        ],
+        "sfx": [
+          "ding"
+        ],
+        "klimaks": true,
+        "teks_klimaks": "Tembus batas!"
+      },
+      {
+        "t": 20.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "stand",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "celebrate",
+          "x": 0.7,
+          "y": 0.3,
+          "hadap": "kanan"
+        },
+        "properti": [],
+        "gelembung_a": "Mau coba juga",
+        "gelembung_b": "Yuk mulai!",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "cheer"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      }
+    ],
+    "klimaks": {
+      "t": 16.0,
+      "jenis": "capai_puncak",
+      "pemenang": "b"
+    },
+    "narasi_penuh": "",
+    "pakai_vo": false,
+    "moral": "Terus coba langkah baru."
+  },
+  "judul": "ChatGPT?",
+  "hook": "Bingung mulai dari mana?",
+  "angle": "Sudut kreator Indonesia: chatgpt aaron matheney",
+  "bahasa": "id",
+  "durasi_target_detik": 24,
+  "narasi_penuh": "",
+  "adegan": [],
+  "caption": "Masih bingung soal ChatGPT? Ini cara praktis yang bisa kamu coba.\n\nTerus coba langkah baru.\n\nSimpan video ini, biar kamu ingat saat mau nyerah.\n\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsAI",
+  "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#Motivasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "MENCOBA",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "storyboard_fallback": false,
+  "pakai_vo": false,
+  "moral": "Terus coba langkah baru."
+}
