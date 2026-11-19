@@ -6254,8 +6254,29 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "approved",
-          "created_at": "2026-11-19T06:01:23+08:00"
+          "status": "qc_failed",
+          "created_at": "2026-11-19T06:01:23+08:00",
+          "qc_ok": false,
+          "qc": {
+            "path": ".",
+            "ok": false,
+            "errors": [
+              "ffprobe gagal: .: Is a directory\n"
+            ],
+            "warnings": [],
+            "width": 0,
+            "height": 0,
+            "fps": 0.0,
+            "duration": 0.0,
+            "has_audio": false,
+            "has_video": false,
+            "integrated_lufs": null,
+            "true_peak_dbtp": null,
+            "mean_volume_db": null,
+            "file_size": 4096,
+            "caption_ok": null,
+            "caption_errors": []
+          }
         },
         {
           "id": "2026-11-19-s4-eeac18",
