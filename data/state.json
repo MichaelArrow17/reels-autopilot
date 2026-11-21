@@ -221,6 +221,12 @@
       "tanggal": "2026-11-20",
       "angle": "Sudut kreator Indonesia: AI gratis",
       "slot": 5
+    },
+    {
+      "judul": "Google Bisa Bikin Game Lewat Teks",
+      "tanggal": "2026-11-21",
+      "angle": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan Mengubah Cara Game seperti Mahjong PGSOFT Dikembangkan",
+      "slot": 1
     }
   ],
   "days": {
@@ -7635,7 +7641,7 @@
           "id": "2026-11-21-s1-838c83",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan Mengubah Cara Game seperti Mahjong PGSOFT Dikembangkan - Habangkalan Penyang Karuhei Tatau",
+          "judul": "Google Bisa Bikin Game Lewat Teks",
           "hook": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan?",
           "topic": {
             "judul": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan Mengubah Cara Game seperti Mahjong PGSOFT Dikembangkan - Habangkalan Penyang Karuhei Tatau",
@@ -7667,29 +7673,22 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "qc_failed",
+          "status": "rendered",
           "created_at": "2026-11-21T06:01:35+08:00",
-          "qc_ok": false,
+          "qc_ok": true,
           "qc": {
-            "path": ".",
-            "ok": false,
-            "errors": [
-              "ffprobe gagal: .: Is a directory\n"
-            ],
-            "warnings": [],
-            "width": 0,
-            "height": 0,
-            "fps": 0.0,
-            "duration": 0.0,
-            "has_audio": false,
-            "has_video": false,
-            "integrated_lufs": null,
-            "true_peak_dbtp": null,
-            "mean_volume_db": null,
-            "file_size": 4096,
-            "caption_ok": null,
-            "caption_errors": []
-          }
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 19.728,
+            "errors": []
+          },
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-21/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-21/slot1/script.json",
+          "caption": "Bisa nggak ya bikin game cuma pakai teks doang?\nSekarang Google bikin itu nyata buat kamu. Teknologi AI mengubah cara game dibuat, dari Mahjong hingga RPG cukup ketik perintahnya.\nFollow untuk part berikutnya.\nGame genre apa yang mau kamu bikin pertama kali pakai AI?\n#GoogleAI #BikinGame #TeknologiAI #ArtificialIntelligence #GamingTech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini"
         },
         {
           "id": "2026-11-21-s2-b42c76",
@@ -8074,6 +8073,13 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "AI Gratis",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-21",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Google Bisa Bikin Game Lewat Teks",
       "reason": "topik info"
     }
   ]

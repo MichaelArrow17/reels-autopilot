@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Bisa nggak ya bikin game cuma pakai teks doang?",
+      "isi": "Sekarang Google bikin itu nyata buat kamu. Teknologi AI mengubah cara game dibuat, dari Mahjong hingga RPG cukup ketik perintahnya.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Game genre apa yang mau kamu bikin pertama kali pakai AI?",
+      "hashtag": [
+        "#GoogleAI",
+        "#BikinGame",
+        "#TeknologiAI",
+        "#ArtificialIntelligence",
+        "#GamingTech"
+      ]
+    },
+    {
+      "baris1": "Bisa nggak ya bikin game cuma pakai teks doang?",
+      "isi": "Teknologi AI dari Google mengubah cara game dibuat. Mau bikin game kayak Mahjong PGSOFT atau RPG, sekarang cukup ketik perintahnya saja.",
+      "cta": "Simpan video ini biar nggak lupa.",
+      "pertanyaan": "Menurutmu, teknologi AI ini bakal gantiin tugas programmer game nggak?",
+      "hashtag": [
+        "#GoogleAI",
+        "#PembuatanGame",
+        "#AIIndonesia",
+        "#TechTrends",
+        "#GameDev"
+      ]
+    },
+    {
+      "baris1": "Bisa nggak ya bikin game cuma pakai teks doang?",
+      "isi": "Sekarang Google mewujudkannya nyata untuk kamu. AI mengubah cara game dibuat, cukup ketik perintah untuk bikin game seperti Mahjong atau RPG.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Ketik di komentar: game impian apa yang mau kamu buat?",
+      "hashtag": [
+        "#GoogleAI",
+        "#AIterbaru",
+        "#PembuatGame",
+        "#InovasiTeknologi",
+        "#GameDesign"
+      ]
+    }
+  ],
+  "cover": "Bikin Game Cuma Pakai Teks!",
+  "komentar_pin": "Gimana menurut kalian, teknologi AI Google ini bakal bikin semua orang jadi developer game nggak? Coba tulis pendapatmu di sini!",
+  "llm_provider": "gemini"
+}

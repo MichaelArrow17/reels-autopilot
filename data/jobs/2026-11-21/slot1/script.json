@@ -1,0 +1,201 @@
+{
+  "judul": "Google Bisa Bikin Game Lewat Teks",
+  "hook": "Bisa nggak ya bikin game cuma pakai teks doang?",
+  "angle": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan Mengubah Cara Game seperti Mahjong PGSOFT Dikembangkan",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Bisa nggak ya bikin game cuma pakai teks doang? Sekarang Google bikin itu nyata buat kamu. Bukan cuma angan, teknologi AI ubah cara game dibuat. Mau bikin game kayak Mahjong PGSOFT atau RPG? Cukup ketik perintahnya. Cobain sekarang dan follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Bisa nggak ya bikin game cuma pakai teks doang?",
+      "teks_layar": "Bikin Game Pakai Teks?",
+      "pose": "idle",
+      "keyword": "teks",
+      "latar": "studio minimalis",
+      "image_query": "stickman wondering looking at screen"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Sekarang Google bikin itu nyata buat kamu.",
+      "teks_layar": "Google Bikin Nyata",
+      "pose": "point",
+      "keyword": "Google",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at glowing search bar"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Bukan cuma angan, teknologi AI ubah cara game dibuat.",
+      "teks_layar": "AI Ubah Cara Bikin Game",
+      "pose": "think",
+      "keyword": "teknologi AI",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking with gears above head"
+    },
+    {
+      "id": 4,
+      "nama": "contoh",
+      "narasi": "Mau bikin game kayak Mahjong PGSOFT atau RPG? Cukup ketik perintahnya.",
+      "teks_layar": "Cukup Ketik Perintah",
+      "pose": "typing",
+      "keyword": "perintah teks",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing fast on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Cobain sekarang dan follow buat part dua.",
+      "teks_layar": "Follow Buat Part 2",
+      "pose": "cheer",
+      "keyword": "follow",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with arms up"
+    }
+  ],
+  "caption": "Gimana menurut kamu kalau bikin game semudah nulis chat? Tulis di komentar ya! #KreatorAI #GoogleAI #Teknologi",
+  "cta": "Follow buat part dua",
+  "hashtag": [
+    "#KreatorAI",
+    "#GoogleAI",
+    "#Teknologi",
+    "#KecerdasanBuatan",
+    "#GameDev"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Google mengembangkan teknologi pembuatan game dari teks."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Bikin Game Cuma Pakai Teks?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Bisa nggak ya bikin game cuma pakai teks doang?",
+        "layout": "kinetic_title",
+        "judul_layar": "Bikin Game Pakai Teks?",
+        "subjudul": "Bisa nggak ya bikin game cuma pakai teks doang?",
+        "kata_kunci": [
+          {
+            "kata": "teks",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Sekarang Google bikin itu nyata buat kamu.",
+        "layout": "bullets",
+        "judul_layar": "Google Bikin Nyata",
+        "subjudul": "Sekarang Google bikin itu nyata buat kamu.",
+        "kata_kunci": [
+          {
+            "kata": "Google",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Bukan cuma angan, teknologi AI ubah cara game dibuat.",
+        "layout": "bullets",
+        "judul_layar": "AI Ubah Cara Bikin Game",
+        "subjudul": "Bukan cuma angan, teknologi AI ubah cara game dibuat.",
+        "kata_kunci": [
+          {
+            "kata": "teknologi AI",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "contoh",
+        "narasi": "Mau bikin game kayak Mahjong PGSOFT atau RPG? Cukup ketik perintahnya.",
+        "layout": "bullets",
+        "judul_layar": "Cukup Ketik Perintah",
+        "subjudul": "Mau bikin game kayak Mahjong PGSOFT atau RPG? Cukup ketik perintahnya.",
+        "kata_kunci": [
+          {
+            "kata": "perintah teks",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Cobain sekarang dan follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Part 2",
+        "subjudul": "Cobain sekarang dan follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}
