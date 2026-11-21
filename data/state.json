@@ -227,6 +227,36 @@
       "tanggal": "2026-11-21",
       "angle": "Google Kini Bisa Membuat Game dari Perintah Teks Apakah Teknologi AI Akan Mengubah Cara Game seperti Mahjong PGSOFT Dikembangkan",
       "slot": 1
+    },
+    {
+      "judul": "Kecemasan di Balik Kecerdasan Buatan",
+      "tanggal": "2026-11-22",
+      "angle": "Sudut kreator Indonesia: AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi",
+      "slot": 1
+    },
+    {
+      "judul": "Beda Layar Beda Warna",
+      "tanggal": "2026-11-22",
+      "angle": "Sudut kreator Indonesia: Teknologi BT.2020 OPPO Find X10 pada Mahjong Ways, Mengapa Warna Emas Bisa Tampak Berbeda di Layar Lain - Habangkalan Penyang Karuhei Tatau",
+      "slot": 2
+    },
+    {
+      "judul": "AI Perkuat Hilir Migas Nasional",
+      "tanggal": "2026-11-22",
+      "angle": "Teknologi digital dan kecerdasan buatan perkuat pengelolaan hilir migas nasional.",
+      "slot": 3
+    },
+    {
+      "judul": "Pendidik PAUD Wajib Melek AI",
+      "tanggal": "2026-11-22",
+      "angle": "Sudut kreator Indonesia: HIMPAUDI Sukoharjo Dorong Pendidik PAUD Adaptif terhadap Teknologi dan Kecerdasan Buatan",
+      "slot": 4
+    },
+    {
+      "judul": "Peluang Investasi Semikonduktor dan AI",
+      "tanggal": "2026-11-22",
+      "angle": "Sudut kreator Indonesia: Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing langsung baru.",
+      "slot": 5
     }
   ],
   "days": {
@@ -8407,7 +8437,7 @@
           "id": "2026-11-22-s1-d25a53",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi - ANTARA News",
+          "judul": "Kecemasan di Balik Kecerdasan Buatan",
           "hook": "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi -?",
           "topic": {
             "judul": "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi - ANTARA News",
@@ -8439,14 +8469,36 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-22T06:01:07+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-22T06:01:07+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 92)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/script.json",
+          "caption": "Apa benar ada kecemasan di balik kecerdasan buatan?\nLaporan ANTARA membahas sisi lain dari perkembangan teknologi AI yang perlu kita ketahui bersama.\nKomentar jawaban\nBagaimana pandanganmu tentang sisi lain AI ini?\n#KecerdasanBuatan #AIAnxiety #TeknologiMasaKini #ArtificialIntelligence\n\nFoto: Lafcadio Hearn / Wikimedia Commons (Public domain)",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 4.066667,
+            "errors": []
+          },
+          "credits": "Foto: Lafcadio Hearn / Wikimedia Commons (Public domain)",
+          "klaim": [
+            {
+              "teks": "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi",
+              "sumber_url": "https://www.antaranews.com",
+              "sumber_nama": "ANTARA News"
+            }
+          ]
         },
         {
           "id": "2026-11-22-s2-7ba48f",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Teknologi BT.2020 OPPO Find X10 pada Mahjong Ways, Mengapa Warna Emas Bisa Tampak Berbeda di Layar Lain - Habangkalan Penyang Karuhei Tatau",
+          "judul": "Beda Layar Beda Warna",
           "hook": "Teknologi BT.2020 OPPO Find X10 pada Mahjong Ways, Mengapa Warna Emas Bisa?",
           "topic": {
             "judul": "Teknologi BT.2020 OPPO Find X10 pada Mahjong Ways, Mengapa Warna Emas Bisa Tampak Berbeda di Layar Lain - Habangkalan Penyang Karuhei Tatau",
@@ -8478,14 +8530,29 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-22T06:01:07+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-22T06:01:07+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 86)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot2/script.json",
+          "caption": "Kenapa warna di layar HP kamu bisa beda banget sama di laptop?\nPerbedaan teknologi panel layar membuat reproduksi warna terlihat tidak sama persis antar perangkat.\nSimpan video ini supaya tidak lupa.\nPernahkah kamu menyadari perbedaan warna yang mencolok ini?\n#teknoindo #tipsgadget #layarhp #displaytech #screen",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-22-s3-ebfd21",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Teknologi Digital dan Kecerdasan Buatan Perkuat Pengelolaan Hilir Migas Nasional - Badan Pengatur Hilir Minyak dan Gas Bumi",
+          "judul": "AI Perkuat Hilir Migas Nasional",
           "hook": "Teknologi Digital dan Kecerdasan Buatan Perkuat Pengelolaan Hilir Migas Nasional - Badan?",
           "topic": {
             "judul": "Teknologi Digital dan Kecerdasan Buatan Perkuat Pengelolaan Hilir Migas Nasional - Badan Pengatur Hilir Minyak dan Gas Bumi",
@@ -8518,14 +8585,28 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-22T06:01:07+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-22T06:01:07+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot3/script.json",
+          "caption": "Bensin di pom daerah kamu tepat sasaran atau bocor?\nTeknologi digital dan kecerdasan buatan kini dipakai untuk memperkuat pengelolaan hilir migas nasional. Data distribusi dipantau secara real time agar tidak ada celah kecurangan.\nSimpan video ini.\nPernahkah kamu memantau distribusi energi lewat ponsel?\n#Hilirmigas #Kecerdasanbuatan #Energiindonesia #AIIndonesia #EnergyTech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 25.2,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-22-s4-6c74de",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "HIMPAUDI Sukoharjo Dorong Pendidik PAUD Adaptif terhadap Teknologi dan Kecerdasan Buatan - Kabarjoglo",
+          "judul": "Pendidik PAUD Wajib Melek AI",
           "hook": "HIMPAUDI Sukoharjo Dorong Pendidik PAUD Adaptif terhadap Teknologi dan Kecerdasan Buatan -?",
           "topic": {
             "judul": "HIMPAUDI Sukoharjo Dorong Pendidik PAUD Adaptif terhadap Teknologi dan Kecerdasan Buatan - Kabarjoglo",
@@ -8558,14 +8639,28 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-22T06:01:07+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-22T06:01:07+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot4/script.json",
+          "caption": "Gimana cara ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?\nBanyak yang takut kalau AI bakal gantiin peran guru di kelas. Padahal, guru PAUD didorong adaptif biar bisa bikin media belajar interaktif tanpa ribet.\nFollow untuk part berikutnya.\nApa alat AI pertama yang ingin kamu coba hari ini?\n#PendidikPAUD #GuruPAUD #PendidikanAnak #TeknologiPendidikan #AIEducation",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 25.296,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-22-s5-cc6a96",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing langsung (FDI) baru. - Vietnam.vn",
+          "judul": "Peluang Investasi Semikonduktor dan AI",
           "hook": "Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing?",
           "topic": {
             "judul": "Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing langsung (FDI) baru. - Vietnam.vn",
@@ -8598,8 +8693,22 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-22T06:01:07+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-22T06:01:07+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot5/script.json",
+          "caption": "Bagaimana semikonduktor dan AI bisa menarik investasi asing?\nBanyak yang keliru mengira ini hanya urusan pabrik besar. Padahal kunci utamanya ada pada kesiapan ekosistem digital lokal.\nSimpan video ini sebelum ketinggalan.\nMenurutmu, apa tantangan terbesar ekosistem digital di Indonesia saat ini?\n#InvestasiAI #Semikonduktor #EkosistemDigital #PeluangBisnis #TechInvestment",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 19.233008,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-22T06:01:07+08:00",
@@ -8835,6 +8944,41 @@
       "slot": 1,
       "style": "penjelas",
       "judul": "Google Bisa Bikin Game Lewat Teks",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 1,
+      "style": "kolase",
+      "judul": "Kecemasan di Balik Kecerdasan Buatan",
+      "reason": "keragaman batch (dari penjelas, yakin 92)"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 2,
+      "style": "cerita",
+      "judul": "Beda Layar Beda Warna",
+      "reason": "keragaman batch (dari penjelas, yakin 86)"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "AI Perkuat Hilir Migas Nasional",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 4,
+      "style": "penjelas",
+      "judul": "Pendidik PAUD Wajib Melek AI",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-22",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "Peluang Investasi Semikonduktor dan AI",
       "reason": "topik info"
     }
   ]

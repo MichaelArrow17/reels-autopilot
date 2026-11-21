@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Gimana cara ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+      "isi": "Banyak yang takut kalau AI bakal gantiin peran guru di kelas. Padahal, guru PAUD didorong adaptif biar bisa bikin media belajar interaktif tanpa ribet.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa alat AI pertama yang ingin kamu coba hari ini?",
+      "hashtag": [
+        "#PendidikPAUD",
+        "#GuruPAUD",
+        "#PendidikanAnak",
+        "#TeknologiPendidikan",
+        "#AIEducation"
+      ]
+    },
+    {
+      "baris1": "Gimana cara ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+      "isi": "Tujuan penggunaan AI sangat simpel, yaitu membantumu membuat media belajar yang interaktif tanpa ribet tanpa menggantikan peranmu sebagai guru.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Menurutmu, apakah guru PAUD wajib menguasai AI sekarang?",
+      "hashtag": [
+        "#GuruPAUD",
+        "#MediaPembelajaran",
+        "#InovasiGuru",
+        "#BelajarAI",
+        "#EdTech"
+      ]
+    },
+    {
+      "baris1": "Gimana cara ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+      "isi": "Kamu bisa mulai mengeksplorasi satu alat AI hari ini untuk menciptakan metode pembelajaran yang lebih seru dan interaktif bagi anak-anak.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Bagaimana pengalamanmu menggunakan media digital di kelas PAUD?",
+      "hashtag": [
+        "#PendidikPAUD",
+        "#GuruKreatif",
+        "#TeknologiAI",
+        "#PembelajaranInteraktif",
+        "#TeacherLife"
+      ]
+    }
+  ],
+  "cover": "Pendidik PAUD Wajib Melek AI",
+  "komentar_pin": "Yuk, mulai eksplorasi AI pertamamu hari ini! Tulis di komentar alat apa yang bikin kamu penasaran.",
+  "llm_provider": "gemini"
+}

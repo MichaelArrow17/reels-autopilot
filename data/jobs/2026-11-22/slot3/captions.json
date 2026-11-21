@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Bensin di pom daerah kamu tepat sasaran atau bocor?",
+      "isi": "Teknologi digital dan kecerdasan buatan kini dipakai untuk memperkuat pengelolaan hilir migas nasional. Data distribusi dipantau secara real time agar tidak ada celah kecurangan.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Pernahkah kamu memantau distribusi energi lewat ponsel?",
+      "hashtag": [
+        "#Hilirmigas",
+        "#Kecerdasanbuatan",
+        "#Energiindonesia",
+        "#AIIndonesia",
+        "#EnergyTech"
+      ]
+    },
+    {
+      "baris1": "Bagaimana pengawasan distribusi minyak bisa begitu ketat?",
+      "isi": "Sistem digital dan kecerdasan buatan dimanfaatkan untuk mengawasi hilir migas secara real time demi menutup celah kecurangan.",
+      "cta": "Komentar jawaban kamu.",
+      "pertanyaan": "Menurutmu, seberapa efektif teknologi ini?",
+      "hashtag": [
+        "#MigasNusantara",
+        "#TeknologiDigital",
+        "#HilirMigas",
+        "#InovasiEnergi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Apakah distribusi minyak di daerahmu sudah terpantau?",
+      "isi": "Pengelolaan hilir migas nasional kini diperkuat dengan AI dan sistem digital agar data distribusi terpantau real time tanpa celah kecurangan.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Sudah cek aplikasi pemantauan energi di ponselmu?",
+      "hashtag": [
+        "#EnergiNegeri",
+        "#Digitalisasi",
+        "#MigasIndonesia",
+        "#SistemAI",
+        "#SmartEnergy"
+      ]
+    }
+  ],
+  "cover": "AI Amankan Hilir Migas",
+  "komentar_pin": "Gimana menurut kamu, apakah teknologi AI ini bisa sepenuhnya menghentikan kebocoran distribusi energi? Tulis pendapatmu ya!",
+  "llm_provider": "gemini"
+}

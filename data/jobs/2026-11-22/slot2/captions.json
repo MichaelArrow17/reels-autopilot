@@ -1,0 +1,20 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa warna di layar HP kamu bisa beda banget sama di laptop?",
+      "isi": "Perbedaan teknologi panel layar membuat reproduksi warna terlihat tidak sama persis antar perangkat.",
+      "cta": "Simpan video ini supaya tidak lupa.",
+      "pertanyaan": "Pernahkah kamu menyadari perbedaan warna yang mencolok ini?",
+      "hashtag": [
+        "#teknoindo",
+        "#tipsgadget",
+        "#layarhp",
+        "#displaytech",
+        "#screen"
+      ]
+    }
+  ],
+  "cover": "Kenapa Warna Layar Beda?",
+  "komentar_pin": "Gimana pengalaman kamu? Pernah ngalamin warna foto berubah pas dipindahin ke laptop? Coba tulis di komen ya!",
+  "llm_provider": "gemini"
+}

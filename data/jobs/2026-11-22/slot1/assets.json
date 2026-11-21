@@ -1,0 +1,42 @@
+[
+  {
+    "query": "vintage typewriter document anxiety",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_1_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_1_cut.png"
+  },
+  {
+    "query": "newspaper archive text macro",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_2_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_2_cut.png"
+  },
+  {
+    "query": "retro alarm clock vintage photo",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_3_ill.png",
+    "license": "original",
+    "author": "Po Chai",
+    "source_url": "",
+    "attribution": "Ilustrasi: Po Chai (karya sendiri)",
+    "provider": "illustration",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_3_cut.png"
+  },
+  {
+    "query": "old paper notebook texture",
+    "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_4.jpg",
+    "license": "Public domain",
+    "author": "Lafcadio Hearn",
+    "source_url": "File:Fantastics and other Fancies.djvu",
+    "attribution": "Lafcadio Hearn / Wikimedia Commons (Public domain)",
+    "provider": "wikimedia",
+    "cutout": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-22/slot1/cutout_4_cut.png"
+  }
+]

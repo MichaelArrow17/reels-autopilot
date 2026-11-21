@@ -1,0 +1,201 @@
+{
+  "judul": "AI Perkuat Hilir Migas Nasional",
+  "hook": "Bensin di pom bensin daerah kamu bisa tepat sasaran atau malah bocor?",
+  "angle": "Teknologi digital dan kecerdasan buatan perkuat pengelolaan hilir migas nasional.",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Bensin di pom bensin daerah kamu bisa tepat sasaran atau malah bocor? Padahal pengawasan distribusi minyak butuh sistem yang super ketat. Makanya, teknologi digital dan kecerdasan buatan sekarang dipakai buat memperkuat pengelolaan hilir migas nasional. Data distribusi dipantau secara real time biar tidak ada lagi celah kecurangan. Coba cek aplikasi pemantauan energi di ponsel kamu sekarang.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Bensin di pom bensin daerah kamu bisa tepat sasaran atau malah bocor?",
+      "teks_layar": "Bensin Tepat Sasaran?",
+      "pose": "shrug",
+      "keyword": "bocor",
+      "latar": "pom bensin",
+      "image_query": "gas station stickman"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal pengawasan distribusi minyak butuh sistem yang super ketat.",
+      "teks_layar": "Distribusi Minyak",
+      "pose": "think",
+      "keyword": "ketat",
+      "latar": "peta indonesia",
+      "image_query": "oil distribution map"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Makanya, teknologi digital dan kecerdasan buatan sekarang dipakai buat memperkuat pengelolaan hilir migas nasional.",
+      "teks_layar": "AI Migas Nasional",
+      "pose": "typing",
+      "keyword": "kecerdasan buatan",
+      "latar": "ruang kontrol",
+      "image_query": "ai control room stickman"
+    },
+    {
+      "id": 4,
+      "nama": "penjelasan",
+      "narasi": "Data distribusi dipantau secara real time biar tidak ada lagi celah kecurangan.",
+      "teks_layar": "Pantau Real Time",
+      "pose": "point",
+      "keyword": "real time",
+      "latar": "grafik digital",
+      "image_query": "digital dashboard stickman"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba cek aplikasi pemantauan energi di ponsel kamu sekarang.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "ponsel",
+      "latar": "smartphone",
+      "image_query": "smartphone stickman cta"
+    }
+  ],
+  "caption": "Teknologi digital dan kecerdasan buatan kini perkuat pengelolaan hilir migas nasional agar distribusi BBM makin transparan. Gimana menurut kamu? Simpan video ini buat info menarik lainnya.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Migas",
+    "#TeknologiDigital",
+    "#KecerdasanBuatan",
+    "#Energi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Penggunaan teknologi digital dan kecerdasan buatan oleh BPH Migas dalam pengelolaan hilir migas nasional."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI Perkuat Hilir Migas!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Bensin di pom bensin daerah kamu bisa tepat sasaran atau malah bocor?",
+        "layout": "kinetic_title",
+        "judul_layar": "Bensin Tepat Sasaran?",
+        "subjudul": "Bensin di pom bensin daerah kamu bisa tepat sasaran atau malah bocor?",
+        "kata_kunci": [
+          {
+            "kata": "bocor",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal pengawasan distribusi minyak butuh sistem yang super ketat.",
+        "layout": "bullets",
+        "judul_layar": "Distribusi Minyak",
+        "subjudul": "Padahal pengawasan distribusi minyak butuh sistem yang super ketat.",
+        "kata_kunci": [
+          {
+            "kata": "ketat",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Makanya, teknologi digital dan kecerdasan buatan sekarang dipakai buat memperkuat pengelolaan hilir migas nasional.",
+        "layout": "bullets",
+        "judul_layar": "AI Migas Nasional",
+        "subjudul": "Makanya, teknologi digital dan kecerdasan buatan sekarang dipakai buat memperkuat pengelol",
+        "kata_kunci": [
+          {
+            "kata": "kecerdasan buatan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "penjelasan",
+        "narasi": "Data distribusi dipantau secara real time biar tidak ada lagi celah kecurangan.",
+        "layout": "bullets",
+        "judul_layar": "Pantau Real Time",
+        "subjudul": "Data distribusi dipantau secara real time biar tidak ada lagi celah kecurangan.",
+        "kata_kunci": [
+          {
+            "kata": "real time",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba cek aplikasi pemantauan energi di ponsel kamu sekarang.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Coba cek aplikasi pemantauan energi di ponsel kamu sekarang.",
+        "kata_kunci": [
+          {
+            "kata": "ponsel",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

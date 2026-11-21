@@ -1,0 +1,225 @@
+{
+  "judul": "Pendidik PAUD Wajib Melek AI",
+  "hook": "Gimana caranya ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+  "angle": "Sudut kreator Indonesia: HIMPAUDI Sukoharjo Dorong Pendidik PAUD Adaptif terhadap Teknologi dan Kecerdasan Buatan",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Gimana caranya ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak? Banyak yang takut kalau AI bakal gantiin peran guru di kelas. Padahal, guru PAUD justru didorong buat adaptif sama teknologi. Tujuannya simpel banget. Biar kamu bisa bikin media belajar yang interaktif tanpa ribet. Coba mulai eksplor satu alat AI hari ini. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Gimana caranya ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+      "teks_layar": "NGGAREK TEKNOLOGI DI PAUD?",
+      "pose": "think",
+      "keyword": "teknologi",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking about technology and kids"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang takut kalau AI bakal gantiin peran guru di kelas.",
+      "teks_layar": "APAKAH AI GANTIIN GURU?",
+      "pose": "shrug",
+      "keyword": "AI",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused with ai robot"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, guru PAUD justru didorong buat adaptif sama teknologi.",
+      "teks_layar": "GURU PAUD ADAPTIF",
+      "pose": "point",
+      "keyword": "adaptif",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at adaptive technology"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Tujuannya simpel banget. Biar kamu bisa bikin media belajar yang interaktif tanpa ribet.",
+      "teks_layar": "MEDIA BELAJAR INTERAKTIF",
+      "pose": "typing",
+      "keyword": "interaktif",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing creating interactive media"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba mulai eksplor satu alat AI hari ini. Follow buat part dua.",
+      "teks_layar": "EXPLOR AI HARI INI",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with follow button"
+    }
+  ],
+  "caption": "Guru PAUD di Sukoharjo mulai didorong adaptif sama teknologi dan AI. Bukan buat gantiin guru, tapi bikin media belajar makin seru! Kamu udah coba alat AI apa aja nih?",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#HIMPAUDI",
+    "#PendidikanPAUD",
+    "#TeknologiPendidikan",
+    "#BelajarAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "HIMPAUDI Sukoharjo mendorong pendidik PAUD adaptif terhadap teknologi dan AI."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "GURU PAUD WAJIB MELEK AI?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Gimana caranya ngajar anak PAUD pakai teknologi tapi nggak bikin layar rusak?",
+        "layout": "kinetic_title",
+        "judul_layar": "TEKNOLOGI DI PAUD",
+        "subjudul": "Bikin anak tetap aktif",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "smartphone"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang takut kalau AI bakal gantiin peran guru di kelas.",
+        "layout": "comparison",
+        "judul_layar": "GURU VS AI",
+        "subjudul": "Klarifikasi peran",
+        "kata_kunci": [
+          {
+            "kata": "AI",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "help"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, guru PAUD justru didorong buat adaptif sama teknologi.",
+        "layout": "steps",
+        "judul_layar": "TUJUAN UTAMA",
+        "subjudul": "Adaptif & Kreatif",
+        "kata_kunci": [
+          {
+            "kata": "adaptif",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Pahami teknologi",
+          "Terapkan dengan bijak"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Tujuannya simpel banget. Biar kamu bisa bikin media belajar yang interaktif tanpa ribet.",
+        "layout": "card",
+        "judul_layar": "MEDIA BELAJAR",
+        "subjudul": "Lebih interaktif",
+        "kata_kunci": [
+          {
+            "kata": "interaktif",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "star"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba mulai eksplor satu alat AI hari ini. Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "MULAI SEKARANG",
+        "subjudul": "Eksplor AI hari ini",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "heart"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

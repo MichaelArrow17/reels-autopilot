@@ -1,0 +1,392 @@
+[
+  {
+    "text": "Gimana caranya ngajar anak",
+    "start": 0.0,
+    "end": 1.6564749558359626,
+    "words": [
+      {
+        "word": "Gimana",
+        "start": 0.226708,
+        "duration": 0.40465102523659313
+      },
+      {
+        "word": "caranya",
+        "start": 0.6313590252365932,
+        "duration": 0.43162776025236604
+      },
+      {
+        "word": "ngajar",
+        "start": 1.0629867854889592,
+        "duration": 0.3237208201892745
+      },
+      {
+        "word": "anak",
+        "start": 1.3867076056782337,
+        "duration": 0.2697673501577289
+      }
+    ]
+  },
+  {
+    "text": "PAUD pakai teknologi tapi",
+    "start": 1.6564749558359626,
+    "end": 2.978334971608834,
+    "words": [
+      {
+        "word": "PAUD",
+        "start": 1.6564749558359626,
+        "duration": 0.18883714511041028
+      },
+      {
+        "word": "pakai",
+        "start": 1.8453121009463729,
+        "duration": 0.2967440851735019
+      },
+      {
+        "word": "teknologi",
+        "start": 2.142056186119875,
+        "duration": 0.5665114353312304
+      },
+      {
+        "word": "tapi",
+        "start": 2.708567621451105,
+        "duration": 0.2697673501577289
+      }
+    ]
+  },
+  {
+    "text": "nggak bikin layar rusak?",
+    "start": 2.978334971608834,
+    "end": 5.250985107255522,
+    "words": [
+      {
+        "word": "nggak",
+        "start": 2.978334971608834,
+        "duration": 0.21581388012618286
+      },
+      {
+        "word": "bikin",
+        "start": 3.194148851735017,
+        "duration": 0.2967440851735019
+      },
+      {
+        "word": "layar",
+        "start": 3.490892936908519,
+        "duration": 1.4633480851735023
+      },
+      {
+        "word": "rusak?",
+        "start": 4.954241022082021,
+        "duration": 0.2967440851735006
+      }
+    ]
+  },
+  {
+    "text": "Banyak yang takut kalau",
+    "start": 5.250985107255522,
+    "end": 6.3570312429022096,
+    "words": [
+      {
+        "word": "Banyak",
+        "start": 5.250985107255522,
+        "duration": 0.3237208201892745
+      },
+      {
+        "word": "yang",
+        "start": 5.574705927444796,
+        "duration": 0.18883714511041028
+      },
+      {
+        "word": "takut",
+        "start": 5.763543072555207,
+        "duration": 0.29674408517350237
+      },
+      {
+        "word": "kalau",
+        "start": 6.060287157728709,
+        "duration": 0.2967440851735006
+      }
+    ]
+  },
+  {
+    "text": "AI bakal gantiin peran",
+    "start": 6.3570312429022096,
+    "end": 7.436100643533125,
+    "words": [
+      {
+        "word": "AI",
+        "start": 6.3570312429022096,
+        "duration": 0.13488367507886423
+      },
+      {
+        "word": "bakal",
+        "start": 6.491914917981074,
+        "duration": 0.29674408517350237
+      },
+      {
+        "word": "gantiin",
+        "start": 6.788659003154576,
+        "duration": 0.35069755520504664
+      },
+      {
+        "word": "peran",
+        "start": 7.139356558359623,
+        "duration": 0.29674408517350237
+      }
+    ]
+  },
+  {
+    "text": "guru di kelas.",
+    "start": 7.436100643533125,
+    "end": 9.14991275394322,
+    "words": [
+      {
+        "word": "guru",
+        "start": 7.436100643533125,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "di",
+        "start": 7.705867993690854,
+        "duration": 0.13488367507886423
+      },
+      {
+        "word": "kelas.",
+        "start": 7.840751668769718,
+        "duration": 1.3091610851735016
+      }
+    ]
+  },
+  {
+    "text": "Padahal, guru PAUD justru",
+    "start": 9.14991275394322,
+    "end": 10.767823829652997,
+    "words": [
+      {
+        "word": "Padahal,",
+        "start": 9.14991275394322,
+        "duration": 0.835585760252366
+      },
+      {
+        "word": "guru",
+        "start": 9.985498514195585,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "PAUD",
+        "start": 10.255265864353314,
+        "duration": 0.18883714511041028
+      },
+      {
+        "word": "justru",
+        "start": 10.444103009463724,
+        "duration": 0.32372082018927273
+      }
+    ]
+  },
+  {
+    "text": "didorong buat adaptif sama",
+    "start": 10.767823829652997,
+    "end": 12.116660580441643,
+    "words": [
+      {
+        "word": "didorong",
+        "start": 10.767823829652997,
+        "duration": 0.4586044952681405
+      },
+      {
+        "word": "buat",
+        "start": 11.226428324921137,
+        "duration": 0.18883714511041205
+      },
+      {
+        "word": "adaptif",
+        "start": 11.41526547003155,
+        "duration": 0.4316277602523648
+      },
+      {
+        "word": "sama",
+        "start": 11.846893230283914,
+        "duration": 0.26976735015772846
+      }
+    ]
+  },
+  {
+    "text": "teknologi. Tujuannya simpel banget.",
+    "start": 12.116660580441643,
+    "end": 16.051632886435335,
+    "words": [
+      {
+        "word": "teknologi.",
+        "start": 12.116660580441643,
+        "duration": 1.627824435331231
+      },
+      {
+        "word": "Tujuannya",
+        "start": 13.744485015772874,
+        "duration": 0.48558123028391265
+      },
+      {
+        "word": "simpel",
+        "start": 14.230066246056786,
+        "duration": 0.3237208201892763
+      },
+      {
+        "word": "banget.",
+        "start": 14.553787066246063,
+        "duration": 1.4978458201892728
+      }
+    ]
+  },
+  {
+    "text": "Biar kamu bisa bikin",
+    "start": 16.051632886435335,
+    "end": 17.076748817034705,
+    "words": [
+      {
+        "word": "Biar",
+        "start": 16.051632886435335,
+        "duration": 0.1888371451104085
+      },
+      {
+        "word": "kamu",
+        "start": 16.240470031545744,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "bisa",
+        "start": 16.510237381703472,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "bikin",
+        "start": 16.7800047318612,
+        "duration": 0.29674408517350415
+      }
+    ]
+  },
+  {
+    "text": "media belajar yang interaktif",
+    "start": 17.076748817034705,
+    "end": 18.587445977917987,
+    "words": [
+      {
+        "word": "media",
+        "start": 17.076748817034705,
+        "duration": 0.2967440851735006
+      },
+      {
+        "word": "belajar",
+        "start": 17.373492902208206,
+        "duration": 0.4316277602523684
+      },
+      {
+        "word": "yang",
+        "start": 17.805120662460574,
+        "duration": 0.1888371451104085
+      },
+      {
+        "word": "interaktif",
+        "start": 17.993957807570983,
+        "duration": 0.5934881703470047
+      }
+    ]
+  },
+  {
+    "text": "tanpa ribet.",
+    "start": 18.587445977917987,
+    "end": 20.30222614826499,
+    "words": [
+      {
+        "word": "tanpa",
+        "start": 18.587445977917987,
+        "duration": 0.2967440851735006
+      },
+      {
+        "word": "ribet.",
+        "start": 18.884190063091488,
+        "duration": 1.418036085173501
+      }
+    ]
+  },
+  {
+    "text": "Coba mulai eksplor satu",
+    "start": 20.30222614826499,
+    "end": 21.489202488958995,
+    "words": [
+      {
+        "word": "Coba",
+        "start": 20.30222614826499,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "mulai",
+        "start": 20.571993498422717,
+        "duration": 0.29674408517350415
+      },
+      {
+        "word": "eksplor",
+        "start": 20.86873758359622,
+        "duration": 0.35069755520504486
+      },
+      {
+        "word": "satu",
+        "start": 21.219435138801266,
+        "duration": 0.26976735015772846
+      }
+    ]
+  },
+  {
+    "text": "alat AI hari ini.",
+    "start": 21.489202488958995,
+    "end": 23.502348479495268,
+    "words": [
+      {
+        "word": "alat",
+        "start": 21.489202488958995,
+        "duration": 0.26976735015772846
+      },
+      {
+        "word": "AI",
+        "start": 21.758969839116723,
+        "duration": 0.13488367507886068
+      },
+      {
+        "word": "hari",
+        "start": 21.893853514195584,
+        "duration": 1.3657043501577277
+      },
+      {
+        "word": "ini.",
+        "start": 23.25955786435331,
+        "duration": 0.24279061514195632
+      }
+    ]
+  },
+  {
+    "text": "Follow buat part dua.",
+    "start": 23.502348479495268,
+    "end": 24.365603999999998,
+    "words": [
+      {
+        "word": "Follow",
+        "start": 23.502348479495268,
+        "duration": 0.32372082018927983
+      },
+      {
+        "word": "buat",
+        "start": 23.826069299684548,
+        "duration": 0.18883714511040495
+      },
+      {
+        "word": "part",
+        "start": 24.014906444794953,
+        "duration": 0.18883714511041205
+      },
+      {
+        "word": "dua.",
+        "start": 24.203743589905365,
+        "duration": 0.1618604100946328
+      }
+    ]
+  }
+]

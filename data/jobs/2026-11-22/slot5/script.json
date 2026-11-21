@@ -1,0 +1,225 @@
+{
+  "judul": "Peluang Investasi Semikonduktor dan AI",
+  "hook": "Mau tahu cara teknologi semikonduktor dan kecerdasan buatan tarik investasi asing?",
+  "angle": "Sudut kreator Indonesia: Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing langsung baru.",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau tahu cara teknologi semikonduktor dan kecerdasan buatan tarik investasi asing? Banyak yang keliru mikir ini cuma urusan pabrik besar. Padahal kuncinya ada di kesiapan ekosistem digital lokal. Kamu bisa mulai pelajari dasarnya sekarang. Simpan video ini sebelum ketinggalan.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau tahu cara teknologi semikonduktor dan kecerdasan buatan tarik investasi asing?",
+      "teks_layar": "Investasi Asing Lewat AI?",
+      "pose": "idle",
+      "keyword": "investasi asing",
+      "latar": "studio",
+      "image_query": "stickman thinking about technology investment"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang keliru mikir ini cuma urusan pabrik besar.",
+      "teks_layar": "Bukan Cuma Pabrik!",
+      "pose": "shrug",
+      "keyword": "pabrik besar",
+      "latar": "studio",
+      "image_query": "stickman confused about factories"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal kuncinya ada di kesiapan ekosistem digital lokal.",
+      "teks_layar": "Kunci: Ekosistem Digital",
+      "pose": "point",
+      "keyword": "ekosistem digital",
+      "latar": "studio",
+      "image_query": "stickman pointing at digital ecosystem"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Kamu bisa mulai pelajari dasarnya sekarang.",
+      "teks_layar": "Mulai Pelajari Dasarnya",
+      "pose": "typing",
+      "keyword": "pelajari",
+      "latar": "studio",
+      "image_query": "stickman typing on computer"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini sebelum ketinggalan.",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "studio",
+      "image_query": "stickman cheering with save icon"
+    }
+  ],
+  "caption": "Peluang teknologi semikonduktor dan kecerdasan buatan makin terbuka buat tarik investasi asing. Pahami ekosistemnya dari sekarang.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Semikonduktor",
+    "#KecerdasanBuatan",
+    "#InvestasiAsing",
+    "#EdukasiTeknologi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Peluang Investasi AI & Semikonduktor",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau tahu cara teknologi semikonduktor dan kecerdasan buatan tarik investasi asing?",
+        "layout": "kinetic_title",
+        "judul_layar": "Investasi Asing Lewat AI?",
+        "subjudul": "Semikonduktor & AI",
+        "kata_kunci": [
+          {
+            "kata": "investasi asing",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "trending_up"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang keliru mikir ini cuma urusan pabrik besar.",
+        "layout": "comparison",
+        "judul_layar": "Mitos vs Fakta",
+        "subjudul": "Pabrik Besar",
+        "kata_kunci": [
+          {
+            "kata": "pabrik besar",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "close"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal kuncinya ada di kesiapan ekosistem digital lokal.",
+        "layout": "steps",
+        "judul_layar": "Kunci Utama",
+        "subjudul": "Ekosistem Digital",
+        "kata_kunci": [
+          {
+            "kata": "ekosistem digital",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Kesiapan lokal",
+          "Teknologi maju"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Kamu bisa mulai pelajari dasarnya sekarang.",
+        "layout": "card",
+        "judul_layar": "Mulai Sekarang",
+        "subjudul": "Pelajari Dasarnya",
+        "kata_kunci": [
+          {
+            "kata": "pelajari",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "lightbulb"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini sebelum ketinggalan.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Jangan Ketinggalan",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

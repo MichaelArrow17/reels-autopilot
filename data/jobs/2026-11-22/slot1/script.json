@@ -1,0 +1,98 @@
+{
+  "judul": "Kecemasan di Balik Kecerdasan Buatan",
+  "hook": "Saat teknologi bergerak lebih cepat dari kemampuan kita beradaptasi, rasa cemas perlahan hadir tanpa diundang.",
+  "angle": "Sudut kreator Indonesia: AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi",
+  "subjek": "AI anxiety",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "AI ANXIETY LAPORAN ANTARA SISI LAIN TULIS DI KOMENTAR",
+  "caption": "Kecemasan terhadap teknologi atau AI anxiety kini menjadi topik yang kian relevan di era digital. Bagaimana cara kita tetap waras di tengah gempuran informasi? Tulis jawabanmu di komentar.",
+  "cta": "Tulis jawabanmu di komentar.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#MentalHealth",
+    "#KecerdasanBuatan",
+    "#EdukasiAI"
+  ],
+  "klaim": [
+    {
+      "teks": "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi",
+      "sumber_url": "https://www.antaranews.com",
+      "sumber_nama": "ANTARA News"
+    }
+  ],
+  "fakta_yang_wajib_dicek": [
+    "AI anxiety bisa ganggu kesehatan mental, ini penyebab & cara mengatasi"
+  ],
+  "cover_text": "Kecemasan di Balik AI",
+  "image_query": "vintage typewriter document anxiety",
+  "is_ai_generated": true,
+  "bab": [
+    {
+      "nama": "hook",
+      "label": "AI ANXIETY",
+      "gambar_query": "vintage typewriter document anxiety",
+      "kata_kunci": [
+        "teknologi",
+        "cemas"
+      ],
+      "latar": [
+        46,
+        28,
+        24
+      ]
+    },
+    {
+      "nama": "timeline",
+      "label": "LAPORAN ANTARA",
+      "gambar_query": "newspaper archive text macro",
+      "kata_kunci": [
+        "ANTARA News",
+        "kesehatan mental"
+      ],
+      "latar": [
+        22,
+        36,
+        38
+      ]
+    },
+    {
+      "nama": "twist",
+      "label": "SISI LAIN",
+      "gambar_query": "retro alarm clock vintage photo",
+      "kata_kunci": [
+        "tertinggal",
+        "kesiapan"
+      ],
+      "latar": [
+        28,
+        26,
+        46
+      ]
+    },
+    {
+      "nama": "tanya",
+      "label": "TULIS DI KOMENTAR",
+      "gambar_query": "old paper notebook texture",
+      "kata_kunci": [
+        "komentar",
+        "batas wajar"
+      ],
+      "latar": [
+        40,
+        32,
+        22
+      ]
+    }
+  ],
+  "style": "kolase",
+  "struktur": [
+    "hook",
+    "timeline",
+    "twist",
+    "tanya"
+  ],
+  "llm_provider": "gemini",
+  "storyboard_fallback": false
+}

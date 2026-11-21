@@ -1,0 +1,215 @@
+{
+  "style": "cerita",
+  "environment": "office",
+  "durasi_detik": 24.0,
+  "label_kiri": "BIASA",
+  "label_kanan": "MENYALA",
+  "judul": "Beda Layar Beda Warna",
+  "hook": "Kenapa warna emas bisa beda di tiap layar?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "bingung"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "fokus"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "look",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "look",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Kok warnanya pudar?",
+      "gelembung_b": "Kok emasnya tajam?",
+      "efek": [
+        "dust"
+      ],
+      "sfx": [
+        "tap"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 4.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "struggle",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "a"
+        }
+      ],
+      "gelembung_a": "Batas layar standar...",
+      "gelembung_b": "Warna tampil sempurna.",
+      "efek": [],
+      "sfx": [
+        "whoosh"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 8.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.7,
+        "y": 0.5,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Susah dibedakan.",
+      "gelembung_b": "Teknologi warna luas!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 12.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "push",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "",
+      "gelembung_b": "Tembus batas standar.",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "pop"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 16.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "kneel",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.7,
+        "y": 0.5,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Beda kualitas...",
+      "gelembung_b": "Warna emas asli!",
+      "efek": [
+        "glow",
+        "break"
+      ],
+      "sfx": [
+        "cheer"
+      ],
+      "klimaks": true,
+      "teks_klimaks": "Warna akurat!"
+    },
+    {
+      "t": 20.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "wave",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Paham sekarang.",
+      "gelembung_b": "Cek layarmu!",
+      "efek": [],
+      "sfx": [
+        "ambient"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 16.0,
+    "jenis": "break_wall",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Gunakan teknologi terbaik untuk hasil maksimal."
+}

@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Apa benar ada kecemasan di balik kecerdasan buatan?",
+      "isi": "Laporan ANTARA membahas sisi lain dari perkembangan teknologi AI yang perlu kita ketahui bersama.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Bagaimana pandanganmu tentang sisi lain AI ini?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#AIAnxiety",
+        "#TeknologiMasaKini",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Mengapa muncul kecemasan di balik kecerdasan buatan?",
+      "isi": "Ada sisi lain yang diungkap dalam laporan ANTARA terkait perkembangan AI saat ini.",
+      "cta": "Simpan",
+      "pertanyaan": "Apakah kamu merasakan kekhawatiran yang sama?",
+      "hashtag": [
+        "#DampakAI",
+        "#IsuTeknologi",
+        "#EdukasiAI",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Sudahkah kamu tahu sisi lain kecemasan di balik kecerdasan buatan?",
+      "isi": "Hal ini merujuk langsung pada laporan ANTARA mengenai fenomena AI saat ini.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Tulis pendapatmu di kolom komentar ya.",
+      "hashtag": [
+        "#OpiniTeknologi",
+        "#LaporanANTARA",
+        "#MasaDepanAI",
+        "#AI"
+      ]
+    }
+  ],
+  "cover": "Sisi Lain AI Menurut ANTARA",
+  "komentar_pin": "Tulis pendapatmu di komentar sesuai pembahasan video ya!",
+  "llm_provider": "gemini"
+}
