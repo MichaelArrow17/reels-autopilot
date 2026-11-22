@@ -1,0 +1,221 @@
+{
+  "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global",
+  "hook": "Pernah mikir gak, kenapa brand mobil listrik asal Asia makin gencar tampil di panggung teknologi dunia?",
+  "angle": "Sudut pandang kreator Indonesia melihat dominasi teknologi EV Asia lewat kiprah VinFast di forum global.",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah mikir gak, kenapa brand mobil listrik asal Asia makin gencar tampil di panggung teknologi dunia? Banyak yang nyangka pemain lama dari Barat bakal terus mendominasi pasar. Padahal, gerak-gerik Asia sekarang agresif banget. Contohnya VinFast yang baru aja pamer inovasi di forum teknologi global, bawa integrasi AI dan baterai canggih. Ini bukti nyata kalau arah angin teknologi otomotif dunia makin bergeser ke Asia. Biar gak ketinggalan tren AI dan teknologi, follow akun ini sekarang!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah mikir gak, kenapa brand mobil listrik asal Asia makin gencar tampil di panggung teknologi dunia?",
+      "teks_layar": "Brand EV Asia Kuasai Dunia?",
+      "pose": "think",
+      "keyword": "brand mobil listrik Asia",
+      "latar": "laboratorium teknologi futuristik",
+      "image_query": "asian electric vehicle tech show"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang nyangka pemain lama dari Barat bakal terus mendominasi pasar.",
+      "teks_layar": "Anggapan Merek Barat Selalu Dominan",
+      "pose": "shrug",
+      "keyword": "pemain lama otomotif",
+      "latar": "grafik pasar otomotif global",
+      "image_query": "global car industry market share"
+    },
+    {
+      "id": 3,
+      "nama": "payoff",
+      "narasi": "Padahal, gerak-gerik Asia sekarang agresif banget. Contohnya VinFast yang baru aja pamer inovasi di forum teknologi global, bawa integrasi AI dan baterai canggih.",
+      "teks_layar": "VinFast Pamer AI & Baterai Canggih",
+      "pose": "point",
+      "keyword": "VinFast forum teknologi AI",
+      "latar": "panggung forum teknologi internasional",
+      "image_query": "VinFast global tech forum presentation"
+    },
+    {
+      "id": 4,
+      "nama": "insight",
+      "narasi": "Ini bukti nyata kalau arah angin teknologi otomotif dunia makin bergeser ke Asia.",
+      "teks_layar": "Kiblat Otomotif Bergeser ke Asia",
+      "pose": "typing",
+      "keyword": "teknologi otomotif bergeser ke Asia",
+      "latar": "peta dunia dengan sorotan kawasan Asia",
+      "image_query": "asia technology innovation globe"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Biar gak ketinggalan tren AI dan teknologi, follow akun ini sekarang!",
+      "teks_layar": "Follow buat Update AI & Tech!",
+      "pose": "cheer",
+      "keyword": "follow update AI teknologi",
+      "latar": "tombol follow dan ikon teknologi AI",
+      "image_query": "follow button creative animation"
+    }
+  ],
+  "caption": "Brand mobil listrik Asia makin berani tampil di kancah global! VinFast baru aja unjuk gigi di forum teknologi dunia bawa inovasi AI dan baterai canggih. Menurutmu, apakah Asia bakal menguasai industri EV sepenuhnya? 🚗⚡ #KreatorAI #VinFast #TeknologiAI #Otomotif",
+  "cta": "Follow akun ini buat update perkembangan AI dan teknologi terkini!",
+  "hashtag": [
+    "#KreatorAI",
+    "#VinFast",
+    "#TeknologiAI",
+    "#MobilListrik",
+    "#InovasiAsia"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Partisipasi VinFast dalam forum teknologi global",
+    "Integrasi AI dan teknologi baterai pada ekosistem VinFast"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "EV Asia Makin Menggila di Kancah Global!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "dark",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah mikir gak, kenapa brand mobil listrik asal Asia makin gencar tampil di panggung teknologi dunia?",
+        "layout": "kinetic_title",
+        "judul_layar": "Brand EV Asia Tampil Beda",
+        "subjudul": "Dominasi Panggung Teknologi Dunia",
+        "kata_kunci": [
+          {
+            "kata": "EV Asia",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang nyangka pemain lama dari Barat bakal terus mendominasi pasar.",
+        "layout": "comparison",
+        "judul_layar": "Mitos vs Realita Otomotif",
+        "subjudul": "Perubahan Peta Industri",
+        "kata_kunci": [
+          {
+            "kata": "Mitos",
+            "warna": "merah"
+          },
+          {
+            "kata": "Realita",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "payoff",
+        "narasi": "Padahal, gerak-gerik Asia sekarang agresif banget. Contohnya VinFast yang baru aja pamer inovasi di forum teknologi global, bawa integrasi AI dan baterai canggih.",
+        "layout": "card",
+        "judul_layar": "VinFast di Forum Global",
+        "subjudul": "Membawa Fitur AI & Baterai",
+        "kata_kunci": [
+          {
+            "kata": "AI & Baterai",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "insight",
+        "narasi": "Ini bukti nyata kalau arah angin teknologi otomotif dunia makin bergeser ke Asia.",
+        "layout": "icons",
+        "judul_layar": "Pergeseran Tren Otomotif",
+        "subjudul": "Asia Jadi Pusat Inovasi",
+        "kata_kunci": [
+          {
+            "kata": "Pusat Inovasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "lightning",
+          "chip",
+          "globe"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Biar gak ketinggalan tren AI dan teknologi, follow akun ini sekarang!",
+        "layout": "cta",
+        "judul_layar": "Follow Po Chai",
+        "subjudul": "Dapatkan Insight AI & Tech Harian",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      }
+    ]
+  }
+}

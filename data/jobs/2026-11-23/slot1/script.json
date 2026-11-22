@@ -1,0 +1,229 @@
+{
+  "judul": "AI Multimodal untuk Mahjong Ways",
+  "hook": "Bingung cara paham konten Mahjong Ways?",
+  "angle": "Sudut kreator Indonesia: Teknologi AI Multimodal Membuka Cara Baru untuk Memahami Konten Mahjong Ways melalui Gabungan Gambar dan Suara",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Bingung cara paham konten Mahjong Ways? Padahal kamu bisa pakai teknologi AI multimodal. Gabungan gambar dan suara bikin segalanya lebih gampang. Gak perlu pusing lagi mikirin trik rumit. Coba teknik ini sekarang juga!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Bingung cara paham konten Mahjong Ways?",
+      "teks_layar": "Paham Mahjong Ways?",
+      "pose": "shrug",
+      "keyword": "Mahjong Ways",
+      "latar": "studio minimalis",
+      "image_query": "confused stickman looking at puzzle"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal kamu bisa pakai teknologi AI multimodal.",
+      "teks_layar": "AI Multimodal",
+      "pose": "point",
+      "keyword": "AI multimodal",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at glowing screen"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Gabungan gambar dan suara bikin segalanya lebih gampang.",
+      "teks_layar": "Gambar + Suara",
+      "pose": "think",
+      "keyword": "gambar dan suara",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking with icons floating"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Gak perlu pusing lagi mikirin trik rumit.",
+      "teks_layar": "Lebih Gampang",
+      "pose": "cheer",
+      "keyword": "trik rumit",
+      "latar": "studio minimalis",
+      "image_query": "happy stickman celebrating"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba teknik ini sekarang juga!",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "typing",
+      "keyword": "sekarang",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on laptop"
+    }
+  ],
+  "caption": "Mau paham konten Mahjong Ways lebih cepat? Gampang banget pakai AI multimodal! Simpan video ini buat dicoba nanti.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#MahjongWays",
+    "#AIMultimodal",
+    "#TipsAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Paham Mahjong Ways Pakai AI",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Bingung cara paham konten Mahjong Ways?",
+        "layout": "kinetic_title",
+        "judul_layar": "Paham Mahjong Ways?",
+        "subjudul": "Cara baru dengan AI",
+        "kata_kunci": [
+          {
+            "kata": "Mahjong Ways",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "help"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal kamu bisa pakai teknologi AI multimodal.",
+        "layout": "icons",
+        "judul_layar": "AI Multimodal",
+        "subjudul": "Teknologi masa kini",
+        "kata_kunci": [
+          {
+            "kata": "AI",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "cpu"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Gabungan gambar dan suara bikin segalanya lebih gampang.",
+        "layout": "comparison",
+        "judul_layar": "Gabungan Media",
+        "subjudul": "Visual dan Audio",
+        "kata_kunci": [
+          {
+            "kata": "Gambar",
+            "warna": "hijau"
+          },
+          {
+            "kata": "Suara",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "image",
+          "volume"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Gak perlu pusing lagi mikirin trik rumit.",
+        "layout": "steps",
+        "judul_layar": "Lebih Praktis",
+        "subjudul": "Tanpa pusing",
+        "kata_kunci": [
+          {
+            "kata": "Gampang",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Pilih konten",
+          "Analisis AI"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba teknik ini sekarang juga!",
+        "layout": "cta",
+        "judul_layar": "Coba Sekarang",
+        "subjudul": "Simpan video ini",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Yakin jago main hape berarti udah paham literasi digital?",
+      "isi": "Jago nge-scroll medsos atau nge-chat ternyata bukan berarti paham cara menyaring informasi. Literasi digital sebenarnya tentang cara berpikir kritis sebelum percaya sama layar.",
+      "cta": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+      "pertanyaan": "Pernah nggak percaya sama informasi di medsos eh ternyata zonk?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#AntiHoaks",
+        "#BijakMedsos",
+        "#DigitalLiteracy"
+      ]
+    },
+    {
+      "baris1": "Bisa main hape tiap hari, tapi udah paham literasi digital?",
+      "isi": "Kebanyakan orang mikir pintar teknologi itu berarti sudah melek digital, padahal menyaring informasi itu butuh berpikir kritis.",
+      "cta": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+      "pertanyaan": "Menurutmu, apa tanda utama seseorang sudah melek digital?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#BerpikirKritis",
+        "#EdukasiDigital",
+        "#DigitalCitizen"
+      ]
+    },
+    {
+      "baris1": "Pintar teknologi otomatis bikin kamu melek digital?",
+      "isi": "Faktanya, jago nge-scroll dan nge-chat belum tentu tahu cara menyaring informasi yang benar sebelum dibagikan ke orang lain.",
+      "cta": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+      "pertanyaan": "Seberapa sering kamu ngecek kebenaran berita sebelum share?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#SaringSebelumSharing",
+        "#FaktaDigital",
+        "#CriticalThinking"
+      ]
+    }
+  ],
+  "cover": "Literasi Digital Bukan Cuma Teknologi",
+  "komentar_pin": "Yuk, mulai latihan saring informasi sebelum sharing! Cerita pengalamanmu di bawah ya.",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Bisakah ChatGPT bantu anak sekolah belajar lebih efektif?",
+      "isi": "ChatGPT K12 hadir untuk mendampingi proses belajar siswa sekolah. Teknologi AI ini membantu menjelaskan konsep materi yang rumit menjadi jauh lebih sederhana.",
+      "cta": "Simpan postingan ini untuk referensi belajar kamu nanti!",
+      "pertanyaan": "Menurut kamu, apakah AI cocok digunakan oleh anak sekolah?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#ChatGPTIndonesia",
+        "#TeknologiPendidikan",
+        "#AIEducation"
+      ]
+    },
+    {
+      "baris1": "Pernah bayangin guru dan murid pakai AI di kelas?",
+      "isi": "Integrasi AI dalam dunia pendidikan K12 mendukung penyampaian materi kurikulum secara interaktif. Siswa bisa mendapatkan tutor pribadi kapan saja untuk mendalami pelajaran.",
+      "cta": "Komentar jawaban kamu di bawah ya!",
+      "pertanyaan": "Mata pelajaran apa yang paling sering bikin kamu bingung?",
+      "hashtag": [
+        "#BelajarAI",
+        "#DuniaPendidikan",
+        "#EduTeknologi",
+        "#ChatGPTK12"
+      ]
+    },
+    {
+      "baris1": "Mau tahu cara AI mengubah cara belajar di sekolah?",
+      "isi": "Pemanfaatan ChatGPT K12 mempermudah pemahaman materi bagi siswa sekaligus membantu guru menyusun bahan ajar. Belajar kini jadi lebih personal dan fleksibel.",
+      "cta": "Follow akun ini untuk part berikutnya!",
+      "pertanyaan": "Tools AI apa yang paling sering membantu pekerjaanmu saat ini?",
+      "hashtag": [
+        "#TipsAI",
+        "#KreatorAI",
+        "#PendidikanK12",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "ChatGPT K12 Masa Depan Belajar",
+  "komentar_pin": "Bagaimana pendapatmu tentang penggunaan AI untuk sekolah? Yuk, diskusi santai di kolom komentar! 👇",
+  "llm_provider": "gemini"
+}

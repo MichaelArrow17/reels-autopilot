@@ -1,0 +1,199 @@
+{
+  "judul": "Literasi Digital Bukan Cuma Pakai Teknologi",
+  "hook": "Bisa main hape tiap hari, tapi yakin udah paham literasi digital?",
+  "angle": "Sudut kreator Indonesia: Literasi digital untuk masyarakat luas bukan hanya tentang mengetahui cara menggunakan teknologi.",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Bisa main hape tiap hari, tapi yakin udah paham literasi digital? Kebanyakan orang mikir pintar teknologi itu berarti udah melek digital. Padahal, jago nge-scroll medsos atau nge-chat bukan berarti paham cara menyaring informasi. Literasi digital itu tentang cara kamu berpikir kritis sebelum percaya sama apa yang muncul di layar. Mulai sekarang, selalu cek kebenaran sebelum membagikan informasi apapun ke orang lain. Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Bisa main hape tiap hari, tapi yakin udah paham literasi digital?",
+      "teks_layar": "Jago main hape = Melek digital?",
+      "pose": "shrug",
+      "keyword": "literasi digital",
+      "latar": "minimalis",
+      "image_query": "smartphone confused person"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kebanyakan orang mikir pintar teknologi itu berarti udah melek digital.",
+      "teks_layar": "Pintar teknologi belum tentu melek digital",
+      "pose": "think",
+      "keyword": "teknologi",
+      "latar": "minimalis",
+      "image_query": "person thinking with phone"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, jago nge-scroll medsos atau nge-chat bukan berarti paham cara menyaring informasi.",
+      "teks_layar": "Jago scroll bukan berarti paham",
+      "pose": "point",
+      "keyword": "menyaring informasi",
+      "latar": "minimalis",
+      "image_query": "scrolling social media"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Literasi digital itu tentang cara kamu berpikir kritis sebelum percaya sama apa yang muncul di layar. Mulai sekarang, selalu cek kebenaran sebelum membagikan informasi apapun ke orang lain.",
+      "teks_layar": "Berpikir kritis sebelum percaya",
+      "pose": "typing",
+      "keyword": "berpikir kritis",
+      "latar": "minimalis",
+      "image_query": "critical thinking digital"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+      "teks_layar": "Simpan video ini!",
+      "pose": "cheer",
+      "keyword": "Simpan video",
+      "latar": "minimalis",
+      "image_query": "bookmark save icon"
+    }
+  ],
+  "caption": "Pernah mikir kalau jago teknologi berarti udah melek digital? Coba tonton sampai habis biar paham bedanya! #LiterasiDigital #KreatorAI",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#LiterasiDigital",
+    "#Edukasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Literasi digital mencakup kemampuan berpikir kritis, bukan sekadar menggunakan perangkat."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Literasi Digital yang Sering Salah Diartikan",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Bisa main hape tiap hari, tapi yakin udah paham literasi digital?",
+        "layout": "kinetic_title",
+        "judul_layar": "Jago main hape = Melek digital?",
+        "subjudul": "Bisa main hape tiap hari, tapi yakin udah paham literasi digital?",
+        "kata_kunci": [
+          {
+            "kata": "literasi digital",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kebanyakan orang mikir pintar teknologi itu berarti udah melek digital.",
+        "layout": "bullets",
+        "judul_layar": "Pintar teknologi belum tentu melek digital",
+        "subjudul": "Kebanyakan orang mikir pintar teknologi itu berarti udah melek digital.",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, jago nge-scroll medsos atau nge-chat bukan berarti paham cara menyaring informasi.",
+        "layout": "bullets",
+        "judul_layar": "Jago scroll bukan berarti paham",
+        "subjudul": "Padahal, jago nge-scroll medsos atau nge-chat bukan berarti paham cara menyaring informasi",
+        "kata_kunci": [
+          {
+            "kata": "menyaring informasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Literasi digital itu tentang cara kamu berpikir kritis sebelum percaya sama apa yang muncul di layar. Mulai sekarang, selalu cek kebenaran sebelum membagikan informasi apapun ke orang lain.",
+        "layout": "bullets",
+        "judul_layar": "Berpikir kritis sebelum percaya",
+        "subjudul": "Literasi digital itu tentang cara kamu berpikir kritis sebelum percaya sama apa yang muncu",
+        "kata_kunci": [
+          {
+            "kata": "berpikir kritis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+        "layout": "cta",
+        "judul_layar": "Simpan video ini!",
+        "subjudul": "Simpan video ini supaya kamu nggak gampang termakan hoaks.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan video",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

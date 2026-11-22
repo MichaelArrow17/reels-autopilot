@@ -257,6 +257,36 @@
       "tanggal": "2026-11-22",
       "angle": "Sudut kreator Indonesia: Teknologi semikonduktor dan kecerdasan buatan membuka peluang untuk menarik aliran investasi asing langsung baru.",
       "slot": 5
+    },
+    {
+      "judul": "AI Multimodal untuk Mahjong Ways",
+      "tanggal": "2026-11-23",
+      "angle": "Sudut kreator Indonesia: Teknologi AI Multimodal Membuka Cara Baru untuk Memahami Konten Mahjong Ways melalui Gabungan Gambar dan Suara",
+      "slot": 1
+    },
+    {
+      "judul": "Literasi Digital Bukan Cuma Pakai Teknologi",
+      "tanggal": "2026-11-23",
+      "angle": "Sudut kreator Indonesia: Literasi digital untuk masyarakat luas bukan hanya tentang mengetahui cara menggunakan teknologi.",
+      "slot": 2
+    },
+    {
+      "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global",
+      "tanggal": "2026-11-23",
+      "angle": "Sudut pandang kreator Indonesia melihat dominasi teknologi EV Asia lewat kiprah VinFast di forum global.",
+      "slot": 3
+    },
+    {
+      "judul": "chatgpt aaron matheney",
+      "tanggal": "2026-11-23",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 4
+    },
+    {
+      "judul": "ChatGPT K12",
+      "tanggal": "2026-11-23",
+      "angle": "Sudut kreator Indonesia: chatgpt k12",
+      "slot": 5
     }
   ],
   "days": {
@@ -9184,7 +9214,7 @@
           "id": "2026-11-23-s1-6e439a",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Teknologi AI Multimodal Membuka Cara Baru untuk Memahami Konten Mahjong Ways melalui Gabungan Gambar dan Suara - Habangkalan Penyang Karuhei Tatau",
+          "judul": "AI Multimodal untuk Mahjong Ways",
           "hook": "Teknologi AI Multimodal Membuka Cara Baru untuk Memahami Konten Mahjong Ways melalui?",
           "topic": {
             "judul": "Teknologi AI Multimodal Membuka Cara Baru untuk Memahami Konten Mahjong Ways melalui Gabungan Gambar dan Suara - Habangkalan Penyang Karuhei Tatau",
@@ -9216,14 +9246,28 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-23T06:01:24+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-23T06:01:24+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot1/script.json",
+          "caption": "Masih bingung cara paham konten Mahjong Ways?\nSekarang kamu bisa memanfaatkan teknologi AI multimodal.\nGabungan visual gambar dan suara bikin proses paham konten jadi jauh lebih gampang tanpa trik rumit.\nSimpan video ini biar kamu nggak lupa tekniknya!\nKamu sendiri sudah pernah coba teknologi AI multimodal belum?\n#AIMultimodal #BelajarAI #TeknologiAI #KreatorAI #AITechnology",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 16.6,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-23-s2-928c85",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Literasi digital untuk masyarakat luas: Ini bukan hanya tentang mengetahui cara menggunakan teknologi. - Vietnam.vn",
+          "judul": "Literasi Digital Bukan Cuma Pakai Teknologi",
           "hook": "Literasi digital untuk masyarakat luas: Ini bukan hanya tentang mengetahui cara menggunakan?",
           "topic": {
             "judul": "Literasi digital untuk masyarakat luas: Ini bukan hanya tentang mengetahui cara menggunakan teknologi. - Vietnam.vn",
@@ -9255,14 +9299,28 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-23T06:01:24+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-23T06:01:24+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot2/script.json",
+          "caption": "Yakin jago main hape berarti udah paham literasi digital?\nJago nge-scroll medsos atau nge-chat ternyata bukan berarti paham cara menyaring informasi. Literasi digital sebenarnya tentang cara berpikir kritis sebelum percaya sama layar.\nSimpan video ini supaya kamu nggak gampang termakan hoaks.\nPernah nggak percaya sama informasi di medsos eh ternyata zonk?\n#LiterasiDigital #AntiHoaks #BijakMedsos #DigitalLiteracy",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -13.9,
+            "peak": -1.5,
+            "duration": 30.432,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-23-s3-1eacd7",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global - Demokratis.co.id",
+          "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global",
           "hook": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global - Demokratis.co.id?",
           "topic": {
             "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global - Demokratis.co.id",
@@ -9295,8 +9353,22 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-23T06:01:24+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-23T06:01:24+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot3/script.json",
+          "caption": "Kenapa brand mobil listrik Asia makin gencar tampil di panggung teknologi?\nVinFast baru aja pamer inovasi di forum teknologi global dengan membawa integrasi AI dan baterai canggih. Ini bukti nyata kalau arah angin teknologi otomotif dunia makin bergeser ke Asia.\nFollow akun ini sekarang!\nMenurut kalian, apakah brand Asia bisa sepenuhnya menggeser dominasi pabrikan Barat?\n#VinFast #MobilListrik #TeknologiAI #Otomotif #TechTrends",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 31.766016,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-23-s4-4d314c",
@@ -9334,14 +9406,30 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-23T06:01:24+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-23T06:01:24+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 6× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot4/script.json",
+          "caption": "Kenapa banyak video profil orang terkenal isinya bisa kosong?\nBanyak video profil terdengar lancar padahal sumbernya kosong. Tanpa tautan resmi atau sumber jelas, jangan langsung percaya kabar skandal atau mundur jabatan.\nSimpan video ini.\nMana hoaks paling tidak masuk akal yang pernah kamu temui?\n#LiterasiDigital #CekFakta #AntiHoax #FactChecking",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-23-s5-37935c",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "chatgpt k12",
+          "judul": "ChatGPT K12",
           "hook": "chatgpt k12?",
           "topic": {
             "judul": "chatgpt k12",
@@ -9373,8 +9461,23 @@
             "sinyal": "chatgpt",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-23T06:01:24+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-23T06:01:24+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-23/slot5/script.json",
+          "caption": "Bisakah ChatGPT bantu anak sekolah belajar lebih efektif?\nChatGPT K12 hadir untuk mendampingi proses belajar siswa sekolah. Teknologi AI ini membantu menjelaskan konsep materi yang rumit menjadi jauh lebih sederhana.\nSimpan postingan ini untuk referensi belajar kamu nanti!\nMenurut kamu, apakah AI cocok digunakan oleh anak sekolah?\n#KecerdasanBuatan #ChatGPTIndonesia #TeknologiPendidikan #AIEducation",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         }
       ],
       "scouted_at": "2026-11-23T06:01:23+08:00",
@@ -9646,6 +9749,41 @@
       "style": "penjelas",
       "judul": "Peluang Investasi Semikonduktor dan AI",
       "reason": "topik info"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "AI Multimodal untuk Mahjong Ways",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "Literasi Digital Bukan Cuma Pakai Teknologi",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "VinFast Perkuat Posisi Asia Lewat Forum Teknologi Global",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 4,
+      "style": "kolase",
+      "judul": "chatgpt aaron matheney",
+      "reason": "rotasi setelah 6× penjelas"
+    },
+    {
+      "date": "2026-11-23",
+      "slot": 5,
+      "style": "cerita",
+      "judul": "ChatGPT K12",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
     }
   ]
 }

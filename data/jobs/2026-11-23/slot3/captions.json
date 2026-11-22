@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa brand mobil listrik Asia makin gencar tampil di panggung teknologi?",
+      "isi": "VinFast baru aja pamer inovasi di forum teknologi global dengan membawa integrasi AI dan baterai canggih. Ini bukti nyata kalau arah angin teknologi otomotif dunia makin bergeser ke Asia.",
+      "cta": "Follow akun ini sekarang!",
+      "pertanyaan": "Menurut kalian, apakah brand Asia bisa sepenuhnya menggeser dominasi pabrikan Barat?",
+      "hashtag": [
+        "#VinFast",
+        "#MobilListrik",
+        "#TeknologiAI",
+        "#Otomotif",
+        "#TechTrends"
+      ]
+    },
+    {
+      "baris1": "Benarkah pemain lama dari Barat bakal terus mendominasi pasar otomotif?",
+      "isi": "Faktanya, gerak-gerik Asia sekarang makin agresif. VinFast menunjukkan taringnya di forum teknologi global dengan memamerkan integrasi AI serta baterai canggih.",
+      "cta": "Follow akun ini sekarang!",
+      "pertanyaan": "Apa inovasi mobil listrik paling kalian tunggu saat ini?",
+      "hashtag": [
+        "#VinFast",
+        "#KendaraanListrik",
+        "#MasaDepan",
+        "#InovasiTeknologi",
+        "#ElectricVehicles"
+      ]
+    },
+    {
+      "baris1": "Bagaimana arah angin teknologi otomotif dunia mulai bergeser ke Asia?",
+      "isi": "Lewat forum teknologi global, VinFast membuktikannya dengan membawa teknologi integrasi AI dan baterai canggih yang siap bersaing di kancah internasional.",
+      "cta": "Follow akun ini sekarang!",
+      "pertanyaan": "Kira-kira kapan mobil listrik dengan AI penuh akan masif di Indonesia?",
+      "hashtag": [
+        "#VinFast",
+        "#TeknologiGlobal",
+        "#AIIndonesia",
+        "#PerkembanganTeknologi",
+        "#Automotive"
+      ]
+    }
+  ],
+  "cover": "Dominasi Baru Otomotif Asia",
+  "komentar_pin": "Tulis pendapat kalian di kolom komentar dan jangan lupa follow akun ini biar gak ketinggalan update teknologi terbaru!",
+  "llm_provider": "gemini"
+}

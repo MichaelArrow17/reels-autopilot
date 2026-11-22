@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa banyak video profil orang terkenal isinya bisa kosong?",
+      "isi": "Banyak video profil terdengar lancar padahal sumbernya kosong. Tanpa tautan resmi atau sumber jelas, jangan langsung percaya kabar skandal atau mundur jabatan.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Mana hoaks paling tidak masuk akal yang pernah kamu temui?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#CekFakta",
+        "#AntiHoax",
+        "#FactChecking"
+      ]
+    },
+    {
+      "baris1": "Yakin informasi tentang tokoh terkenal yang kamu baca itu benar?",
+      "isi": "Kalau ada tanggal, gelar, atau jumlah dalam sebuah video, pastikan tanya dulu dari mana asalnya. Jangan sebarkan kabar duka tanpa sumber.",
+      "cta": "Komentar jawaban.",
+      "pertanyaan": "Pernahkah kamu hampir percaya berita palsu di internet?",
+      "hashtag": [
+        "#EdukasiAI",
+        "#PikirKritis",
+        "#SaringSebelumSharing",
+        "#CriticalThinking"
+      ]
+    },
+    {
+      "baris1": "Hati-hati, banyak video profil terlihat lancar tapi tanpa sumber!",
+      "isi": "Informasi soal skandal, mundur jabatan, atau kabar duka sering disebar tanpa dasar. Selalu cek tautan resminya sebelum percaya.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Bagaimana biasanya kamu memvalidasi suatu informasi?",
+      "hashtag": [
+        "#BijakMedsos",
+        "#InfoTeknologi",
+        "#KreatorAI",
+        "#DigitalLiteracy"
+      ]
+    }
+  ],
+  "cover": "Cek fakta sebelum percaya",
+  "komentar_pin": "Tulis di komentar kalau ada klaim atau video yang mau kamu cek faktanya bareng-bareng!",
+  "llm_provider": "gemini"
+}

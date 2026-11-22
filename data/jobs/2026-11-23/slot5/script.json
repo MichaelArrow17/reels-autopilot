@@ -1,0 +1,240 @@
+{
+  "style": "cerita",
+  "storyboard": {
+    "style": "cerita",
+    "environment": "office",
+    "durasi_detik": 24.0,
+    "label_kiri": "BINGUNG",
+    "label_kanan": "COBA LAGI",
+    "judul": "ChatGPT K12",
+    "hook": "ChatGPT k12?",
+    "karakter": [
+      {
+        "id": "a",
+        "warna": "abu",
+        "peran": "menyerah"
+      },
+      {
+        "id": "b",
+        "warna": "kuning",
+        "peran": "berjuang"
+      }
+    ],
+    "beats": [
+      {
+        "t": 0.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "sit",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [],
+        "gelembung_a": "Bingung mulai dari mana...",
+        "gelembung_b": "Coba pelan-pelan yuk!",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "sigh"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 4.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "idle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.7,
+          "y": 0.55,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "ladder",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Ah, males deh.",
+        "gelembung_b": "Ini satu langkah.",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "click"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 8.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "climb",
+          "x": 0.7,
+          "y": 0.45,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "ladder",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Ribet banget.",
+        "gelembung_b": "Makin ngerti nih.",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "success"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 12.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "kneel",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "push",
+          "x": 0.7,
+          "y": 0.4,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Udah menyerah aja.",
+        "gelembung_b": "Tembus batas!",
+        "efek": [
+          "break"
+        ],
+        "sfx": [
+          "crash"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 16.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "celebrate",
+          "x": 0.7,
+          "y": 0.35,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Andai aku coba.",
+        "gelembung_b": "Berhasil!",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "cheer"
+        ],
+        "klimaks": true,
+        "teks_klimaks": "Satu langkah langsung dicoba!"
+      },
+      {
+        "t": 20.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "stand",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "wave",
+          "x": 0.7,
+          "y": 0.35,
+          "hadap": "kiri"
+        },
+        "properti": [],
+        "gelembung_a": "Besok deh...",
+        "gelembung_b": "Yuk bisa yuk!",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "bell"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      }
+    ],
+    "klimaks": {
+      "t": 16.0,
+      "jenis": "capai_puncak",
+      "pemenang": "b"
+    },
+    "narasi_penuh": "",
+    "pakai_vo": false,
+    "moral": "Jangan menyerah, terus belajar."
+  },
+  "judul": "ChatGPT K12",
+  "hook": "ChatGPT k12?",
+  "angle": "Sudut kreator Indonesia: chatgpt k12",
+  "bahasa": "id",
+  "durasi_target_detik": 24,
+  "narasi_penuh": "",
+  "adegan": [],
+  "caption": "Masih bingung soal ChatGPT K12? Ini cara praktis yang bisa kamu coba.\n\nJangan menyerah, terus belajar.\n\nSimpan video ini, biar kamu ingat saat mau nyerah.\n\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsAI",
+  "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#Motivasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "COBA LAGI",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "storyboard_fallback": false,
+  "pakai_vo": false,
+  "moral": "Jangan menyerah, terus belajar."
+}
