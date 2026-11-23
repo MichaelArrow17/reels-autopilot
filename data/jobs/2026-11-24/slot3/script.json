@@ -1,0 +1,201 @@
+{
+  "judul": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today",
+  "hook": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?",
+  "angle": "Sudut kreator Indonesia: Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?. Banyak yang sudah mendengar soal “Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today”, tapi jarang dijelaskan pelan. Kita mulai dari rasa penasaran, bukan definisi, biar mudah diingat. Yang dibahas hanya yang masuk akal dan bisa kamu cek sendiri. Visualnya sederhana: karakter, teks di layar, suara yang jelas. Tujuannya biar kamu tahan nonton sampai akhir, lalu bisa coba sendiri. Kalau nyambung, simpan videonya. AI bisa bantu naskah, arah tetap di tangan kamu.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?",
+      "teks_layar": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?",
+      "pose": "idle",
+      "keyword": "HOOK",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 2,
+      "nama": "konteks",
+      "narasi": "Hook: taruh penonton di dalam pertanyaan.",
+      "teks_layar": "Bukan sihir",
+      "pose": "think",
+      "keyword": "WORKFLOW",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 3,
+      "nama": "konflik",
+      "narasi": "Konflik: apa yang biasanya disalahpahami.",
+      "teks_layar": "Satu ide, satu langkah",
+      "pose": "point",
+      "keyword": "1 IDE",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Payoff: satu langkah yang bisa langsung dicoba.",
+      "teks_layar": "Cek fakta, baru tayang",
+      "pose": "typing",
+      "keyword": "CEK FAKTA",
+      "latar": "",
+      "image_query": ""
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini kalau mau ikut alurnya.",
+      "teks_layar": "Simpan · Follow",
+      "pose": "cheer",
+      "keyword": "SIMPAN",
+      "latar": "",
+      "image_query": ""
+    }
+  ],
+  "caption": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?\n\nBanyak yang sudah dengar soal Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today, tapi jarang dijelaskan pelan biar bisa langsung dicoba.\nAmbil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\n\nSimpan video ini, atau follow buat tip berikutnya.\n\n#KreatorAI #PoChai #ReelsIndonesia #TipsAI #BelajarAI",
+  "cta": "Simpan video ini, atau follow buat tip berikutnya.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#ReelsIndonesia",
+    "#TipsAI",
+    "#BelajarAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Teknologi HEVC Pada Smartphone Mengungkap Cara",
+  "image_query": "dark studio creative desk indonesia",
+  "llm_provider": "template",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan?",
+        "layout": "kinetic_title",
+        "judul_layar": "Teknologi HEVC Pada Smartphone Mengungkap Cara M",
+        "subjudul": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengor",
+        "kata_kunci": [
+          {
+            "kata": "HOOK",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konteks",
+        "narasi": "Hook: taruh penonton di dalam pertanyaan.",
+        "layout": "bullets",
+        "judul_layar": "Bukan sihir",
+        "subjudul": "Hook: taruh penonton di dalam pertanyaan.",
+        "kata_kunci": [
+          {
+            "kata": "WORKFLOW",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "konflik",
+        "narasi": "Konflik: apa yang biasanya disalahpahami.",
+        "layout": "bullets",
+        "judul_layar": "Satu ide, satu langkah",
+        "subjudul": "Konflik: apa yang biasanya disalahpahami.",
+        "kata_kunci": [
+          {
+            "kata": "1 IDE",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Payoff: satu langkah yang bisa langsung dicoba.",
+        "layout": "bullets",
+        "judul_layar": "Cek fakta, baru tayang",
+        "subjudul": "Payoff: satu langkah yang bisa langsung dicoba.",
+        "kata_kunci": [
+          {
+            "kata": "CEK FAKTA",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini kalau mau ikut alurnya.",
+        "layout": "cta",
+        "judul_layar": "Simpan · Follow",
+        "subjudul": "Simpan video ini kalau mau ikut alurnya.",
+        "kata_kunci": [
+          {
+            "kata": "SIMPAN",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

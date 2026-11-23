@@ -287,6 +287,36 @@
       "tanggal": "2026-11-23",
       "angle": "Sudut kreator Indonesia: chatgpt k12",
       "slot": 5
+    },
+    {
+      "judul": "AI Mulai Masuk Perbankan, Bagaimana Nasib Keamanan Data Nasabah? - Akurat.co",
+      "tanggal": "2026-11-24",
+      "angle": "Sudut kreator Indonesia: AI Mulai Masuk Perbankan, Bagaimana Nasib Keamanan Data Nasabah? - Akurat.co",
+      "slot": 1
+    },
+    {
+      "judul": "Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus Rat Royale Pragmatic Play Tidak Layak Dipakai Memprediksi Hasil Seleksi? - Habangkalan Penyang Karuhei Tatau",
+      "tanggal": "2026-11-24",
+      "angle": "Sudut kreator Indonesia: Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus Rat Royale Pragmatic Play Tidak Layak Dipakai Memprediksi Hasil Seleksi? - Habangkalan Penyang Karuhei Tatau",
+      "slot": 2
+    },
+    {
+      "judul": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today",
+      "tanggal": "2026-11-24",
+      "angle": "Sudut kreator Indonesia: Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today",
+      "slot": 3
+    },
+    {
+      "judul": "Pabrik Amonia Fakfak Gandeng Teknologi Denmark dan Jepang, Mengapa Efek Api Shio Naga Dragon Hatch 2 PG SOFT Bukan Gambaran Reaksi Industri Nyata? - Habangkalan Penyang Karuhei Tatau",
+      "tanggal": "2026-11-24",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 4
+    },
+    {
+      "judul": "Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today",
+      "tanggal": "2026-11-24",
+      "angle": "Sudut kreator Indonesia: Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today",
+      "slot": 5
     }
   ],
   "days": {
@@ -9985,8 +10015,22 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-24T06:05:22+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-24T06:05:22+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot1/script.json",
+          "caption": "AI Mulai Masuk Perbankan, Bagaimana Nasib Keamanan Data Nasabah? - Akurat.co?\nBanyak yang sudah dengar soal AI Mulai Masuk Perbankan, Bagaimana Nasib Keamanan Data Nasabah? - Akurat.co, tapi jarang dijelaskan pelan biar bisa langsung dicoba. Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\nSimpan video ini, atau follow buat tip berikutnya.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #ReelsIndonesia #TipsAI #BelajarAI",
+          "tts_provider": "edge_tts",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.3,
+            "duration": 44.266667,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-24-s2-4e7f77",
@@ -10024,8 +10068,23 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-24T06:05:22+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-24T06:05:22+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 86)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot2/script.json",
+          "caption": "Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus?\nBanyak yang sudah dengar soal Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus Rat Royale Pragmatic Play Tidak Layak Dipakai Memprediksi Hasil Seleksi? - Habangkalan Penyang Karuhei Tatau, tapi jarang dijelaskan pelan biar bisa langsung dicoba. Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\nSimpan video ini, biar kamu ingat saat mau nyerah.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsAI",
+          "tts_provider": "ambient",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -15.9,
+            "peak": -1.1,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-24-s3-c83072",
@@ -10063,8 +10122,22 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-24T06:05:22+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-24T06:05:22+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot3/script.json",
+          "caption": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengor\nBanyak yang sudah dengar soal Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today, tapi jarang dijelaskan pelan biar bisa langsung dicoba. Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\nSimpan video ini, atau follow buat tip berikutnya.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #ReelsIndonesia #TipsAI #BelajarAI",
+          "tts_provider": "edge_tts",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.3,
+            "duration": 44.2,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-24-s4-394b6e",
@@ -10102,8 +10175,24 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-24T06:05:22+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-24T06:05:22+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 86)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot4/script.json",
+          "caption": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong.\nBanyak yang sudah dengar soal Pabrik Amonia Fakfak Gandeng Teknologi Denmark dan Jepang, Mengapa Efek Api Shio Naga Dragon Hatch 2 PG SOFT Bukan Gambaran Reaksi Industri Nyata? - Habangkalan Penyang Karuhei Tatau, tapi jarang dijelaskan pelan biar bisa langsung dicoba. Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\nTulis di komentar kalau ada yang mau kamu cek.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #CekSumber #ReelsIndonesia #KontenKreator",
+          "tts_provider": "edge_tts",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-24-s5-4390b1",
@@ -10141,8 +10230,22 @@
             "sinyal": null,
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-24T06:05:22+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-24T06:05:22+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot5/script.json",
+          "caption": "Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting\nBanyak yang sudah dengar soal Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today, tapi jarang dijelaskan pelan biar bisa langsung dicoba. Ambil satu langkah kecil hari ini, lalu lihat sendiri hasilnya.\nSimpan video ini, atau follow buat tip berikutnya.\nBagian mana yang mau kamu coba dulu?\n#KreatorAI #PoChai #ReelsIndonesia #TipsKonten #BelajarAI",
+          "tts_provider": "edge_tts",
+          "llm_provider": "template",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 44.466016,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-24T06:05:22+08:00",
@@ -10449,6 +10552,41 @@
       "style": "cerita",
       "judul": "ChatGPT K12",
       "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "AI Mulai Masuk Perbankan, Bagaimana Nasib Keamanan Data Nasabah? - Akurat.co",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 2,
+      "style": "cerita",
+      "judul": "Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus Rat Royale Pragmatic Play Tidak Layak Dipakai Memprediksi Hasil Seleksi? - Habangkalan Penyang Karuhei Tatau",
+      "reason": "keragaman batch (dari penjelas, yakin 86)"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "Teknologi HEVC Pada Smartphone Mengungkap Cara Memperkecil Ukuran Video Tanpa Harus Mengorbankan Banyak Detail Rekaman - Architecture Today",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 4,
+      "style": "kolase",
+      "judul": "Pabrik Amonia Fakfak Gandeng Teknologi Denmark dan Jepang, Mengapa Efek Api Shio Naga Dragon Hatch 2 PG SOFT Bukan Gambaran Reaksi Industri Nyata? - Habangkalan Penyang Karuhei Tatau",
+      "reason": "keragaman batch (dari penjelas, yakin 86)"
+    },
+    {
+      "date": "2026-11-24",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today",
+      "reason": "topik info"
     }
   ]
 }

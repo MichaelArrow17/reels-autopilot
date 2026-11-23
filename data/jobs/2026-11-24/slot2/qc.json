@@ -1,0 +1,21 @@
+{
+  "path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-24/slot2/reel.mp4",
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "durasi 24.0s di bawah ideal 25–40s (target 30–40s)",
+    "loudness -15.9 LUFS, target -14 ±1.5"
+  ],
+  "width": 1080,
+  "height": 1920,
+  "fps": 30.0,
+  "duration": 24.0,
+  "has_audio": true,
+  "has_video": true,
+  "integrated_lufs": -15.9,
+  "true_peak_dbtp": -1.1,
+  "mean_volume_db": -14.0,
+  "file_size": 3929472,
+  "caption_ok": null,
+  "caption_errors": []
+}

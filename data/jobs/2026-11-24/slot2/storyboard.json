@@ -1,0 +1,242 @@
+{
+  "style": "cerita",
+  "environment": "underwater",
+  "durasi_detik": 24.0,
+  "label_kiri": "MENYERAH",
+  "label_kanan": "BERUSAHA",
+  "judul": "Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus Rat Royale ",
+  "hook": "Panselnas CPNS 2026 Bentuk Tim Audit Teknologi, Mengapa Klaim Angka Shio Tikus?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "menyerah"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "berjuang"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 3.5,
+      "aksi_a": {
+        "nama": "swim",
+        "x": 0.3,
+        "y": 0.55,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "swim",
+        "x": 0.68,
+        "y": 0.52,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        },
+        {
+          "jenis": "chain_ball",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Buat apa dicoba?",
+      "gelembung_b": "",
+      "efek": [
+        "bubbles"
+      ],
+      "sfx": [
+        "bubble"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 3.5,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "struggle",
+        "x": 0.3,
+        "y": 0.62,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "swim",
+        "x": 0.66,
+        "y": 0.46,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        },
+        {
+          "jenis": "chain_ball",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "",
+      "gelembung_b": "Sedikit lagi.",
+      "efek": [
+        "bubbles"
+      ],
+      "sfx": [
+        "bubble"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 7.5,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sink",
+        "x": 0.3,
+        "y": 0.78,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "struggle",
+        "x": 0.64,
+        "y": 0.44,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        },
+        {
+          "jenis": "chain_ball",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Aku nyerah.",
+      "gelembung_b": "Masih bisa.",
+      "efek": [
+        "bubbles"
+      ],
+      "sfx": [
+        "thud"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 11.5,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "limp",
+        "x": 0.28,
+        "y": 0.86,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "swim",
+        "x": 0.62,
+        "y": 0.36,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        },
+        {
+          "jenis": "chain_ball",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "",
+      "gelembung_b": "",
+      "efek": [
+        "bubbles"
+      ],
+      "sfx": [
+        "chain"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 15.5,
+      "durasi": 3.5,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.28,
+        "y": 0.87,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.62,
+        "y": 0.26,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        }
+      ],
+      "gelembung_a": "",
+      "gelembung_b": "",
+      "efek": [
+        "bubbles",
+        "break",
+        "glow"
+      ],
+      "sfx": [
+        "break"
+      ],
+      "klimaks": true,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 19.0,
+      "durasi": 5.0,
+      "aksi_a": {
+        "nama": "limp",
+        "x": 0.3,
+        "y": 0.88,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.62,
+        "y": 0.16,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "chain_ball",
+          "pada": "a"
+        }
+      ],
+      "gelembung_a": "Dia cuma beruntung.",
+      "gelembung_b": "",
+      "efek": [
+        "glow",
+        "sparks"
+      ],
+      "sfx": [
+        "chime"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 15.5,
+    "jenis": "break_chain",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Yang terus berusaha sampai ke permukaan. Yang menyerah tetap di dasar."
+}
