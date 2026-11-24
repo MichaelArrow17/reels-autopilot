@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau tahu cara pakai AI gratis tanpa ribet?",
+      "isi": "Banyak tools AI gratis yang bisa membantu proses menulis dan pembuatan konten sehari-hari.",
+      "cta": "Simpan video ini supaya tidak lupa.",
+      "pertanyaan": "Tools AI gratis apa yang paling sering kamu pakai?",
+      "hashtag": [
+        "#AIGratis",
+        "#KreatorAI",
+        "#PenulisIndonesia",
+        "#Teknologi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Benarkah ada AI gratis untuk bantu menulis?",
+      "isi": "Pemanfaatan teknologi AI gratis kini semakin mudah diakses oleh para kreator dan penulis.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Menurutmu, apakah AI bisa sepenuhnya menggantikan penulis?",
+      "hashtag": [
+        "#AIWriting",
+        "#TipsKreator",
+        "#MenulisOnline",
+        "#AlatAI",
+        "#ContentCreator"
+      ]
+    },
+    {
+      "baris1": "Sudah coba rekomendasi AI gratis ini belum?",
+      "isi": "Eksplorasi berbagai fitur AI gratis dapat meningkatkan produktivitas dalam berkarya.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Kendala apa yang sering kamu hadapi saat menggunakan AI?",
+      "hashtag": [
+        "#AIAssistant",
+        "#Produktivitas",
+        "#PenulisPemula",
+        "#RekomendasiAI",
+        "#TechTips"
+      ]
+    }
+  ],
+  "cover": "Cara Pakai AI Gratis",
+  "komentar_pin": "Tulis pengalamanmu pakai AI gratis di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

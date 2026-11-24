@@ -1,0 +1,179 @@
+{
+  "style": "cerita",
+  "environment": "road",
+  "durasi_detik": 24.0,
+  "label_kiri": "BINGUNG",
+  "label_kanan": "MENCOBA",
+  "judul": "AI Gratis",
+  "hook": "AI gratis 2026?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "menyerah"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "berjuang"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.7,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "properti": [],
+      "gelembung_a": "Bisa apa aja ya?",
+      "gelembung_b": "Mulai aja dulu!",
+      "efek": [],
+      "sfx": [
+        "click"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 4.0,
+      "durasi": 4.5,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "walk",
+        "x": 0.45,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "tengah"
+        }
+      ],
+      "gelembung_a": "Ribet deh...",
+      "gelembung_b": "Cari tahu yuk",
+      "efek": [
+        "dust"
+      ],
+      "sfx": [
+        "step"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 8.5,
+      "durasi": 5.0,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "climb",
+        "x": 0.55,
+        "y": 0.5,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "ladder",
+          "pada": "tengah"
+        }
+      ],
+      "gelembung_a": "Nanti aja deh",
+      "gelembung_b": "Wah gampang nih!",
+      "efek": [
+        "sparks"
+      ],
+      "sfx": [
+        "boost"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 13.5,
+      "durasi": 5.5,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.75,
+        "y": 0.4,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Banyak pilihan...",
+      "gelembung_b": "Ketemu kuncinya!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "ding"
+      ],
+      "klimaks": true,
+      "teks_klimaks": "Satu langkah kecil!"
+    },
+    {
+      "t": 19.0,
+      "durasi": 5.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.3,
+        "y": 0.7,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.8,
+        "y": 0.7,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Tertinggal...",
+      "gelembung_b": "Siap eksplorasi!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "cheer"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 13.5,
+    "jenis": "capai_puncak",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Jangan cuma nonton, langsung coba!"
+}

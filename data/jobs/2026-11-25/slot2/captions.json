@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan?",
+      "isi": "Banyak aplikasi ngaku gratis tapi pas mau simpan malah kena watermark atau wajib kartu kredit. Padahal ada tools AI web dengan akses gratis harian untuk edit rapi tanpa bayar.",
+      "cta": "Simpan video ini buat dicoba nanti!",
+      "pertanyaan": "Tools AI apa yang biasa kamu pakai buat edit foto?",
+      "hashtag": [
+        "#AIGratis",
+        "#EditFotoAI",
+        "#TipsEditing",
+        "#AITools"
+      ]
+    },
+    {
+      "baris1": "Kenapa aplikasi AI edit foto gratis selalu minta kartu kredit di akhir?",
+      "isi": "Kebanyakan aplikasi memang bilang gratis, tapi ujung-ujungnya suruh langganan atau kena watermark saat disimpan. Padahal ada web AI gratis harian buat hapus background dan perjelas foto.",
+      "cta": "Simpan video ini buat dicoba nanti!",
+      "pertanyaan": "Pernah tertipu aplikasi yang ngakunya gratis?",
+      "hashtag": [
+        "#EditFoto",
+        "#AIGratis",
+        "#TipsTeknologi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Nggak perlu sewa editor mahal cuma buat hapus background atau perjelas foto.",
+      "isi": "Aplikasi AI sering menagih biaya berlangganan saat foto mau disimpan atau diberi watermark. Solusinya, pakai tools AI berbasis web yang kasih akses gratis harian tanpa keluar uang.",
+      "cta": "Simpan video ini buat dicoba nanti!",
+      "pertanyaan": "Berapa budget bulananmu untuk aplikasi edit foto?",
+      "hashtag": [
+        "#AIGratis",
+        "#TutorialEditFoto",
+        "#TipsAI",
+        "#ProductivityHack"
+      ]
+    }
+  ],
+  "cover": "AI Edit Foto Gratis",
+  "komentar_pin": "Tools AI gratis mana yang jadi andalanmu? Tulis di komentar ya!",
+  "llm_provider": "gemini"
+}

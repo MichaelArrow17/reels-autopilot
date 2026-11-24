@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah dengar video profil orang terkenal yang kedengarannya sangat lancar?",
+      "isi": "Banyak narasi tampak meyakinkan padahal sumbernya kosong. Kalau ada klaim tanggal, gelar, atau jumlah angka, wajib tanyakan dulu dari mana asalnya jika tanpa tautan resmi.",
+      "cta": "Simpan video ini supaya kamu nggak mudah tertipu informasi tanpa sumber.",
+      "pertanyaan": "Pernah menemukan kabar profil AI yang ternyata hoax?",
+      "hashtag": [
+        "#EdukasiAI",
+        "#TeknologiAI",
+        "#CekFakta",
+        "#LiterasiDigital",
+        "#AITools"
+      ]
+    },
+    {
+      "baris1": "Yakin kabar skandal atau profil tokoh yang kamu tonton itu fakta?",
+      "isi": "Informasi tentang klaim skandal, mundur jabatan, atau kabar duka sering disebar tanpa sumber. Jangan langsung percaya atau menyebarkannya sebelum ada verifikasi tautan resmi.",
+      "cta": "Tulis di komentar kalau ada kabar yang mau kamu cek kebenarannya.",
+      "pertanyaan": "Informasi tokoh siapa yang paling sering bikin kamu ragu?",
+      "hashtag": [
+        "#TipsAI",
+        "#KreatorAI",
+        "#LiterasiInformasi",
+        "#FaktaAI",
+        "#DigitalLiteracy"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara membedakan profil AI asli dan narasi tanpa sumber?",
+      "isi": "Narasi profil bisa terdengar lancar walau datanya tak ada. Kuncinya, tanyakan asal-usul angka, gelar, atau tanggal sebelum membagikan isi videonya.",
+      "cta": "Simpan postingan ini sebagai pengingat agar selalu kritis menyerap informasi.",
+      "pertanyaan": "Apa tanda pertama yang bikin kamu curiga sama video narasi AI?",
+      "hashtag": [
+        "#PoChai",
+        "#PenulisAI",
+        "#KritisInformasi",
+        "#CekSumber",
+        "#ArtificialIntelligence"
+      ]
+    }
+  ],
+  "cover": "Jangan Asal Percaya Video Profil AI",
+  "komentar_pin": "Punya berita atau profil video AI yang mencurigakan dan mau dibantu cek kebenarannya? Tulis topik atau nama tokohnya di bawah ya! 👇",
+  "llm_provider": "gemini"
+}

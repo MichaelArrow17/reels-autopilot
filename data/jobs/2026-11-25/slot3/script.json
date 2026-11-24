@@ -1,0 +1,225 @@
+{
+  "judul": "AI Gratis dari Google",
+  "hook": "Mau pakai AI gratis dari Google tapi takut salah?",
+  "angle": "Sudut kreator Indonesia: AI gratis dari Google",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau pakai AI gratis dari Google tapi takut salah? Banyak yang bingung karena mengira semua fiturnya berbayar atau ribet dipakai. Padahal, kamu cukup buka browser, masuk ke situs resminya, dan langsung bisa bikin tulisan atau ide konten dalam hitungan detik. Tanpa biaya langganan, tanpa instal aplikasi tambahan. Coba sekarang dan lihat sendiri hasilnya. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau pakai AI gratis dari Google tapi takut salah?",
+      "teks_layar": "AI GRATIS DARI GOOGLE?",
+      "pose": "shrug",
+      "keyword": "AI gratis",
+      "latar": "studio minimalis",
+      "image_query": "google ai logo abstract background"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang bingung karena mengira semua fiturnya berbayar atau ribet dipakai.",
+      "teks_layar": "Kira berbayar & ribet",
+      "pose": "think",
+      "keyword": "berbayar",
+      "latar": "studio minimalis",
+      "image_query": "confused stickman looking at screen"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal, kamu cukup buka browser, masuk ke situs resminya, dan langsung bisa bikin tulisan atau ide konten dalam hitungan detik.",
+      "teks_layar": "Buka browser & pakai",
+      "pose": "typing",
+      "keyword": "browser",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing laptop"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Tanpa biaya langganan, tanpa instal aplikasi tambahan. Coba sekarang dan lihat sendiri hasilnya.",
+      "teks_layar": "Tanpa biaya tambahan",
+      "pose": "point",
+      "keyword": "tanpa biaya",
+      "latar": "studio minimalis",
+      "image_query": "free icon motion graphics"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part dua.",
+      "teks_layar": "FOLLOW BUAT PART 2",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "studio minimalis",
+      "image_query": "social media follow stickman"
+    }
+  ],
+  "caption": "Mau pakai AI gratis dari Google tapi takut salah? Begini cara gampangnya. Simpan video ini dan coba sekarang!",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#AIGratis",
+    "#GoogleAI",
+    "#TipsKreator"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI GOOGLE GRATIS!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau pakai AI gratis dari Google tapi takut salah?",
+        "layout": "kinetic_title",
+        "judul_layar": "AI GRATIS DARI GOOGLE?",
+        "subjudul": "Cara mudah tanpa ribet",
+        "kata_kunci": [
+          {
+            "kata": "AI gratis",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "search"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang bingung karena mengira semua fiturnya berbayar atau ribet dipakai.",
+        "layout": "comparison",
+        "judul_layar": "Mitos vs Fakta",
+        "subjudul": "Jangan salah sangka",
+        "kata_kunci": [
+          {
+            "kata": "berbayar",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "help"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal, kamu cukup buka browser, masuk ke situs resminya, dan langsung bisa bikin tulisan atau ide konten dalam hitungan detik.",
+        "layout": "steps",
+        "judul_layar": "Langkah Mudah",
+        "subjudul": "Langsung pakai di browser",
+        "kata_kunci": [
+          {
+            "kata": "browser",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "globe"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Buka browser",
+          "Masuk situs",
+          "Mulai ketik"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "click"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Tanpa biaya langganan, tanpa instal aplikasi tambahan. Coba sekarang dan lihat sendiri hasilnya.",
+        "layout": "card",
+        "judul_layar": "Tanpa Biaya",
+        "subjudul": "Bebas akses kapan saja",
+        "kata_kunci": [
+          {
+            "kata": "tanpa biaya",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "check"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "FOLLOW BUAT PART 2",
+        "subjudul": "Simpan video ini",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "heart"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      }
+    ]
+  }
+}

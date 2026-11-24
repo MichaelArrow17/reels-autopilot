@@ -317,6 +317,30 @@
       "tanggal": "2026-11-24",
       "angle": "Sudut kreator Indonesia: Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today",
       "slot": 5
+    },
+    {
+      "judul": "ai gratis unlimited",
+      "tanggal": "2026-11-25",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 1
+    },
+    {
+      "judul": "AI Gratis Edit Foto Tanpa Bayar",
+      "tanggal": "2026-11-25",
+      "angle": "Sudut kreator Indonesia: cara memanfaatkan AI edit foto gratis tanpa jebakan langganan",
+      "slot": 2
+    },
+    {
+      "judul": "AI Gratis dari Google",
+      "tanggal": "2026-11-25",
+      "angle": "Sudut kreator Indonesia: AI gratis dari Google",
+      "slot": 3
+    },
+    {
+      "judul": "AI gratis terbaru",
+      "tanggal": "2026-11-25",
+      "angle": "Sudut kreator Indonesia: ai gratis terbaru",
+      "slot": 5
     }
   ],
   "days": {
@@ -10753,14 +10777,30 @@
             "sinyal": "ai gratis",
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-25T06:02:06+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-25T06:02:06+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot1/script.json",
+          "caption": "Pernah dengar video profil orang terkenal yang kedengarannya sangat lancar?\nBanyak narasi tampak meyakinkan padahal sumbernya kosong. Kalau ada klaim tanggal, gelar, atau jumlah angka, wajib tanyakan dulu dari mana asalnya jika tanpa tautan resmi.\nSimpan video ini supaya kamu nggak mudah tertipu informasi tanpa sumber.\nPernah menemukan kabar profil AI yang ternyata hoax?\n#EdukasiAI #TeknologiAI #CekFakta #LiterasiDigital #AITools",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-25-s2-8b2a7c",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "ai gratis edit foto",
+          "judul": "AI Gratis Edit Foto Tanpa Bayar",
           "hook": "ai gratis edit foto?",
           "topic": {
             "judul": "ai gratis edit foto",
@@ -10792,14 +10832,28 @@
             "sinyal": "ai gratis",
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-25T06:02:06+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-25T06:02:06+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot2/script.json",
+          "caption": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan?\nBanyak aplikasi ngaku gratis tapi pas mau simpan malah kena watermark atau wajib kartu kredit. Padahal ada tools AI web dengan akses gratis harian untuk edit rapi tanpa bayar.\nSimpan video ini buat dicoba nanti!\nTools AI apa yang biasa kamu pakai buat edit foto?\n#AIGratis #EditFotoAI #TipsEditing #AITools",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 36.333333,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-25-s3-f65d53",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "ai gratis dari google",
+          "judul": "AI Gratis dari Google",
           "hook": "ai gratis dari google?",
           "topic": {
             "judul": "ai gratis dari google",
@@ -10831,14 +10885,28 @@
             "sinyal": "ai gratis",
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-25T06:02:06+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-25T06:02:06+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot3/script.json",
+          "caption": "Mau pakai AI gratis dari Google tapi takut salah?\nBanyak yang bingung karena mengira fiturnya berbayar. Padahal cukup buka browser di situs resminya tanpa instal aplikasi.\nBisa bikin tulisan atau ide konten dalam hitungan detik tanpa biaya langganan.\nFollow untuk part berikutnya\nUdah pernah coba akses AI ini belum?\n#AIGoogle #TipsAI #KreatorAI #BelajarAI #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.328,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-25-s4-ffca33",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "ai gratis 2026",
+          "judul": "AI Gratis",
           "hook": "ai gratis 2026?",
           "topic": {
             "judul": "ai gratis 2026",
@@ -10870,14 +10938,29 @@
             "sinyal": "ai gratis",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-25T06:02:06+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-25T06:02:06+08:00",
+          "style": "cerita",
+          "style_reason": "rotasi setelah 4× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot4/script.json",
+          "caption": "Mau tahu cara pakai AI gratis tanpa ribet?\nBanyak tools AI gratis yang bisa membantu proses menulis dan pembuatan konten sehari-hari.\nSimpan video ini supaya tidak lupa.\nTools AI gratis apa yang paling sering kamu pakai?\n#AIGratis #KreatorAI #PenulisIndonesia #Teknologi #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.3,
+            "peak": -1.3,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-25-s5-27e4b0",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "ai gratis terbaru",
+          "judul": "AI gratis terbaru",
           "hook": "ai gratis terbaru?",
           "topic": {
             "judul": "ai gratis terbaru",
@@ -10909,8 +10992,22 @@
             "sinyal": "ai gratis",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-25T06:02:06+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-25T06:02:06+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-25/slot5/script.json",
+          "caption": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol?\nKebanyakan orang nyerah duluan pas lihat harganya mahal. Padahal ada cara pinter buat akses semua fitur canggih tanpa langganan lewat browser.\nSimpan video ini buat dicoba nanti.\nUdah pernah coba situs AI gratis yang mana nih?\n#AIGratis #TeknologiAI #TipsAI #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 21.233008,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-25T06:02:05+08:00",
@@ -11251,6 +11348,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "Gambar Berukuran Besar Bisa Memperlambat Website Mobile Mengapa Teknologi Kompresi Penting Untuk Pengalaman Pengguna - Architecture Today",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 1,
+      "style": "kolase",
+      "judul": "ai gratis unlimited",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "AI Gratis Edit Foto Tanpa Bayar",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "AI Gratis dari Google",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "AI Gratis",
+      "reason": "rotasi setelah 4× penjelas"
+    },
+    {
+      "date": "2026-11-25",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "AI gratis terbaru",
       "reason": "topik info"
     }
   ]

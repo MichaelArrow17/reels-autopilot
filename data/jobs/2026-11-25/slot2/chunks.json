@@ -1,0 +1,571 @@
+[
+  {
+    "text": "Mau edit foto pakai",
+    "start": 0.0,
+    "end": 1.2332769721936145,
+    "words": [
+      {
+        "word": "Mau",
+        "start": 0.242229,
+        "duration": 0.16071048197734286
+      },
+      {
+        "word": "edit",
+        "start": 0.40293948197734286,
+        "duration": 0.26785080329557154
+      },
+      {
+        "word": "foto",
+        "start": 0.6707902852729144,
+        "duration": 0.26785080329557154
+      },
+      {
+        "word": "pakai",
+        "start": 0.9386410885684859,
+        "duration": 0.2946358836251286
+      }
+    ]
+  },
+  {
+    "text": "AI tapi ujung-ujungnya selalu",
+    "start": 1.2332769721936145,
+    "end": 2.7868116313079296,
+    "words": [
+      {
+        "word": "AI",
+        "start": 1.2332769721936145,
+        "duration": 0.13392540164778577
+      },
+      {
+        "word": "tapi",
+        "start": 1.3672023738414003,
+        "duration": 0.26785080329557154
+      },
+      {
+        "word": "ujung-ujungnya",
+        "start": 1.6350531771369718,
+        "duration": 0.7499822492276005
+      },
+      {
+        "word": "selalu",
+        "start": 2.3850354263645723,
+        "duration": 0.4017762049433573
+      }
+    ]
+  },
+  {
+    "text": "disuruh bayar berlangganan?",
+    "start": 2.7868116313079296,
+    "end": 5.194891728115344,
+    "words": [
+      {
+        "word": "disuruh",
+        "start": 2.7868116313079296,
+        "duration": 0.42856128527291437
+      },
+      {
+        "word": "bayar",
+        "start": 3.215372916580844,
+        "duration": 0.2946358836251286
+      },
+      {
+        "word": "berlangganan?",
+        "start": 3.5100088002059726,
+        "duration": 1.6848829279093716
+      }
+    ]
+  },
+  {
+    "text": "Kebanyakan aplikasi memang ngaku",
+    "start": 5.194891728115344,
+    "end": 6.935921949536559,
+    "words": [
+      {
+        "word": "Kebanyakan",
+        "start": 5.194891728115344,
+        "duration": 0.5892717672502572
+      },
+      {
+        "word": "aplikasi",
+        "start": 5.784163495365601,
+        "duration": 0.5357016065911431
+      },
+      {
+        "word": "memang",
+        "start": 6.3198651019567444,
+        "duration": 0.32142096395468567
+      },
+      {
+        "word": "ngaku",
+        "start": 6.64128606591143,
+        "duration": 0.29463588362512905
+      }
+    ]
+  },
+  {
+    "text": "gratis. Tapi pas mau",
+    "start": 6.935921949536559,
+    "end": 8.860405680741504,
+    "words": [
+      {
+        "word": "gratis.",
+        "start": 6.935921949536559,
+        "duration": 1.3352119639546869
+      },
+      {
+        "word": "Tapi",
+        "start": 8.271133913491246,
+        "duration": 0.26785080329557154
+      },
+      {
+        "word": "pas",
+        "start": 8.538984716786818,
+        "duration": 0.16071048197734328
+      },
+      {
+        "word": "mau",
+        "start": 8.69969519876416,
+        "duration": 0.16071048197734328
+      }
+    ]
+  },
+  {
+    "text": "simpan hasil fotonya, malah",
+    "start": 8.860405680741504,
+    "end": 10.657888697219363,
+    "words": [
+      {
+        "word": "simpan",
+        "start": 8.860405680741504,
+        "duration": 0.32142096395468656
+      },
+      {
+        "word": "hasil",
+        "start": 9.18182664469619,
+        "duration": 0.29463588362512816
+      },
+      {
+        "word": "fotonya,",
+        "start": 9.476462528321319,
+        "duration": 0.4285612852729148
+      },
+      {
+        "word": "malah",
+        "start": 9.905023813594234,
+        "duration": 0.7528648836251293
+      }
+    ]
+  },
+  {
+    "text": "kena watermark atau harus",
+    "start": 10.657888697219363,
+    "end": 11.970357633367662,
+    "words": [
+      {
+        "word": "kena",
+        "start": 10.657888697219363,
+        "duration": 0.26785080329556976
+      },
+      {
+        "word": "watermark",
+        "start": 10.925739500514933,
+        "duration": 0.48213144593202983
+      },
+      {
+        "word": "atau",
+        "start": 11.407870946446963,
+        "duration": 0.26785080329556976
+      },
+      {
+        "word": "harus",
+        "start": 11.675721749742532,
+        "duration": 0.29463588362512994
+      }
+    ]
+  },
+  {
+    "text": "daftar kartu kredit.",
+    "start": 11.970357633367662,
+    "end": 14.035335444902163,
+    "words": [
+      {
+        "word": "daftar",
+        "start": 11.970357633367662,
+        "duration": 0.32142096395468656
+      },
+      {
+        "word": "kartu",
+        "start": 12.291778597322349,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "kredit.",
+        "start": 12.586414480947475,
+        "duration": 1.4489209639546878
+      }
+    ]
+  },
+  {
+    "text": "Padahal, kamu nggak perlu",
+    "start": 14.035335444902163,
+    "end": 15.686352059732233,
+    "words": [
+      {
+        "word": "Padahal,",
+        "start": 14.035335444902163,
+        "duration": 0.8742492852729136
+      },
+      {
+        "word": "kamu",
+        "start": 14.909584730175077,
+        "duration": 0.2678508032955733
+      },
+      {
+        "word": "nggak",
+        "start": 15.17743553347065,
+        "duration": 0.21428064263645652
+      },
+      {
+        "word": "perlu",
+        "start": 15.391716176107106,
+        "duration": 0.2946358836251264
+      }
+    ]
+  },
+  {
+    "text": "sewa editor mahal cuma",
+    "start": 15.686352059732233,
+    "end": 16.918465754891862,
+    "words": [
+      {
+        "word": "sewa",
+        "start": 15.686352059732233,
+        "duration": 0.2678508032955733
+      },
+      {
+        "word": "editor",
+        "start": 15.954202863027806,
+        "duration": 0.4017762049433564
+      },
+      {
+        "word": "mahal",
+        "start": 16.355979067971163,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "cuma",
+        "start": 16.65061495159629,
+        "duration": 0.2678508032955733
+      }
+    ]
+  },
+  {
+    "text": "buat hapus background atau",
+    "start": 16.918465754891862,
+    "end": 18.097009289392375,
+    "words": [
+      {
+        "word": "buat",
+        "start": 16.918465754891862,
+        "duration": 0.1874955623068999
+      },
+      {
+        "word": "hapus",
+        "start": 17.105961317198762,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "background",
+        "start": 17.40059720082389,
+        "duration": 0.4285612852729166
+      },
+      {
+        "word": "atau",
+        "start": 17.829158486096805,
+        "duration": 0.26785080329556976
+      }
+    ]
+  },
+  {
+    "text": "perjelas foto yang buram.",
+    "start": 18.097009289392375,
+    "end": 20.329378904222445,
+    "words": [
+      {
+        "word": "perjelas",
+        "start": 18.097009289392375,
+        "duration": 0.4553463656024732
+      },
+      {
+        "word": "foto",
+        "start": 18.552355654994848,
+        "duration": 1.2948918032955703
+      },
+      {
+        "word": "yang",
+        "start": 19.84724745829042,
+        "duration": 0.1874955623068999
+      },
+      {
+        "word": "buram.",
+        "start": 20.03474302059732,
+        "duration": 0.2946358836251264
+      }
+    ]
+  },
+  {
+    "text": "Coba pakai tools AI",
+    "start": 20.329378904222445,
+    "end": 21.24007163542739,
+    "words": [
+      {
+        "word": "Coba",
+        "start": 20.329378904222445,
+        "duration": 0.2678508032955733
+      },
+      {
+        "word": "pakai",
+        "start": 20.597229707518018,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "tools",
+        "start": 20.891865591143144,
+        "duration": 0.21428064263646007
+      },
+      {
+        "word": "AI",
+        "start": 21.106146233779604,
+        "duration": 0.13392540164778666
+      }
+    ]
+  },
+  {
+    "text": "berbasis web yang menyediakan",
+    "start": 21.24007163542739,
+    "end": 22.659680892893917,
+    "words": [
+      {
+        "word": "berbasis",
+        "start": 21.24007163542739,
+        "duration": 0.4553463656024732
+      },
+      {
+        "word": "web",
+        "start": 21.695418001029864,
+        "duration": 0.16071048197733973
+      },
+      {
+        "word": "yang",
+        "start": 21.856128483007204,
+        "duration": 0.1874955623068999
+      },
+      {
+        "word": "menyediakan",
+        "start": 22.043624045314104,
+        "duration": 0.6160568475798129
+      }
+    ]
+  },
+  {
+    "text": "akses gratis harian.",
+    "start": 22.659680892893917,
+    "end": 24.622554704428424,
+    "words": [
+      {
+        "word": "akses",
+        "start": 22.659680892893917,
+        "duration": 0.2946358836251335
+      },
+      {
+        "word": "gratis",
+        "start": 22.95431677651905,
+        "duration": 0.32142096395468656
+      },
+      {
+        "word": "harian.",
+        "start": 23.275737740473737,
+        "duration": 1.3468169639546872
+      }
+    ]
+  },
+  {
+    "text": "Cukup unggah foto, pilih",
+    "start": 24.622554704428424,
+    "end": 26.248223238928944,
+    "words": [
+      {
+        "word": "Cukup",
+        "start": 24.622554704428424,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "unggah",
+        "start": 24.91719058805355,
+        "duration": 0.32142096395468656
+      },
+      {
+        "word": "foto,",
+        "start": 25.238611552008237,
+        "duration": 0.7149758032955731
+      },
+      {
+        "word": "pilih",
+        "start": 25.95358735530381,
+        "duration": 0.2946358836251335
+      }
+    ]
+  },
+  {
+    "text": "fitur edit, dan selesai",
+    "start": 26.248223238928944,
+    "end": 27.8399196930999,
+    "words": [
+      {
+        "word": "fitur",
+        "start": 26.248223238928944,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "edit,",
+        "start": 26.54285912255407,
+        "duration": 0.7077888032955713
+      },
+      {
+        "word": "dan",
+        "start": 27.25064792584964,
+        "duration": 0.16071048197734683
+      },
+      {
+        "word": "selesai",
+        "start": 27.411358407826988,
+        "duration": 0.42856128527291304
+      }
+    ]
+  },
+  {
+    "text": "dalam hitungan detik.",
+    "start": 27.8399196930999,
+    "end": 29.960870825952632,
+    "words": [
+      {
+        "word": "dalam",
+        "start": 27.8399196930999,
+        "duration": 0.2946358836251264
+      },
+      {
+        "word": "hitungan",
+        "start": 28.134555576725027,
+        "duration": 0.4553463656024732
+      },
+      {
+        "word": "detik.",
+        "start": 28.5899019423275,
+        "duration": 1.3709688836251317
+      }
+    ]
+  },
+  {
+    "text": "Editing foto rapi tajam",
+    "start": 29.960870825952632,
+    "end": 31.21976960144182,
+    "words": [
+      {
+        "word": "Editing",
+        "start": 29.960870825952632,
+        "duration": 0.42856128527291304
+      },
+      {
+        "word": "foto",
+        "start": 30.389432111225545,
+        "duration": 0.2678508032955733
+      },
+      {
+        "word": "rapi",
+        "start": 30.65728291452112,
+        "duration": 0.2678508032955733
+      },
+      {
+        "word": "tajam",
+        "start": 30.925133717816692,
+        "duration": 0.2946358836251264
+      }
+    ]
+  },
+  {
+    "text": "tanpa keluar uang sepeser",
+    "start": 31.21976960144182,
+    "end": 32.45188329660145,
+    "words": [
+      {
+        "word": "tanpa",
+        "start": 31.21976960144182,
+        "duration": 0.2946358836251335
+      },
+      {
+        "word": "keluar",
+        "start": 31.514405485066952,
+        "duration": 0.32142096395468656
+      },
+      {
+        "word": "uang",
+        "start": 31.83582644902164,
+        "duration": 0.1874955623068928
+      },
+      {
+        "word": "sepeser",
+        "start": 32.02332201132853,
+        "duration": 0.42856128527292014
+      }
+    ]
+  },
+  {
+    "text": "pun. Simpan video ini",
+    "start": 32.45188329660145,
+    "end": 34.508654349124626,
+    "words": [
+      {
+        "word": "pun.",
+        "start": 32.45188329660145,
+        "duration": 1.1996484819773485
+      },
+      {
+        "word": "Simpan",
+        "start": 33.6515317785788,
+        "duration": 0.32142096395467945
+      },
+      {
+        "word": "video",
+        "start": 33.97295274253348,
+        "duration": 0.2946358836251335
+      },
+      {
+        "word": "ini",
+        "start": 34.26758862615861,
+        "duration": 0.24106572296601314
+      }
+    ]
+  },
+  {
+    "text": "buat dicoba nanti!",
+    "start": 34.508654349124626,
+    "end": 35.392562,
+    "words": [
+      {
+        "word": "buat",
+        "start": 34.508654349124626,
+        "duration": 0.1874955623068928
+      },
+      {
+        "word": "dicoba",
+        "start": 34.69614991143152,
+        "duration": 0.40177620494335997
+      },
+      {
+        "word": "nanti!",
+        "start": 35.09792611637488,
+        "duration": 0.2946358836251193
+      }
+    ]
+  }
+]

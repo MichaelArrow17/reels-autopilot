@@ -1,0 +1,200 @@
+{
+  "judul": "AI gratis terbaru",
+  "hook": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol?",
+  "angle": "Sudut kreator Indonesia: ai gratis terbaru",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol? Kebanyakan orang nyerah duluan pas lihat harganya mahal. Padahal ada cara pinter buat akses semua fitur canggih tanpa langganan. Cukup buka situs resminya langsung dari browser kamu. Coba sekarang dan buktikan sendiri. Simpan video ini buat dicoba nanti.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol?",
+      "teks_layar": "AI Gratis Terbaru?",
+      "pose": "shrug",
+      "keyword": "gratis",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused looking at expensive tech screen"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kebanyakan orang nyerah duluan pas lihat harganya mahal.",
+      "teks_layar": "Harga Mahal?",
+      "pose": "think",
+      "keyword": "mahal",
+      "latar": "studio minimalis",
+      "image_query": "stickman looking sad at high price tag"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Padahal ada cara pinter buat akses semua fitur canggih tanpa langganan.",
+      "teks_layar": "Tanpa Langganan",
+      "pose": "point",
+      "keyword": "canggih",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at smart assistant interface"
+    },
+    {
+      "id": 4,
+      "nama": "aksi",
+      "narasi": "Cukup buka situs resminya langsung dari browser kamu.",
+      "teks_layar": "Buka Browser",
+      "pose": "typing",
+      "keyword": "browser",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on laptop keyboard"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba sekarang dan buktikan sendiri. Simpan video ini buat dicoba nanti.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering happy with save icon"
+    }
+  ],
+  "caption": "Mau coba AI gratis terbaru tanpa ribet? Simpan video ini dan praktekin sekarang!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#AIGratis",
+    "#TipsTeknologi",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI GRATIS TERBARU",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol?",
+        "layout": "kinetic_title",
+        "judul_layar": "AI Gratis Terbaru?",
+        "subjudul": "Lagi cari AI gratis terbaru yang gak bikin kantong jebol?",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kebanyakan orang nyerah duluan pas lihat harganya mahal.",
+        "layout": "bullets",
+        "judul_layar": "Harga Mahal?",
+        "subjudul": "Kebanyakan orang nyerah duluan pas lihat harganya mahal.",
+        "kata_kunci": [
+          {
+            "kata": "mahal",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Padahal ada cara pinter buat akses semua fitur canggih tanpa langganan.",
+        "layout": "bullets",
+        "judul_layar": "Tanpa Langganan",
+        "subjudul": "Padahal ada cara pinter buat akses semua fitur canggih tanpa langganan.",
+        "kata_kunci": [
+          {
+            "kata": "canggih",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "aksi",
+        "narasi": "Cukup buka situs resminya langsung dari browser kamu.",
+        "layout": "bullets",
+        "judul_layar": "Buka Browser",
+        "subjudul": "Cukup buka situs resminya langsung dari browser kamu.",
+        "kata_kunci": [
+          {
+            "kata": "browser",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba sekarang dan buktikan sendiri. Simpan video ini buat dicoba nanti.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Coba sekarang dan buktikan sendiri. Simpan video ini buat dicoba nanti.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

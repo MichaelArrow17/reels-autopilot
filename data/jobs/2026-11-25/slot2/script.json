@@ -1,0 +1,227 @@
+{
+  "judul": "AI Gratis Edit Foto Tanpa Bayar",
+  "hook": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan?",
+  "angle": "Sudut kreator Indonesia: cara memanfaatkan AI edit foto gratis tanpa jebakan langganan",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan? Kebanyakan aplikasi memang ngaku gratis. Tapi pas mau simpan hasil fotonya, malah kena watermark atau harus daftar kartu kredit. Padahal, kamu nggak perlu sewa editor mahal cuma buat hapus background atau perjelas foto yang buram. Coba pakai tools AI berbasis web yang menyediakan akses gratis harian. Cukup unggah foto, pilih fitur edit, dan selesai dalam hitungan detik. Editing foto rapi tajam tanpa keluar uang sepeser pun. Simpan video ini buat dicoba nanti!",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan?",
+      "teks_layar": "Edit Foto AI Selalu Bayar?",
+      "pose": "shrug",
+      "keyword": "edit foto AI",
+      "latar": "studio_minimalis",
+      "image_query": "photo editing paywall frustraton"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kebanyakan aplikasi memang ngaku gratis. Tapi pas mau simpan hasil fotonya, malah kena watermark atau harus daftar kartu kredit.",
+      "teks_layar": "Jebakan Watermark & Berlangganan",
+      "pose": "think",
+      "keyword": "watermark",
+      "latar": "ruang_kerja",
+      "image_query": "watermark lock screen software"
+    },
+    {
+      "id": 3,
+      "nama": "insight",
+      "narasi": "Padahal, kamu nggak perlu sewa editor mahal cuma buat hapus background atau perjelas foto yang buram.",
+      "teks_layar": "Nggak Perlu Sewa Editor",
+      "pose": "point",
+      "keyword": "perjelas foto",
+      "latar": "studio_minimalis",
+      "image_query": "photo blur to clear transformation"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Coba pakai tools AI berbasis web yang menyediakan akses gratis harian. Cukup unggah foto, pilih fitur edit, dan selesai dalam hitungan detik.",
+      "teks_layar": "Gunakan Web AI Gratis",
+      "pose": "typing",
+      "keyword": "tools web gratis",
+      "latar": "meja_laptop",
+      "image_query": "web AI photo editor dashboard interface"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Editing foto rapi tajam tanpa keluar uang sepeser pun. Simpan video ini buat dicoba nanti!",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "simpan video",
+      "latar": "studio_minimalis",
+      "image_query": "save bookmark phone screen graphic"
+    }
+  ],
+  "caption": "Suka kesal pas mau download foto hasil edit AI malah disuruh bayar? 😅 Tenang, kamu bisa manfaatin tools AI berbasis web gratisan tanpa perlu langganan mahal. Hemat waktu dan kantong!\n\nSimpan video ini biar nggak bingung pas butuh edit foto cepat! 📌",
+  "cta": "Simpan video ini buat dicoba nanti!",
+  "hashtag": [
+    "#KreatorAI",
+    "#AIGratis",
+    "#EditFotoAI",
+    "#TipsKreator",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Memastikan ada opsi tools AI web gratis tanpa watermark yang mudah diakses pengguna."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Edit Foto AI Gratis Tanpa Bayar!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "dark",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau edit foto pakai AI tapi ujung-ujungnya selalu disuruh bayar berlangganan?",
+        "layout": "kinetic_title",
+        "judul_layar": "EDIT FOTO AI",
+        "subjudul": "Kenapa Selalu Suruh Bayar?",
+        "kata_kunci": [
+          {
+            "kata": "Bayar?",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "lock"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kebanyakan aplikasi memang ngaku gratis. Tapi pas mau simpan hasil fotonya, malah kena watermark atau harus daftar kartu kredit.",
+        "layout": "comparison",
+        "judul_layar": "KLAIM VS REALITA",
+        "subjudul": "Kebanyakan aplikasi memang ngaku gratis. Tapi pas mau simpan hasil fotonya, malah kena wat",
+        "kata_kunci": [
+          {
+            "kata": "Watermark",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "alert"
+        ],
+        "perbandingan": {
+          "kiri": {
+            "judul": "LAMA",
+            "nilai": "",
+            "poin": [],
+            "warna": "abu",
+            "ikon": ""
+          },
+          "kanan": {
+            "judul": "BARU",
+            "nilai": "",
+            "poin": [],
+            "warna": "hijau",
+            "ikon": ""
+          }
+        },
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "insight",
+        "narasi": "Padahal, kamu nggak perlu sewa editor mahal cuma buat hapus background atau perjelas foto yang buram.",
+        "layout": "icons",
+        "judul_layar": "SOLUSI SIMPEL",
+        "subjudul": "Hapus Background & Perjelas Foto",
+        "kata_kunci": [
+          {
+            "kata": "Solusi",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "sparkles",
+          "image"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Coba pakai tools AI berbasis web yang menyediakan akses gratis harian. Cukup unggah foto, pilih fitur edit, dan selesai dalam hitungan detik.",
+        "layout": "steps",
+        "judul_layar": "PAKAI AI WEB GRATIS",
+        "subjudul": "Tanpa Install Aplikasi",
+        "kata_kunci": [
+          {
+            "kata": "Gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "globe"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Unggah Foto",
+          "Pilih Fitur Edit",
+          "Selesai Detik Itu"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "click"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Editing foto rapi tajam tanpa keluar uang sepeser pun. Simpan video ini buat dicoba nanti!",
+        "layout": "cta",
+        "judul_layar": "SIMPAN VIDEO INI",
+        "subjudul": "Coba Nanti Saat Butuh!",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "bookmark"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "cheer"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau pakai AI gratis dari Google tapi takut salah?",
+      "isi": "Banyak yang bingung karena mengira fiturnya berbayar. Padahal cukup buka browser di situs resminya tanpa instal aplikasi.\nBisa bikin tulisan atau ide konten dalam hitungan detik tanpa biaya langganan.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Udah pernah coba akses AI ini belum?",
+      "hashtag": [
+        "#AIGoogle",
+        "#TipsAI",
+        "#KreatorAI",
+        "#BelajarAI",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Kenapa banyak yang bingung pakai AI gratis dari Google?",
+      "isi": "Banyak yang mengira semua fiturnya berbayar atau ribet dipakai.\nPadahal kamu bisa langsung buat tulisan dan ide konten lewat browser tanpa instal aplikasi tambahan.",
+      "cta": "Simpan video ini",
+      "pertanyaan": "Menurutmu AI ini bakal gantiin tugas nulis nggak?",
+      "hashtag": [
+        "#TeknologiGoogle",
+        "#IdeKonten",
+        "#AIGratis",
+        "#PenulisIndonesia",
+        "#AItools"
+      ]
+    },
+    {
+      "baris1": "Bisa bikin ide konten dalam hitungan detik pakai AI?",
+      "isi": "Cukup buka browser dan masuk ke situs resminya tanpa perlu biaya langganan.\nKamu nggak perlu instal aplikasi tambahan untuk mulai bikin tulisan.",
+      "cta": "Komentar jawabanmu di bawah",
+      "pertanyaan": "Fitur AI apa yang paling sering kamu pakai?",
+      "hashtag": [
+        "#TipsMenulis",
+        "#ProduktivitasAI",
+        "#GoogleAI",
+        "#KontenKreator",
+        "#AIWriter"
+      ]
+    }
+  ],
+  "cover": "Cara Pakai AI Google Gratis",
+  "komentar_pin": "Udah pada cobain situs resminya belum? Tulis pengalamanmu di bawah ya!",
+  "llm_provider": "gemini"
+}

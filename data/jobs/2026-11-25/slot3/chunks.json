@@ -1,0 +1,392 @@
+[
+  {
+    "text": "Mau pakai AI gratis",
+    "start": 0.0,
+    "end": 1.1567847934621103,
+    "words": [
+      {
+        "word": "Mau",
+        "start": 0.239208,
+        "duration": 0.16192531649331351
+      },
+      {
+        "word": "pakai",
+        "start": 0.4011333164933135,
+        "duration": 0.29686308023774155
+      },
+      {
+        "word": "AI",
+        "start": 0.6979963967310551,
+        "duration": 0.134937763744428
+      },
+      {
+        "word": "gratis",
+        "start": 0.8329341604754831,
+        "duration": 0.3238506329866272
+      }
+    ]
+  },
+  {
+    "text": "dari Google tapi takut",
+    "start": 1.1567847934621103,
+    "end": 2.3172495616641906,
+    "words": [
+      {
+        "word": "dari",
+        "start": 1.1567847934621103,
+        "duration": 0.269875527488856
+      },
+      {
+        "word": "Google",
+        "start": 1.4266603209509663,
+        "duration": 0.3238506329866271
+      },
+      {
+        "word": "tapi",
+        "start": 1.7505109539375934,
+        "duration": 0.2698755274888558
+      },
+      {
+        "word": "takut",
+        "start": 2.020386481426449,
+        "duration": 0.29686308023774144
+      }
+    ]
+  },
+  {
+    "text": "salah? Banyak yang bingung",
+    "start": 2.3172495616641906,
+    "end": 4.590735329866272,
+    "words": [
+      {
+        "word": "salah?",
+        "start": 2.3172495616641906,
+        "duration": 0.29686308023774144
+      },
+      {
+        "word": "Banyak",
+        "start": 2.614112641901932,
+        "duration": 1.4368716329866276
+      },
+      {
+        "word": "yang",
+        "start": 4.05098427488856,
+        "duration": 0.1889128692421984
+      },
+      {
+        "word": "bingung",
+        "start": 4.239897144130758,
+        "duration": 0.3508381857355136
+      }
+    ]
+  },
+  {
+    "text": "karena mengira semua fiturnya",
+    "start": 4.590735329866272,
+    "end": 6.183000942050521,
+    "words": [
+      {
+        "word": "karena",
+        "start": 4.590735329866272,
+        "duration": 0.4048132912332836
+      },
+      {
+        "word": "mengira",
+        "start": 4.995548621099555,
+        "duration": 0.43180084398216856
+      },
+      {
+        "word": "semua",
+        "start": 5.427349465081724,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "fiturnya",
+        "start": 5.724212545319466,
+        "duration": 0.4587883967310553
+      }
+    ]
+  },
+  {
+    "text": "berbayar atau ribet dipakai.",
+    "start": 6.183000942050521,
+    "end": 8.655536790490345,
+    "words": [
+      {
+        "word": "berbayar",
+        "start": 6.183000942050521,
+        "duration": 0.4587883967310553
+      },
+      {
+        "word": "atau",
+        "start": 6.641789338781576,
+        "duration": 0.2698755274888569
+      },
+      {
+        "word": "ribet",
+        "start": 6.911664866270433,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "dipakai.",
+        "start": 7.208527946508175,
+        "duration": 1.4470088439821698
+      }
+    ]
+  },
+  {
+    "text": "Padahal, kamu cukup buka",
+    "start": 8.655536790490345,
+    "end": 10.352535769687968,
+    "words": [
+      {
+        "word": "Padahal,",
+        "start": 8.655536790490345,
+        "duration": 0.8603848439821693
+      },
+      {
+        "word": "kamu",
+        "start": 9.515921634472514,
+        "duration": 0.2698755274888569
+      },
+      {
+        "word": "cukup",
+        "start": 9.785797161961371,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "buka",
+        "start": 10.082660242199113,
+        "duration": 0.2698755274888551
+      }
+    ]
+  },
+  {
+    "text": "browser, masuk ke situs",
+    "start": 10.352535769687968,
+    "end": 11.824349879643394,
+    "words": [
+      {
+        "word": "browser,",
+        "start": 10.352535769687968,
+        "duration": 0.7431501857355141
+      },
+      {
+        "word": "masuk",
+        "start": 11.095685955423482,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "ke",
+        "start": 11.392549035661224,
+        "duration": 0.13493776374442845
+      },
+      {
+        "word": "situs",
+        "start": 11.527486799405652,
+        "duration": 0.2968630802377419
+      }
+    ]
+  },
+  {
+    "text": "resminya, dan langsung bisa",
+    "start": 11.824349879643394,
+    "end": 13.493098858841018,
+    "words": [
+      {
+        "word": "resminya,",
+        "start": 11.824349879643394,
+        "duration": 0.4587883967310553
+      },
+      {
+        "word": "dan",
+        "start": 12.28313827637445,
+        "duration": 0.5622593164933143
+      },
+      {
+        "word": "langsung",
+        "start": 12.845397592867764,
+        "duration": 0.3778257384843986
+      },
+      {
+        "word": "bisa",
+        "start": 13.223223331352163,
+        "duration": 0.2698755274888551
+      }
+    ]
+  },
+  {
+    "text": "bikin tulisan atau ide",
+    "start": 13.493098858841018,
+    "end": 14.734526285289755,
+    "words": [
+      {
+        "word": "bikin",
+        "start": 13.493098858841018,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "tulisan",
+        "start": 13.78996193907876,
+        "duration": 0.43180084398217033
+      },
+      {
+        "word": "atau",
+        "start": 14.22176278306093,
+        "duration": 0.2698755274888551
+      },
+      {
+        "word": "ide",
+        "start": 14.491638310549785,
+        "duration": 0.24288797473997015
+      }
+    ]
+  },
+  {
+    "text": "konten dalam hitungan detik.",
+    "start": 14.734526285289755,
+    "end": 17.16576647548292,
+    "words": [
+      {
+        "word": "konten",
+        "start": 14.734526285289755,
+        "duration": 0.32385063298662686
+      },
+      {
+        "word": "dalam",
+        "start": 15.058376918276382,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "hitungan",
+        "start": 15.355239998514124,
+        "duration": 1.5136633967310527
+      },
+      {
+        "word": "detik.",
+        "start": 16.868903395245177,
+        "duration": 0.2968630802377419
+      }
+    ]
+  },
+  {
+    "text": "Tanpa biaya langganan, tanpa",
+    "start": 17.16576647548292,
+    "end": 18.98929866567609,
+    "words": [
+      {
+        "word": "Tanpa",
+        "start": 17.16576647548292,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "biaya",
+        "start": 17.46262955572066,
+        "duration": 0.2968630802377419
+      },
+      {
+        "word": "langganan,",
+        "start": 17.759492635958402,
+        "duration": 0.9329429494799442
+      },
+      {
+        "word": "tanpa",
+        "start": 18.692435585438346,
+        "duration": 0.2968630802377419
+      }
+    ]
+  },
+  {
+    "text": "instal aplikasi tambahan.",
+    "start": 18.98929866567609,
+    "end": 21.363084750371478,
+    "words": [
+      {
+        "word": "instal",
+        "start": 18.98929866567609,
+        "duration": 0.32385063298662686
+      },
+      {
+        "word": "aplikasi",
+        "start": 19.313149298662715,
+        "duration": 0.5397510549777103
+      },
+      {
+        "word": "tambahan.",
+        "start": 19.852900353640425,
+        "duration": 1.5101843967310522
+      }
+    ]
+  },
+  {
+    "text": "Coba sekarang dan lihat",
+    "start": 21.363084750371478,
+    "end": 22.550537071322445,
+    "words": [
+      {
+        "word": "Coba",
+        "start": 21.363084750371478,
+        "duration": 0.2698755274888569
+      },
+      {
+        "word": "sekarang",
+        "start": 21.632960277860334,
+        "duration": 0.45878839673105176
+      },
+      {
+        "word": "dan",
+        "start": 22.091748674591386,
+        "duration": 0.16192531649331698
+      },
+      {
+        "word": "lihat",
+        "start": 22.253673991084703,
+        "duration": 0.2968630802377419
+      }
+    ]
+  },
+  {
+    "text": "sendiri hasilnya.",
+    "start": 22.550537071322445,
+    "end": 24.537731312035667,
+    "words": [
+      {
+        "word": "sendiri",
+        "start": 22.550537071322445,
+        "duration": 0.4318008439821668
+      },
+      {
+        "word": "hasilnya.",
+        "start": 22.982337915304612,
+        "duration": 1.5553933967310556
+      }
+    ]
+  },
+  {
+    "text": "Follow buat part dua.",
+    "start": 24.537731312035667,
+    "end": 25.401333,
+    "words": [
+      {
+        "word": "Follow",
+        "start": 24.537731312035667,
+        "duration": 0.32385063298662686
+      },
+      {
+        "word": "buat",
+        "start": 24.861581945022294,
+        "duration": 0.18891286924220196
+      },
+      {
+        "word": "part",
+        "start": 25.050494814264496,
+        "duration": 0.18891286924219486
+      },
+      {
+        "word": "dua.",
+        "start": 25.23940768350669,
+        "duration": 0.16192531649330988
+      }
+    ]
+  }
+]
