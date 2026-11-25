@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?",
+      "isi": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan. Riset kendaraan pintar kini resmi punya rumah sendiri.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Menurutmu, teknologi kendaraan pintar apa yang paling kamu tunggu kehadirannya di Indonesia?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#TransportasiCerdas",
+        "#IlmuData",
+        "#RisetTeknologi",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Sering dikira cuma urusan mesin, padahal data dan AI sudah ambil alih.",
+      "isi": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan. Riset kendaraan pintar kini resmi punya rumah sendiri.",
+      "cta": "Simpan video ini agar tidak lupa.",
+      "pertanyaan": "Kira-kira kapan kendaraan pintar sepenuhnya dikuasai AI di jalanan? Tulis pendapatmu di bawah!",
+      "hashtag": [
+        "#KendaraanPintar",
+        "#AIIndonesia",
+        "#TeknologiTransportasi",
+        "#DataScience",
+        "#SmartMobility"
+      ]
+    },
+    {
+      "baris1": "Dari mana mulainya transportasi yang makin canggih ini?",
+      "isi": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan untuk riset kendaraan pintar.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Bagian mana dari transportasi masa depan bikin kamu paling penasaran?",
+      "hashtag": [
+        "#InovasiTransportasi",
+        "#KecerdasanBuatan",
+        "#RisetAI",
+        "#TeknologiMasaDepan",
+        "#TechTrends"
+      ]
+    }
+  ],
+  "cover": "Rumah Baru Riset AI Transportasi",
+  "komentar_pin": "Mau tahu lebih banyak perkembangan AI dan teknologi? Yuk, diskusi di komentar atau follow akun ini!",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,232 @@
+{
+  "style": "cerita",
+  "storyboard": {
+    "style": "cerita",
+    "environment": "office",
+    "durasi_detik": 24.0,
+    "label_kiri": "SENDIRIAN",
+    "label_kanan": "KOLABORASI",
+    "judul": "Inovasi Bareng Komunitas",
+    "hook": "Kenapa perusahaan makin andalkan pengguna?",
+    "karakter": [
+      {
+        "id": "a",
+        "warna": "abu",
+        "peran": "bekerja sendiri"
+      },
+      {
+        "id": "b",
+        "warna": "kuning",
+        "peran": "berkolaborasi"
+      }
+    ],
+    "beats": [
+      {
+        "t": 0.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "push",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "push",
+          "x": 0.6,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "a"
+          }
+        ],
+        "gelembung_a": "Bikin sendiri aja!",
+        "gelembung_b": "Ajak yang lain yuk!",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "push"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 4.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "struggle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.65,
+          "y": 0.5,
+          "hadap": "kanan"
+        },
+        "properti": [],
+        "gelembung_a": "Berat banget...",
+        "gelembung_b": "Ide kalian apa?",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "strain"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 8.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.65,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "stand",
+          "x": 0.65,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [],
+        "gelembung_a": "Gagal terus.",
+        "gelembung_b": "Masukan diterima!",
+        "efek": [],
+        "sfx": [
+          "sigh"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 12.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "look",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "climb",
+          "x": 0.7,
+          "y": 0.4,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "ladder",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Kok dia cepat?",
+        "gelembung_b": "Bareng-bareng maju!",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "cheer"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 16.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "kneel",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "celebrate",
+          "x": 0.75,
+          "y": 0.3,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Ah, harusnya kolab.",
+        "gelembung_b": "Inovasi sukses!",
+        "efek": [
+          "sparks",
+          "glow"
+        ],
+        "sfx": [
+          "tada"
+        ],
+        "klimaks": true,
+        "teks_klimaks": "Kekuatan Komunitas!"
+      },
+      {
+        "t": 20.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "walk",
+          "x": 0.4,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "wave",
+          "x": 0.75,
+          "y": 0.6,
+          "hadap": "kiri"
+        },
+        "properti": [],
+        "gelembung_a": "Gabung deh.",
+        "gelembung_b": "Yuk gabung!",
+        "efek": [],
+        "sfx": [
+          "bell"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      }
+    ],
+    "klimaks": {
+      "t": 16.0,
+      "jenis": "capai_puncak",
+      "pemenang": "b"
+    },
+    "narasi_penuh": "",
+    "pakai_vo": false,
+    "moral": "Produk hebat lahir dari kolaborasi bersama."
+  },
+  "judul": "Inovasi Bareng Komunitas",
+  "hook": "Kenapa perusahaan makin andalkan pengguna?",
+  "angle": "Sudut kreator Indonesia: Komunitas Pengguna Menjadi Bagian Penting dalam Inovasi Teknologi Mengapa Perusahaan Semakin Mengandalkan Pengujian Produk secara Kolaboratif - Fortune Italia",
+  "bahasa": "id",
+  "durasi_target_detik": 24,
+  "narasi_penuh": "",
+  "adegan": [],
+  "caption": "Masih bingung soal Inovasi Bareng Komunitas? Ini cara praktis yang bisa kamu coba.\n\nProduk hebat lahir dari kolaborasi bersama.\n\nSimpan video ini, biar kamu ingat saat mau nyerah.\n\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsKonten",
+  "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#Motivasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "KOLABORASI",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "storyboard_fallback": false,
+  "pakai_vo": false,
+  "moral": "Produk hebat lahir dari kolaborasi bersama."
+}

@@ -341,6 +341,36 @@
       "tanggal": "2026-11-25",
       "angle": "Sudut kreator Indonesia: ai gratis terbaru",
       "slot": 5
+    },
+    {
+      "judul": "Inovasi Bareng Komunitas",
+      "tanggal": "2026-11-26",
+      "angle": "Sudut kreator Indonesia: Komunitas Pengguna Menjadi Bagian Penting dalam Inovasi Teknologi Mengapa Perusahaan Semakin Mengandalkan Pengujian Produk secara Kolaboratif - Fortune Italia",
+      "slot": 1
+    },
+    {
+      "judul": "Cara Kerja Teknologi BYD TiTAN 7 DM",
+      "tanggal": "2026-11-26",
+      "angle": "Sudut kreator Indonesia: Mengulik Cara Kerja Teknologi Canggih di BYD TiTAN 7 DM",
+      "slot": 2
+    },
+    {
+      "judul": "UMKM Desa Pakai AI",
+      "tanggal": "2026-11-26",
+      "angle": "Sudut kreator Indonesia: Kemenekraf dorong UMKM desa manfaatkan AI",
+      "slot": 3
+    },
+    {
+      "judul": "Bagian Khusus AI Transportasi",
+      "tanggal": "2026-11-26",
+      "angle": "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama dari bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan (JSAI).",
+      "slot": 4
+    },
+    {
+      "judul": "chatgpt astra",
+      "tanggal": "2026-11-26",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 5
     }
   ],
   "days": {
@@ -11488,7 +11518,7 @@
           "id": "2026-11-26-s1-66c67f",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Komunitas Pengguna Menjadi Bagian Penting dalam Inovasi Teknologi Mengapa Perusahaan Semakin Mengandalkan Pengujian Produk secara Kolaboratif - Fortune Italia",
+          "judul": "Inovasi Bareng Komunitas",
           "hook": "Komunitas Pengguna Menjadi Bagian Penting dalam Inovasi Teknologi Mengapa Perusahaan Semakin Mengandalkan?",
           "topic": {
             "judul": "Komunitas Pengguna Menjadi Bagian Penting dalam Inovasi Teknologi Mengapa Perusahaan Semakin Mengandalkan Pengujian Produk secara Kolaboratif - Fortune Italia",
@@ -11520,14 +11550,29 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-26T06:01:38+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-26T06:01:38+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 86)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot1/script.json",
+          "caption": "Bagaimana inovasi bisa lahir bareng komunitas?\nKreativitas berkembang pesat saat ide-ide dari berbagai kepala digabungkan bersama.\nKomentar jawaban\nMenurutmu, apa tantangan terbesar saat membuat karya bareng komunitas?\n#InovasiKomunitas #KreatorAI #PenulisIndonesia #CommunityCollaboration",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.5,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-26-s2-68e8c8",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Mengulik Cara Kerja Teknologi Canggih di BYD TiTAN 7 DM - Medcom.id",
+          "judul": "Cara Kerja Teknologi BYD TiTAN 7 DM",
           "hook": "Mengulik Cara Kerja Teknologi Canggih di BYD TiTAN 7 DM - Medcom.id?",
           "topic": {
             "judul": "Mengulik Cara Kerja Teknologi Canggih di BYD TiTAN 7 DM - Medcom.id",
@@ -11559,14 +11604,28 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-26T06:01:38+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-26T06:01:38+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot2/script.json",
+          "caption": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?\nBanyak yang mengira mobil hybrid itu ribet dan boros bahan bakar. Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis.\nSimpan video ini buat kamu yang suka teknologi otomotif terbaru.\nMenurutmu, apakah mobil hybrid bakal sepenuhnya menggantikan mobil konvensional?\n#BYDTiTAN7DM #TeknologiMobil #MobilHybrid #OtomotifIndonesia #cartech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 23.6,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-26-s3-57d27a",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Kemenekraf Dorong UMKM Desa Manfaatkan Teknologi AI - Jawa Pos",
+          "judul": "UMKM Desa Pakai AI",
           "hook": "Kemenekraf Dorong UMKM Desa Manfaatkan Teknologi AI - Jawa Pos?",
           "topic": {
             "judul": "Kemenekraf Dorong UMKM Desa Manfaatkan Teknologi AI - Jawa Pos",
@@ -11599,14 +11658,28 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-26T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-26T06:01:39+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot3/script.json",
+          "caption": "Desa kamu mau jualan tapi bingung mulai dari mana?\nKemenparekraf kini gencar mendorong UMKM desa memanfaatkan AI untuk membuat foto produk dan teks promosi lewat aplikasi gratis.\nSimpan\nApa produk lokal dari desamu yang paling potensial dijual online?\n#UMKMDesa #Kemenparekraf #BisnisDigital #AIforBusiness",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 25.366667,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-26-s4-96e48d",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama dari bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan (JSAI). - Vietnam.vn",
+          "judul": "Bagian Khusus AI Transportasi",
           "hook": "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama dari bagian khusus Ilmu?",
           "topic": {
             "judul": "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama dari bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan (JSAI). - Vietnam.vn",
@@ -11639,8 +11712,22 @@
             "sinyal": null,
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-26T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-26T06:01:39+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot4/script.json",
+          "caption": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?\nJurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan. Riset kendaraan pintar kini resmi punya rumah sendiri.\nFollow untuk part berikutnya.\nMenurutmu, teknologi kendaraan pintar apa yang paling kamu tunggu kehadirannya di Indonesia?\n#KecerdasanBuatan #TransportasiCerdas #IlmuData #RisetTeknologi #ArtificialIntelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 27.624,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-26-s5-dfa892",
@@ -11678,8 +11765,24 @@
             "sinyal": "chatgpt",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-26T06:01:39+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-26T06:01:39+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 5× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-26/slot5/script.json",
+          "caption": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong.\nKalau ada tanggal, gelar, atau jumlah, tanyakan dulu asal angkanya sebelum langsung percaya. Jangan pernah sebar kabar duka atau skandal tanpa tautan resmi.\nSimpan video ini.\nMana informasi tanpa sumber yang paling sering kamu temui di media sosial?\n#literasidigital #cekfakta #aiprofile #fakenews #factcheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         }
       ],
       "scouted_at": "2026-11-26T06:01:38+08:00",
@@ -12056,6 +12159,41 @@
       "style": "penjelas",
       "judul": "AI gratis terbaru",
       "reason": "topik info"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 1,
+      "style": "cerita",
+      "judul": "Inovasi Bareng Komunitas",
+      "reason": "keragaman batch (dari penjelas, yakin 86)"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "Cara Kerja Teknologi BYD TiTAN 7 DM",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "UMKM Desa Pakai AI",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 4,
+      "style": "penjelas",
+      "judul": "Bagian Khusus AI Transportasi",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-26",
+      "slot": 5,
+      "style": "kolase",
+      "judul": "chatgpt astra",
+      "reason": "rotasi setelah 5× penjelas"
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+      "isi": "Banyak yang mengira mobil hybrid itu ribet dan boros bahan bakar. Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis.",
+      "cta": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+      "pertanyaan": "Menurutmu, apakah mobil hybrid bakal sepenuhnya menggantikan mobil konvensional?",
+      "hashtag": [
+        "#BYDTiTAN7DM",
+        "#TeknologiMobil",
+        "#MobilHybrid",
+        "#OtomotifIndonesia",
+        "#cartech"
+      ]
+    },
+    {
+      "baris1": "Benarkah mobil hybrid itu ribet dan boros bahan bakar?",
+      "isi": "Kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis. Kamu tinggal duduk manis dan biarkan sistem memilih efisiensi terbaik.",
+      "cta": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+      "pertanyaan": "Bagian mana dari teknologi hybrid yang paling bikin kamu penasaran?",
+      "hashtag": [
+        "#BYDTiTAN",
+        "#MobilHybrid",
+        "#InovasiOtomotif",
+        "#TeknologiCanggih",
+        "#hybridcar"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+      "isi": "Sistem penggerak cerdas mengatur bensin dan listrik secara otomatis sehingga kamu tinggal duduk manis dan membiarkan sistem memilih efisiensi terbaik.",
+      "cta": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+      "pertanyaan": "Lebih pilih mobil bensin konvensional atau hybrid cerdas seperti ini?",
+      "hashtag": [
+        "#BYDIndonesia",
+        "#TeknologiOtomotif",
+        "#MobilMasaDepan",
+        "#Otomotif",
+        "#electricvehicle"
+      ]
+    }
+  ],
+  "cover": "Cara Kerja BYD TiTAN 7 DM",
+  "komentar_pin": "Gimana menurutmu tentang sistem penggerak otomatis di mobil hybrid ini? Tulis pendapatmu di bawah ya!",
+  "llm_provider": "gemini"
+}

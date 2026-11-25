@@ -1,0 +1,200 @@
+{
+  "judul": "Bagian Khusus AI Transportasi",
+  "hook": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?",
+  "angle": "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama dari bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan (JSAI).",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya? Sering dikira cuma urusan mesin, padahal data dan AI sudah ambil alih. Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan. Artinya, riset kendaraan pintar kini resmi punya rumah sendiri. Cek jurnalnya buat tahu tren teknologi masa depan. Follow buat part 2.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?",
+      "teks_layar": "Transportasi Canggih?",
+      "pose": "shrug",
+      "keyword": "canggih",
+      "latar": "studio minimalis",
+      "image_query": "futuristic transportation stickman"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Sering dikira cuma urusan mesin, padahal data dan AI sudah ambil alih.",
+      "teks_layar": "Bukan Cuma Mesin",
+      "pose": "point",
+      "keyword": "data dan AI",
+      "latar": "studio minimalis",
+      "image_query": "AI data traffic stickman"
+    },
+    {
+      "id": 3,
+      "nama": "fakta",
+      "narasi": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan.",
+      "teks_layar": "Edisi Pertama JSAI",
+      "pose": "typing",
+      "keyword": "edisi pertama",
+      "latar": "studio minimalis",
+      "image_query": "scientific journal stickman"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Artinya, riset kendaraan pintar kini resmi punya rumah sendiri. Cek jurnalnya buat tahu tren teknologi masa depan.",
+      "teks_layar": "Riset Kendaraan Pintar",
+      "pose": "think",
+      "keyword": "kendaraan pintar",
+      "latar": "studio minimalis",
+      "image_query": "smart car research stickman"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part 2.",
+      "teks_layar": "Follow Po Chai",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "studio minimalis",
+      "image_query": "follow stickman"
+    }
+  ],
+  "caption": "Transportasi masa depan makin fokus ke AI dan data! Simpan video ini dan tulis pendapatmu di komentar.",
+  "cta": "Follow buat part 2.",
+  "hashtag": [
+    "#KreatorAI",
+    "#KecerdasanBuatan",
+    "#TransportasiPintar",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jurnal Ilmu dan Teknologi Transportasi menerbitkan edisi pertama bagian khusus JSAI."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI Masuk Transportasi?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?",
+        "layout": "kinetic_title",
+        "judul_layar": "Transportasi Canggih?",
+        "subjudul": "Transportasi makin canggih, tapi kamu tahu dari mana mulainya?",
+        "kata_kunci": [
+          {
+            "kata": "canggih",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Sering dikira cuma urusan mesin, padahal data dan AI sudah ambil alih.",
+        "layout": "bullets",
+        "judul_layar": "Bukan Cuma Mesin",
+        "subjudul": "Sering dikira cuma urusan mesin, padahal data dan AI sudah ambil alih.",
+        "kata_kunci": [
+          {
+            "kata": "data dan AI",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "fakta",
+        "narasi": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu Data dan Kecerdasan Buatan Terapan.",
+        "layout": "bullets",
+        "judul_layar": "Edisi Pertama JSAI",
+        "subjudul": "Jurnal Ilmu dan Teknologi Transportasi resmi menerbitkan edisi pertama bagian khusus Ilmu ",
+        "kata_kunci": [
+          {
+            "kata": "edisi pertama",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Artinya, riset kendaraan pintar kini resmi punya rumah sendiri. Cek jurnalnya buat tahu tren teknologi masa depan.",
+        "layout": "bullets",
+        "judul_layar": "Riset Kendaraan Pintar",
+        "subjudul": "Artinya, riset kendaraan pintar kini resmi punya rumah sendiri. Cek jurnalnya buat tahu tr",
+        "kata_kunci": [
+          {
+            "kata": "kendaraan pintar",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow buat part 2.",
+        "layout": "cta",
+        "judul_layar": "Follow Po Chai",
+        "subjudul": "Follow buat part 2.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

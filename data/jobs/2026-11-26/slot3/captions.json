@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+      "isi": "Kemenparekraf kini gencar mendorong UMKM desa memanfaatkan AI untuk membuat foto produk dan teks promosi lewat aplikasi gratis.",
+      "cta": "Simpan",
+      "pertanyaan": "Apa produk lokal dari desamu yang paling potensial dijual online?",
+      "hashtag": [
+        "#UMKMDesa",
+        "#Kemenparekraf",
+        "#BisnisDigital",
+        "#AIforBusiness"
+      ]
+    },
+    {
+      "baris1": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+      "isi": "Teknologi kecerdasan buatan kini dipakai UMKM desa untuk mempermudah promosi jualan dengan aplikasi gratis tanpa hal yang rumit.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Sudah pernah coba pakai aplikasi AI buat jualan belum?",
+      "hashtag": [
+        "#UMKMIndonesia",
+        "#DigitalisasiDesa",
+        "#TipsBisnis",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+      "isi": "Hanya pakai aplikasi gratis, UMKM desa bisa membuat foto produk dan teks promosi dengan bantuan teknologi AI.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Bagaimana tantangan promosi produk di desamu saat ini?",
+      "hashtag": [
+        "#PemberdayaanUMKM",
+        "#TeknologiDesa",
+        "#KontenAI",
+        "#SmallBusiness"
+      ]
+    }
+  ],
+  "cover": "UMKM Desa Pakai AI",
+  "komentar_pin": "Tulis di komentar, apa produk dari desamu yang mau dipromosikan pakai AI?",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong.",
+      "isi": "Kalau ada tanggal, gelar, atau jumlah, tanyakan dulu asal angkanya sebelum langsung percaya. Jangan pernah sebar kabar duka atau skandal tanpa tautan resmi.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Mana informasi tanpa sumber yang paling sering kamu temui di media sosial?",
+      "hashtag": [
+        "#literasidigital",
+        "#cekfakta",
+        "#aiprofile",
+        "#fakenews",
+        "#factcheck"
+      ]
+    },
+    {
+      "baris1": "Yakin video profil orang terkenal yang kamu tonton itu benar isinya?",
+      "isi": "Pastikan selalu cek tanggal, gelar, dan jumlah dari sumber resmi. Tanpa tautan yang jelas, skandal atau kabar duka sebaiknya jangan disebar.",
+      "cta": "Komentar jawaban.",
+      "pertanyaan": "Pernahkah kamu hampir percaya berita palsu yang terlihat sangat meyakinkan?",
+      "hashtag": [
+        "#literasidigital",
+        "#misinformasi",
+        "#aiwatch",
+        "#beritabohong",
+        "#factcheck"
+      ]
+    },
+    {
+      "baris1": "Kenapa sumber informasi dalam video profil bisa kosong melompong?",
+      "isi": "Selalu periksa setiap angka, tanggal, dan gelar yang disebutkan. Hindari menyebarkan kabar duka atau skandal jika tidak ada tautan resmi.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Bagaimana cara kamu biasanya memverifikasi kebenaran sebuah video?",
+      "hashtag": [
+        "#literasidigital",
+        "#saringsebelumsharing",
+        "#hoaxbusters",
+        "#awasdisinformasi",
+        "#factcheck"
+      ]
+    }
+  ],
+  "cover": "Cek dulu sebelum percaya video AI",
+  "komentar_pin": "Tulis di komentar, informasi apa yang paling bikin kamu ragu akhir-akhir ini?",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,201 @@
+{
+  "judul": "Cara Kerja Teknologi BYD TiTAN 7 DM",
+  "hook": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+  "angle": "Sudut kreator Indonesia: Mengulik Cara Kerja Teknologi Canggih di BYD TiTAN 7 DM",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM? Banyak yang mengira mobil hybrid itu ribet dan boros bahan bakar. Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis. Kamu tinggal duduk manis dan biarkan sistem memilih efisiensi terbaik. Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+      "teks_layar": "Teknologi BYD TiTAN 7 DM",
+      "pose": "think",
+      "keyword": "teknologi",
+      "latar": "studio minimalis",
+      "image_query": "modern car technology abstract"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Banyak yang mengira mobil hybrid itu ribet dan boros bahan bakar.",
+      "teks_layar": "Hybrid ribet?",
+      "pose": "shrug",
+      "keyword": "boros",
+      "latar": "studio minimalis",
+      "image_query": "confused stickman car"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis.",
+      "teks_layar": "Sistem Penggerak Cerdas",
+      "pose": "point",
+      "keyword": "otomatis",
+      "latar": "studio minimalis",
+      "image_query": "smart hybrid engine diagram"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "Kamu tinggal duduk manis dan biarkan sistem memilih efisiensi terbaik.",
+      "teks_layar": "Efisiensi Terbaik",
+      "pose": "sit",
+      "keyword": "efisiensi",
+      "latar": "studio minimalis",
+      "image_query": "relaxed driving electric car"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "Simpan",
+      "latar": "studio minimalis",
+      "image_query": "save icon motion graphic"
+    }
+  ],
+  "caption": "Penasaran sama teknologi BYD TiTAN 7 DM? Ternyata begini cara kerjanya! Simpan video ini buat kamu yang suka otomotif.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#BYD",
+    "#TiTAN7DM",
+    "#TeknologiMobil",
+    "#OtomotifIndonesia"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Cara Kerja BYD TiTAN 7 DM",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+        "layout": "kinetic_title",
+        "judul_layar": "Teknologi BYD TiTAN 7 DM",
+        "subjudul": "Pernah penasaran cara kerja teknologi canggih di mobil BYD TiTAN 7 DM?",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Banyak yang mengira mobil hybrid itu ribet dan boros bahan bakar.",
+        "layout": "bullets",
+        "judul_layar": "Hybrid ribet?",
+        "subjudul": "Banyak yang mengira mobil hybrid itu ribet dan boros bahan bakar.",
+        "kata_kunci": [
+          {
+            "kata": "boros",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara otomatis.",
+        "layout": "bullets",
+        "judul_layar": "Sistem Penggerak Cerdas",
+        "subjudul": "Padahal kuncinya ada di sistem penggerak cerdas yang mengatur bensin dan listrik secara ot",
+        "kata_kunci": [
+          {
+            "kata": "otomatis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "Kamu tinggal duduk manis dan biarkan sistem memilih efisiensi terbaik.",
+        "layout": "bullets",
+        "judul_layar": "Efisiensi Terbaik",
+        "subjudul": "Kamu tinggal duduk manis dan biarkan sistem memilih efisiensi terbaik.",
+        "kata_kunci": [
+          {
+            "kata": "efisiensi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini buat kamu yang suka teknologi otomotif terbaru.",
+        "kata_kunci": [
+          {
+            "kata": "Simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

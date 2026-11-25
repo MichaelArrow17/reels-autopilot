@@ -1,0 +1,19 @@
+{
+  "varian": [
+    {
+      "baris1": "Bagaimana inovasi bisa lahir bareng komunitas?",
+      "isi": "Kreativitas berkembang pesat saat ide-ide dari berbagai kepala digabungkan bersama.",
+      "cta": "Komentar jawaban",
+      "pertanyaan": "Menurutmu, apa tantangan terbesar saat membuat karya bareng komunitas?",
+      "hashtag": [
+        "#InovasiKomunitas",
+        "#KreatorAI",
+        "#PenulisIndonesia",
+        "#CommunityCollaboration"
+      ]
+    }
+  ],
+  "cover": "Inovasi Bareng Komunitas",
+  "komentar_pin": "Yuk, sharing pengalamanmu di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

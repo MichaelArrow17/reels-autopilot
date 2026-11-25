@@ -1,0 +1,200 @@
+{
+  "judul": "UMKM Desa Pakai AI",
+  "hook": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+  "angle": "Sudut kreator Indonesia: Kemenekraf dorong UMKM desa manfaatkan AI",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Desa kamu mau jualan tapi bingung mulai dari mana? Tenang, Kemenekraf sekarang lagi gencar dorong UMKM desa buat pakai teknologi kecerdasan buatan. Bukan buat hal rumit, tapi biar promosi jualan makin gampang. Kamu cukup pakai aplikasi gratis buat bikin foto produk dan teks promosi. Mulai dari sekarang supaya usahamu makin dilirik pembeli. Follow buat part dua.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+      "teks_layar": "UMKM Desa Bingung Jualan?",
+      "pose": "idle",
+      "keyword": "bingung",
+      "latar": "polos",
+      "image_query": "stickman confused"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Tenang, Kemenekraf sekarang lagi gencar dorong UMKM desa buat pakai teknologi kecerdasan buatan.",
+      "teks_layar": "Kemenekraf Dorong UMKM Pakai AI",
+      "pose": "point",
+      "keyword": "Kemenekraf",
+      "latar": "polos",
+      "image_query": "stickman pointing"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Bukan buat hal rumit, tapi biar promosi jualan makin gampang.",
+      "teks_layar": "Bikin Promosi Gampang",
+      "pose": "think",
+      "keyword": "promosi",
+      "latar": "polos",
+      "image_query": "stickman thinking"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Kamu cukup pakai aplikasi gratis buat bikin foto produk dan teks promosi.",
+      "teks_layar": "Pakai Aplikasi Gratis",
+      "pose": "typing",
+      "keyword": "aplikasi",
+      "latar": "polos",
+      "image_query": "stickman typing"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Mulai dari sekarang supaya usahamu makin dilirik pembeli. Follow buat part dua.",
+      "teks_layar": "Follow Buat Part 2",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "polos",
+      "image_query": "stickman cheering"
+    }
+  ],
+  "caption": "Kemenekraf dorong UMKM desa manfaatkan AI biar jualan makin gampang. Cobain sekarang!",
+  "cta": "Follow buat part dua.",
+  "hashtag": [
+    "#KreatorAI",
+    "#UMKMDesa",
+    "#Kemenekraf",
+    "#TeknologiAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Kemenekraf dorong UMKM desa manfaatkan teknologi AI"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "UMKM Desa Pakai AI!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+        "layout": "kinetic_title",
+        "judul_layar": "UMKM Desa Bingung Jualan?",
+        "subjudul": "Desa kamu mau jualan tapi bingung mulai dari mana?",
+        "kata_kunci": [
+          {
+            "kata": "bingung",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Tenang, Kemenekraf sekarang lagi gencar dorong UMKM desa buat pakai teknologi kecerdasan buatan.",
+        "layout": "bullets",
+        "judul_layar": "Kemenekraf Dorong UMKM Pakai AI",
+        "subjudul": "Tenang, Kemenekraf sekarang lagi gencar dorong UMKM desa buat pakai teknologi kecerdasan b",
+        "kata_kunci": [
+          {
+            "kata": "Kemenekraf",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Bukan buat hal rumit, tapi biar promosi jualan makin gampang.",
+        "layout": "bullets",
+        "judul_layar": "Bikin Promosi Gampang",
+        "subjudul": "Bukan buat hal rumit, tapi biar promosi jualan makin gampang.",
+        "kata_kunci": [
+          {
+            "kata": "promosi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Kamu cukup pakai aplikasi gratis buat bikin foto produk dan teks promosi.",
+        "layout": "bullets",
+        "judul_layar": "Pakai Aplikasi Gratis",
+        "subjudul": "Kamu cukup pakai aplikasi gratis buat bikin foto produk dan teks promosi.",
+        "kata_kunci": [
+          {
+            "kata": "aplikasi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Mulai dari sekarang supaya usahamu makin dilirik pembeli. Follow buat part dua.",
+        "layout": "cta",
+        "judul_layar": "Follow Buat Part 2",
+        "subjudul": "Mulai dari sekarang supaya usahamu makin dilirik pembeli. Follow buat part dua.",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}
