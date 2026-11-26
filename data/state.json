@@ -371,6 +371,30 @@
       "tanggal": "2026-11-26",
       "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
       "slot": 5
+    },
+    {
+      "judul": "Kenapa Iklan Muncul Usai Dibicarakan? Ini Penjelasan Bos Instagram",
+      "tanggal": "2026-11-27",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 1
+    },
+    {
+      "judul": "AI di Perpustakaan Bukan Sekadar Teknologi",
+      "tanggal": "2026-11-27",
+      "angle": "Sudut kreator Indonesia tentang AI di perpustakaan",
+      "slot": 2
+    },
+    {
+      "judul": "AI untuk Deteksi Dini Alzheimer",
+      "tanggal": "2026-11-27",
+      "angle": "Sudut kreator Indonesia: Kecerdasan Buatan untuk Deteksi Dini Alzheimer dan Demensia: Menuju Teknologi Diagnosis yang Terjangkau - Universitas Airlangga",
+      "slot": 3
+    },
+    {
+      "judul": "ChatGPT Tanpa Langganan",
+      "tanggal": "2026-11-27",
+      "angle": "Sudut kreator Indonesia: chatgpt without subscription",
+      "slot": 5
     }
   ],
   "days": {
@@ -12294,14 +12318,30 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-27T06:01:31+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-27T06:01:31+08:00",
+          "style": "kolase",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot1/script.json",
+          "caption": "Kenapa iklan bisa muncul usai dibicarakan?\nBanyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Jangan langsung percaya jika tidak ada tautan resmi.\nSimpan video ini.\nPernahkah kamu mengalami iklan muncul tiba-tiba setelah dibicarakan?\n#faktasosmed #literasidigital #privasidata #smartuser",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-27-s2-77c693",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Kecerdasan Buatan di Perpustakaan: Bukan Sekadar Soal Teknologi - Universitas Airlangga",
+          "judul": "AI di Perpustakaan Bukan Sekadar Teknologi",
           "hook": "Kecerdasan Buatan di Perpustakaan: Bukan Sekadar Soal Teknologi - Universitas Airlangga?",
           "topic": {
             "judul": "Kecerdasan Buatan di Perpustakaan: Bukan Sekadar Soal Teknologi - Universitas Airlangga",
@@ -12334,14 +12374,28 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-27T06:01:31+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-27T06:01:31+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot2/script.json",
+          "caption": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?\nFokus utama AI di perpustakaan bukan sekadar jadi mesin pencari buku biasa, melainkan membantu memahami kebiasaan baca supaya rekomendasinya pas banget.\nFollow untuk part berikutnya\nSistem pencarian kampusmu sudah pakai teknologi ini belum?\n#KecerdasanBuatan #PerpustakaanDigital #TipsBelajar #AIinEducation",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 23.0,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-27-s3-447e8b",
           "slot": 3,
           "slot_label": "17:00",
-          "judul": "Kecerdasan Buatan untuk Deteksi Dini Alzheimer dan Demensia: Menuju Teknologi Diagnosis yang Terjangkau - Universitas Airlangga",
+          "judul": "AI untuk Deteksi Dini Alzheimer",
           "hook": "Kecerdasan Buatan untuk Deteksi Dini Alzheimer dan Demensia: Menuju Teknologi Diagnosis yang?",
           "topic": {
             "judul": "Kecerdasan Buatan untuk Deteksi Dini Alzheimer dan Demensia: Menuju Teknologi Diagnosis yang Terjangkau - Universitas Airlangga",
@@ -12374,14 +12428,28 @@
             "sinyal": null,
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-27T06:01:31+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-27T06:01:31+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot3/script.json",
+          "caption": "Kenapa deteksi Alzheimer biasanya lama dan mahal?\nRiset Universitas Airlangga sedang mengembangkan AI untuk membuat diagnosis Alzheimer lebih terjangkau dengan menganalisis pola tertentu secara cepat tanpa biaya tinggi.\nYuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.\nMenurutmu, seberapa penting teknologi AI dalam dunia kesehatan saat ini?\n#Alzheimer #TeknologiKesehatan #AIIndonesia #UniversitasAirlangga #HealthTech",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 28.5,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-27-s4-dd8463",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "chatgpt astra explained",
+          "judul": "ChatGPT Astra?",
           "hook": "chatgpt astra explained?",
           "topic": {
             "judul": "chatgpt astra explained",
@@ -12413,14 +12481,29 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-27T06:01:31+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-27T06:01:31+08:00",
+          "style": "cerita",
+          "style_reason": "rotasi setelah 3× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot4/script.json",
+          "caption": "Apa benar ChatGPT Astra akan segera rilis?\nInformasi seputar perkembangan teknologi AI terbaru dan prediksi kehadirannya menarik untuk disimak.\nKomentar jawaban\nMenurut kamu, seberapa besar pengaruh AI ini nantinya?\n#ChatGPTAstra #KecerdasanBuatan #TeknologiTerbaru #AIUpdate",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-27-s5-ca3185",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "chatgpt without subscription",
+          "judul": "ChatGPT Tanpa Langganan",
           "hook": "chatgpt without subscription?",
           "topic": {
             "judul": "chatgpt without subscription",
@@ -12452,8 +12535,22 @@
             "sinyal": "chatgpt",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-27T06:01:31+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-27T06:01:31+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-27/slot5/script.json",
+          "caption": "Mau pakai ChatGPT tapi malas berlangganan?\nVersi gratisnya masih sangat bisa diandalkan buat bikin naskah. Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun lewat browser.\nKomentar jawaban di bawah ya.\nFitur gratis apa yang paling sering kamu pakai?\n#chatgptindonesia #aiuntukpenulis #tipsteknologi #artificialintelligence",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 20.1,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-27T06:01:30+08:00",
@@ -12865,6 +12962,41 @@
       "style": "kolase",
       "judul": "chatgpt astra",
       "reason": "rotasi setelah 5× penjelas"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 1,
+      "style": "kolase",
+      "judul": "Kenapa Iklan Muncul Usai Dibicarakan? Ini Penjelasan Bos Instagram",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "AI di Perpustakaan Bukan Sekadar Teknologi",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 3,
+      "style": "penjelas",
+      "judul": "AI untuk Deteksi Dini Alzheimer",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "ChatGPT Astra?",
+      "reason": "rotasi setelah 3× penjelas"
+    },
+    {
+      "date": "2026-11-27",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "ChatGPT Tanpa Langganan",
+      "reason": "topik info"
     }
   ]
 }

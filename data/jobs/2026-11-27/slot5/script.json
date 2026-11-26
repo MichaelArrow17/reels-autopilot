@@ -1,0 +1,201 @@
+{
+  "judul": "ChatGPT Tanpa Langganan",
+  "hook": "Mau pakai ChatGPT tapi malas berlangganan?",
+  "angle": "Sudut kreator Indonesia: chatgpt without subscription",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau pakai ChatGPT tapi malas berlangganan? Tenang, versi gratisnya masih sangat bisa diandalkan buat bikin naskah. Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun. Caranya gampang, langsung buka browser dan masuk ke situs resminya sekarang. Coba trik ini sekarang.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau pakai ChatGPT tapi malas berlangganan?",
+      "teks_layar": "ChatGPT Tanpa Langganan?",
+      "pose": "shrug",
+      "keyword": "berlangganan",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused facing laptop"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Tenang, versi gratisnya masih sangat bisa diandalkan buat bikin naskah.",
+      "teks_layar": "Versi Gratis Tetap Mantap",
+      "pose": "point",
+      "keyword": "gratis",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at free sign"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun.",
+      "teks_layar": "Tanpa Biaya Sepeser Pun",
+      "pose": "think",
+      "keyword": "biaya",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking with lightbulb"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Caranya gampang, langsung buka browser dan masuk ke situs resminya sekarang.",
+      "teks_layar": "Buka Browser Sekarang",
+      "pose": "typing",
+      "keyword": "browser",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on computer"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Coba trik ini sekarang.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "coba",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with arms up"
+    }
+  ],
+  "caption": "Mau pakai AI tapi malas bayar bulanan? Versi gratisnya sudah lebih dari cukup buat bantu kerjaan harianmu. Simpan video ini buat dicoba nanti!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#ChatGPTIndonesia",
+    "#TipsAI",
+    "#BelajarAI",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "ChatGPT menyediakan versi gratis yang dapat diakses melalui browser."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "ChatGPT Tanpa Langganan?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau pakai ChatGPT tapi malas berlangganan?",
+        "layout": "kinetic_title",
+        "judul_layar": "ChatGPT Tanpa Langganan?",
+        "subjudul": "Mau pakai ChatGPT tapi malas berlangganan?",
+        "kata_kunci": [
+          {
+            "kata": "berlangganan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Tenang, versi gratisnya masih sangat bisa diandalkan buat bikin naskah.",
+        "layout": "bullets",
+        "judul_layar": "Versi Gratis Tetap Mantap",
+        "subjudul": "Tenang, versi gratisnya masih sangat bisa diandalkan buat bikin naskah.",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun.",
+        "layout": "bullets",
+        "judul_layar": "Tanpa Biaya Sepeser Pun",
+        "subjudul": "Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun.",
+        "kata_kunci": [
+          {
+            "kata": "biaya",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Caranya gampang, langsung buka browser dan masuk ke situs resminya sekarang.",
+        "layout": "bullets",
+        "judul_layar": "Buka Browser Sekarang",
+        "subjudul": "Caranya gampang, langsung buka browser dan masuk ke situs resminya sekarang.",
+        "kata_kunci": [
+          {
+            "kata": "browser",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Coba trik ini sekarang.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Coba trik ini sekarang.",
+        "kata_kunci": [
+          {
+            "kata": "coba",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

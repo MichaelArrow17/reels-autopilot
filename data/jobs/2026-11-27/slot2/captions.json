@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+      "isi": "Fokus utama AI di perpustakaan bukan sekadar jadi mesin pencari buku biasa, melainkan membantu memahami kebiasaan baca supaya rekomendasinya pas banget.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Sistem pencarian kampusmu sudah pakai teknologi ini belum?",
+      "hashtag": [
+        "#KecerdasanBuatan",
+        "#PerpustakaanDigital",
+        "#TipsBelajar",
+        "#AIinEducation"
+      ]
+    },
+    {
+      "baris1": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+      "isi": "Teknologi ini bekerja untuk memahami kebiasaan baca kamu agar rekomendasi buku yang diberikan bisa benar-benar pas.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Menurutmu, rekomendasi buku dari AI beneran akurat atau nggak?",
+      "hashtag": [
+        "#TeknologiPendidikan",
+        "#LiterasiDigital",
+        "#BelajarCerdas",
+        "#ArtificialIntelligence"
+      ]
+    },
+    {
+      "baris1": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+      "isi": "Bukan cuma soal mesin pencari biasa, AI membantu mengenali kebiasaan baca supaya rekomendasinya semakin tepat.",
+      "cta": "Follow untuk part berikutnya",
+      "pertanyaan": "Bagaimana pengalamanmu pakai sistem pencarian kampus sejauh ini?",
+      "hashtag": [
+        "#InovasiPendidikan",
+        "#MahasiswaAktif",
+        "#SistemPerpustakaan",
+        "#AI"
+      ]
+    }
+  ],
+  "cover": "AI Perpustakaan: Pintar atau Ribet?",
+  "komentar_pin": "Gimana menurutmu, AI di perpustakaan bikin makin gampang atau justru bikin bingung? Tulis di bawah ya!",
+  "llm_provider": "gemini"
+}

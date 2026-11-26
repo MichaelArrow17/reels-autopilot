@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa iklan bisa muncul usai dibicarakan?",
+      "isi": "Banyak video profil orang terkenal terdengar lancar, padahal sumbernya kosong. Jangan langsung percaya jika tidak ada tautan resmi.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Pernahkah kamu mengalami iklan muncul tiba-tiba setelah dibicarakan?",
+      "hashtag": [
+        "#faktasosmed",
+        "#literasidigital",
+        "#privasidata",
+        "#smartuser"
+      ]
+    },
+    {
+      "baris1": "Benarkah HP kita mendengarkan untuk iklan?",
+      "isi": "Sumber video profil orang terkenal sering kali kosong dan tidak ada tautan resmi. Selalu cek kebenarannya sebelum percaya.",
+      "cta": "Komentar jawabanmu di bawah.",
+      "pertanyaan": "Menurutmu, apakah algoritma benar-benar mencuri percakapan kita?",
+      "hashtag": [
+        "#algoritmainstagram",
+        "#tipskeamanan",
+        "#beritaviral",
+        "#privacy"
+      ]
+    },
+    {
+      "baris1": "Apa benar iklan muncul karena kita membicarakannya?",
+      "isi": "Kalau ada tanggal, gelar, atau jumlah, tanyakan dulu dari mana angkanya. Tanpa sumber resmi, jangan langsung percaya.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa hal mencurigakan yang pernah muncul di berandamu?",
+      "hashtag": [
+        "#keamanansiber",
+        "#literasimedia",
+        "#faktamenarik",
+        "#technews"
+      ]
+    }
+  ],
+  "cover": "Iklan Muncul Usai Dibicarakan?",
+  "komentar_pin": "Tulis pengalamanmu soal iklan yang tiba-tiba muncul di kolom komentar ya!",
+  "llm_provider": "gemini"
+}

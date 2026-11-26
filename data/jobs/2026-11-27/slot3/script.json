@@ -1,0 +1,201 @@
+{
+  "judul": "AI untuk Deteksi Dini Alzheimer",
+  "hook": "Bisa nggak ya kecerdasan buatan deteksi Alzheimer lebih awal?",
+  "angle": "Sudut kreator Indonesia: Kecerdasan Buatan untuk Deteksi Dini Alzheimer dan Demensia: Menuju Teknologi Diagnosis yang Terjangkau - Universitas Airlangga",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah mikir nggak, kenapa deteksi Alzheimer biasanya lama dan mahal? Padahal, diagnosis dini itu kunci utama penanganan yang tepat. Tenang, riset terbaru dari Universitas Airlangga lagi ngembangin teknologi kecerdasan buatan buat bikin diagnosis ini jadi jauh lebih terjangkau. Jadi, sistem AI menganalisis pola tertentu dengan cepat tanpa biaya selangit. Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah mikir nggak, kenapa deteksi Alzheimer biasanya lama dan mahal?",
+      "teks_layar": "Deteksi Alzheimer Mahal?",
+      "pose": "think",
+      "keyword": "Alzheimer",
+      "latar": "Polos",
+      "image_query": "stickman thinking confused"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Padahal, diagnosis dini itu kunci utama penanganan yang tepat.",
+      "teks_layar": "Diagnosis Dini Kunci Utama",
+      "pose": "point",
+      "keyword": "diagnosis",
+      "latar": "Polos",
+      "image_query": "stickman pointing forward"
+    },
+    {
+      "id": 3,
+      "nama": "solusi",
+      "narasi": "Tenang, riset terbaru dari Universitas Airlangga lagi ngembangin teknologi kecerdasan buatan buat bikin diagnosis ini jadi jauh lebih terjangkau.",
+      "teks_layar": "AI Unair Lebih Terjangkau",
+      "pose": "typing",
+      "keyword": "Unair",
+      "latar": "Polos",
+      "image_query": "stickman typing computer"
+    },
+    {
+      "id": 4,
+      "nama": "penjelasan",
+      "narasi": "Jadi, sistem AI menganalisis pola tertentu dengan cepat tanpa biaya selangit.",
+      "teks_layar": "Analisis Cepat & Murah",
+      "pose": "idle",
+      "keyword": "analisis",
+      "latar": "Polos",
+      "image_query": "stickman standing idle"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "Polos",
+      "image_query": "stickman cheering happy"
+    }
+  ],
+  "caption": "Teknologi kecerdasan buatan untuk deteksi dini Alzheimer kini makin dikembangkan agar lebih terjangkau. Simpan video ini buat info kesehatan lainnya!",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Alzheimer",
+    "#TeknologiKesehatan",
+    "#Unair",
+    "#EdukasiAI"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Riset deteksi dini Alzheimer oleh Universitas Airlangga"
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI Deteksi Alzheimer Terjangkau",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah mikir nggak, kenapa deteksi Alzheimer biasanya lama dan mahal?",
+        "layout": "kinetic_title",
+        "judul_layar": "Deteksi Alzheimer Mahal?",
+        "subjudul": "Pernah mikir nggak, kenapa deteksi Alzheimer biasanya lama dan mahal?",
+        "kata_kunci": [
+          {
+            "kata": "Alzheimer",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Padahal, diagnosis dini itu kunci utama penanganan yang tepat.",
+        "layout": "bullets",
+        "judul_layar": "Diagnosis Dini Kunci Utama",
+        "subjudul": "Padahal, diagnosis dini itu kunci utama penanganan yang tepat.",
+        "kata_kunci": [
+          {
+            "kata": "diagnosis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "solusi",
+        "narasi": "Tenang, riset terbaru dari Universitas Airlangga lagi ngembangin teknologi kecerdasan buatan buat bikin diagnosis ini jadi jauh lebih terjangkau.",
+        "layout": "bullets",
+        "judul_layar": "AI Unair Lebih Terjangkau",
+        "subjudul": "Tenang, riset terbaru dari Universitas Airlangga lagi ngembangin teknologi kecerdasan buat",
+        "kata_kunci": [
+          {
+            "kata": "Unair",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "penjelasan",
+        "narasi": "Jadi, sistem AI menganalisis pola tertentu dengan cepat tanpa biaya selangit.",
+        "layout": "bullets",
+        "judul_layar": "Analisis Cepat & Murah",
+        "subjudul": "Jadi, sistem AI menganalisis pola tertentu dengan cepat tanpa biaya selangit.",
+        "kata_kunci": [
+          {
+            "kata": "analisis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini!",
+        "subjudul": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,328 @@
+[
+  {
+    "text": "Perpustakaan pakai AI, emang",
+    "start": 0.0,
+    "end": 2.0329340799289524,
+    "words": [
+      {
+        "word": "Perpustakaan",
+        "start": 0.203771,
+        "duration": 0.6603614493783305
+      },
+      {
+        "word": "pakai",
+        "start": 0.8641324493783306,
+        "duration": 0.30266566429840147
+      },
+      {
+        "word": "AI,",
+        "start": 1.166798113676732,
+        "duration": 0.13757530195381884
+      },
+      {
+        "word": "emang",
+        "start": 1.3043734156305509,
+        "duration": 0.7285606642984015
+      }
+    ]
+  },
+  {
+    "text": "bikin makin pintar atau",
+    "start": 2.0329340799289524,
+    "end": 3.2435967371225582,
+    "words": [
+      {
+        "word": "bikin",
+        "start": 2.0329340799289524,
+        "duration": 0.30266566429840136
+      },
+      {
+        "word": "makin",
+        "start": 2.3355997442273537,
+        "duration": 0.3026656642984018
+      },
+      {
+        "word": "pintar",
+        "start": 2.6382654085257555,
+        "duration": 0.33018072468916504
+      },
+      {
+        "word": "atau",
+        "start": 2.9684461332149206,
+        "duration": 0.2751506039076377
+      }
+    ]
+  },
+  {
+    "text": "malah ribet?",
+    "start": 3.2435967371225582,
+    "end": 5.043220065719361,
+    "words": [
+      {
+        "word": "malah",
+        "start": 3.2435967371225582,
+        "duration": 0.30266566429840136
+      },
+      {
+        "word": "ribet?",
+        "start": 3.5462624014209596,
+        "duration": 1.4969576642984017
+      }
+    ]
+  },
+  {
+    "text": "Kamu mungkin mikir teknologi",
+    "start": 5.043220065719361,
+    "end": 6.556548387211369,
+    "words": [
+      {
+        "word": "Kamu",
+        "start": 5.043220065719361,
+        "duration": 0.2751506039076377
+      },
+      {
+        "word": "mungkin",
+        "start": 5.318370669626999,
+        "duration": 0.3576957850799296
+      },
+      {
+        "word": "mikir",
+        "start": 5.676066454706929,
+        "duration": 0.30266566429840136
+      },
+      {
+        "word": "teknologi",
+        "start": 5.97873211900533,
+        "duration": 0.577816268206039
+      }
+    ]
+  },
+  {
+    "text": "ini cuma soal mesin",
+    "start": 6.556548387211369,
+    "end": 7.574605621669629,
+    "words": [
+      {
+        "word": "ini",
+        "start": 6.556548387211369,
+        "duration": 0.247635543516874
+      },
+      {
+        "word": "cuma",
+        "start": 6.804183930728243,
+        "duration": 0.2751506039076377
+      },
+      {
+        "word": "soal",
+        "start": 7.079334534635881,
+        "duration": 0.19260542273534664
+      },
+      {
+        "word": "mesin",
+        "start": 7.271939957371227,
+        "duration": 0.30266566429840136
+      }
+    ]
+  },
+  {
+    "text": "pencari buku biasa.",
+    "start": 7.574605621669629,
+    "end": 9.620037856127887,
+    "words": [
+      {
+        "word": "pencari",
+        "start": 7.574605621669629,
+        "duration": 0.44024096625221976
+      },
+      {
+        "word": "buku",
+        "start": 8.014846587921848,
+        "duration": 1.3025256039076378
+      },
+      {
+        "word": "biasa.",
+        "start": 9.317372191829486,
+        "duration": 0.30266566429840047
+      }
+    ]
+  },
+  {
+    "text": "Padahal, fokus utamanya bukan",
+    "start": 9.620037856127887,
+    "end": 11.641661358792188,
+    "words": [
+      {
+        "word": "Padahal,",
+        "start": 9.620037856127887,
+        "duration": 0.8659909662522232
+      },
+      {
+        "word": "fokus",
+        "start": 10.48602882238011,
+        "duration": 0.30266566429840047
+      },
+      {
+        "word": "utamanya",
+        "start": 10.78869448667851,
+        "duration": 0.5503012078152754
+      },
+      {
+        "word": "bukan",
+        "start": 11.338995694493786,
+        "duration": 0.30266566429840225
+      }
+    ]
+  },
+  {
+    "text": "di situ.",
+    "start": 11.641661358792188,
+    "end": 13.115595264653642,
+    "words": [
+      {
+        "word": "di",
+        "start": 11.641661358792188,
+        "duration": 1.1987833019538172
+      },
+      {
+        "word": "situ.",
+        "start": 12.840444660746005,
+        "duration": 0.2751506039076368
+      }
+    ]
+  },
+  {
+    "text": "AI bantu pahami kebiasaan",
+    "start": 13.115595264653642,
+    "end": 14.463833223801068,
+    "words": [
+      {
+        "word": "AI",
+        "start": 13.115595264653642,
+        "duration": 0.13757530195382017
+      },
+      {
+        "word": "bantu",
+        "start": 13.253170566607462,
+        "duration": 0.30266566429840225
+      },
+      {
+        "word": "pahami",
+        "start": 13.555836230905864,
+        "duration": 0.41272590586145697
+      },
+      {
+        "word": "kebiasaan",
+        "start": 13.968562136767321,
+        "duration": 0.4952710870337462
+      }
+    ]
+  },
+  {
+    "text": "baca kamu supaya rekomendasinya pas banget.",
+    "start": 14.463833223801068,
+    "end": 17.965884357015987,
+    "words": [
+      {
+        "word": "baca",
+        "start": 14.463833223801068,
+        "duration": 0.2751506039076368
+      },
+      {
+        "word": "kamu",
+        "start": 14.738983827708704,
+        "duration": 0.2751506039076368
+      },
+      {
+        "word": "supaya",
+        "start": 15.014134431616341,
+        "duration": 0.41272590586145697
+      },
+      {
+        "word": "rekomendasinya",
+        "start": 15.426860337477798,
+        "duration": 2.0437529325044395
+      },
+      {
+        "word": "pas",
+        "start": 17.470613269982238,
+        "duration": 0.16509036234458208
+      },
+      {
+        "word": "banget.",
+        "start": 17.63570363232682,
+        "duration": 0.3301807246891677
+      }
+    ]
+  },
+  {
+    "text": "Coba cek sistem pencarian",
+    "start": 17.965884357015987,
+    "end": 19.23157713499112,
+    "words": [
+      {
+        "word": "Coba",
+        "start": 17.965884357015987,
+        "duration": 0.2751506039076368
+      },
+      {
+        "word": "cek",
+        "start": 18.241034960923624,
+        "duration": 0.16509036234458208
+      },
+      {
+        "word": "sistem",
+        "start": 18.406125323268206,
+        "duration": 0.3301807246891677
+      },
+      {
+        "word": "pencarian",
+        "start": 18.736306047957374,
+        "duration": 0.4952710870337462
+      }
+    ]
+  },
+  {
+    "text": "kampusmu sekarang.",
+    "start": 19.23157713499112,
+    "end": 21.25663118827709,
+    "words": [
+      {
+        "word": "kampusmu",
+        "start": 19.23157713499112,
+        "duration": 0.4677560266429843
+      },
+      {
+        "word": "sekarang.",
+        "start": 19.699333161634105,
+        "duration": 1.5572980266429859
+      }
+    ]
+  },
+  {
+    "text": "Follow buat part 2.",
+    "start": 21.25663118827709,
+    "end": 22.082083,
+    "words": [
+      {
+        "word": "Follow",
+        "start": 21.25663118827709,
+        "duration": 0.3301807246891677
+      },
+      {
+        "word": "buat",
+        "start": 21.586811912966258,
+        "duration": 0.19260542273534398
+      },
+      {
+        "word": "part",
+        "start": 21.779417335701602,
+        "duration": 0.19260542273534753
+      },
+      {
+        "word": "2.",
+        "start": 21.97202275843695,
+        "duration": 0.11006024156305116
+      }
+    ]
+  }
+]

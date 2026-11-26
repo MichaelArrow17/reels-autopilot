@@ -1,0 +1,44 @@
+{
+  "varian": [
+    {
+      "baris1": "Mau pakai ChatGPT tapi malas berlangganan?",
+      "isi": "Versi gratisnya masih sangat bisa diandalkan buat bikin naskah. Kamu tetap bisa akses fitur dasarnya tanpa keluar biaya sepeser pun lewat browser.",
+      "cta": "Komentar jawaban di bawah ya.",
+      "pertanyaan": "Fitur gratis apa yang paling sering kamu pakai?",
+      "hashtag": [
+        "#chatgptindonesia",
+        "#aiuntukpenulis",
+        "#tipsteknologi",
+        "#artificialintelligence"
+      ]
+    },
+    {
+      "baris1": "Gimana cara pakai ChatGPT tanpa keluar biaya?",
+      "isi": "Cukup buka browser dan langsung masuk ke situs resminya sekarang juga. Fitur dasarnya terbukti sangat bisa diandalkan buat kebutuhan naskahmu.",
+      "cta": "Simpan video ini buat dicoba nanti.",
+      "pertanyaan": "Udah pernah coba akses versi gratisnya lewat browser?",
+      "hashtag": [
+        "#belajarai",
+        "#chatgptgratis",
+        "#penulisindonesia",
+        "#contentcreator",
+        "#chatgpttips"
+      ]
+    },
+    {
+      "baris1": "Tetap bisa akses ChatGPT tanpa langganan?",
+      "isi": "Kamu bisa langsung buka situs resminya lewat browser tanpa keluar biaya sepeser pun. Versi gratisnya ini masih sangat bisa diandalkan untuk bikin naskah.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Biasanya kamu pakai ChatGPT buat bikin apa?",
+      "hashtag": [
+        "#produktivitas",
+        "#aitools",
+        "#tipsmenulis",
+        "#chatgpt"
+      ]
+    }
+  ],
+  "cover": "ChatGPT Gratis Tanpa Langganan",
+  "komentar_pin": "Gimana, gampang banget kan? Coba tulis di komentar, apa kendala utama kamu waktu pakai AI!",
+  "llm_provider": "gemini"
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa deteksi Alzheimer biasanya lama dan mahal?",
+      "isi": "Riset Universitas Airlangga sedang mengembangkan AI untuk membuat diagnosis Alzheimer lebih terjangkau dengan menganalisis pola tertentu secara cepat tanpa biaya tinggi.",
+      "cta": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+      "pertanyaan": "Menurutmu, seberapa penting teknologi AI dalam dunia kesehatan saat ini?",
+      "hashtag": [
+        "#Alzheimer",
+        "#TeknologiKesehatan",
+        "#AIIndonesia",
+        "#UniversitasAirlangga",
+        "#HealthTech"
+      ]
+    },
+    {
+      "baris1": "Kenapa deteksi Alzheimer biasanya lama dan mahal?",
+      "isi": "Universitas Airlangga mengembangkan kecerdasan buatan untuk menganalisis pola penyakit ini dengan cepat dan tanpa biaya selangit demi diagnosis dini yang tepat.",
+      "cta": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+      "pertanyaan": "Apa harapanmu untuk perkembangan teknologi medis di Indonesia?",
+      "hashtag": [
+        "#DeteksiDini",
+        "#KecerdasanBuatan",
+        "#KesehatanMental",
+        "#InovasiMedis",
+        "#MedicalAI"
+      ]
+    },
+    {
+      "baris1": "Kenapa deteksi Alzheimer biasanya lama dan mahal?",
+      "isi": "Sistem AI buatan periset Universitas Airlangga mampu menganalisis pola tertentu untuk mendeteksi Alzheimer secara cepat dan terjangkau.",
+      "cta": "Yuk, simpan video ini supaya nggak ketinggalan info kesehatan terbaru.",
+      "pertanyaan": "Pernahkah kamu mendengar tentang pemanfaatan AI untuk medis sebelumnya?",
+      "hashtag": [
+        "#PenyakitAlzheimer",
+        "#RisetUnair",
+        "#ArtificialIntelligence",
+        "#InfoKesehatan",
+        "#TechTrends"
+      ]
+    }
+  ],
+  "cover": "AI Deteksi Dini Alzheimer",
+  "komentar_pin": "Simpan video ini biar nggak lupa infonya ya! Tulis pendapatmu di komentar 👇",
+  "llm_provider": "gemini"
+}

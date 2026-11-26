@@ -1,0 +1,208 @@
+{
+  "judul": "AI di Perpustakaan Bukan Sekadar Teknologi",
+  "hook": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+  "angle": "Sudut kreator Indonesia tentang AI di perpustakaan",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet? Kamu mungkin mikir teknologi ini cuma soal mesin pencari buku biasa. Padahal, fokus utamanya bukan di situ. AI bantu pahami kebiasaan baca kamu supaya rekomendasinya pas banget. Coba cek sistem pencarian kampusmu sekarang. Follow buat part 2.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+      "teks_layar": "AI di Perpustakaan?",
+      "pose": "shrug",
+      "keyword": "AI",
+      "latar": "Polos",
+      "image_query": "stickman confused library"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kamu mungkin mikir teknologi ini cuma soal mesin pencari buku biasa.",
+      "teks_layar": "Cuma Mesin Cari Buku?",
+      "pose": "think",
+      "keyword": "teknologi",
+      "latar": "Polos",
+      "image_query": "stickman thinking"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, fokus utamanya bukan di situ.",
+      "teks_layar": "Bukan Cuma Teknologi",
+      "pose": "point",
+      "keyword": "fokus",
+      "latar": "Polos",
+      "image_query": "stickman pointing"
+    },
+    {
+      "id": 4,
+      "nama": "payoff",
+      "narasi": "AI bantu pahami kebiasaan baca kamu supaya rekomendasinya pas banget. Coba cek sistem pencarian kampusmu sekarang.",
+      "teks_layar": "Rekomendasi Pas",
+      "pose": "typing",
+      "keyword": "kebiasaan baca",
+      "latar": "Polos",
+      "image_query": "stickman typing computer"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Follow buat part 2.",
+      "teks_layar": "Follow Buat Part 2",
+      "pose": "cheer",
+      "keyword": "Follow",
+      "latar": "Polos",
+      "image_query": "stickman cheerful"
+    }
+  ],
+  "caption": "Kecerdasan buatan di perpustakaan ternyata bukan cuma soal teknologi canggih, tapi gimana sistem nangkep kebiasaan baca kamu. Gimana menurutmu?",
+  "cta": "Follow buat part 2",
+  "hashtag": [
+    "#KreatorAI",
+    "#Perpustakaan",
+    "#Teknologi",
+    "#Edukasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI di Perpustakaan?",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Perpustakaan pakai AI, emang bikin makin pintar atau malah ribet?",
+        "layout": "kinetic_title",
+        "judul_layar": "AI di Perpustakaan?",
+        "subjudul": "Bukan Sekadar Teknologi",
+        "kata_kunci": [
+          {
+            "kata": "AI",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "help"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kamu mungkin mikir teknologi ini cuma soal mesin pencari buku biasa.",
+        "layout": "card",
+        "judul_layar": "Mitos vs Fakta",
+        "subjudul": "Bukan cuma mesin pencari",
+        "kata_kunci": [
+          {
+            "kata": "teknologi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [
+          "book"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "click"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, fokus utamanya bukan di situ.",
+        "layout": "bullets",
+        "judul_layar": "Fokus Utama",
+        "subjudul": "Pahami pembaca",
+        "kata_kunci": [
+          {
+            "kata": "fokus",
+            "warna": "hijau"
+          }
+        ],
+        "ikon": [
+          "target"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "payoff",
+        "narasi": "AI bantu pahami kebiasaan baca kamu supaya rekomendasinya pas banget. Coba cek sistem pencarian kampusmu sekarang.",
+        "layout": "steps",
+        "judul_layar": "Aksi Kamu",
+        "subjudul": "Cek sistem kampusmu",
+        "kata_kunci": [
+          {
+            "kata": "kebiasaan",
+            "warna": "emas"
+          }
+        ],
+        "ikon": [
+          "search"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [
+          "Cek sistem kampus"
+        ],
+        "progress_poin": [],
+        "sfx": [
+          "ding"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Follow buat part 2.",
+        "layout": "cta",
+        "judul_layar": "Jangan Lupa",
+        "subjudul": "Follow buat part 2",
+        "kata_kunci": [
+          {
+            "kata": "Follow",
+            "warna": "merah"
+          }
+        ],
+        "ikon": [
+          "heart"
+        ],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "success"
+        ]
+      }
+    ]
+  }
+}

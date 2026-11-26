@@ -1,0 +1,212 @@
+{
+  "style": "cerita",
+  "storyboard": {
+    "style": "cerita",
+    "environment": "office",
+    "durasi_detik": 24.0,
+    "label_kiri": "BINGUNG",
+    "label_kanan": "PAHAM",
+    "judul": "ChatGPT Astra?",
+    "hook": "Bingung soal istilah baru?",
+    "karakter": [
+      {
+        "id": "a",
+        "warna": "abu",
+        "peran": "menyerah"
+      },
+      {
+        "id": "b",
+        "warna": "kuning",
+        "peran": "berjuang"
+      }
+    ],
+    "beats": [
+      {
+        "t": 0.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "sit",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "stand",
+          "x": 0.7,
+          "y": 0.6,
+          "hadap": "kiri"
+        },
+        "properti": [],
+        "gelembung_a": "Rumit banget ya?",
+        "gelembung_b": "Cari tahu yuk!",
+        "efek": [],
+        "sfx": [
+          "click"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 4.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "struggle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "reach",
+          "x": 0.7,
+          "y": 0.5,
+          "hadap": ""
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "tengah"
+          }
+        ],
+        "gelembung_a": "Nyerah deh...",
+        "gelembung_b": "Pelan-pelan pahami.",
+        "efek": [
+          "dust"
+        ],
+        "sfx": [
+          "swipe"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 8.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "idle",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "push",
+          "x": 0.65,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "wall",
+            "pada": "tengah"
+          }
+        ],
+        "gelembung_a": "",
+        "gelembung_b": "Bongkar mitosnya!",
+        "efek": [
+          "sparks"
+        ],
+        "sfx": [
+          "pop"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 12.0,
+        "durasi": 4.0,
+        "aksi_a": {
+          "nama": "kneel",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "climb",
+          "x": 0.7,
+          "y": 0.4,
+          "hadap": ""
+        },
+        "properti": [
+          {
+            "jenis": "ladder",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Kok bisa?",
+        "gelembung_b": "Ternyata simpel.",
+        "efek": [
+          "glow"
+        ],
+        "sfx": [
+          "ding"
+        ],
+        "klimaks": false,
+        "teks_klimaks": ""
+      },
+      {
+        "t": 16.0,
+        "durasi": 8.0,
+        "aksi_a": {
+          "nama": "look",
+          "x": 0.3,
+          "y": 0.6,
+          "hadap": "kanan"
+        },
+        "aksi_b": {
+          "nama": "celebrate",
+          "x": 0.7,
+          "y": 0.3,
+          "hadap": "kanan"
+        },
+        "properti": [
+          {
+            "jenis": "coin",
+            "pada": "b"
+          }
+        ],
+        "gelembung_a": "Oh begitu...",
+        "gelembung_b": "Langsung paham!",
+        "efek": [
+          "glow",
+          "sparks"
+        ],
+        "sfx": [
+          "success"
+        ],
+        "klimaks": true,
+        "teks_klimaks": "Terjawab!"
+      }
+    ],
+    "klimaks": {
+      "t": 16.0,
+      "jenis": "capai_puncak",
+      "pemenang": "b"
+    },
+    "narasi_penuh": "",
+    "pakai_vo": false,
+    "moral": "Jangan malas cari tahu!"
+  },
+  "judul": "ChatGPT Astra?",
+  "hook": "Bingung soal istilah baru?",
+  "angle": "Sudut kreator Indonesia: chatgpt astra explained",
+  "bahasa": "id",
+  "durasi_target_detik": 24,
+  "narasi_penuh": "",
+  "adegan": [],
+  "caption": "Masih bingung soal ChatGPT Astra? Ini cara praktis yang bisa kamu coba.\n\nJangan malas cari tahu!\n\nSimpan video ini, biar kamu ingat saat mau nyerah.\n\n#KreatorAI #PoChai #Motivasi #ReelsIndonesia #TipsAI",
+  "cta": "Simpan video ini, biar kamu ingat saat mau nyerah.",
+  "hashtag": [
+    "#KreatorAI",
+    "#PoChai",
+    "#Motivasi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "PAHAM",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "storyboard_fallback": false,
+  "pakai_vo": false,
+  "moral": "Jangan malas cari tahu!"
+}
