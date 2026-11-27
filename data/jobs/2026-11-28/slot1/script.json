@@ -1,0 +1,201 @@
+{
+  "judul": "Cara HP Awasi Energi Saat Game Terbuka",
+  "hook": "Pernah mikir kenapa HP panas banget pas game berat dibuka?",
+  "angle": "Teknologi Sensor Arus pada Smartphone",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Pernah mikir kenapa HP panas banget pas game berat dibuka? Jawabannya ada di dalam chip kamu. Namanya sensor arus. Alat kecil ini bertugas ngawasi pemakaian daya listrik secara real-time. Biar baterai nggak gampang jebol, sensor langsung ngatur ulang beban kerja komponen. Jadi, performa tetap stabil tanpa bikin HP kamu mendadak mati. Simpan video ini biar kamu tahu rahasia HP kamu.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Pernah mikir kenapa HP panas banget pas game berat dibuka?",
+      "teks_layar": "HP Panas Saat Main Game?",
+      "pose": "idle",
+      "keyword": "panas",
+      "latar": "kamar",
+      "image_query": "hot smartphone warning stickman"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Jawabannya ada di dalam chip kamu. Namanya sensor arus.",
+      "teks_layar": "Chip & Sensor Arus",
+      "pose": "point",
+      "keyword": "sensor arus",
+      "latar": "laboratorium",
+      "image_query": "smartphone internal chip technology"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Alat kecil ini bertugas ngawasi pemakaian daya listrik secara real-time.",
+      "teks_layar": "Awasi Daya Real-Time",
+      "pose": "typing",
+      "keyword": "daya listrik",
+      "latar": "kantor",
+      "image_query": "power monitoring graphic"
+    },
+    {
+      "id": 4,
+      "nama": "solusi",
+      "narasi": "Biar baterai nggak gampang jebol, sensor langsung ngatur ulang beban kerja komponen. Jadi, performa tetap stabil tanpa bikin HP kamu mendadak mati.",
+      "teks_layar": "Performa Tetap Stabil",
+      "pose": "cheer",
+      "keyword": "stabil",
+      "latar": "studio",
+      "image_query": "stable performance gaming smartphone"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+      "teks_layar": "Simpan Video Ini!",
+      "pose": "shrug",
+      "keyword": "simpan video",
+      "latar": "studio",
+      "image_query": "save button icon stickman"
+    }
+  ],
+  "caption": "Pernah penasaran gimana cara HP ngatur daya pas dipakai kerja berat? Ternyata ada komponen rahasianya! Simpan video ini dan tulis pendapatmu di kolom komentar.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#Teknologi",
+    "#Smartphone",
+    "#TipsHP",
+    "#PoChai"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Sensor arus pada smartphone berfungsi memantau konsumsi daya listrik untuk keamanan dan efisiensi."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Rahasia HP Atur Energi!",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Pernah mikir kenapa HP panas banget pas game berat dibuka?",
+        "layout": "kinetic_title",
+        "judul_layar": "HP Panas Saat Main Game?",
+        "subjudul": "Pernah mikir kenapa HP panas banget pas game berat dibuka?",
+        "kata_kunci": [
+          {
+            "kata": "panas",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Jawabannya ada di dalam chip kamu. Namanya sensor arus.",
+        "layout": "bullets",
+        "judul_layar": "Chip & Sensor Arus",
+        "subjudul": "Jawabannya ada di dalam chip kamu. Namanya sensor arus.",
+        "kata_kunci": [
+          {
+            "kata": "sensor arus",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Alat kecil ini bertugas ngawasi pemakaian daya listrik secara real-time.",
+        "layout": "bullets",
+        "judul_layar": "Awasi Daya Real-Time",
+        "subjudul": "Alat kecil ini bertugas ngawasi pemakaian daya listrik secara real-time.",
+        "kata_kunci": [
+          {
+            "kata": "daya listrik",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "solusi",
+        "narasi": "Biar baterai nggak gampang jebol, sensor langsung ngatur ulang beban kerja komponen. Jadi, performa tetap stabil tanpa bikin HP kamu mendadak mati.",
+        "layout": "bullets",
+        "judul_layar": "Performa Tetap Stabil",
+        "subjudul": "Biar baterai nggak gampang jebol, sensor langsung ngatur ulang beban kerja komponen. Jadi,",
+        "kata_kunci": [
+          {
+            "kata": "stabil",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini!",
+        "subjudul": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+        "kata_kunci": [
+          {
+            "kata": "simpan video",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "style": "cerita",
+  "environment": "office",
+  "durasi_detik": 24.0,
+  "label_kiri": "BINGUNG",
+  "label_kanan": "MENCOBA",
+  "judul": "ChatGPT Tanpa Langganan",
+  "hook": "ChatGPT tanpa berlangganan?",
+  "karakter": [
+    {
+      "id": "a",
+      "warna": "abu",
+      "peran": "menyerah"
+    },
+    {
+      "id": "b",
+      "warna": "kuning",
+      "peran": "berjuang"
+    }
+  ],
+  "beats": [
+    {
+      "t": 0.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.7,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Bayar terus ya?",
+      "gelembung_b": "Cari cara gratis yuk!",
+      "efek": [],
+      "sfx": [
+        "click"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 4.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "idle",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "reach",
+        "x": 0.7,
+        "y": 0.55,
+        "hadap": "kiri"
+      },
+      "properti": [
+        {
+          "jenis": "wall",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Ah males deh.",
+      "gelembung_b": "Bisa versi gratis!",
+      "efek": [],
+      "sfx": [
+        "beep"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 8.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "sit",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "push",
+        "x": 0.65,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [],
+      "gelembung_a": "",
+      "gelembung_b": "Tinggal login saja.",
+      "efek": [
+        "dust"
+      ],
+      "sfx": [
+        "type"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 12.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "look",
+        "x": 0.3,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "walk",
+        "x": 0.5,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "properti": [
+        {
+          "jenis": "coin",
+          "pada": "b"
+        }
+      ],
+      "gelembung_a": "Oh, gratisan?",
+      "gelembung_b": "Nih, bisa langsung.",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "success"
+      ],
+      "klimaks": false,
+      "teks_klimaks": ""
+    },
+    {
+      "t": 16.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "stand",
+        "x": 0.35,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "celebrate",
+        "x": 0.65,
+        "y": 0.5,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "Mau coba juga!",
+      "gelembung_b": "Berhasil!",
+      "efek": [
+        "glow"
+      ],
+      "sfx": [
+        "cheer"
+      ],
+      "klimaks": true,
+      "teks_klimaks": "Akses Gratis Terbuka!"
+    },
+    {
+      "t": 20.0,
+      "durasi": 4.0,
+      "aksi_a": {
+        "nama": "walk",
+        "x": 0.45,
+        "y": 0.6,
+        "hadap": "kanan"
+      },
+      "aksi_b": {
+        "nama": "stand",
+        "x": 0.55,
+        "y": 0.6,
+        "hadap": "kiri"
+      },
+      "properti": [],
+      "gelembung_a": "",
+      "gelembung_b": "Yuk mulai.",
+      "efek": [],
+      "sfx": [],
+      "klimaks": false,
+      "teks_klimaks": ""
+    }
+  ],
+  "klimaks": {
+    "t": 16.0,
+    "jenis": "mencapai_tujuan",
+    "pemenang": "b"
+  },
+  "narasi_penuh": "",
+  "pakai_vo": false,
+  "moral": "Selalu ada cara gratis untuk mulai belajar."
+}

@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa mikir semua AI keren itu harus berlangganan mahal?",
+      "isi": "Padahal banyak situs web menyediakan fitur canggih tanpa dipungut biaya. Cukup buka browser dan unggah foto kamu.",
+      "cta": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+      "pertanyaan": "Situs AI gratis apa yang biasa kamu pakai buat edit foto?",
+      "hashtag": [
+        "#aigratis",
+        "#editfotomudah",
+        "#tipsai",
+        "#teknologi",
+        "#aiphoto"
+      ]
+    },
+    {
+      "baris1": "Benarkah semua AI canggih untuk edit foto itu harus bayar?",
+      "isi": "Ternyata banyak situs web menyediakan fitur canggih tanpa dipungut biaya. Cukup buka browser, unggah foto, dan biarkan AI bekerja.",
+      "cta": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+      "pertanyaan": "Fitur edit foto apa yang paling sering kamu butuhkan?",
+      "hashtag": [
+        "#editfotogratis",
+        "#artificialintelligence",
+        "#tutorialai",
+        "#tipseditfoto",
+        "#aitools"
+      ]
+    },
+    {
+      "baris1": "Mau edit foto tapi malas bayar langganan mahal?",
+      "isi": "Banyak situs web menyediakan fitur canggih tanpa dipungut biaya. Cukup buka browser, unggah foto, dan biarkan AI yang bekerja.",
+      "cta": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+      "pertanyaan": "Pernahkah kamu coba edit foto pakai AI di browser?",
+      "hashtag": [
+        "#aiediting",
+        "#trikeditfoto",
+        "#situsai",
+        "#kreatorai",
+        "#freeai"
+      ]
+    }
+  ],
+  "cover": "Edit foto pakai AI gratis",
+  "komentar_pin": "Mau tahu trik AI gratis lainnya? Komen di bawah ya!",
+  "llm_provider": "gemini"
+}

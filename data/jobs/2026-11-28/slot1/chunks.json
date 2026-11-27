@@ -1,0 +1,428 @@
+[
+  {
+    "text": "Pernah mikir kenapa HP",
+    "start": 0.0,
+    "end": 1.4414066277056274,
+    "words": [
+      {
+        "word": "Pernah",
+        "start": 0.236375,
+        "duration": 0.336287896103896
+      },
+      {
+        "word": "mikir",
+        "start": 0.572662896103896,
+        "duration": 0.3082639047619047
+      },
+      {
+        "word": "kenapa",
+        "start": 0.8809268008658007,
+        "duration": 0.4203598701298701
+      },
+      {
+        "word": "HP",
+        "start": 1.3012866709956707,
+        "duration": 0.1401199567099567
+      }
+    ]
+  },
+  {
+    "text": "panas banget pas game",
+    "start": 1.4414066277056274,
+    "end": 2.5343422900432895,
+    "words": [
+      {
+        "word": "panas",
+        "start": 1.4414066277056274,
+        "duration": 0.3082639047619047
+      },
+      {
+        "word": "banget",
+        "start": 1.7496705324675321,
+        "duration": 0.33628789610389576
+      },
+      {
+        "word": "pas",
+        "start": 2.085958428571428,
+        "duration": 0.16814394805194866
+      },
+      {
+        "word": "game",
+        "start": 2.2541023766233765,
+        "duration": 0.28023991341991294
+      }
+    ]
+  },
+  {
+    "text": "berat dibuka?",
+    "start": 2.5343422900432895,
+    "end": 4.325882064935064,
+    "words": [
+      {
+        "word": "berat",
+        "start": 2.5343422900432895,
+        "duration": 0.3082639047619047
+      },
+      {
+        "word": "dibuka?",
+        "start": 2.842606194805194,
+        "duration": 1.4832758701298703
+      }
+    ]
+  },
+  {
+    "text": "Jawabannya ada di dalam",
+    "start": 4.325882064935064,
+    "end": 5.6430096580086575,
+    "words": [
+      {
+        "word": "Jawabannya",
+        "start": 4.325882064935064,
+        "duration": 0.6165278095238094
+      },
+      {
+        "word": "ada",
+        "start": 4.942409874458874,
+        "duration": 0.2522159220779221
+      },
+      {
+        "word": "di",
+        "start": 5.194625796536796,
+        "duration": 0.14011995670995692
+      },
+      {
+        "word": "dalam",
+        "start": 5.334745753246753,
+        "duration": 0.3082639047619047
+      }
+    ]
+  },
+  {
+    "text": "chip kamu.",
+    "start": 5.6430096580086575,
+    "end": 7.19531251082251,
+    "words": [
+      {
+        "word": "chip",
+        "start": 5.6430096580086575,
+        "duration": 0.1961679393939395
+      },
+      {
+        "word": "kamu.",
+        "start": 5.839177597402597,
+        "duration": 1.356134913419913
+      }
+    ]
+  },
+  {
+    "text": "Namanya sensor arus.",
+    "start": 7.19531251082251,
+    "end": 8.260224181818181,
+    "words": [
+      {
+        "word": "Namanya",
+        "start": 7.19531251082251,
+        "duration": 0.4483838614718616
+      },
+      {
+        "word": "sensor",
+        "start": 7.643696372294372,
+        "duration": 0.3362878961038964
+      },
+      {
+        "word": "arus.",
+        "start": 7.979984268398268,
+        "duration": 0.28023991341991294
+      }
+    ]
+  },
+  {
+    "text": "Alat kecil ini bertugas",
+    "start": 8.260224181818181,
+    "end": 10.618059774891773,
+    "words": [
+      {
+        "word": "Alat",
+        "start": 8.260224181818181,
+        "duration": 1.3209479134199142
+      },
+      {
+        "word": "kecil",
+        "start": 9.581172095238095,
+        "duration": 0.3082639047619047
+      },
+      {
+        "word": "ini",
+        "start": 9.889436,
+        "duration": 0.2522159220779212
+      },
+      {
+        "word": "bertugas",
+        "start": 10.141651922077921,
+        "duration": 0.47640785281385156
+      }
+    ]
+  },
+  {
+    "text": "ngawasi pemakaian daya listrik",
+    "start": 10.618059774891773,
+    "end": 12.215427281385281,
+    "words": [
+      {
+        "word": "ngawasi",
+        "start": 10.618059774891773,
+        "duration": 0.4483838614718625
+      },
+      {
+        "word": "pemakaian",
+        "start": 11.066443636363635,
+        "duration": 0.5044318441558442
+      },
+      {
+        "word": "daya",
+        "start": 11.57087548051948,
+        "duration": 0.28023991341991206
+      },
+      {
+        "word": "listrik",
+        "start": 11.851115393939391,
+        "duration": 0.36431188744588994
+      }
+    ]
+  },
+  {
+    "text": "secara real-time.",
+    "start": 12.215427281385281,
+    "end": 14.113820004329003,
+    "words": [
+      {
+        "word": "secara",
+        "start": 12.215427281385281,
+        "duration": 0.4203598701298681
+      },
+      {
+        "word": "real-time.",
+        "start": 12.63578715151515,
+        "duration": 1.478032852813854
+      }
+    ]
+  },
+  {
+    "text": "Biar baterai nggak gampang",
+    "start": 14.113820004329003,
+    "end": 15.346875623376622,
+    "words": [
+      {
+        "word": "Biar",
+        "start": 14.113820004329003,
+        "duration": 0.19616793939394128
+      },
+      {
+        "word": "baterai",
+        "start": 14.309987943722945,
+        "duration": 0.4483838614718607
+      },
+      {
+        "word": "nggak",
+        "start": 14.758371805194805,
+        "duration": 0.22419193073593036
+      },
+      {
+        "word": "gampang",
+        "start": 14.982563735930736,
+        "duration": 0.3643118874458864
+      }
+    ]
+  },
+  {
+    "text": "jebol, sensor langsung ngatur",
+    "start": 15.346875623376622,
+    "end": 17.136614199134197,
+    "words": [
+      {
+        "word": "jebol,",
+        "start": 15.346875623376622,
+        "duration": 0.7248269047619047
+      },
+      {
+        "word": "sensor",
+        "start": 16.071702528138527,
+        "duration": 0.3362878961038973
+      },
+      {
+        "word": "langsung",
+        "start": 16.407990424242424,
+        "duration": 0.392335878787879
+      },
+      {
+        "word": "ngatur",
+        "start": 16.800326303030303,
+        "duration": 0.33628789610389376
+      }
+    ]
+  },
+  {
+    "text": "ulang beban kerja komponen.",
+    "start": 17.136614199134197,
+    "end": 19.577417766233765,
+    "words": [
+      {
+        "word": "ulang",
+        "start": 17.136614199134197,
+        "duration": 0.3082639047619047
+      },
+      {
+        "word": "beban",
+        "start": 17.4448781038961,
+        "duration": 0.30826390476190824
+      },
+      {
+        "word": "kerja",
+        "start": 17.75314200865801,
+        "duration": 0.30826390476190113
+      },
+      {
+        "word": "komponen.",
+        "start": 18.06140591341991,
+        "duration": 1.516011852813854
+      }
+    ]
+  },
+  {
+    "text": "Jadi, performa tetap stabil",
+    "start": 19.577417766233765,
+    "end": 21.417596333333336,
+    "words": [
+      {
+        "word": "Jadi,",
+        "start": 19.577417766233765,
+        "duration": 0.7192189134199154
+      },
+      {
+        "word": "performa",
+        "start": 20.29663667965368,
+        "duration": 0.4764078528138498
+      },
+      {
+        "word": "tetap",
+        "start": 20.77304453246753,
+        "duration": 0.30826390476190824
+      },
+      {
+        "word": "stabil",
+        "start": 21.08130843722944,
+        "duration": 0.3362878961038973
+      }
+    ]
+  },
+  {
+    "text": "tanpa bikin HP kamu",
+    "start": 21.417596333333336,
+    "end": 22.45448401298701,
+    "words": [
+      {
+        "word": "tanpa",
+        "start": 21.417596333333336,
+        "duration": 0.30826390476190113
+      },
+      {
+        "word": "bikin",
+        "start": 21.725860238095237,
+        "duration": 0.30826390476190824
+      },
+      {
+        "word": "HP",
+        "start": 22.034124142857145,
+        "duration": 0.14011995670995248
+      },
+      {
+        "word": "kamu",
+        "start": 22.174244099567098,
+        "duration": 0.28023991341991206
+      }
+    ]
+  },
+  {
+    "text": "mendadak mati.",
+    "start": 22.45448401298701,
+    "end": 24.25892377922078,
+    "words": [
+      {
+        "word": "mendadak",
+        "start": 22.45448401298701,
+        "duration": 0.4764078528138569
+      },
+      {
+        "word": "mati.",
+        "start": 22.930891865800866,
+        "duration": 1.3280319134199132
+      }
+    ]
+  },
+  {
+    "text": "Simpan video ini biar",
+    "start": 24.25892377922078,
+    "end": 25.35185944155844,
+    "words": [
+      {
+        "word": "Simpan",
+        "start": 24.25892377922078,
+        "duration": 0.3362878961038973
+      },
+      {
+        "word": "video",
+        "start": 24.595211675324677,
+        "duration": 0.30826390476190113
+      },
+      {
+        "word": "ini",
+        "start": 24.903475580086578,
+        "duration": 0.252215922077923
+      },
+      {
+        "word": "biar",
+        "start": 25.1556915021645,
+        "duration": 0.19616793939393773
+      }
+    ]
+  },
+  {
+    "text": "kamu tahu rahasia HP",
+    "start": 25.35185944155844,
+    "end": 26.500843086580083,
+    "words": [
+      {
+        "word": "kamu",
+        "start": 25.35185944155844,
+        "duration": 0.28023991341991206
+      },
+      {
+        "word": "tahu",
+        "start": 25.63209935497835,
+        "duration": 0.28023991341991206
+      },
+      {
+        "word": "rahasia",
+        "start": 25.912339268398263,
+        "duration": 0.4483838614718607
+      },
+      {
+        "word": "HP",
+        "start": 26.360723129870124,
+        "duration": 0.14011995670995958
+      }
+    ]
+  },
+  {
+    "text": "kamu.",
+    "start": 26.500843086580083,
+    "end": 27.100843086580085,
+    "words": [
+      {
+        "word": "kamu.",
+        "start": 26.500843086580083,
+        "duration": 0.28023991341991206
+      }
+    ]
+  }
+]

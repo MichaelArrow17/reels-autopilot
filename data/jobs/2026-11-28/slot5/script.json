@@ -1,0 +1,200 @@
+{
+  "judul": "AI Gratis untuk Edit Foto",
+  "hook": "Mau edit foto tapi malas bayar langganan mahal?",
+  "angle": "Sudut kreator Indonesia: AI gratis untuk edit foto",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Mau edit foto tapi malas bayar langganan mahal? Kebanyakan orang mikir semua AI keren itu harus berlangganan. Padahal, banyak situs web menyediakan fitur canggih tanpa dipungut biaya. Cukup buka browser, unggah foto, dan biarkan AI yang bekerja. Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Mau edit foto tapi malas bayar langganan mahal?",
+      "teks_layar": "Edit Foto Gratis?",
+      "pose": "shrug",
+      "keyword": "gratis",
+      "latar": "studio minimalis",
+      "image_query": "stickman confused looking at phone"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Kebanyakan orang mikir semua AI keren itu harus berlangganan.",
+      "teks_layar": "Harus Berbayar?",
+      "pose": "think",
+      "keyword": "berlangganan",
+      "latar": "studio minimalis",
+      "image_query": "stickman thinking with question mark"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan",
+      "narasi": "Padahal, banyak situs web menyediakan fitur canggih tanpa dipungut biaya.",
+      "teks_layar": "Banyak yang Gratis",
+      "pose": "point",
+      "keyword": "tanpa biaya",
+      "latar": "studio minimalis",
+      "image_query": "stickman pointing at free sign"
+    },
+    {
+      "id": 4,
+      "nama": "aksi",
+      "narasi": "Cukup buka browser, unggah foto, dan biarkan AI yang bekerja.",
+      "teks_layar": "Unggah & Edit",
+      "pose": "typing",
+      "keyword": "unggah foto",
+      "latar": "studio minimalis",
+      "image_query": "stickman typing on laptop"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "cheer",
+      "keyword": "simpan",
+      "latar": "studio minimalis",
+      "image_query": "stickman cheering with saved icon"
+    }
+  ],
+  "caption": "Mau edit foto tanpa ribet dan tanpa bayar? Coba cara ini sekarang juga. Jangan lupa follow akun Po Chai buat tips AI lainnya!",
+  "cta": "Simpan video ini supaya kamu tidak lupa.",
+  "hashtag": [
+    "#KreatorAI",
+    "#EditFoto",
+    "#AIGratis",
+    "#TipsEditing"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "AI GRATIS EDIT FOTO",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Mau edit foto tapi malas bayar langganan mahal?",
+        "layout": "kinetic_title",
+        "judul_layar": "Edit Foto Gratis?",
+        "subjudul": "Mau edit foto tapi malas bayar langganan mahal?",
+        "kata_kunci": [
+          {
+            "kata": "gratis",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Kebanyakan orang mikir semua AI keren itu harus berlangganan.",
+        "layout": "bullets",
+        "judul_layar": "Harus Berbayar?",
+        "subjudul": "Kebanyakan orang mikir semua AI keren itu harus berlangganan.",
+        "kata_kunci": [
+          {
+            "kata": "berlangganan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan",
+        "narasi": "Padahal, banyak situs web menyediakan fitur canggih tanpa dipungut biaya.",
+        "layout": "bullets",
+        "judul_layar": "Banyak yang Gratis",
+        "subjudul": "Padahal, banyak situs web menyediakan fitur canggih tanpa dipungut biaya.",
+        "kata_kunci": [
+          {
+            "kata": "tanpa biaya",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "aksi",
+        "narasi": "Cukup buka browser, unggah foto, dan biarkan AI yang bekerja.",
+        "layout": "bullets",
+        "judul_layar": "Unggah & Edit",
+        "subjudul": "Cukup buka browser, unggah foto, dan biarkan AI yang bekerja.",
+        "kata_kunci": [
+          {
+            "kata": "unggah foto",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini supaya kamu tidak lupa mencobanya nanti.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

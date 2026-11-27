@@ -1,0 +1,201 @@
+{
+  "judul": "Mendigitalisasi Sumbu Filosofi Yogyakarta dengan Scan to BIM",
+  "hook": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak aslinya?",
+  "angle": "Sudut kreator Indonesia: Bagaimana Teknologi Scan to BIM Digunakan untuk Mendigitalisasi Sumbu Filosofi Yogyakarta? - Spatial Highlights",
+  "bahasa": "id",
+  "durasi_target_detik": 35,
+  "narasi_penuh": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak aslinya? Sumbu Filosofi Yogyakarta sekarang pakai teknologi Scan to BIM buat merekam setiap detail bangunan. Kamera khusus memindai seluruh sudut fisik secara akurat. Hasilnya langsung berubah jadi model tiga dimensi di komputer. Proses ini bikin perawatan cagar budaya jauh lebih presisi. Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+  "adegan": [
+    {
+      "id": 1,
+      "nama": "hook",
+      "narasi": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak aslinya?",
+      "teks_layar": "Scan to BIM Jogja",
+      "pose": "think",
+      "keyword": "digital",
+      "latar": "studio",
+      "image_query": "historic building scanner"
+    },
+    {
+      "id": 2,
+      "nama": "konflik",
+      "narasi": "Sumbu Filosofi Yogyakarta sekarang pakai teknologi Scan to BIM buat merekam setiap detail bangunan.",
+      "teks_layar": "Sumbu Filosofi",
+      "pose": "point",
+      "keyword": "Sumbu Filosofi",
+      "latar": "studio",
+      "image_query": "Yogyakarta monument"
+    },
+    {
+      "id": 3,
+      "nama": "penjelasan_1",
+      "narasi": "Kamera khusus memindai seluruh sudut fisik secara akurat.",
+      "teks_layar": "Pemindaian Akurat",
+      "pose": "typing",
+      "keyword": "akurat",
+      "latar": "studio",
+      "image_query": "3d laser scanner"
+    },
+    {
+      "id": 4,
+      "nama": "penjelasan_2",
+      "narasi": "Hasilnya langsung berubah jadi model tiga dimensi di komputer. Proses ini bikin perawatan cagar budaya jauh lebih presisi.",
+      "teks_layar": "Model Tiga Dimensi",
+      "pose": "cheer",
+      "keyword": "presisi",
+      "latar": "studio",
+      "image_query": "BIM software 3d model"
+    },
+    {
+      "id": 5,
+      "nama": "cta",
+      "narasi": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+      "teks_layar": "Simpan Video Ini",
+      "pose": "idle",
+      "keyword": "simpan",
+      "latar": "studio",
+      "image_query": "save button icon"
+    }
+  ],
+  "caption": "Teknologi modern bantu lestarikan sejarah. Gini cara Scan to BIM rekam Sumbu Filosofi Yogyakarta.",
+  "cta": "Simpan video ini",
+  "hashtag": [
+    "#KreatorAI",
+    "#ScanToBIM",
+    "#Jogja",
+    "#SumbuFilosofi",
+    "#Teknologi"
+  ],
+  "fakta_yang_wajib_dicek": [
+    "Jangan mengarang angka; cek klaim sebelum naskah final."
+  ],
+  "is_ai_generated": true,
+  "cover_text": "Scan to BIM Sumbu Filosofi Jogja",
+  "image_query": "",
+  "llm_provider": "gemini",
+  "style": "penjelas",
+  "visual": {
+    "mode": "light",
+    "bab": [
+      {
+        "id": 1,
+        "label": "01/05",
+        "nama": "hook",
+        "narasi": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak aslinya?",
+        "layout": "kinetic_title",
+        "judul_layar": "Scan to BIM Jogja",
+        "subjudul": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak aslinya?",
+        "kata_kunci": [
+          {
+            "kata": "digital",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "pop"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "02/05",
+        "nama": "konflik",
+        "narasi": "Sumbu Filosofi Yogyakarta sekarang pakai teknologi Scan to BIM buat merekam setiap detail bangunan.",
+        "layout": "bullets",
+        "judul_layar": "Sumbu Filosofi",
+        "subjudul": "Sumbu Filosofi Yogyakarta sekarang pakai teknologi Scan to BIM buat merekam setiap detail ",
+        "kata_kunci": [
+          {
+            "kata": "Sumbu Filosofi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 3,
+        "label": "03/05",
+        "nama": "penjelasan_1",
+        "narasi": "Kamera khusus memindai seluruh sudut fisik secara akurat.",
+        "layout": "bullets",
+        "judul_layar": "Pemindaian Akurat",
+        "subjudul": "Kamera khusus memindai seluruh sudut fisik secara akurat.",
+        "kata_kunci": [
+          {
+            "kata": "akurat",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "04/05",
+        "nama": "penjelasan_2",
+        "narasi": "Hasilnya langsung berubah jadi model tiga dimensi di komputer. Proses ini bikin perawatan cagar budaya jauh lebih presisi.",
+        "layout": "bullets",
+        "judul_layar": "Model Tiga Dimensi",
+        "subjudul": "Hasilnya langsung berubah jadi model tiga dimensi di komputer. Proses ini bikin perawatan ",
+        "kata_kunci": [
+          {
+            "kata": "presisi",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "05/05",
+        "nama": "cta",
+        "narasi": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+        "layout": "cta",
+        "judul_layar": "Simpan Video Ini",
+        "subjudul": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+        "kata_kunci": [
+          {
+            "kata": "simpan",
+            "warna": "aksen"
+          }
+        ],
+        "ikon": [],
+        "perbandingan": null,
+        "counter": null,
+        "langkah": [],
+        "progress_poin": [],
+        "sfx": [
+          "whoosh",
+          "pop"
+        ]
+      }
+    ]
+  }
+}

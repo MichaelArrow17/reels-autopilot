@@ -1,0 +1,421 @@
+[
+  {
+    "text": "Gimana caranya bangunan bersejarah",
+    "start": 0.0,
+    "end": 2.0938150220048897,
+    "words": [
+      {
+        "word": "Gimana",
+        "start": 0.224146,
+        "duration": 0.40064336185819066
+      },
+      {
+        "word": "caranya",
+        "start": 0.6247893618581907,
+        "duration": 0.4273529193154032
+      },
+      {
+        "word": "bangunan",
+        "start": 1.0521422811735939,
+        "duration": 0.454062476772616
+      },
+      {
+        "word": "bersejarah",
+        "start": 1.50620475794621,
+        "duration": 0.5876102640586798
+      }
+    ]
+  },
+  {
+    "text": "dicatat jadi data digital",
+    "start": 2.0938150220048897,
+    "end": 3.4827120097799504,
+    "words": [
+      {
+        "word": "dicatat",
+        "start": 2.0938150220048897,
+        "duration": 0.4273529193154033
+      },
+      {
+        "word": "jadi",
+        "start": 2.521167941320293,
+        "duration": 0.26709557457212707
+      },
+      {
+        "word": "data",
+        "start": 2.78826351589242,
+        "duration": 0.26709557457212707
+      },
+      {
+        "word": "digital",
+        "start": 3.055359090464547,
+        "duration": 0.4273529193154033
+      }
+    ]
+  },
+  {
+    "text": "tanpa merusak aslinya?",
+    "start": 3.4827120097799504,
+    "end": 5.721389980440097,
+    "words": [
+      {
+        "word": "tanpa",
+        "start": 3.4827120097799504,
+        "duration": 0.2938051320293398
+      },
+      {
+        "word": "merusak",
+        "start": 3.77651714180929,
+        "duration": 0.42735291931540287
+      },
+      {
+        "word": "aslinya?",
+        "start": 4.203870061124693,
+        "duration": 1.5175199193154043
+      }
+    ]
+  },
+  {
+    "text": "Sumbu Filosofi Yogyakarta sekarang",
+    "start": 5.721389980440097,
+    "end": 7.591059002444986,
+    "words": [
+      {
+        "word": "Sumbu",
+        "start": 5.721389980440097,
+        "duration": 0.29380513202933933
+      },
+      {
+        "word": "Filosofi",
+        "start": 6.015195112469437,
+        "duration": 0.5341911491442541
+      },
+      {
+        "word": "Yogyakarta",
+        "start": 6.549386261613691,
+        "duration": 0.5876102640586796
+      },
+      {
+        "word": "sekarang",
+        "start": 7.13699652567237,
+        "duration": 0.4540624767726156
+      }
+    ]
+  },
+  {
+    "text": "pakai teknologi Scan to",
+    "start": 7.591059002444986,
+    "end": 8.766279530562345,
+    "words": [
+      {
+        "word": "pakai",
+        "start": 7.591059002444986,
+        "duration": 0.29380513202933933
+      },
+      {
+        "word": "teknologi",
+        "start": 7.884864134474325,
+        "duration": 0.5609007066014673
+      },
+      {
+        "word": "Scan",
+        "start": 8.445764841075793,
+        "duration": 0.1869669022004885
+      },
+      {
+        "word": "to",
+        "start": 8.632731743276281,
+        "duration": 0.13354778728606398
+      }
+    ]
+  },
+  {
+    "text": "BIM buat merekam setiap",
+    "start": 8.766279530562345,
+    "end": 9.861371386308067,
+    "words": [
+      {
+        "word": "BIM",
+        "start": 8.766279530562345,
+        "duration": 0.16025734474327713
+      },
+      {
+        "word": "buat",
+        "start": 8.926536875305622,
+        "duration": 0.1869669022004885
+      },
+      {
+        "word": "merekam",
+        "start": 9.11350377750611,
+        "duration": 0.4273529193154033
+      },
+      {
+        "word": "setiap",
+        "start": 9.540856696821514,
+        "duration": 0.3205146894865525
+      }
+    ]
+  },
+  {
+    "text": "detail bangunan.",
+    "start": 9.861371386308067,
+    "end": 10.635948552567235,
+    "words": [
+      {
+        "word": "detail",
+        "start": 9.861371386308067,
+        "duration": 0.3205146894865525
+      },
+      {
+        "word": "bangunan.",
+        "start": 10.181886075794619,
+        "duration": 0.45406247677261646
+      }
+    ]
+  },
+  {
+    "text": "Kamera khusus memindai seluruh",
+    "start": 10.635948552567235,
+    "end": 13.280938999999998,
+    "words": [
+      {
+        "word": "Kamera",
+        "start": 10.635948552567235,
+        "duration": 1.4430603618581905
+      },
+      {
+        "word": "khusus",
+        "start": 12.079008914425426,
+        "duration": 0.3205146894865525
+      },
+      {
+        "word": "memindai",
+        "start": 12.399523603911978,
+        "duration": 0.45406247677261646
+      },
+      {
+        "word": "seluruh",
+        "start": 12.853586080684595,
+        "duration": 0.4273529193154033
+      }
+    ]
+  },
+  {
+    "text": "sudut fisik secara akurat.",
+    "start": 13.280938999999998,
+    "end": 15.83379398777506,
+    "words": [
+      {
+        "word": "sudut",
+        "start": 13.280938999999998,
+        "duration": 0.29380513202933933
+      },
+      {
+        "word": "fisik",
+        "start": 13.574744132029338,
+        "duration": 0.29380513202933933
+      },
+      {
+        "word": "secara",
+        "start": 13.868549264058677,
+        "duration": 0.40064336185819016
+      },
+      {
+        "word": "akurat.",
+        "start": 14.269192625916867,
+        "duration": 1.5646013618581929
+      }
+    ]
+  },
+  {
+    "text": "Hasilnya langsung berubah jadi",
+    "start": 15.83379398777506,
+    "end": 17.356238762836185,
+    "words": [
+      {
+        "word": "Hasilnya",
+        "start": 15.83379398777506,
+        "duration": 0.45406247677261646
+      },
+      {
+        "word": "langsung",
+        "start": 16.287856464547676,
+        "duration": 0.373933804400977
+      },
+      {
+        "word": "berubah",
+        "start": 16.661790268948653,
+        "duration": 0.4273529193154033
+      },
+      {
+        "word": "jadi",
+        "start": 17.089143188264057,
+        "duration": 0.26709557457212796
+      }
+    ]
+  },
+  {
+    "text": "model tiga dimensi di",
+    "start": 17.356238762836185,
+    "end": 18.47804017603912,
+    "words": [
+      {
+        "word": "model",
+        "start": 17.356238762836185,
+        "duration": 0.29380513202933756
+      },
+      {
+        "word": "tiga",
+        "start": 17.650043894865522,
+        "duration": 0.26709557457212796
+      },
+      {
+        "word": "dimensi",
+        "start": 17.91713946943765,
+        "duration": 0.4273529193154033
+      },
+      {
+        "word": "di",
+        "start": 18.344492388753054,
+        "duration": 0.13354778728606576
+      }
+    ]
+  },
+  {
+    "text": "komputer. Proses ini bikin",
+    "start": 18.47804017603912,
+    "end": 20.838453491442543,
+    "words": [
+      {
+        "word": "komputer.",
+        "start": 18.47804017603912,
+        "duration": 1.505707476772617
+      },
+      {
+        "word": "Proses",
+        "start": 19.983747652811736,
+        "duration": 0.3205146894865507
+      },
+      {
+        "word": "ini",
+        "start": 20.304262342298287,
+        "duration": 0.2403860171149148
+      },
+      {
+        "word": "bikin",
+        "start": 20.544648359413202,
+        "duration": 0.2938051320293411
+      }
+    ]
+  },
+  {
+    "text": "perawatan cagar budaya jauh",
+    "start": 20.838453491442543,
+    "end": 22.280769594132025,
+    "words": [
+      {
+        "word": "perawatan",
+        "start": 20.838453491442543,
+        "duration": 0.5609007066014655
+      },
+      {
+        "word": "cagar",
+        "start": 21.39935419804401,
+        "duration": 0.2938051320293411
+      },
+      {
+        "word": "budaya",
+        "start": 21.69315933007335,
+        "duration": 0.4006433618581866
+      },
+      {
+        "word": "jauh",
+        "start": 22.093802691931536,
+        "duration": 0.1869669022004885
+      }
+    ]
+  },
+  {
+    "text": "lebih presisi.",
+    "start": 22.280769594132025,
+    "end": 24.04394764547677,
+    "words": [
+      {
+        "word": "lebih",
+        "start": 22.280769594132025,
+        "duration": 0.2938051320293411
+      },
+      {
+        "word": "presisi.",
+        "start": 22.574574726161366,
+        "duration": 1.4693729193154041
+      }
+    ]
+  },
+  {
+    "text": "Simpan video ini kalau",
+    "start": 24.04394764547677,
+    "end": 25.192458616136918,
+    "words": [
+      {
+        "word": "Simpan",
+        "start": 24.04394764547677,
+        "duration": 0.3205146894865507
+      },
+      {
+        "word": "video",
+        "start": 24.36446233496332,
+        "duration": 0.2938051320293411
+      },
+      {
+        "word": "ini",
+        "start": 24.658267466992662,
+        "duration": 0.2403860171149148
+      },
+      {
+        "word": "kalau",
+        "start": 24.898653484107577,
+        "duration": 0.2938051320293411
+      }
+    ]
+  },
+  {
+    "text": "kamu penasaran sama teknologi",
+    "start": 25.192458616136918,
+    "end": 26.848451178484105,
+    "words": [
+      {
+        "word": "kamu",
+        "start": 25.192458616136918,
+        "duration": 0.2670955745721315
+      },
+      {
+        "word": "penasaran",
+        "start": 25.45955419070905,
+        "duration": 0.5609007066014655
+      },
+      {
+        "word": "sama",
+        "start": 26.020454897310515,
+        "duration": 0.2670955745721244
+      },
+      {
+        "word": "teknologi",
+        "start": 26.28755047188264,
+        "duration": 0.5609007066014655
+      }
+    ]
+  },
+  {
+    "text": "pelestarian.",
+    "start": 26.848451178484105,
+    "end": 27.462770999999996,
+    "words": [
+      {
+        "word": "pelestarian.",
+        "start": 26.848451178484105,
+        "duration": 0.6143198215158918
+      }
+    ]
+  }
+]

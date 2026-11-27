@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Pernah mikir kenapa HP panas banget pas game berat dibuka?",
+      "isi": "Di dalam chip terdapat sensor arus yang bertugas ngawasi pemakaian daya listrik secara real-time. Sensor ini langsung ngatur ulang beban kerja komponen agar baterai nggak gampang jebol.",
+      "cta": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+      "pertanyaan": "Game apa yang paling sering bikin HP kamu cepat panas?",
+      "hashtag": [
+        "#TeknologiHP",
+        "#TipsGadget",
+        "#PerformaGaming",
+        "#Smartphone",
+        "#TechTips"
+      ]
+    },
+    {
+      "baris1": "Kenapa HP bisa panas banget pas dipakai main game berat?",
+      "isi": "Ternyata ada alat kecil bernama sensor arus di dalam chip yang bertugas mengawasi pemakaian daya listrik. Komponen ini mengatur ulang beban kerja agar performa tetap stabil dan HP tidak mati.",
+      "cta": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+      "pertanyaan": "Kira-kira apa game terberat yang pernah kamu mainkan di HP?",
+      "hashtag": [
+        "#Chipset",
+        "#GamingMobile",
+        "#InfoTekno",
+        "#GamerIndonesia",
+        "#TechKnowledge"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara chip HP mengawasi energi saat game dibuka?",
+      "isi": "Sensor arus di dalam chip mengawasi pemakaian daya listrik secara real-time dan mengatur ulang beban kerja komponen. Hal ini menjaga performa tetap stabil tanpa bikin HP mendadak mati.",
+      "cta": "Simpan video ini biar kamu tahu rahasia HP kamu.",
+      "pertanyaan": "Pernahkah HP kamu mendadak mati sendiri saat asyik bermain game?",
+      "hashtag": [
+        "#HardwareHP",
+        "#TipsHP",
+        "#EdukasiTekno",
+        "#GamingTips",
+        "#GadgetFacts"
+      ]
+    }
+  ],
+  "cover": "Kenapa HP Panas Saat Main Game?",
+  "komentar_pin": "Tulis game terberat di HP kamu di komentar dan simpan video ini!",
+  "llm_provider": "gemini"
+}

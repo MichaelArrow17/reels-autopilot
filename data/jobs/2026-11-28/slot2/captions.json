@@ -1,0 +1,43 @@
+{
+  "varian": [
+    {
+      "baris1": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak?",
+      "isi": "Sumbu Filosofi Yogyakarta menggunakan teknologi Scan to BIM untuk merekam setiap detail fisik bangunan secara akurat menjadi model 3D di komputer. Proses ini membuat perawatan cagar budaya jauh lebih presisi.",
+      "cta": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+      "pertanyaan": "Menurutmu, bangunan apa lagi yang harus didandani pakai teknologi ini?",
+      "hashtag": [
+        "#ScanToBIM",
+        "#SumbuFilosofiJogja",
+        "#CagarBudaya",
+        "#TeknologiArsitektur"
+      ]
+    },
+    {
+      "baris1": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak?",
+      "isi": "Teknologi Scan to BIM dipakai di Sumbu Filosofi Yogyakarta untuk merekam sudut fisik bangunan tanpa merusak aslinya dan mengubahnya langsung jadi model tiga dimensi.",
+      "cta": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+      "pertanyaan": "Pernah bayangkan bangunan bersejarah punya kembaran digital?",
+      "hashtag": [
+        "#BIMIndonesia",
+        "#PelestarianBudaya",
+        "#ArsitekturJogja",
+        "#DigitalTwin"
+      ]
+    },
+    {
+      "baris1": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak?",
+      "isi": "Perekaman detail bangunan lewat kamera khusus menghasilkan model tiga dimensi di komputer untuk perawatan cagar budaya yang lebih presisi pada Sumbu Filosofi Yogyakarta.",
+      "cta": "Simpan video ini kalau kamu penasaran sama teknologi pelestarian.",
+      "pertanyaan": "Apa kamu tertarik belajar lebih dalam soal teknologi pemindaian bangunan ini?",
+      "hashtag": [
+        "#HeritageConservation",
+        "#Scan3D",
+        "#InovasiJogja",
+        "#PariwisataEdukasi"
+      ]
+    }
+  ],
+  "cover": "Scan to BIM Sumbu Filosofi Jogja",
+  "komentar_pin": "Gimana menurutmu, seberapa penting teknologi digital buat nyelametin bangunan masa lalu?",
+  "llm_provider": "gemini"
+}

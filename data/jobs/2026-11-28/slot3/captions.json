@@ -1,0 +1,46 @@
+{
+  "varian": [
+    {
+      "baris1": "Kenapa banyak profil orang terkenal terdengar lancar tapi sumbernya kosong?",
+      "isi": "Banyak video terdengar sangat meyakinkan padahal sumber datanya tidak jelas. Pastikan selalu mengecek tautan resmi sebelum mempercayai sebuah informasi.",
+      "cta": "Simpan video ini.",
+      "pertanyaan": "Pernah hampir percaya berita tanpa sumber yang jelas?",
+      "hashtag": [
+        "#LiterasiDigital",
+        "#CekFakta",
+        "#AntiHoaks",
+        "#AIContent",
+        "#factcheck"
+      ]
+    },
+    {
+      "baris1": "Benarkah informasi tentang tanggal, gelar, dan jumlah selalu akurat?",
+      "isi": "Setiap ada klaim tanggal, gelar, atau jumlah tertentu, tanyakan dulu dari mana asal angkanya. Tanpa sumber resmi, jangan langsung percaya.",
+      "cta": "Komentar jawaban.",
+      "pertanyaan": "Bagaimana biasanya kamu memverifikasi informasi di internet?",
+      "hashtag": [
+        "#BeritaPalsu",
+        "#LiterasiMedia",
+        "#EdukasiAI",
+        "#Kritis",
+        "#mediahabit"
+      ]
+    },
+    {
+      "baris1": "Bagaimana cara menyikapi kabar skandal atau duka tanpa sumber?",
+      "isi": "Untuk kabar skandal, mundur jabatan, atau berita duka, aturan utamanya adalah jangan disebar jika tidak ada sumber.",
+      "cta": "Follow untuk part berikutnya.",
+      "pertanyaan": "Apa hal pertama yang kamu cek saat melihat berita mengejutkan?",
+      "hashtag": [
+        "#EtikaSosmed",
+        "#SaringSebelumSharing",
+        "#PikirPikir",
+        "#BijakBermedsos",
+        "#digitalliteracy"
+      ]
+    }
+  ],
+  "cover": "Jangan Percaya Asal, Cek Sumbernya!",
+  "komentar_pin": "Tulis di komentar kalau ada klaim atau informasi yang mau kamu bantu cek faktanya bareng-bareng.",
+  "llm_provider": "gemini"
+}

@@ -395,6 +395,30 @@
       "tanggal": "2026-11-27",
       "angle": "Sudut kreator Indonesia: chatgpt without subscription",
       "slot": 5
+    },
+    {
+      "judul": "Cara HP Awasi Energi Saat Game Terbuka",
+      "tanggal": "2026-11-28",
+      "angle": "Teknologi Sensor Arus pada Smartphone",
+      "slot": 1
+    },
+    {
+      "judul": "Mendigitalisasi Sumbu Filosofi Yogyakarta dengan Scan to BIM",
+      "tanggal": "2026-11-28",
+      "angle": "Sudut kreator Indonesia: Bagaimana Teknologi Scan to BIM Digunakan untuk Mendigitalisasi Sumbu Filosofi Yogyakarta? - Spatial Highlights",
+      "slot": 2
+    },
+    {
+      "judul": "chatgpt astra explained",
+      "tanggal": "2026-11-28",
+      "angle": "Cek sumber sebelum menyebar kisah orang nyata.",
+      "slot": 3
+    },
+    {
+      "judul": "AI Gratis untuk Edit Foto",
+      "tanggal": "2026-11-28",
+      "angle": "Sudut kreator Indonesia: AI gratis untuk edit foto",
+      "slot": 5
     }
   ],
   "days": {
@@ -13029,7 +13053,7 @@
           "id": "2026-11-28-s1-bce079",
           "slot": 1,
           "slot_label": "07:30",
-          "judul": "Teknologi Sensor Arus pada Smartphone, Cara Perangkat Mengawasi Penggunaan Energi ketika Wild Bounty Showdown Terbuka - MMC Kabupaten Gunung Mas",
+          "judul": "Cara HP Awasi Energi Saat Game Terbuka",
           "hook": "Teknologi Sensor Arus pada Smartphone, Cara Perangkat Mengawasi Penggunaan Energi ketika Wild?",
           "topic": {
             "judul": "Teknologi Sensor Arus pada Smartphone, Cara Perangkat Mengawasi Penggunaan Energi ketika Wild Bounty Showdown Terbuka - MMC Kabupaten Gunung Mas",
@@ -13061,14 +13085,28 @@
             "sinyal": null,
             "rank": 1
           },
-          "status": "pending",
-          "created_at": "2026-11-28T06:01:18+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-28T06:01:18+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot1/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot1/script.json",
+          "caption": "Pernah mikir kenapa HP panas banget pas game berat dibuka?\nDi dalam chip terdapat sensor arus yang bertugas ngawasi pemakaian daya listrik secara real-time. Sensor ini langsung ngatur ulang beban kerja komponen agar baterai nggak gampang jebol.\nSimpan video ini biar kamu tahu rahasia HP kamu.\nGame apa yang paling sering bikin HP kamu cepat panas?\n#TeknologiHP #TipsGadget #PerformaGaming #Smartphone #TechTips",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 27.696,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-28-s2-9da25a",
           "slot": 2,
           "slot_label": "12:00",
-          "judul": "Bagaimana Teknologi Scan to BIM Digunakan untuk Mendigitalisasi Sumbu Filosofi Yogyakarta? - Spatial Highlights",
+          "judul": "Mendigitalisasi Sumbu Filosofi Yogyakarta dengan Scan to BIM",
           "hook": "Bagaimana Teknologi Scan to BIM Digunakan untuk Mendigitalisasi Sumbu Filosofi Yogyakarta? -?",
           "topic": {
             "judul": "Bagaimana Teknologi Scan to BIM Digunakan untuk Mendigitalisasi Sumbu Filosofi Yogyakarta? - Spatial Highlights",
@@ -13100,8 +13138,22 @@
             "sinyal": null,
             "rank": 2
           },
-          "status": "pending",
-          "created_at": "2026-11-28T06:01:18+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-28T06:01:18+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot2/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot2/script.json",
+          "caption": "Gimana caranya bangunan bersejarah dicatat jadi data digital tanpa merusak?\nSumbu Filosofi Yogyakarta menggunakan teknologi Scan to BIM untuk merekam setiap detail fisik bangunan secara akurat menjadi model 3D di komputer. Proses ini membuat perawatan cagar budaya jauh lebih presisi.\nSimpan video ini kalau kamu penasaran sama teknologi pelestarian.\nMenurutmu, bangunan apa lagi yang harus didandani pakai teknologi ini?\n#ScanToBIM #SumbuFilosofiJogja #CagarBudaya #TeknologiArsitektur",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.5,
+            "duration": 28.366016,
+            "errors": []
+          }
         },
         {
           "id": "2026-11-28-s3-73c394",
@@ -13139,14 +13191,30 @@
             "sinyal": "chatgpt",
             "rank": 3
           },
-          "status": "pending",
-          "created_at": "2026-11-28T06:01:18+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-28T06:01:18+08:00",
+          "style": "kolase",
+          "style_reason": "rotasi setelah 3× penjelas",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot3/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot3/script.json",
+          "caption": "Kenapa banyak profil orang terkenal terdengar lancar tapi sumbernya kosong?\nBanyak video terdengar sangat meyakinkan padahal sumber datanya tidak jelas. Pastikan selalu mengecek tautan resmi sebelum mempercayai sebuah informasi.\nSimpan video ini.\nPernah hampir percaya berita tanpa sumber yang jelas?\n#LiterasiDigital #CekFakta #AntiHoaks #AIContent #factcheck",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.0,
+            "peak": -1.4,
+            "duration": 26.832,
+            "errors": []
+          },
+          "credits": "",
+          "klaim": []
         },
         {
           "id": "2026-11-28-s4-9b76ef",
           "slot": 4,
           "slot_label": "19:00",
-          "judul": "chatgpt without subscription",
+          "judul": "ChatGPT Tanpa Langganan",
           "hook": "chatgpt without subscription?",
           "topic": {
             "judul": "chatgpt without subscription",
@@ -13178,14 +13246,29 @@
             "sinyal": "chatgpt",
             "rank": 4
           },
-          "status": "pending",
-          "created_at": "2026-11-28T06:01:18+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-28T06:01:18+08:00",
+          "style": "cerita",
+          "style_reason": "keragaman batch (dari penjelas, yakin 74)",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot4/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot4/script.json",
+          "caption": "Mau tahu cara pakai ChatGPT tanpa langganan?\nKamu bisa memanfaatkan berbagai alternatif platform gratis yang menawarkan teknologi AI serupa tanpa harus merogoh kocek berlangganan setiap bulannya.\nKomentar jawaban\nApa platform AI gratis andalanmu sehari-hari?\n#ChatGPTGratis #KecerdasanBuatan #TipsTeknologi #AIIndonesia #ArtificialIntelligence",
+          "tts_provider": "ambient",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.4,
+            "peak": -1.2,
+            "duration": 24.0,
+            "errors": []
+          },
+          "storyboard_fallback": false
         },
         {
           "id": "2026-11-28-s5-1e3de0",
           "slot": 5,
           "slot_label": "21:00",
-          "judul": "ai gratis untuk edit foto",
+          "judul": "AI Gratis untuk Edit Foto",
           "hook": "ai gratis untuk edit foto?",
           "topic": {
             "judul": "ai gratis untuk edit foto",
@@ -13217,8 +13300,22 @@
             "sinyal": "ai gratis",
             "rank": 5
           },
-          "status": "pending",
-          "created_at": "2026-11-28T06:01:18+08:00"
+          "status": "rendered",
+          "created_at": "2026-11-28T06:01:18+08:00",
+          "style": "penjelas",
+          "style_reason": "topik info",
+          "mp4": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot5/reel.mp4",
+          "script_path": "/home/runner/work/reels-autopilot/reels-autopilot/data/jobs/2026-11-28/slot5/script.json",
+          "caption": "Kenapa mikir semua AI keren itu harus berlangganan mahal?\nPadahal banyak situs web menyediakan fitur canggih tanpa dipungut biaya. Cukup buka browser dan unggah foto kamu.\nSimpan video ini supaya kamu tidak lupa mencobanya nanti.\nSitus AI gratis apa yang biasa kamu pakai buat edit foto?\n#aigratis #editfotomudah #tipsai #teknologi #aiphoto",
+          "tts_provider": "edge_tts",
+          "llm_provider": "gemini",
+          "qc_ok": true,
+          "qc": {
+            "lufs": -14.1,
+            "peak": -1.5,
+            "duration": 21.633008,
+            "errors": []
+          }
         }
       ],
       "scouted_at": "2026-11-28T06:01:17+08:00",
@@ -13664,6 +13761,41 @@
       "slot": 5,
       "style": "penjelas",
       "judul": "ChatGPT Tanpa Langganan",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 1,
+      "style": "penjelas",
+      "judul": "Cara HP Awasi Energi Saat Game Terbuka",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 2,
+      "style": "penjelas",
+      "judul": "Mendigitalisasi Sumbu Filosofi Yogyakarta dengan Scan to BIM",
+      "reason": "topik info"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 3,
+      "style": "kolase",
+      "judul": "chatgpt astra explained",
+      "reason": "rotasi setelah 3× penjelas"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 4,
+      "style": "cerita",
+      "judul": "ChatGPT Tanpa Langganan",
+      "reason": "keragaman batch (dari penjelas, yakin 74)"
+    },
+    {
+      "date": "2026-11-28",
+      "slot": 5,
+      "style": "penjelas",
+      "judul": "AI Gratis untuk Edit Foto",
       "reason": "topik info"
     }
   ]
